@@ -11,4 +11,11 @@ func CalculateObfuscatedKey(key: String) -> String
     return obfuscatedKey.substring(to: String.Index(encodedOffset: 22))
 }
 
+// 0D3qCmmfJ/i1mpmjOsV7EA - confirmed
 CalculateObfuscatedKey(key: "ScreenSerialNumber")
+
+// 0AJUv/uYPsRiZNGpWJ7zfg - guessed
+CalculateObfuscatedKey(key: "disable-spoken-messages")
+
+// M+WPVivF4iTnm1CC8c6h+A (haptic) - guessed
+CalculateObfuscatedKey(key: "pre-warm-disabled")
