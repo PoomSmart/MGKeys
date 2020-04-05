@@ -8,7 +8,16 @@ struct tKeyMapping
  
 static const struct tKeyMapping keyMappingTable[] =
 {
+	"/6FWCRjN1yRdUABG9vF8ow", NULL,
+	"/9luHerXthRoPoNt/PVkTg", NULL,
+	"/bfa1LxXd7G1WqHujpjsdA", NULL,
+	"/bSMNaIuUT58N/BN1nYUjw", NULL,
+	"/GK+yfRFY/b5ZDIDpdVImg", NULL,
+	"/Oajtq8qODrC4XBBOULF3A", NULL,
+	"/Pop5T2XQdDA60MRyxQJdQ", NULL,
+	"/YYygAofPDbhrwToVsXdeA", NULL,
 	"+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
+	"+97cHA72jHlHqQnIkgGBYg", NULL,
 	"+Ce1uSqGUXaJPl/uT6ur8g", "SDIOProductInfo",
 	"+N9mZUAHooNvMiQnjeTJ8g", "HasAppleNeuralEngine",
 	"+U0jSj4F2EfE+Vqj22IavA", "tnr-mode-back",
@@ -32,7 +41,11 @@ static const struct tKeyMapping keyMappingTable[] =
 	"0/7QNywWU4IqDcyvTv9UYQ", "RearFacingCameraVideoCapture720pMaxFPS",
 	"0/VAyl58TL5U/mAQEJNRQw", "DeviceHasAggregateCamera",
 	"03hWmMtMs+4nzama4/PzHQ", "CameraLiveEffectsCapability",
+	"04zgp3uYWXAEZCOV0wrVXQ", NULL,
+	"061e/gd5kFdZwwe1G2qXFQ", NULL,
 	"0AFeHRmliNJ4pSlVb8ltZA", "FrontFacingCameraVideoCapture720pMaxFPS",
+	"0AJUv/uYPsRiZNGpWJ7zfg", NULL,
+	"0D3qCmmfJ/i1mpmjOsV7EA", "ScreenSerialNumber",
 	"0L5PkT61qoH1b/B1USWqjQ", "RegionalBehaviorChinaBrick",
 	"0R2aiV2nJVu/v8I7Ex2GcQ", "RegionalBehaviorNoPasscodeLocationTiles",
 	"0VkTunHOJrrZdolQXR5gCg", "DevicePrefersTrafficAlpha",
