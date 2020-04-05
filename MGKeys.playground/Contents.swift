@@ -15,7 +15,7 @@ func CalculateObfuscatedKey(key: String) -> String
 CalculateObfuscatedKey(key: "ScreenSerialNumber")
 
 // 0AJUv/uYPsRiZNGpWJ7zfg - guessed
-CalculateObfuscatedKey(key: "disable-spoken-messages")
+CalculateObfuscatedKey(key: "DeviceSupportsSpokenMessages")
 
 // M+WPVivF4iTnm1CC8c6h+A (haptic) - guessed
 CalculateObfuscatedKey(key: "pre-warm-disabled")
