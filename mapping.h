@@ -1,6 +1,6 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-// 762 deobfuscated keys out of 836 keys in total (91.1%)
+// 762 deobfuscated keys out of 838 keys in total (90.9%)
 
 struct tKeyMapping {
 	const char *obfuscatedKey;
@@ -142,10 +142,11 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"8bOgXKgqoLvqV/XeSomAfA", "SecondaryBluetoothMacAddress",
 	"8bY/L3i3rmxrl4ZjFZZpgQ", "siri-gesture",
 	"8DHlxr5ECKhTSL3HmlZQGQ", "RestoreOSBuild",
+	"8LAJHwc8DUQZwV2TSwsysA", NULL, // back camera stage light portrait effects
 	"8olRm6C1xqr7AJGpLRnpSw", "PearlIDCapability",
 	"8OTc3mN30ACaEwecgpKfXA", "CloudPhotoLibraryCapability",
 	"8QNz35Yxm0KqxP1JiE0HIw", "PintoMacAddressData",
-	"8S7ydMJ4DlCUF38/hI/fJA", NULL,
+	"8S7ydMJ4DlCUF38/hI/fJA", NULL, // front camera portrait (Pearl)
 	"8Shl+AdVKo09f1Sldkb0kA", "touch-id",
 	"8vIFqHe5lcMGo7TvbNLmyg", "home-button-type",
 	"8Wunmi1SpU1MxfBxkv3KOw", "dali-mode",
@@ -473,7 +474,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"L2Oq7vNNUKuv+iJ4m9xtiw", "SIMTrayStatus",
 	"L47fh6KehOmR+AseqK2Xsw", "DeviceSupportsCCK",
 	"L5al7b+7JATD/izSJeH0aQ", "cellular-data",
-	"L8CqbJeM+rf7l7NSOjnAHg", NULL, // Portrait lighting
+	"L8CqbJeM+rf7l7NSOjnAHg", NULL, // Portrait lighting / effect intensity
 	"LAB8o3Bxs3CgNuzDawjRdw", "opengles-3",
 	"LBJfwOEzExRxzlAnSuI7eg", "InternalBuild",
 	"Lcu6Zck+C/+AMO8qULacDw", "DeviceSupportsToneMapping",
@@ -543,7 +544,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"nAl8QWlApaJQkipRf38fdg", "DeviceSupportsNewton",
 	"ND6ZSbBBgMgwtMfh+OL5Wg", "HighestSupportedVideoMode",
 	"NE090Fbwd79LVOHj0AN+OA", NULL,
-	"nfoN5DvniQJQRqNth7F0fg", NULL,
+	"nfoN5DvniQJQRqNth7F0fg", NULL, // hme-refresh-rate
 	"nFRqKto/RuQAV1P+0/qkBA", "UniqueDeviceIDData",
 	"nhGhVMyvrWYe9U2ltAUImg", NULL, // locationd, nearbyd
 	"Nhm02nvVOaQPimpOshlO1g", "FaceTimeBitRate2G",
@@ -572,6 +573,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"O8mk69g6k/CbfeET9LtqQA", "RosalineSerialNumber",
 	"oBbtJ8x+s1q0OkaiocPuog", "MainScreenStaticInfo",
 	"OBqqs000I0SR+EbJ7VO8UQ", "HasSpringBoard",
+	"ocYC+NyuthjbvU9CyI4Z8Q", NULL, // front camera stage light portrait effects
 	"oGLRS3rALy/eJqiKMfXOxA", NULL, // (ARKit.framework, CoreServices/StarBoard.app)
 	"ohnQBWkVQf2nu9Vr/9uLug", "DeviceSupports3DImagery",
 	"oJGeec0N+MudCr0LsdtbHw", "MobileSubscriberNetworkCode",
@@ -669,6 +671,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"sJ0n0UZHSUVJbmyy2p54Cw", "unified-ipod",
 	"SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus",
 	"sJmYs82RucA1MWX5jHFSjA", "DeviceSupportsWebkit",
+	"SjQQ07G8UacM7E69G7dPbg", NULL, // back camera spatial over capture
 	"sLe8lqXRlqZM74MNUoVcyQ", "BatteryIsCharging",
 	"SMgTCc2v9AU2ziIHRX8qww", "hearingaid-audio-equalization",
 	"SmUPjD77AHIMCLny9nawdw", "ConfigNumber",
@@ -700,7 +703,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"Ty5/C8UDfdjcdR853kulmA", "FrontFacingCameraBurstCapability",
 	"tYqUcLmLfhmk7vOgdFvURg", "sim-phonebook",
 	"TZ/0j62wM3D0CuRt+Nc/Lw", "ProductHash",
-	"U/nyu97+Q5SFY9yJKJTuSA", NULL,
+	"U/nyu97+Q5SFY9yJKJTuSA", NULL, // RoswellAuthI2CRelayInterface, IDSN
 	"U+73bmG4kBGj6kpreQXUTQ", "DeviceSupportsAlwaysListening",
 	"U1fcnNYCEu9uH1bg3/6PKQ", "image4-supported",
 	"U28TFcPMDYvyjIBpc8HZ4Q", NULL,

@@ -59,6 +59,9 @@ CalculateObfuscatedKey(key: "DeviceSupportsTelephonyOverUSB")
 // feC7TgoAAKLjn/KU8JAKFA - confirmed
 CalculateObfuscatedKey(key: "DeviceSupportsExternalHDR")
 
+// XriAxQ+JY1z5nt5f3ftXVw - confirmed
+CalculateObfuscatedKey(key: "DeviceSupportsCameraHaptics")
+
 // SZy8T5ma/+a0wJc0ntiaaA - confirmed
 CalculateObfuscatedKey(key: "PhoneNumber2")
 
