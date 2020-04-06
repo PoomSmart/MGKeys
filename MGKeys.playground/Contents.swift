@@ -56,6 +56,15 @@ CalculateObfuscatedKey(key: "DeviceSupportsTelephonyOverUSB")
 // feC7TgoAAKLjn/KU8JAKFA - confirmed
 CalculateObfuscatedKey(key: "DeviceSupportsExternalHDR")
 
+// SZy8T5ma/+a0wJc0ntiaaA - confirmed
+CalculateObfuscatedKey(key: "PhoneNumber2")
+
+// 2zyzecwSf2ZYRpB3tuQhOQ
+CalculateObfuscatedKey(key: "WirelessSplitterCapability")
+
+// q3JBrhzy5fyJ1+LAITPW0w
+CalculateObfuscatedKey(key: "HearingAidLEA2Capability")
+
 // M+WPVivF4iTnm1CC8c6h+A (haptic) - guessed
 CalculateObfuscatedKey(key: "pre-warm-disabled")
 
