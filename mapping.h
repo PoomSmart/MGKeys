@@ -1,10 +1,10 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-// 756 deobfuscated keys out of 835 keys in total (90.5%)
+// 756 deobfuscated keys out of 834 keys in total (90.5%)
 
 struct tKeyMapping {
-    const char *obfuscatedKey;
-    const char *key;
+	const char *obfuscatedKey;
+	const char *key;
 };
  
 static const struct tKeyMapping keyMappingTable[] = {
@@ -142,7 +142,6 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"8bOgXKgqoLvqV/XeSomAfA", "SecondaryBluetoothMacAddress",
 	"8bY/L3i3rmxrl4ZjFZZpgQ", "siri-gesture",
 	"8DHlxr5ECKhTSL3HmlZQGQ", "RestoreOSBuild",
-	"8LAJHwc8DUQZwV2TSwsysA", NULL,
 	"8olRm6C1xqr7AJGpLRnpSw", "PearlIDCapability",
 	"8OTc3mN30ACaEwecgpKfXA", "CloudPhotoLibraryCapability",
 	"8QNz35Yxm0KqxP1JiE0HIw", "PintoMacAddressData",
