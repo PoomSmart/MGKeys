@@ -50,4 +50,7 @@ CalculateObfuscatedKey(key: "DeviceSupportsSpokenMessages")
 // M+WPVivF4iTnm1CC8c6h+A (haptic) - guessed
 CalculateObfuscatedKey(key: "pre-warm-disabled")
 
-obfuscatedToMD5("obfuscated")
+// TqAfAH10ANDgiG7V2u8BkQ - confirmed
+CalculateObfuscatedKey(key: "FrontFacingCameraHFRVideoCapture720pMaxFPS")
+
+// obfuscatedToMD5("obfuscated")

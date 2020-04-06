@@ -1,6 +1,6 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-// 756 deobfuscated keys out of 834 keys in total (90.6%)
+// 757 deobfuscated keys out of 834 keys in total (90.8%)
 
 struct tKeyMapping {
 	const char *obfuscatedKey;
@@ -472,7 +472,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"L2Oq7vNNUKuv+iJ4m9xtiw", "SIMTrayStatus",
 	"L47fh6KehOmR+AseqK2Xsw", "DeviceSupportsCCK",
 	"L5al7b+7JATD/izSJeH0aQ", "cellular-data",
-	"L8CqbJeM+rf7l7NSOjnAHg", NULL,
+	"L8CqbJeM+rf7l7NSOjnAHg", NULL, // Portrait lightning
 	"LAB8o3Bxs3CgNuzDawjRdw", "opengles-3",
 	"LBJfwOEzExRxzlAnSuI7eg", "InternalBuild",
 	"Lcu6Zck+C/+AMO8qULacDw", "DeviceSupportsToneMapping",
@@ -688,7 +688,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"TF31PAB6aO8KAbPyNKSxKA", "UniqueChipID",
 	"ToJGxfcjkIerYyeL2e8c4A", "BasebandBoardSnum",
 	"tOLVnZop4m/g5/iuC7zlUw", "effective-production-status-ap",
-	"TqAfAH10ANDgiG7V2u8BkQ", NULL,
+	"TqAfAH10ANDgiG7V2u8BkQ", "FrontFacingCameraHFRVideoCapture720pMaxFPS",
 	"TqrlqJOZiAuRx8Qu3SVr+Q", "SecondaryWifiMacAddressData",
 	"Tr9qG122eEQiKGfr6EGRdQ", "RegionalBehaviorEUVolumeLimit",
 	"TTZrMo1OOEUELa7asaQ7xg", "RearFacingCameraHDRCapability",
