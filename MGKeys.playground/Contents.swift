@@ -44,13 +44,22 @@ func obfuscatedToMD5(_ filename: String) -> Int {
 // 0D3qCmmfJ/i1mpmjOsV7EA - confirmed
 CalculateObfuscatedKey(key: "ScreenSerialNumber")
 
-// 0AJUv/uYPsRiZNGpWJ7zfg - guessed
-CalculateObfuscatedKey(key: "DeviceSupportsSpokenMessages")
+// TqAfAH10ANDgiG7V2u8BkQ - confirmed
+CalculateObfuscatedKey(key: "FrontFacingCameraHFRVideoCapture720pMaxFPS")
+
+// 0AJUv/uYPsRiZNGpWJ7zfg - confirmed
+CalculateObfuscatedKey(key: "DeviceSupportsSiriSpokenMessages")
 
 // M+WPVivF4iTnm1CC8c6h+A (haptic) - guessed
 CalculateObfuscatedKey(key: "pre-warm-disabled")
 
-// TqAfAH10ANDgiG7V2u8BkQ - confirmed
-CalculateObfuscatedKey(key: "FrontFacingCameraHFRVideoCapture720pMaxFPS")
+// jaJWtlotaa+Y41lCs7NVHg
+CalculateObfuscatedKey(key: "BackFacingCameraLowLightingCapability")
+
+// hnXJ1OpiiIL0+p3jUG/XxQ
+CalculateObfuscatedKey(key: "rear-cam-super-wide-capability")
+
+// L8CqbJeM+rf7l7NSOjnAHg
+CalculateObfuscatedKey(key: "DeviceSupportsPortraitLightEffectFilters2")
 
 // obfuscatedToMD5("obfuscated")
