@@ -1,6 +1,6 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-// 757 deobfuscated keys out of 834 keys in total (90.8%)
+// 757 deobfuscated keys out of 835 keys in total (90.7%)
 
 struct tKeyMapping {
 	const char *obfuscatedKey;
@@ -36,7 +36,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"04zgp3uYWXAEZCOV0wrVXQ", NULL,
 	"061e/gd5kFdZwwe1G2qXFQ", NULL,
 	"0AFeHRmliNJ4pSlVb8ltZA", "FrontFacingCameraVideoCapture720pMaxFPS",
-	"0AJUv/uYPsRiZNGpWJ7zfg", NULL,
+	"0AJUv/uYPsRiZNGpWJ7zfg", NULL, // (AssistantServices.framework) (call hint: DeviceSupportsSpokenMessages)
 	"0D3qCmmfJ/i1mpmjOsV7EA", "ScreenSerialNumber",
 	"0dnM19zBqLw5ZPhIo4GEkg", "SecureElement",
 	"0jjK6IVSQzA8doQeSwmujA", "software-bundle-version",
@@ -72,7 +72,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"2Qf/8sQyx6voo3Mw3QKgZQ", "DeviceRequiresSoftwareBrightnessCalculations",
 	"2sWGezz2RezScIJJgiIYQg", "IcefallInRestrictedMode",
 	"2xSqkUxsVWmOBWk6StVOfQ", "LunaFlexSerialNumber",
-	"2zyzecwSf2ZYRpB3tuQhOQ", NULL,
+	"2zyzecwSf2ZYRpB3tuQhOQ", NULL, // (bluetoothd) (Method call hint: "Wireless Splitter is %s on this hardware platform")
 	"38C0kq9NiVaMsqjlUsCHcQ", "ota-activation",
 	"39ZkJVEsL4pmCXbg+89QmQ", "accelerometer",
 	"3kmXfug8VcxLI5yEmsqQKw", "InDiagnosticsMode",
@@ -227,7 +227,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"CN/XFuy/9Fdv0yE+28kwRQ", "cell-broadcast",
 	"CN64p1hw1JVdTHCfBdgPLQ", "BasebandStatus",
 	"CnoPCMssOh+xPJJo6pvnog", "WatchSupportsAutoPlaylistPlayback",
-	"CPiqZJJPocpjc5C5qe1tiw", NULL,
+	"CPiqZJJPocpjc5C5qe1tiw", NULL, // locationd
 	"CpVSHukvtqlJzCgSdoHW5w", "SBAllowSensitiveUI",
 	"CQ6gFmgMhpnnISvG6VakBQ", "MobileSubscriberCountryCode",
 	"cRjPy4Ef+KZwJ+nfPeBV5Q", "DeviceSupportsSwimmingWorkouts",
@@ -254,6 +254,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"drPpRw0Jmqcxv1XQPn/q/Q", "CameraFrontFlashCapability",
 	"DrrXMX9VWX7bMj0MZuhTUA", NULL,
 	"DrSqlXYNVfYXCvAsuUrUDA", "DebugBoardRevision",
+	"DtSpvgyOyNVwNa5W0zigqg", NULL, // CTM
 	"DViRIxZ/ZwO007CLcEYvZw", "SoftwareBundleVersion",
 	"DWrhyh1BwYypYmW5q78Wuw", "armv7",
 	"DzLC4o1jZ4hWtP8aB6An6g", "SDIOManufacturerTuple",
@@ -297,7 +298,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier",
 	"fdh+s6j3VijuyrK7xLjd7g", "main-screen-class",
 	"FDsm68UVR7l3wErusGLgKg", "hw-snapshots-need-purplegfx",
-	"feC7TgoAAKLjn/KU8JAKFA", NULL,
+	"feC7TgoAAKLjn/KU8JAKFA", NULL, // AVKit.framework
 	"FgjnMkPJPpI4C38dWETwtw", "flash",
 	"fGpT09KNGDBjFXnqcVbgbw", "RearFacingCameraHFRCapability",
 	"Fh2Ga0/Sj4T3Qn5Z9A9BMw", "DeviceSupports4k",
@@ -369,7 +370,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"HMKkoKYsMmBBSN6ozOtw/w", "stand-alone-contacts",
 	"HMpTbnbcAb+mQDi8O71h6Q", "LynxPublicKey",
 	"HnHX0gXt8RvhMQzIVMM7hw", "FrontFacingCameraHDROnCapability",
-	"hnXJ1OpiiIL0+p3jUG/XxQ", NULL,
+	"hnXJ1OpiiIL0+p3jUG/XxQ", NULL, // back superwide camera
 	"hOkus/A6lBEF6Ar3jV7LrQ", "DeviceSupportsRGB10",
 	"Ht1HDxwTOy2gyY+THjbd6w", "peer-peer",
 	"htWSrEg/cfn3squdzvER/w", NULL,
@@ -414,10 +415,10 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"J/a5Y6rhDH0gVkYtWUylOA", NULL,
 	"j1pdCAYnpIEYMqIAitm3JA", "DeviceSupportsCinnamon",
 	"j4dedPnpeXouudM1+j3dsQ", "IntegratedCircuitCardIdentifier",
-	"j8/Omm6s1lsmTDFsXjsBfA", NULL,
+	"j8/Omm6s1lsmTDFsXjsBfA", NULL, // nanoregistryd
 	"J912s3mVzhReVtPv4HwqNQ", "FaceTimeCameraRequiresFastSwitchOptions",
 	"j9Th5smJpdztHwc+i39zIg", "MarketingProductName",
-	"jaJWtlotaa+Y41lCs7NVHg", NULL,
+	"jaJWtlotaa+Y41lCs7NVHg", NULL, // back camera low light supported
 	"jBGZJ71pRJrqD8VZ6Tk2VQ", "RearFacingCameraVideoCapture1080pMaxFPS",
 	"jdLgKT+0BZmGrzd9J0cuPA", "camera-flash",
 	"jewva1LRTg17HDPWdj+TLw", NULL,
@@ -472,7 +473,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"L2Oq7vNNUKuv+iJ4m9xtiw", "SIMTrayStatus",
 	"L47fh6KehOmR+AseqK2Xsw", "DeviceSupportsCCK",
 	"L5al7b+7JATD/izSJeH0aQ", "cellular-data",
-	"L8CqbJeM+rf7l7NSOjnAHg", NULL, // Portrait lightning
+	"L8CqbJeM+rf7l7NSOjnAHg", NULL, // Portrait lighting
 	"LAB8o3Bxs3CgNuzDawjRdw", "opengles-3",
 	"LBJfwOEzExRxzlAnSuI7eg", "InternalBuild",
 	"Lcu6Zck+C/+AMO8qULacDw", "DeviceSupportsToneMapping",
@@ -544,7 +545,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"NE090Fbwd79LVOHj0AN+OA", NULL,
 	"nfoN5DvniQJQRqNth7F0fg", NULL,
 	"nFRqKto/RuQAV1P+0/qkBA", "UniqueDeviceIDData",
-	"nhGhVMyvrWYe9U2ltAUImg", NULL,
+	"nhGhVMyvrWYe9U2ltAUImg", NULL, // locationd, nearbyd
 	"Nhm02nvVOaQPimpOshlO1g", "FaceTimeBitRate2G",
 	"niQFEBBY7JaauAIosAyQQg", NULL,
 	"NJsxTSI2WuD+13rxShXX9w", "DeviceHousingColor",
@@ -571,7 +572,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"O8mk69g6k/CbfeET9LtqQA", "RosalineSerialNumber",
 	"oBbtJ8x+s1q0OkaiocPuog", "MainScreenStaticInfo",
 	"OBqqs000I0SR+EbJ7VO8UQ", "HasSpringBoard",
-	"oGLRS3rALy/eJqiKMfXOxA", NULL,
+	"oGLRS3rALy/eJqiKMfXOxA", NULL, // (ARKit.framework, CoreServices/StarBoard.app)
 	"ohnQBWkVQf2nu9Vr/9uLug", "DeviceSupports3DImagery",
 	"oJGeec0N+MudCr0LsdtbHw", "MobileSubscriberNetworkCode",
 	"Oji6HRoPi7rH7HPdWVakuw", "HasInternalSettingsBundle",
@@ -617,7 +618,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"Q/BI7GKNZY13TpxbqA8nhQ", "rear-max-video-fps-720p",
 	"Q1Ty5w8gxMWHx3p4lQ1fhA", "MLBSerialNumber",
 	"Q2jR+AUT9PTHUrP/mkdfxQ", "NVRAMDictionary",
-	"q3JBrhzy5fyJ1+LAITPW0w", NULL,
+	"q3JBrhzy5fyJ1+LAITPW0w", NULL, // (HearingCore.framework) (Method call: +[HCUtilities supportsLEA2])
 	"Q4b8YIwPgnznT5hs4qXjaA", "rear-burst-image-duration",
 	"q4cLktMwtrx8dCJAQTeqTg", "PanoramaCameraCapability",
 	"Q5QHkCRPRmiX3L/5xxKrRg", "BasebandCertId",
@@ -678,7 +679,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"ssIPnsZyWHPGC5sg3Pzkiw", "SiKACapability",
 	"SvI9oDkzw4XJFd+dKen/2Q", "DeviceVariant",
 	"sYxZdpH3i8nwjZNet0QuAw", "fcm-type",
-	"SZy8T5ma/+a0wJc0ntiaaA", NULL,
+	"SZy8T5ma/+a0wJc0ntiaaA", NULL, // lockdownd
 	"T9MMpvl0fu59PO8lXi/Cxg", "effective-production-status",
 	"tad3RCjcWdkyLSVI8kUBtA", "caller-id",
 	"tbBVomzeDyPq15QV5VGQGg", NULL,
@@ -805,7 +806,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"yeQy+rgNoD7+YIY6mSVOhg", NULL,
 	"YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability",
 	"yhHcB0iH0d1XzPO/CFd3ow", "DeviceSupportsApplePencil",
-	"YiUtBQygkHRhLcdO3LFB4A", NULL,
+	"YiUtBQygkHRhLcdO3LFB4A", NULL, // (libAudioToolboxUtility.dylib) (call hint: telephonyOverUSB, USBTypeC related)
 	"Yk5H+MlMreeaBLjv6PPFDw", "camera-front",
 	"yl8qmYPdAhFLeDBho10sdQ", "FaceTimeDecodings",
 	"YlK+0xmxNWhNn/+r8SM8kA", "DeviceSupportsStereoAudioRecording",
