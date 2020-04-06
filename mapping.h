@@ -1,6 +1,6 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-// 758 deobfuscated keys out of 835 keys in total (90.8%)
+// 760 deobfuscated keys out of 835 keys in total (91.0%)
 
 struct tKeyMapping {
 	const char *obfuscatedKey;
@@ -298,7 +298,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier",
 	"fdh+s6j3VijuyrK7xLjd7g", "main-screen-class",
 	"FDsm68UVR7l3wErusGLgKg", "hw-snapshots-need-purplegfx",
-	"feC7TgoAAKLjn/KU8JAKFA", NULL, // AVKit.framework
+	"feC7TgoAAKLjn/KU8JAKFA", "DeviceSupportsExternalHDR",
 	"FgjnMkPJPpI4C38dWETwtw", "flash",
 	"fGpT09KNGDBjFXnqcVbgbw", "RearFacingCameraHFRCapability",
 	"Fh2Ga0/Sj4T3Qn5Z9A9BMw", "DeviceSupports4k",
@@ -806,7 +806,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"yeQy+rgNoD7+YIY6mSVOhg", NULL,
 	"YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability",
 	"yhHcB0iH0d1XzPO/CFd3ow", "DeviceSupportsApplePencil",
-	"YiUtBQygkHRhLcdO3LFB4A", NULL, // (libAudioToolboxUtility.dylib) (call hint: telephonyOverUSB, USBTypeC related)
+	"YiUtBQygkHRhLcdO3LFB4A", "DeviceSupportsTelephonyOverUSB",
 	"Yk5H+MlMreeaBLjv6PPFDw", "camera-front",
 	"yl8qmYPdAhFLeDBho10sdQ", "FaceTimeDecodings",
 	"YlK+0xmxNWhNn/+r8SM8kA", "DeviceSupportsStereoAudioRecording",

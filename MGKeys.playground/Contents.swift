@@ -50,6 +50,12 @@ CalculateObfuscatedKey(key: "FrontFacingCameraHFRVideoCapture720pMaxFPS")
 // 0AJUv/uYPsRiZNGpWJ7zfg - confirmed
 CalculateObfuscatedKey(key: "DeviceSupportsSiriSpokenMessages")
 
+// YiUtBQygkHRhLcdO3LFB4A - confirmed
+CalculateObfuscatedKey(key: "DeviceSupportsTelephonyOverUSB")
+
+// feC7TgoAAKLjn/KU8JAKFA - confirmed
+CalculateObfuscatedKey(key: "DeviceSupportsExternalHDR")
+
 // M+WPVivF4iTnm1CC8c6h+A (haptic) - guessed
 CalculateObfuscatedKey(key: "pre-warm-disabled")
 
