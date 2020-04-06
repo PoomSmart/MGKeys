@@ -1,6 +1,6 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-// 761 deobfuscated keys out of 835 keys in total (91.1%)
+// 762 deobfuscated keys out of 835 keys in total (91.3%)
 
 struct tKeyMapping {
 	const char *obfuscatedKey;
@@ -514,7 +514,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"Mh+drGtyBfLYKN02sROzxg", "delay-sleep-for-headset-click",
 	"MjqwTHDneTCNeqhZ7vCvUw", "DeviceSupportsHiResBuildings",
 	"Mk4ZslaChmO+6s3h7L1w6Q", "DeviceSupports1080p",
-	"mL1lk3ZVGDFUQhxU9YLW6Q", NULL,
+	"mL1lk3ZVGDFUQhxU9YLW6Q", "FrontFacingCameraHFRVideoCapture1080pMaxFPS",
 	"mm4/5+X4Z+eStXyipfwWVQ", "rear-cam-telephoto-capability",
 	"mmu76v66k1dAtghToInT8g", "UIParallaxCapability",
 	"MTa8c+pEdbK0tHGXP06xOw", "AllowYouTubePlugin",

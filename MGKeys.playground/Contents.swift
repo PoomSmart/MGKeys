@@ -47,6 +47,9 @@ CalculateObfuscatedKey(key: "ScreenSerialNumber")
 // TqAfAH10ANDgiG7V2u8BkQ - confirmed
 CalculateObfuscatedKey(key: "FrontFacingCameraHFRVideoCapture720pMaxFPS")
 
+// mL1lk3ZVGDFUQhxU9YLW6Q - confirmed
+CalculateObfuscatedKey(key: "FrontFacingCameraHFRVideoCapture1080pMaxFPS")
+
 // 0AJUv/uYPsRiZNGpWJ7zfg - confirmed
 CalculateObfuscatedKey(key: "DeviceSupportsSiriSpokenMessages")
 
