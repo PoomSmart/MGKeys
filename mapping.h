@@ -1,13 +1,11 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-struct tKeyMapping
-{
-    const char *    obfuscatedKey;
-    const char *    key;
+struct tKeyMapping {
+    const char *obfuscatedKey;
+    const char *key;
 };
  
-static const struct tKeyMapping keyMappingTable[] =
-{
+static const struct tKeyMapping keyMappingTable[] = {
 	"/2V8H9h/+z0UxNUr9aRLeQ", "boot-nonce",
 	"/6FWCRjN1yRdUABG9vF8ow", "WiFiCallingCapability",
 	"/9luHerXthRoPoNt/PVkTg", "VibratorCapability",
@@ -661,7 +659,7 @@ static const struct tKeyMapping keyMappingTable[] =
 	"s+gaKNe68Gs3PfqKrZhi1w", "MonarchLowEndHardware",
 	"s2UwZpwDQcywU3de47/ilw", "microphone",
 	"S5Bf9bF00BTHrySCydAkdg", "bitrate-2g",
-	"SaW+DA+cbiqDHrex8MTABA", NULL,
+	"SaW+DA+cbiqDHrex8MTABA", "DeviceSupportsEnvironmentalDosimetry",
 	"SCNOHu+KqRX0xhIlj5KXaA", "H264EncoderCapability",
 	"sFTm4FEVKVfdZ0ChdwQY1g", "WifiAntennaSKUVersion",
 	"sHiXbHqHvvRS3I/qo/rH2Q", "SIMTrayStatus2",
