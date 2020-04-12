@@ -1,6 +1,6 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-// 763 deobfuscated keys out of 848 keys in total (89.98%)
+// 769 deobfuscated keys out of 848 keys in total (90.68%)
 
 struct tKeyMapping {
 	const char *obfuscatedKey;
@@ -21,7 +21,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"/Pop5T2XQdDA60MRyxQJdQ", "hall-effect-sensor",
 	"/YYygAofPDbhrwToVsXdeA", "HWModelStr",
 	"+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
-	"+97cHA72jHlHqQnIkgGBYg", NULL,
+	"+97cHA72jHlHqQnIkgGBYg", "CameraHDRVersion",
 	"+bL/lKwaIAv+fzmjsHYZdw", "N78aHack",
 	"+Ce1uSqGUXaJPl/uT6ur8g", "SDIOProductInfo",
 	"+fgL2ovGydvB5CWd1JI1qg", "has-sphere",
@@ -65,14 +65,14 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"2/q9qmqGigMfkzY830Zf2g", "YonkersChipID",
 	"2aIAScwtFNCz+Y7WesMOCA", NULL,
 	"2IDxmg5KyAMBBi/b0rojgQ", "telephony-maximum-generation",
-	"2kuITg6XPwXl8zbpx+hoCw", NULL,
+	"2kuITg6XPwXl8zbpx+hoCw", "FrontFacingIRCameraModuleSerialNumber",
 	"2lNKobEIQqX50ohy1JBqCA", "no-hi-res-buildings",
 	"2OK50OGmkXM1ospsh766WQ", "TouchDelivery120Hz",
 	"2pxKjejpRGpWvUE+3yp5mQ", "cameraRestriction",
 	"2Qf/8sQyx6voo3Mw3QKgZQ", "DeviceRequiresSoftwareBrightnessCalculations",
 	"2sWGezz2RezScIJJgiIYQg", "IcefallInRestrictedMode",
 	"2xSqkUxsVWmOBWk6StVOfQ", "LunaFlexSerialNumber",
-	"2zyzecwSf2ZYRpB3tuQhOQ", NULL, // (bluetoothd) (Method call hint: "Wireless Splitter is %s on this hardware platform")
+	"2zyzecwSf2ZYRpB3tuQhOQ", "DeviceSupportsWirelessSplitting",
 	"38C0kq9NiVaMsqjlUsCHcQ", "ota-activation",
 	"39ZkJVEsL4pmCXbg+89QmQ", "accelerometer",
 	"3kmXfug8VcxLI5yEmsqQKw", "InDiagnosticsMode",
@@ -223,7 +223,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"cHla4KIe1wv0OvpRVrzy/w", "hide-non-default-apps",
 	"CJcvxERO5v/3IWjDFKZKRw", "DeviceBackingColor",
 	"CK3I7fFGkgeqzKEhGew9rQ", "FaceTimeFrontCameraTemporalNoiseReductionMode",
-	"cm399FbDqnv8IOFoeBLWYg", NULL,
+	"cm399FbDqnv8IOFoeBLWYg", "RearFacingTelephotoCameraModuleSerialNumber",
 	"cmkS/KVB6ubxH76sLbumbw", "rear-max-slomo-video-fps-1080p",
 	"CN/XFuy/9Fdv0yE+28kwRQ", "cell-broadcast",
 	"CN64p1hw1JVdTHCfBdgPLQ", "BasebandStatus",
@@ -430,7 +430,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"jJ+5tnncQBcHo5T26MI5jA", "debug-board-revision",
 	"jKFTzVOYcfTfNBh+yDrprw", "RearFacingCameraHFRVideoCapture1080pMaxFPS",
 	"jkr5aFPOh/d6zTzNKYthBw", NULL,
-	"JkZlE8z9YwHjE1hnbMhcgA", NULL,
+	"JkZlE8z9YwHjE1hnbMhcgA", "DeviceSupportsHDRDeferredProcessing",
 	"JLP/IinyzetEPztvoNUNKg", "AggregateDevicePhotoZoomFactor",
 	"jMiqevikb6QWeHOhvLsw6A", "RenderWideGamutImagesAtDisplayTime",
 	"JOlwW/P8Cw3CDCoFunq8og", "platinum",
@@ -762,7 +762,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"WbcphnnzI6Yb5r/AzwiyUA", "mix-n-match-prevention-status",
 	"wBVgxg3VYUU5gawcgq7MXg", "SupportedKeyboards",
 	"WC6wwFV23k19BlUQIAwDTg", "RearFacingCameraMaxVideoZoomFactor",
-	"wH7fRq4TDdYG2pN1KDQW/A", NULL,
+	"wH7fRq4TDdYG2pN1KDQW/A", "FrontFacingIRStructuredLightProjectorModuleSerialNumber",
 	"whbsdxpLirBFgUbLH3+0JA", "DeviceSupportsAdaptiveMapsUI",
 	"wlxZYdEZITDTzgs/OnnV+Q", "personal-hotspot",
 	"wNdWl5xfBJmJGNWJr5t0zA", "DeviceSupportsBerkelium2",

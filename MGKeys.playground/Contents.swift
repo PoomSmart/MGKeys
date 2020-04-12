@@ -65,8 +65,23 @@ CalculateObfuscatedKey(key: "DeviceSupportsCameraHaptics")
 // SZy8T5ma/+a0wJc0ntiaaA - confirmed
 CalculateObfuscatedKey(key: "PhoneNumber2")
 
-// 2zyzecwSf2ZYRpB3tuQhOQ
-CalculateObfuscatedKey(key: "WirelessSplitterCapability")
+// 2zyzecwSf2ZYRpB3tuQhOQ - confirmed
+CalculateObfuscatedKey(key: "DeviceSupportsWirelessSplitting")
+
+// SjQQ07G8UacM7E69G7dPbg
+CalculateObfuscatedKey(key: "DeviceSupportsCameraSpatialOverCapture")
+
+// 8LAJHwc8DUQZwV2TSwsysA
+CalculateObfuscatedKey(key: "")
+
+// 8S7ydMJ4DlCUF38/hI/fJA
+CalculateObfuscatedKey(key: "FrontFacingPortraitCamera")
+
+// U/nyu97+Q5SFY9yJKJTuSA
+CalculateObfuscatedKey(key: "IDSN")
+
+// nfoN5DvniQJQRqNth7F0fg
+CalculateObfuscatedKey(key: "HMERefreshRate")
 
 // q3JBrhzy5fyJ1+LAITPW0w
 CalculateObfuscatedKey(key: "HearingAidLEA2Capability")
@@ -75,12 +90,12 @@ CalculateObfuscatedKey(key: "HearingAidLEA2Capability")
 CalculateObfuscatedKey(key: "pre-warm-disabled")
 
 // jaJWtlotaa+Y41lCs7NVHg
-CalculateObfuscatedKey(key: "BackFacingCameraLowLightingCapability")
+CalculateObfuscatedKey(key: "DeviceSupportsLowLightingVideo")
 
 // hnXJ1OpiiIL0+p3jUG/XxQ
-CalculateObfuscatedKey(key: "rear-cam-super-wide-capability")
+CalculateObfuscatedKey(key: "RearFacingSuperWideCamera")
 
 // L8CqbJeM+rf7l7NSOjnAHg
-CalculateObfuscatedKey(key: "DeviceSupportsPortraitLightEffectFilters2")
+CalculateObfuscatedKey(key: "DeviceSupportsPortraitEffectIntensity")
 
 // obfuscatedToMD5("obfuscated")
