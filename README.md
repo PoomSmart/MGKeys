@@ -5,6 +5,7 @@ Mapping of the obfuscated keys (or questions) used by iOS's MobileGestalt to the
 It is our job to de-obfuscate them all.
 
 ## Credits (Keys De-obfuscation)
+- Jonathan Levin
 - [Timac](https://twitter.com/timacfr)
 - [Siguza](https://twitter.com/s1guza)
 - [Elias Limneos](https://twitter.com/limneos)
