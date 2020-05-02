@@ -1,6 +1,6 @@
 // Original: https://blog.timac.org/2018/1126-deobfuscated-libmobilegestalt-keys-ios-12/
 
-// 769 deobfuscated keys out of 848 keys in total (90.68%)
+// 769 deobfuscated keys out of 851 keys in total (90.36%)
 
 struct tKeyMapping {
 	const char *obfuscatedKey;
@@ -139,6 +139,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"84iheBmhAmsxIlcxG4a0zA", "VideoStillsCapability",
 	"86GizkmSK+IxgCtUMOp2NA", "front-max-video-fps-720p",
 	"87sSAh2rboMI2TDvFBimkg", "DeviceColorMapPolicy",
+	"8bCjks0zVuOcdivIhytNbQ", NULL,
 	"8bOgXKgqoLvqV/XeSomAfA", "SecondaryBluetoothMacAddress",
 	"8bY/L3i3rmxrl4ZjFZZpgQ", "siri-gesture",
 	"8DHlxr5ECKhTSL3HmlZQGQ", "RestoreOSBuild",
@@ -261,6 +262,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"DzLC4o1jZ4hWtP8aB6An6g", "SDIOManufacturerTuple",
 	"e+pTfaabi1k1kfdk2vl1Kw", NULL,
 	"E2iZGHvwvi387UKi9wC2Mg", "CameraFlashCapability",
+	"E9a3UzlfYjWEB9viQCHNAA", NULL,
 	"e9aZViEIJ/riA4pRfg1ihg", "device-color-policy",
 	"Eavu9TP+iZ0Lzlk7FU6w6Q", "ActiveWirelessTechnology",
 	"ebyBs0j3KAquBsgcfrNZIg", "CellularTelephonyCapability",
@@ -506,6 +508,7 @@ static const struct tKeyMapping keyMappingTable[] = {
 	"m+FD6mX8VZzP95hOhM+jow", "hw-encode-snapshots",
 	"M+WPVivF4iTnm1CC8c6h+A", NULL,
 	"m4UsCAgXhbdnwLebiyKMiw", "UIReachability",
+	"m7lDS+oP8q0pGg+CO7RvPg", NULL,
 	"m9ORTKMgu9A+zF+A61Zz5A", NULL,
 	"m9OWD0Y4Br0TZHUl6rGcOg", "SavageChipID",
 	"mAAbkChrX3bpxPIffHG1BQ", "front-facing-camera",

@@ -41,33 +41,6 @@ func obfuscatedToMD5(_ filename: String) -> Int {
     return 0
 }
 
-// 0D3qCmmfJ/i1mpmjOsV7EA - confirmed
-CalculateObfuscatedKey(key: "ScreenSerialNumber")
-
-// TqAfAH10ANDgiG7V2u8BkQ - confirmed
-CalculateObfuscatedKey(key: "FrontFacingCameraHFRVideoCapture720pMaxFPS")
-
-// mL1lk3ZVGDFUQhxU9YLW6Q - confirmed
-CalculateObfuscatedKey(key: "FrontFacingCameraHFRVideoCapture1080pMaxFPS")
-
-// 0AJUv/uYPsRiZNGpWJ7zfg - confirmed
-CalculateObfuscatedKey(key: "DeviceSupportsSiriSpokenMessages")
-
-// YiUtBQygkHRhLcdO3LFB4A - confirmed
-CalculateObfuscatedKey(key: "DeviceSupportsTelephonyOverUSB")
-
-// feC7TgoAAKLjn/KU8JAKFA - confirmed
-CalculateObfuscatedKey(key: "DeviceSupportsExternalHDR")
-
-// XriAxQ+JY1z5nt5f3ftXVw - confirmed
-CalculateObfuscatedKey(key: "DeviceSupportsCameraHaptics")
-
-// SZy8T5ma/+a0wJc0ntiaaA - confirmed
-CalculateObfuscatedKey(key: "PhoneNumber2")
-
-// 2zyzecwSf2ZYRpB3tuQhOQ - confirmed
-CalculateObfuscatedKey(key: "DeviceSupportsWirelessSplitting")
-
 // SjQQ07G8UacM7E69G7dPbg
 CalculateObfuscatedKey(key: "DeviceSupportsCameraSpatialOverCapture")
 
@@ -98,4 +71,13 @@ CalculateObfuscatedKey(key: "RearFacingSuperWideCamera")
 // L8CqbJeM+rf7l7NSOjnAHg
 CalculateObfuscatedKey(key: "DeviceSupportsPortraitEffectIntensity")
 
-// obfuscatedToMD5("obfuscated")
+// 8bCjks0zVuOcdivIhytNbQ
+CalculateObfuscatedKey(key: "")
+
+// E9a3UzlfYjWEB9viQCHNAA
+CalculateObfuscatedKey(key: "")
+
+// m7lDS+oP8q0pGg+CO7RvPg
+CalculateObfuscatedKey(key: "")
+
+obfuscatedToMD5("obfuscated")
