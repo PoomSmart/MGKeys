@@ -7,7 +7,7 @@ struct tKeyMapping {
 	const char *obfuscatedKey;
 	const char *key;
 };
- 
+
 static const struct tKeyMapping keyMappingTable[] = {
 	"/2V8H9h/+z0UxNUr9aRLeQ", "boot-nonce",
 	"/6FWCRjN1yRdUABG9vF8ow", "WiFiCallingCapability",
