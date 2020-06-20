@@ -41,43 +41,21 @@ func obfuscatedToMD5(_ filename: String) -> Int {
     return 0
 }
 
-// SjQQ07G8UacM7E69G7dPbg
-CalculateObfuscatedKey(key: "DeviceSupportsCameraSpatialOverCapture")
+func toObfuscated(_ filename: String) -> Int {
+    errno = 0
+    let realPath = Bundle.main.path(forResource: filename, ofType: "txt")
+    if freopen(realPath, "r", stdin) == nil {
+        perror(realPath)
+        return 1
+    }
+    let dict = NSMutableDictionary()
+    while let line = readLine() {
+        let obfuscated = CalculateObfuscatedKey(key: line);
+        dict[obfuscated] = line
+    }
+    print(dict)
+    return 0
+}
 
-// 8LAJHwc8DUQZwV2TSwsysA
-CalculateObfuscatedKey(key: "")
-
-// 8S7ydMJ4DlCUF38/hI/fJA
-CalculateObfuscatedKey(key: "FrontFacingPortraitCamera")
-
-// U/nyu97+Q5SFY9yJKJTuSA
-CalculateObfuscatedKey(key: "IDSN")
-
-// nfoN5DvniQJQRqNth7F0fg
-CalculateObfuscatedKey(key: "HMERefreshRate")
-
-// q3JBrhzy5fyJ1+LAITPW0w
-CalculateObfuscatedKey(key: "HearingAidLEA2Capability")
-
-// M+WPVivF4iTnm1CC8c6h+A (haptic) - guessed
-CalculateObfuscatedKey(key: "pre-warm-disabled")
-
-// jaJWtlotaa+Y41lCs7NVHg
-CalculateObfuscatedKey(key: "DeviceSupportsLowLightingVideo")
-
-// hnXJ1OpiiIL0+p3jUG/XxQ
-CalculateObfuscatedKey(key: "RearFacingSuperWideCamera")
-
-// L8CqbJeM+rf7l7NSOjnAHg
-CalculateObfuscatedKey(key: "DeviceSupportsPortraitEffectIntensity")
-
-// 8bCjks0zVuOcdivIhytNbQ
-CalculateObfuscatedKey(key: "")
-
-// E9a3UzlfYjWEB9viQCHNAA
-CalculateObfuscatedKey(key: "")
-
-// m7lDS+oP8q0pGg+CO7RvPg
-CalculateObfuscatedKey(key: "")
-
-obfuscatedToMD5("obfuscated")
+// obfuscatedToMD5("obfuscated")
+toObfuscated("deobfuscated")

@@ -10,6 +10,7 @@ It is our job to de-obfuscate them all.
 - [Siguza](https://twitter.com/s1guza)
 - [Elias Limneos](https://twitter.com/limneos)
 - [PoomSmart](https://twitter.com/PoomSmart)
+- [JackoPlane](https://twitter.com/JackoPlane)
 
 ## Further Readings
 - http://newosxbook.com/articles/guesstalt.html by Jonathan Levin
