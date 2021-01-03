@@ -474,7 +474,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "LeSRsiLoJCMhjn6nd6GWbQ", "FirmwareVersion",
     "Leuy56dCZmAMYoVCQGTfPA", "DeviceSupportsPeriodicALSUpdates",
     "Lfx1lF4WO7V2u7mKQTQXGA", "LocalizedDeviceNameString",
-    "Lg1EJX11Jb7EbveB6+YgVQ", NULL, // lwHRTZNO5Jq87pVlzdNGIA
+    "Lg1EJX11Jb7EbveB6+YgVQ", NULL, // lwHRTZNO5Jq87pVlzdNGIA (DeviceSupports720p)
     "lHMDJnC58naUz2rOCJyVIw", "IntegratedCircuitCardIdentifier2",
     "li+w2foswFu0srn5UxdOug", NULL,
     "LJ8aZhTg8lXUeVxHzT+hMw", "TimeSyncCapability",
