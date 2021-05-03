@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 857 keys
-// Deobfuscated: 812 keys (94.75%)
+// Total: 862 keys
+// Deobfuscated: 812 keys (94.20%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "/6FWCRjN1yRdUABG9vF8ow", "WiFiCallingCapability",
@@ -168,6 +168,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "9ZQAcDmoSgmTrmVL06N7hA", "AppleInternalInstallCapability",
     "9ZqSL68MJyQESzQFDvKqXA", "voip",
     "a/mex6YNO6gJ8N8SxAA71A", "DeviceSupportsCrudeProx",
+    "a1r7npIrhXsZ7SmKRKC1eA", NULL,
     "a5BRUxn1QBPXkAnbAHbmeg", "SigningFuse",
     "a6vjPkzcRjrsXmniFsm0dg", "ShouldHactivate",
     "A8aFtN08Oqt21846jqnftQ", "SiriGestureCapability",
@@ -305,6 +306,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Fh2Ga0/Sj4T3Qn5Z9A9BMw", "DeviceSupports4k",
     "fh6DnnDGDVZ5kZ9nYn/GrQ", "hdr-image-capture",
     "Fhqq6Bhy/XnCEBRAe3TI+g", "SavageInfo",
+    "fI93k3j19qMaEqYkKKI7BQ", NULL,
     "fJZs6N8SqTS4RuQVh3szxA", "camera-front-flash",
     "FkD7K642S082lnfw/ohHzg", "BasebandFirmwareManifestData",
     "fkWvcjYnYzGRhVKiBoYzgA", "HasPKA",
@@ -440,6 +442,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "k+KTni1jrwErpcDMEnn3aw", "MobileDeviceMinimumVersion",
     "K0deZit9WJp08kND9wq7cQ", "CellBroadcastCapability",
     "k0rC7smY1sjVXxjCLHVeJA", "CellularDataCapability",
+    "K57p2Tit1BlJ8rFbLl/Nqg", NULL,
     "k5lVWbXuiZHLA17KGiVUAA", "BluetoothAddress",
     "k7QIBwZJJOVw+Sej/8h8VA", "CPUArchitecture",
     "KGlZoljMyZQSxfhROj0IFg", "data-plan",
@@ -756,6 +759,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "W7MyZ3Yxoy1qD6FrI0mLUQ", "RF-exposure-separation-distance",
     "WAfNjeiwOd/k6+VU6D6SIQ", NULL, // 5Y72WwdS5NYHdc00gEZ/DQ
     "WAg9taYd5sCaLcjVswnjjw", "ConferenceCallType",
+    "waGD2UTpntjbDXD1r3oALQ", NULL,
     "waWRQ4fj6cyMuJ+wTWJs1g", "RearCameraOffsetFromDisplayCenter",
     "wBVgxg3VYUU5gawcgq7MXg", "SupportedKeyboards",
     "WC6wwFV23k19BlUQIAwDTg", "RearFacingCameraMaxVideoZoomFactor",
@@ -861,5 +865,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "zPHFWx4ZItDiTXNT2onrWQ", "MobileEquipmentInfoDisplayCSN",
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability",
     "zxMIgVSILN6S5ee6MZhf+Q", "NFCRadio",
+    "ZYqko/XM5zD3XBfN5RmaXA", NULL,
     NULL, NULL
 };

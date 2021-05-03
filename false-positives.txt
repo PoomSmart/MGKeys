@@ -1,0 +1,12 @@
+AmountRestoreAvailable
+IOPlatformExpertDevice
+SpeakerCalibrationSpGa
+RegionalBehaviorNoWiFi
+IOPlatformSerialNumber
+FloatingLiveAppOverlay
+RegionalBehaviorNoVOIP
+BluetoothLE2Capability
+SpeakerCalibrationMiGa
+CoverglassSerialNumber
+/usr/libexec/lockdownd
+SpeakerCalibrationSpTS
