@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 862 keys
-// Deobfuscated: 812 keys (94.20%)
+// Deobfuscated: 816 keys (94.66%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "/6FWCRjN1yRdUABG9vF8ow", "WiFiCallingCapability",
@@ -145,14 +145,14 @@ static const struct tKeyMapping keyMappingTable[] = {
     "8bOgXKgqoLvqV/XeSomAfA", "SecondaryBluetoothMacAddress",
     "8bY/L3i3rmxrl4ZjFZZpgQ", "siri-gesture",
     "8DHlxr5ECKhTSL3HmlZQGQ", "RestoreOSBuild",
-    "8LAJHwc8DUQZwV2TSwsysA", NULL, // back camera stage light portrait effects
+    "8LAJHwc8DUQZwV2TSwsysA", "RearFacingCameraStageLightPortraitCaptureCapability",
     "8lHIyh53plXuU5ZXCCtc1A", "AirDropRestriction",
     "8olRm6C1xqr7AJGpLRnpSw", "PearlIDCapability",
     "8OTc3mN30ACaEwecgpKfXA", "CloudPhotoLibraryCapability",
     "8P5JZjT7LnaofwK60pBM1w", "MicrophoneCapability",
     "8QDlnfTo4K3713bkcH+E9A", "iPadCapability",
     "8QNz35Yxm0KqxP1JiE0HIw", "PintoMacAddressData",
-    "8S7ydMJ4DlCUF38/hI/fJA", NULL, // front camera portrait (Pearl)
+    "8S7ydMJ4DlCUF38/hI/fJA", NULL, // PearlCameraCapability
     "8Shl+AdVKo09f1Sldkb0kA", "touch-id",
     "9/J7LY7zuYSGW1BcSTRpOw", "SysCfgDict",
     "91LyMcx4z1w3SGVeqteMnA", "BasebandRegionSKU",
@@ -306,7 +306,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Fh2Ga0/Sj4T3Qn5Z9A9BMw", "DeviceSupports4k",
     "fh6DnnDGDVZ5kZ9nYn/GrQ", "hdr-image-capture",
     "Fhqq6Bhy/XnCEBRAe3TI+g", "SavageInfo",
-    "fI93k3j19qMaEqYkKKI7BQ", NULL,
+    "fI93k3j19qMaEqYkKKI7BQ", "FrontFacingCameraSuperWideCameraCapability",
     "fJZs6N8SqTS4RuQVh3szxA", "camera-front-flash",
     "FkD7K642S082lnfw/ohHzg", "BasebandFirmwareManifestData",
     "fkWvcjYnYzGRhVKiBoYzgA", "HasPKA",
@@ -442,7 +442,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "k+KTni1jrwErpcDMEnn3aw", "MobileDeviceMinimumVersion",
     "K0deZit9WJp08kND9wq7cQ", "CellBroadcastCapability",
     "k0rC7smY1sjVXxjCLHVeJA", "CellularDataCapability",
-    "K57p2Tit1BlJ8rFbLl/Nqg", NULL,
+    "K57p2Tit1BlJ8rFbLl/Nqg", "DeviceSupportseARC",
     "k5lVWbXuiZHLA17KGiVUAA", "BluetoothAddress",
     "k7QIBwZJJOVw+Sej/8h8VA", "CPUArchitecture",
     "KGlZoljMyZQSxfhROj0IFg", "data-plan",
@@ -568,7 +568,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oaIPJckrXuT73yxxtfGJAg", "EnforceGoogleMail",
     "oBbtJ8x+s1q0OkaiocPuog", "MainScreenStaticInfo",
     "OBqqs000I0SR+EbJ7VO8UQ", "HasSpringBoard",
-    "ocYC+NyuthjbvU9CyI4Z8Q", NULL, // front camera stage light portrait effects
+    "ocYC+NyuthjbvU9CyI4Z8Q", "FrontFacingCameraStageLightPortraitCaptureCapability",
     "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit",
     "ohnQBWkVQf2nu9Vr/9uLug", "DeviceSupports3DImagery",
     "oJGeec0N+MudCr0LsdtbHw", "MobileSubscriberNetworkCode",
@@ -753,7 +753,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "VLfT+eziZYKNjRASM6ntnQ", "FirmwareNonce",
     "VOKmP/SJjhnx1AaT13J7QA", "MultitaskingGesturesCapability",
     "VqRhf8vgXr9B+SYvpnX39g", "BoardRevision",
-    "VuGdqp8UBpi9vPWHlPluVQ", NULL,
+    "VuGdqp8UBpi9vPWHlPluVQ", NULL, // array
     "vwZ4ohiPF3w3M1jzHbP30g", "HallEffectSensorCapability",
     "W/xqvBX9L07XHb0BOtYycQ", NULL, // yF2IQrYS4yyREV4ZkbLysw
     "W7MyZ3Yxoy1qD6FrI0mLUQ", "RF-exposure-separation-distance",
@@ -865,6 +865,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "zPHFWx4ZItDiTXNT2onrWQ", "MobileEquipmentInfoDisplayCSN",
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability",
     "zxMIgVSILN6S5ee6MZhf+Q", "NFCRadio",
-    "ZYqko/XM5zD3XBfN5RmaXA", NULL,
+    "ZYqko/XM5zD3XBfN5RmaXA", NULL, // PiPPinned
     NULL, NULL
 };
