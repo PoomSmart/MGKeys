@@ -4,6 +4,13 @@
 // Deobfuscated: 816 keys (94.66%)
 
 static const struct tKeyMapping keyMappingTable[] = {
+    "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
+    "+97cHA72jHlHqQnIkgGBYg", "CameraHDRVersion",
+    "+bL/lKwaIAv+fzmjsHYZdw", "N78aHack",
+    "+Ce1uSqGUXaJPl/uT6ur8g", "SDIOProductInfo",
+    "+N9mZUAHooNvMiQnjeTJ8g", "HasAppleNeuralEngine",
+    "+VIu65zA5EW4ztayJXvOUg", "device-name-localized",
+    "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
     "/6FWCRjN1yRdUABG9vF8ow", "WiFiCallingCapability",
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
     "/9luHerXthRoPoNt/PVkTg", "VibratorCapability",
@@ -14,13 +21,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "/Oajtq8qODrC4XBBOULF3A", "DeviceSupportsHeartRateVariability",
     "/Pop5T2XQdDA60MRyxQJdQ", "hall-effect-sensor",
     "/YYygAofPDbhrwToVsXdeA", "HWModelStr",
-    "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
-    "+97cHA72jHlHqQnIkgGBYg", "CameraHDRVersion",
-    "+bL/lKwaIAv+fzmjsHYZdw", "N78aHack",
-    "+Ce1uSqGUXaJPl/uT6ur8g", "SDIOProductInfo",
-    "+N9mZUAHooNvMiQnjeTJ8g", "HasAppleNeuralEngine",
-    "+VIu65zA5EW4ztayJXvOUg", "device-name-localized",
-    "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
     "0/2HluYMd/whD80Hua4Rpw", "io-surface-backed-images",
     "0/7QNywWU4IqDcyvTv9UYQ", "RearFacingCameraVideoCapture720pMaxFPS",
     "0/VAyl58TL5U/mAQEJNRQw", "DeviceHasAggregateCamera",
