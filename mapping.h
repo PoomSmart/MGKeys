@@ -146,7 +146,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "9UCjT7Qfi4xLVvPAKIzTCQ", "ReleaseType",
     "9ZqSL68MJyQESzQFDvKqXA", "voip",
     "a/mex6YNO6gJ8N8SxAA71A", "DeviceSupportsCrudeProx",
-    "a1r7npIrhXsZ7SmKRKC1eA", NULL,
+    "a1r7npIrhXsZ7SmKRKC1eA", NULL, // supports-meteor or noqTy5fUbyK03UHxWigBBQ
     "a5BRUxn1QBPXkAnbAHbmeg", "SigningFuse",
     "a6vjPkzcRjrsXmniFsm0dg", "ShouldHactivate",
     "A8aFtN08Oqt21846jqnftQ", "SiriGestureCapability",
@@ -244,7 +244,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "euampscYbKXqj/bSaHD0QA", "IsPwrOpposedVol",
     "EuwCLwMXh+X5LErHKwvuIw", "MultiTouchMaxBootTime",
     "evtY5EeJ8V0nFhmrj/OYjg", "NFCUniqueChipID",
-    "eW5H/Gwg0uqbMqFot70pYg", NULL,
+    "eW5H/Gwg0uqbMqFot70pYg", NULL, // soc-generation related
     "Ex6ChutQnIx5Zm6c5uwYuw", "AllowOnlyATVCPSDKApps",
     "eXCYx/SHTZIn5LInWvZByw", "call-waiting",
     "ExSUJyf7MblY5nBQx2OaRw", "ScreenRecorderCapability",
@@ -275,7 +275,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "fv8ZXM/NhUHQBQqCSk19cA", "FrontFacingCameraAutoHDRCapability",
     "fW9C1U4C1FR8bwe1VqEWug", "full-6",
     "FymLPtOEy6FdE7TmKeoTdg", "DeviceSupportsSingleCameraPortrait",
-    "fYsrGTmVTbneEs3HKetEdQ", NULL,
+    "fYsrGTmVTbneEs3HKetEdQ", NULL, // IODeviceTree:/product/camera > ItOvlwIhFj2aCXL4wk3ijg
     "g/MkWm2Ac6+TLNBgtBGxsg", "HEVCEncodingCapability",
     "g+9NpjmSVwtomd8nyNJimg", "armv6",
     "g5LBi+DCiP5+jUnWVL7Y9w", "FrontCameraRotationFromDisplayNormal",
@@ -341,7 +341,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ik8OQ5JoYhyK8AoTx29MuA", "DeviceSupportsOnDemandPhotoAnalysis",
     "ILaGO+KV5JAOq7Q5GEwbWQ", "AvailableDisplayZoomSizes",
     "IMLaTlxS7ITtwfbRfPYWuA", "DeviceVariantGuess",
-    "IMUksyctl4kC/BFI2K/Qyw", NULL,
+    "IMUksyctl4kC/BFI2K/Qyw", NULL, // IODeviceTree:/product/camera > bmYssgjtQNKMy3Zhf8N+2w
     "inECTnNyR97XWxm7jU8uqA", "MobileEquipmentInfoBaseId",
     "inLiSl5OQHJ1stAIvKH8wg", "RegionalBehaviorGB18030",
     "iTvGxmtSOnHv548XON379A", NULL, // mesa type
@@ -421,7 +421,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "m+FD6mX8VZzP95hOhM+jow", "hw-encode-snapshots",
     "M+WPVivF4iTnm1CC8c6h+A", "DeviceAlwaysPrewarmActuator",
     "m4UsCAgXhbdnwLebiyKMiw", "UIReachability",
-    "m7lDS+oP8q0pGg+CO7RvPg", NULL,
+    "m7lDS+oP8q0pGg+CO7RvPg", NULL, // IODeviceTree:/chosen > 4JalTKSe5a9I+mb00ATvag
     "m9ORTKMgu9A+zF+A61Zz5A", "DeviceSupportsPhotosLocalLight",
     "m9OWD0Y4Br0TZHUl6rGcOg", "SavageChipID",
     "mAAbkChrX3bpxPIffHG1BQ", "front-facing-camera",
@@ -462,7 +462,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "niQFEBBY7JaauAIosAyQQg", "MultiLynxPublicKeyArray",
     "NJsxTSI2WuD+13rxShXX9w", "DeviceHousingColor",
     "nJU6/TSuJTVJlJ7t5/Z/ug", "DeviceSupportsMapsOpticalHeading",
-    "njUcH4bm+JBmvASakDdObg", NULL,
+    "njUcH4bm+JBmvASakDdObg", NULL, // IODeviceTree:/arm-io/isp > /4LCTfMhvzuiK6b557ir5Q
     "nK4D+jDUuTGFFwRFPC2lWg", "DeviceSupportsFloorCounting",
     "Nmhz54v5ZLqj2I4NPFIFqQ", "BasebandSerialNumber",
     "nmOy2K5HzAAs2QNAi8wR+Q", "SupportsRotateToWake",
@@ -503,7 +503,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "pB5sZVvnp+QjZQtt2KfQvA", "BasebandChipset",
     "pCbWB0w5vhsKbGJHs/c1jQ", "youtube",
     "PcQWbThCb7iLEW+EoqZdEQ", "NandControllerUID",
-    "PFnuFyqMMnGUQQnTqS5byg", NULL,
+    "PFnuFyqMMnGUQQnTqS5byg", NULL, // IODeviceTree:/product > MlDJggkQz38CLQh3AVv7VQ
     "plaYa8bKJaAF5Erc5nvZ+g", "RearFacingCameraBurstCapability",
     "PLQ6xgfGji63NbFu+sjeYg", "WLANBkgScanCache",
     "pLzf7OiX5nWAPUMj7BfI4Q", "SupportsIrisCapture",
@@ -582,7 +582,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "spGVujDEmyCzDznXozB3oA", "apn",
     "SR/QIL//glHfqoE+lOAnbA", "SupportsBurninMitigation",
     "ssIPnsZyWHPGC5sg3Pzkiw", "SiKACapability",
-    "STBQ8gY0pl0CK8VmRcks4w", NULL,
+    "STBQ8gY0pl0CK8VmRcks4w", NULL, // IODeviceTree:/product/camera > IvdL59ITgJvhb5ptpLbqRg
     "SvI9oDkzw4XJFd+dKen/2Q", "DeviceVariant",
     "SZy8T5ma/+a0wJc0ntiaaA", "PhoneNumber2",
     "tad3RCjcWdkyLSVI8kUBtA", "caller-id",
@@ -688,7 +688,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "xunfK8NYNCS75N2z2buKWQ", "FaceTimeBitRateLTE",
     "XWAyufZ2SrclH9F9EDmBKw", "AcousticID",
     "XxnEk9uiIk5vCdbWEGt7lA", "DeviceSupportsLiquidDetection_CorrosionMitigation",
-    "XYlJKKkj2hztRP1NWWnhlw", NULL,
+    "XYlJKKkj2hztRP1NWWnhlw", NULL, // IODeviceTree:/chosen > E3qwwdwgUSy6FV6VC+Uf3A
     "xYu8vn4nnbLnNTbBe0FT+w", "WAGraphicQuality",
     "xZm4Ky2/qswyf7ykvlchYg", "CPUType",
     "y0jtYciPmcx3ywPM582WZw", "ContinuityCapability",
@@ -734,6 +734,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "zP3kBA1Biwz2d6PTIIbmUQ", "ActivationProtocol",
     "zPHFWx4ZItDiTXNT2onrWQ", "MobileEquipmentInfoDisplayCSN",
     "zxMIgVSILN6S5ee6MZhf+Q", "NFCRadio",
-    "ZYqko/XM5zD3XBfN5RmaXA", NULL, // PiPPinned
+    "ZYqko/XM5zD3XBfN5RmaXA", NULL, // PiPPinned or IODeviceTree:/product > h9v96tCehBWUil/aJ7UrcA
     NULL, NULL
 };
