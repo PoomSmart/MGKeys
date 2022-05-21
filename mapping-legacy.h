@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 306 keys
-// Deobfuscated: 275 keys (89.87%)
+// Total: 317 keys
+// Deobfuscated: 286 keys (90.22%)
 
 static const struct tKeyMapping legacyKeyMappingTable[] = {
     "/2V8H9h/+z0UxNUr9aRLeQ", "boot-nonce",
@@ -49,6 +49,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "7ot70MKj7EdRIEEi91jlcg", "bitrate-3g",
     "7qHcAWI5X9b1SiyYIg/Byw", "ui-background-quality",
     "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability",
+    "84iheBmhAmsxIlcxG4a0zA", "VideoStillsCapability",
     "86GizkmSK+IxgCtUMOp2NA", "front-max-video-fps-720p",
     "8bazN693YkKz0MDmcZvjXw", "ExplicitContentRestriction",
     "8lHIyh53plXuU5ZXCCtc1A", "AirDropRestriction",
@@ -60,6 +61,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "9s1QcGZXIyfHeOT8b/+m/A", "LTEDeviceCapability",
     "9ZQAcDmoSgmTrmVL06N7hA", "AppleInternalInstallCapability",
     "a13V9f9x26JcQCfczZAVAw", "ui-traffic-cheap-shaders",
+    "A8aFtN08Oqt21846jqnftQ", "SiriGestureCapability",
     "aCuWsar9Ayou7Vfkh7fdLw", "front-slowmo",
     "AFgMLiOUXwdf4T83wrVcxw", "MMSCapability",
     "AFSjHTczUWJZWdEzHqndnQ", "720pPlaybackCapability",
@@ -103,6 +105,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "e+pTfaabi1k1kfdk2vl1Kw", NULL,
     "E2iZGHvwvi387UKi9wC2Mg", "CameraFlashCapability",
     "e9aZViEIJ/riA4pRfg1ihg", "device-color-policy",
+    "Ecx7M8v2wk05Fch3pFE/GA", "NikeIpodCapability",
     "eDiwRLHFAmDNNPtULAcEZA", "TelephonyMaximumGeneration",
     "edlvEg0UXOGErRDpk7O5Fg", "calibration",
     "EJRyIpTkLz2+Lb6XWy10bQ", "panorama",
@@ -117,6 +120,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier",
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability",
     "FgjnMkPJPpI4C38dWETwtw", "flash",
+    "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability",
     "FuR7SfqQmxpRW5MyqMm7FQ", "low-power-wallet-mode",
     "fxnMXVRwuznDzWhoDCxb2A", NULL,
     "g1gP4TOlkv84ezeaZrUgFg", "thin-bezel",
@@ -163,6 +167,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "JuR8P7H4EAlo95lY7lgvtA", "WAPICapability",
     "JVeuWWZ2F8AjVRs9kfKJ3Q", "WiFiCapability",
     "jw9WzWmThYzveJbsV+GZMA", "sika-support",
+    "jyEyRLza0L3StNXgFUCoTw", "GPSCapability",
     "K+5Xuejc6dNaKo6szngjSg", "DisplayFCCLogosViaSoftwareCapability",
     "K0deZit9WJp08kND9wq7cQ", "CellBroadcastCapability",
     "k0rC7smY1sjVXxjCLHVeJA", "CellularDataCapability",
@@ -176,11 +181,13 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "kTX3vfIkwQHB9e90qFxlDg", "PhotoStreamCapability",
     "KWr9OM2iqeLQEhaHS0UshQ", NULL,
     "KXulcwjWtgzrg+u8qILKBQ", "LocationServicesCapability",
+    "ld2eewXs5StVwdRtwYT8sw", "PersonalHotspotCapability",
     "Lfx1lF4WO7V2u7mKQTQXGA", "LocalizedDeviceNameString",
     "Lg1EJX11Jb7EbveB6+YgVQ", "720p",
     "lJMvqLXN5hYqj0ulelo/1Q", "SIMCapability",
     "lLP6eSW9thhnfm1jBFX21Q", "ScreenDimensionsCapability",
     "lMKshPs7fX9YxDSOEXnoiw", "effective-security-mode-sep",
+    "lM8BH5myz/qFGeIYnsiEoQ", "HearingAidAudioEqualizationCapability",
     "lo3szoQ4sLy7o3+ZD0GcAQ", "ambient-light-sensor",
     "lp0YX+xu6UPp4SeF2oyLcQ", "EnforceCameraShutterClick",
     "lR7sjp4tOz3cMWoEMlZrLA", NULL,
@@ -196,7 +203,9 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "mm4/5+X4Z+eStXyipfwWVQ", "rear-cam-telephoto-capability",
     "mMpmRVTiFjGCIUUH1v5aVg", "EncodeAACCapability",
     "mug/QuG6jZ3CYR9p7OWQaw", NULL,
+    "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha",
     "MvBKQ+GSnR3DjkovgNL+3w", "airplay-no-mirroring",
+    "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability",
     "MXZ7vg7hul895QdsLUBJFA", "boot-manifest-hash",
     "MzxVeXMzucmEMx2lw8Pg1Q", "opposed-power-vol-buttons",
     "n/G0fQIQiom+pb4tHA4Mmw", "device-colors",
@@ -243,6 +252,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "RrhB72r1de9N65EG4pgqJw", "tnr-mode-front",
     "S5Bf9bF00BTHrySCydAkdg", "bitrate-2g",
     "S9ZweBMsbQwCL6t3Zpj4fg", "IOSurfaceBackedImagesCapability",
+    "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC",
     "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability",
     "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus",
     "Sr1Bmb3uoIfgKyaZguG0Gw", "front-max-video-fps-4k",
@@ -298,6 +308,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "YcNAX0Gc6KejQPKSrA9kvg", "front-burst",
     "yeaE9+OrN2WJlWkDroMtZg", "bitrate-wifi",
     "yeQy+rgNoD7+YIY6mSVOhg", NULL,
+    "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability",
     "Yk5H+MlMreeaBLjv6PPFDw", "camera-front",
     "yPSUYPhrVLHnvX0TUugiwg", "rear-auto-hdr",
     "YWQYAm8X1mwtoYPwpLF6YA", "YouTubePluginCapability",

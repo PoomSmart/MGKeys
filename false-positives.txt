@@ -10,3 +10,8 @@ SpeakerCalibrationMiGa
 CoverglassSerialNumber
 /usr/libexec/lockdownd
 SpeakerCalibrationSpTS
+BBUpdaterExtremeCreate
+AMFDRCreateWithOptions
+AMFDRDecodeCertificate
+AMFDRDecodeTrustObject
+IOAccessoryManagerType
