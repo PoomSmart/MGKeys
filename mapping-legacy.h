@@ -310,5 +310,5 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "znvmheFkjr6hiqIK9TrCVw", "pressure",
     "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus",
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability",
-	NULL, NULL
+    NULL, NULL
 };
