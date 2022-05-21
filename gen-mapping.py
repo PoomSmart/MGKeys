@@ -58,7 +58,7 @@ with open('hashes.txt', 'r') as hashes:
         deobfuscated = len(deobfuscated_keys)
         out.write('#include "struct.h"\n\n')
         out.write(f'// Total: {total} keys\n')
-        out.write(f'// Deobfuscated: {deobfuscated} keys ({((deobfuscated / total) * 100)}%)\n\n')
+        out.write(f'// Deobfuscated: {deobfuscated} keys ({round((deobfuscated / total) * 100, 2)}%)\n\n')
         out.write('static const struct tKeyMapping keyMappingTable[] = {\n')
         for hash in mapping:
             out.write(f'    "{hash}", {mapping[hash]}\n')
