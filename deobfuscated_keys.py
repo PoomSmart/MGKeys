@@ -84,6 +84,7 @@ deobfuscated_keys = {
     "67A3BpQkCRe1ihx0Me4lgg": "arkit",
     "67Dsh4G8EGQp4WbPDfS/Xw": "YonkersSerialNumber",
     "67x5O+zO+JwnGgmKlq+qdA": "DiagData",
+    "68eiAurB2LJ96Vz/CzaAcA": "DeviceSupportsMTP",
     "6iI7/9cVUGIjdrSvIXEt4A": "RearCameraCapability",
     "6k70IxahfOQTZbGwu++QwA": "additional-text-tones",
     "6MnVtR+c9LeR46bMxvR5Yw": "RegionalBehaviorNoVOIP",
