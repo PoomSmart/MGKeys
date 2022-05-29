@@ -1,1 +1,1 @@
-/Users/thatchaponunp/Documents/Tweaks/MGKeys/MGKeys.playground/Resources/obfuscated.txt
+MGKeys.playground/Resources/obfuscated.txt
