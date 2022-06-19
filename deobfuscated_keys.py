@@ -413,6 +413,7 @@ deobfuscated_keys = {
     "LE2kQ7U1iM32AmlhYvlagg": "SavageSerialNumber",
     "LeSRsiLoJCMhjn6nd6GWbQ": "FirmwareVersion",
     "Leuy56dCZmAMYoVCQGTfPA": "DeviceSupportsPeriodicALSUpdates",
+    "Lg1EJX11Jb7EbveB6+YgVQ": "720p",
     "lHMDJnC58naUz2rOCJyVIw": "IntegratedCircuitCardIdentifier2",
     "li+w2foswFu0srn5UxdOug": "arm64e",
     "LJ8aZhTg8lXUeVxHzT+hMw": "TimeSyncCapability",

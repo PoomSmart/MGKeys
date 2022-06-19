@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 772 keys
-// Deobfuscated: 749 keys (97.02%)
+// Deobfuscated: 750 keys (97.15%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -428,7 +428,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "LE2kQ7U1iM32AmlhYvlagg", "SavageSerialNumber",
     "LeSRsiLoJCMhjn6nd6GWbQ", "FirmwareVersion",
     "Leuy56dCZmAMYoVCQGTfPA", "DeviceSupportsPeriodicALSUpdates",
-    "Lg1EJX11Jb7EbveB6+YgVQ", NULL, // Has720PPlaybackCapability (mismatched)
+    "Lg1EJX11Jb7EbveB6+YgVQ", "720p",
     "lHMDJnC58naUz2rOCJyVIw", "IntegratedCircuitCardIdentifier2",
     "li+w2foswFu0srn5UxdOug", "arm64e",
     "LJ8aZhTg8lXUeVxHzT+hMw", "TimeSyncCapability",

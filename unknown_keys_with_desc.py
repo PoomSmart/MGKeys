@@ -6,7 +6,6 @@ unknown_with_desc = {
     "8S7ydMJ4DlCUF38/hI/fJA": "PearlCameraCapability (mismatched)",
     "J1QHVh74Nnd6Rqyiq71/yw": "avd AppleARMIODevice > decode-samples-per-second",
     "JWjvsupiqWYtIGwr8yGd8w": "PerfLevelCapabilityTwo4IOS (mismatched)",
-    "Lg1EJX11Jb7EbveB6+YgVQ": "Has720PPlaybackCapability (mismatched)",
     "LUy+wqFiBmou5hwM5OWbmA": "AppleOceanComputeMCU > Carrier Slot",
     "m7lDS+oP8q0pGg+CO7RvPg": "IODeviceTree:/chosen > 4JalTKSe5a9I+mb00ATvag",
     "Mi/ME+v1wZqkvXFU3xX3KA": "PerfLevelCapabilityOne4IOS (mismatched)",
