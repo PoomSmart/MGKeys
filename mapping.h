@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 772 keys
-// Deobfuscated: 742 keys (96.11%)
+// Deobfuscated: 749 keys (97.02%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -41,7 +41,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "0uyHvVqOLpJQBpSl/rF3Vg", "kSimultaneousCallAndDataSupported",
     "0VkTunHOJrrZdolQXR5gCg", "DevicePrefersTrafficAlpha",
     "0Y4fmR6ZHZPxDZFfPtBnRQ", "SysCfg",
-    "0Yu30fwSQVPKvHVla17kXw", NULL, // UMTSDeviceCapability (mismatched)
+    "0Yu30fwSQVPKvHVla17kXw", "umts-device",
     "16N2bLOzcgJEsZToEX21Zg", "accessibility",
     "1CFbwvaGHR/89vDu2VjnpQ", "DeviceSupportsLowLatency",
     "1DQNgySZSIjPqLWroIzfiQ", "BacklightCapability",
@@ -51,7 +51,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "1N37hGont/jibw4G2hwdRg", "DeviceSupportsUnconditionalPluckItCollection",
     "1oMPwMsqxTa9BJxUs8v06w", "PlatinumCapability",
     "1plD8faLv1bhScZQ3t0PLQ", "IsServicePart",
-    "1qDdT/85SS7sxriK0wIbbg", NULL, // MGIOMFBSupport.c
+    "1qDdT/85SS7sxriK0wIbbg", NULL,
     "1qJmMHedWOh43VwRKPdDrw", "iTunesFamilyID",
     "1rf3rZXIZFgznqrHlPehuQ", "FaceTimeBitRate3G",
     "1Rm/mWYEI5ttaC0dJ3sHBQ", "BootNonce",
@@ -191,7 +191,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "bUJD9zcOcitJwFA0ieIkxA", "DeviceBackGlassMaterial",
     "bwLsbkp4shhHuNB5VpRa8w", "YonkersUID",
     "BWoQXWXYITrPRpFyc9xTLw", "DeviceSupportsUSBTypeC",
-    "byGRtH44VNik9CzN/QKLCw", NULL, // DeviceSupportsNFC (mismatched)
+    "byGRtH44VNik9CzN/QKLCw", "nfc",
     "bysMryc4yLwQjKvUQGGXXQ", "DevicePrefersProceduralAntiAliasing",
     "c5uqoV7Z9ly+f4c5mYXILg", "OfflineDictationCapability",
     "c7fCSBIbX1mFaRoKT5zTIw", "WifiVendor",
@@ -406,7 +406,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "KMgjmT+dsqBCXu1YQEcOFg", "RegionalBehaviorValid",
     "Kq9K9xqDoUiUP7JEfg+pNw", "DeviceSupportsDoNotDisturbWhileDriving",
     "kt7gXeIiU0dLEKrgUSsLVw", "opengles-1",
-    "kT9JwUR2xPCTHTdgvG3UdA", NULL, // TorpedoCapability (mismatched)
+    "kT9JwUR2xPCTHTdgvG3UdA", "torpedo",
     "kWVFqaGBc3nOGmfM+ZpoEg", "tv-out-settings",
     "KXUnLpPZ6IZSE+As45CkhA", "SoftwareDimmingAlpha",
     "kyszW/uUGJFTVNQwFaf6og", "DeviceSupportsEnhancedAC3",
@@ -434,7 +434,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "LJ8aZhTg8lXUeVxHzT+hMw", "TimeSyncCapability",
     "LkWb+FyA1+ef2UD1Fx+kAw", "RearFacingCameraHDROnCapability",
     "lM8BH5myz/qFGeIYnsiEoQ", "HearingAidAudioEqualizationCapability",
-    "lo3szoQ4sLy7o3+ZD0GcAQ", NULL, // AmbientLightSensorCapability (mismatched)
+    "lo3szoQ4sLy7o3+ZD0GcAQ", "ambient-light-sensor",
     "lSpe1QHIya0aeNrjLTtaJA", "hidpi",
     "LTI8wHvEYKy8zR1IXBW1uQ", "ArtworkTraitDisplayGamut",
     "lU5WxNTusw4lrrBSEBiZeQ", NULL,
@@ -522,7 +522,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oPeik/9e8lQWMszEjbPzng", "ArtworkTraits",
     "OPzhvROZUqCZhgYMyve5BA", "sms",
     "OWi11Urd09rDmPVy1z5dOQ", "CoverglassSerialNumber",
-    "OwiopkU88VSKJX7zgoWPpQ", NULL, // DeviceSupportsExternalDriverKit (mismatched)
+    "OwiopkU88VSKJX7zgoWPpQ", "external-driverkit",
     "OWLyWlUOIkl+eQB7Iq37xQ", "DesenseBuild",
     "OyENNqRhuo8+RHkpbr/82A", "RoswellChipID",
     "oYicEKzVTz4/CxxE05pEgQ", "TargetSubType",
@@ -696,7 +696,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "WXi7NQbOKnEX4vPQFeZAdQ", "DeviceSupportsSiriBargeIn",
     "wYMBabAO8VguyDDVgCsPdg", "WiFiChipsetRevision",
     "X7SF9XDG+CBhoPIXA1YlCg", NULL,
-    "X9cK3qXzcFCrVpE258P2lQ", NULL, // HorsemanCapability (mismatched)
+    "X9cK3qXzcFCrVpE258P2lQ", "horseman",
     "Xa9nxhMDoHTdmrn/FufA3g", "WatchSupportsListeningOnGesture",
     "xbNo7dj2oAnz92JhEOn9tw", "DevicePrefers3DBuildingStrokes",
     "XcmwH6K+Nop/mDqy50Nrqw", "HorsemanCapability",
@@ -759,7 +759,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Z+gc4OJwBMm2YaVtp4usig", NULL,
     "Z/dqyWS6OZTRy10UcmUAhw", "marketing-name",
     "Z/TJS0IaLyq10dcSvUTGPg", "DieId",
-    "Z06ZMtQY6G3kKrC7fs/gOA", NULL, // MarketingSOCNameString (mismatched)
+    "Z06ZMtQY6G3kKrC7fs/gOA", "marketing-soc-name",
     "Z3gOHeppbL6+rblIe8H5Ag", "BasebandRegionSKURadioTechnology",
     "z5G/N9jcMdgPm8UegLwbKg", "IsEmulatedDevice",
     "ZApuwHXWV8RCz0iVzMnqLw", "telephony",
