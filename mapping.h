@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 772 keys
-// Deobfuscated: 750 keys (97.15%)
+// Total: 775 keys
+// Deobfuscated: 752 keys (97.03%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -317,6 +317,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "h8xonkkn/NzDMvvCXLw8cQ", "FaceTimeBitRateWiFi",
     "H97G3GzDYb4wY5kwJ0AKfQ", "ForwardCameraCapability",
     "h9jDsbgj7xIVeIQ8S3/X3Q", "ProductType",
+    "HBf5L3fT108kze+YWeiy+w", NULL,
     "heP+NTlvkhJ2zzWIUznawA", "MobileEquipmentInfoBaseProfile",
     "hewg+QX1h57eGJGphdCong", "DeviceSupportsPortraitLightEffectFilters",
     "hfs43coKE3iWlCwnqPgBpg", "IceFallID",
@@ -376,6 +377,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "jdLgKT+0BZmGrzd9J0cuPA", "camera-flash",
     "jgE7MmmkZAG0BiWVqD7bMQ", "BatteryIsFullyCharged",
     "JhEU414EIaDvAz8ki5DSqw", "DeviceEnclosureColor",
+    "JHXk7RXOxvlqK+SxkwcM2A", NULL,
     "ji56BO1mUeT7Qg9RO7Er9w", "DeviceSupportsASTC",
     "jKFTzVOYcfTfNBh+yDrprw", "RearFacingCameraHFRVideoCapture1080pMaxFPS",
     "jkr5aFPOh/d6zTzNKYthBw", "DualSIMActivationPolicyCapable",
@@ -458,6 +460,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Mk4ZslaChmO+6s3h7L1w6Q", "DeviceSupports1080p",
     "mL1lk3ZVGDFUQhxU9YLW6Q", "FrontFacingCameraHFRVideoCapture1080pMaxFPS",
     "mmu76v66k1dAtghToInT8g", "UIParallaxCapability",
+    "MQJ1mlVrhOwaUUVJehJSVA", "WatchKeyboardCapability",
     "MTa8c+pEdbK0tHGXP06xOw", "AllowYouTubePlugin",
     "mtHZd1H8XJ2DMVtNVUSkag", "wifi",
     "mtrAoWJ3gsq+I90ZnQ0vQw", "DeviceClassNumber",
@@ -522,7 +525,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oPeik/9e8lQWMszEjbPzng", "ArtworkTraits",
     "OPzhvROZUqCZhgYMyve5BA", "sms",
     "OWi11Urd09rDmPVy1z5dOQ", "CoverglassSerialNumber",
-    "OwiopkU88VSKJX7zgoWPpQ", "external-driverkit",
     "OWLyWlUOIkl+eQB7Iq37xQ", "DesenseBuild",
     "OyENNqRhuo8+RHkpbr/82A", "RoswellChipID",
     "oYicEKzVTz4/CxxE05pEgQ", "TargetSubType",
@@ -629,6 +631,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ToJGxfcjkIerYyeL2e8c4A", "BasebandBoardSnum",
     "TpY9O1U1rtUk/m0BvlO58A", "DeviceDefaultsToAnalyticsOptIn",
     "TqAfAH10ANDgiG7V2u8BkQ", "FrontFacingCameraHFRVideoCapture720pMaxFPS",
+    "Tqr2NqCLwGszJc3HOaPlTw", "driverkit",
     "TqrlqJOZiAuRx8Qu3SVr+Q", "SecondaryWifiMacAddressData",
     "TR6Z82EVZEKMVUdHfkhDmQ", "DeviceSupportsBrook",
     "Tr9qG122eEQiKGfr6EGRdQ", "RegionalBehaviorEUVolumeLimit",
