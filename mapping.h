@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 775 keys
-// Deobfuscated: 752 keys (97.03%)
+// Total: 778 keys
+// Deobfuscated: 755 keys (97.04%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -76,6 +76,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "4+qmMh9JBDh72Nq6fD64RQ", "gyroscope",
     "475wW3fne+tyzGr4wleUSQ", "CarrierBundleInfoArray",
     "4D8XW4YwJI7QvyPhv1TEdw", "DeviceSupportsRaiseToSpeak",
+    "4ec+Q3FdQ1N0HeNpOPsmfA", "DeviceSupportsThunderbolt",
     "4fT83+9coO3VAUnlxuOOcw", "SupportsEDUMU",
     "4I0hOaR3n80379Vka7u+Xg", "volume-buttons",
     "4Jfu4lqX8dzru4Z+ONQ1rQ", "PhotosPostEffectsCapability",
@@ -205,6 +206,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "CN/XFuy/9Fdv0yE+28kwRQ", "cell-broadcast",
     "CN64p1hw1JVdTHCfBdgPLQ", "BasebandStatus",
     "CnoPCMssOh+xPJJo6pvnog", "WatchSupportsAutoPlaylistPlayback",
+    "CoWnN4xo783YGn4wLrUatA", "DeviceSupportsDisplayPort",
     "CPiqZJJPocpjc5C5qe1tiw", "ArrowUniqueChipID",
     "CpVSHukvtqlJzCgSdoHW5w", "SBAllowSensitiveUI",
     "CQ6gFmgMhpnnISvG6VakBQ", "MobileSubscriberCountryCode",
@@ -461,6 +463,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "mL1lk3ZVGDFUQhxU9YLW6Q", "FrontFacingCameraHFRVideoCapture1080pMaxFPS",
     "mmu76v66k1dAtghToInT8g", "UIParallaxCapability",
     "MQJ1mlVrhOwaUUVJehJSVA", "WatchKeyboardCapability",
+    "MrC93gcyPVLHmEbzUu9uzQ", "IsVirtualDevice",
     "MTa8c+pEdbK0tHGXP06xOw", "AllowYouTubePlugin",
     "mtHZd1H8XJ2DMVtNVUSkag", "wifi",
     "mtrAoWJ3gsq+I90ZnQ0vQw", "DeviceClassNumber",
