@@ -172,6 +172,7 @@ deobfuscated_keys = {
     "bbtR9jQx50Fv5Af/affNtA": "PhysicalHardwareNameString",
     "BdS2M69XMEc9v/jsHBC3Eg": "ThreadRadioCapability",
     "Bg8VW4HdQj+GVY+191T3nQ": "DeviceSupportsSideButtonClickSpeed",
+    "bGUN8lS6sYzy3xhePubp8A": "KeyboardMutePreservesRegionalShutterClickBehavior",
     "Birtx7GxrxCCUzsE1JQO8Q": "LowPowerWalletMode",
     "bl+nF6e86pLBiPP4pVJ24g": "PhotoCapability",
     "BoNz1QXiAEUgic9RdMVLIg": "FaceTimeEncodings",

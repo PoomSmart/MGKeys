@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 778 keys
-// Deobfuscated: 755 keys (97.04%)
+// Total: 779 keys
+// Deobfuscated: 756 keys (97.05%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -183,6 +183,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "bbtR9jQx50Fv5Af/affNtA", "PhysicalHardwareNameString",
     "BdS2M69XMEc9v/jsHBC3Eg", "ThreadRadioCapability",
     "Bg8VW4HdQj+GVY+191T3nQ", "DeviceSupportsSideButtonClickSpeed",
+    "bGUN8lS6sYzy3xhePubp8A", "KeyboardMutePreservesRegionalShutterClickBehavior",
     "Birtx7GxrxCCUzsE1JQO8Q", "LowPowerWalletMode",
     "bl+nF6e86pLBiPP4pVJ24g", "PhotoCapability",
     "BoNz1QXiAEUgic9RdMVLIg", "FaceTimeEncodings",
