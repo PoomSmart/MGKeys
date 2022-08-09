@@ -10,3 +10,4 @@ SpeakerCalibrationMiGa
 CoverglassSerialNumber
 /usr/libexec/lockdownd
 SpeakerCalibrationSpTS
+DeviceSupportsSWProRes

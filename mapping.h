@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 779 keys
-// Deobfuscated: 756 keys (97.05%)
+// Total: 784 keys
+// Deobfuscated: 760 keys (96.94%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -304,6 +304,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ghpAuGJlPoauWijdtPi7sQ", "UserAssignedDeviceName",
     "gI6iODv8MZuiP0IA+efJCw", "WifiAddress",
     "gKzNJcweSCWA+gIGiUQJ5w", "mms",
+    "gLd6IDfbVM+JiOhktEP7Bw", "SupplementalBuildVersion",
     "Glo+aTkt0Uw31BghCxnsyQ", "BridgeRestoreVersion",
     "gnQwi8RnEeMG9qBe3IUKrg", "DeviceCoverGlassMaterial",
     "gPoIZFd4NhmSKrk67qH80w", "SBCanForceDebuggingInfo",
@@ -530,8 +531,10 @@ static const struct tKeyMapping keyMappingTable[] = {
     "OPzhvROZUqCZhgYMyve5BA", "sms",
     "OWi11Urd09rDmPVy1z5dOQ", "CoverglassSerialNumber",
     "OWLyWlUOIkl+eQB7Iq37xQ", "DesenseBuild",
+    "oWUSugFxOVhHOKYv7DawLw", NULL,
     "OyENNqRhuo8+RHkpbr/82A", "RoswellChipID",
     "oYicEKzVTz4/CxxE05pEgQ", "TargetSubType",
+    "P5Go9WVVA604m7rKhbVndw", "ProductVersionExtra",
     "P6z8eNrRPcv0AcKPML0iow", "wi-fi",
     "paR6NqTecAD44x45kzV87g", "AudioPlaybackCapability",
     "pB5sZVvnp+QjZQtt2KfQvA", "BasebandChipset",
@@ -548,6 +551,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "PpmzzBVLpZVubmP0tCIymg", "WirelessChargingCapability",
     "pQzfsK0Ado+nkNFgPRIA8Q", "DeviceSupportsLivePhotoAuto",
     "PQzmRjKVMistuIVsqs6QXA", "BasebandFirmwareVersion",
+    "PR+xeEtTAiUN0R25+EYGfw", "DeviceSupportsCarPlay2",
     "PTQ+ABwag03BwO/CKvIK/A", "DeviceSupportsSiriSpeaks",
     "PUMArrha4PFeOqINeQRM3A", "sim",
     "PVMLomcejavaax8/I3Ud3A", "RearALSCapability",
@@ -568,6 +572,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "qgfS+6l1exvcMW5Tfplv2Q", NULL, // AppleOceanComputeMCU > Carrier ID
     "QGmb9t2ZMFVwOImO6fewgQ", "all-features",
     "qHVhw5NhezD+ljFUPvQb4g", "nike-ipod",
+    "QHxt+hGLaBPbQJbXiUJX3w", "DeviceSupportsBootChime",
     "QJSuJ2zhdxYX/7DUA2JtUw", "EffectiveSecurityModeSEP",
     "qlcdNkarcGLcbW3HvBhwaA", "FrontFacingCameraModuleSerialNumber",
     "qNNddlUK+B/YlooNoymwgA", "ProductVersion",
