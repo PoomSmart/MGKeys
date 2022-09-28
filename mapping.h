@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 793 keys
-// Deobfuscated: 768 keys (96.85%)
+// Total: 794 keys
+// Deobfuscated: 769 keys (96.85%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -271,6 +271,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "F1Xz9g1JORibBS9DYPUPrg", "BlueLightReductionSupported",
     "f2DlVMUVcV+MeWs/g2ku+g", "BatteryCurrentCapacity",
     "f8peylp799CJta4Ev/vz8A", "hiccough-interval",
+    "fbpzGGoBNcvDLt4LlZGnfA", "DeviceSupportsSingleDisplayEnhancedMultitasking",
     "FBw/2WrPE2supEKosxxoTw", "WatchAppButtonCapability",
     "fdh+s6j3VijuyrK7xLjd7g", "main-screen-class",
     "FDsm68UVR7l3wErusGLgKg", "hw-snapshots-need-purplegfx",

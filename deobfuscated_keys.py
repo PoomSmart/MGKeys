@@ -259,6 +259,7 @@ deobfuscated_keys = {
     "F1Xz9g1JORibBS9DYPUPrg": "BlueLightReductionSupported",
     "f2DlVMUVcV+MeWs/g2ku+g": "BatteryCurrentCapacity",
     "f8peylp799CJta4Ev/vz8A": "hiccough-interval",
+    "fbpzGGoBNcvDLt4LlZGnfA": "DeviceSupportsSingleDisplayEnhancedMultitasking",
     "FBw/2WrPE2supEKosxxoTw": "WatchAppButtonCapability",
     "fdh+s6j3VijuyrK7xLjd7g": "main-screen-class",
     "FDsm68UVR7l3wErusGLgKg": "hw-snapshots-need-purplegfx",
