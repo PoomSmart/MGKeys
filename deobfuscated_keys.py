@@ -277,6 +277,7 @@ deobfuscated_keys = {
     "fqNtLlgbYfa9gSNrhg7VGQ": "encode-aac",
     "Fralg2R4+pkggafylKbVgw": "HearingAidLowEnergyAudioCapability",
     "frZQaeyWLUvLjeuEK43hmg": "InverseDeviceID",
+    "fu+4kyf8VcMBtgbMyJlLtg": "WorkoutUltraMode",
     "fucd7llSuoCNHrrvLS1QQg": "watch-companion",
     "fuKL2rMywRgQF1wowOA/cg": "DeviceBrand",
     "fv8ZXM/NhUHQBQqCSk19cA": "FrontFacingCameraAutoHDRCapability",
