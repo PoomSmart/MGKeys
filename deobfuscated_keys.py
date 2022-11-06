@@ -102,7 +102,6 @@ deobfuscated_keys = {
     "6S9CvPHPtzHQqKudHSfsag": "haptics",
     "6UUmcaeT7rJoyUVmoPJd4A": "ProximitySensorCalibration",
     "6WdGcQGw4VLzrgxJo+bcrw": "UniqueChipIDString",
-    "6WdGcQGw4VLzrgxJo+bcrw": "UniqueChipIDString",
     "7D54DikSnFQnbDEBwlKQTQ": "DevicePrefersCheapTrafficShaders",
     "7DfjbzhvH/GDkhio1dv8fA": "HasSEP",
     "7IgVvZZLtNjMFdInQlKg6A": "SoftwareBehavior",
