@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 795 keys
-// Deobfuscated: 770 keys (96.86%)
+// Deobfuscated: 772 keys (97.11%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -51,7 +51,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "1N37hGont/jibw4G2hwdRg", "DeviceSupportsUnconditionalPluckItCollection",
     "1oMPwMsqxTa9BJxUs8v06w", "PlatinumCapability",
     "1plD8faLv1bhScZQ3t0PLQ", "IsServicePart",
-    "1qDdT/85SS7sxriK0wIbbg", NULL,
+    "1qDdT/85SS7sxriK0wIbbg", "main-screen-orientation",
     "1qJmMHedWOh43VwRKPdDrw", "iTunesFamilyID",
     "1rf3rZXIZFgznqrHlPehuQ", "FaceTimeBitRate3G",
     "1Rm/mWYEI5ttaC0dJ3sHBQ", "BootNonce",
@@ -137,7 +137,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "8olRm6C1xqr7AJGpLRnpSw", "PearlIDCapability",
     "8OTc3mN30ACaEwecgpKfXA", "CloudPhotoLibraryCapability",
     "8QNz35Yxm0KqxP1JiE0HIw", "PintoMacAddressData",
-    "8S7ydMJ4DlCUF38/hI/fJA", NULL, // PearlCameraCapability (mismatched)
+    "8S7ydMJ4DlCUF38/hI/fJA", "front-depth-camera",
     "8Shl+AdVKo09f1Sldkb0kA", "touch-id",
     "8Vbp0HyqndjWuIFZibhu7g", "DeviceSupportsGrey",
     "9/J7LY7zuYSGW1BcSTRpOw", "SysCfgDict",
