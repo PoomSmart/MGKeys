@@ -59,3 +59,4 @@ func toObfuscated(_ filename: String) -> Int {
 
 // obfuscatedToMD5("obfuscated")
 // toObfuscated("deobfuscated")
+print(CalculateObfuscatedKey(key: "DeviceIsPortableMac"))
