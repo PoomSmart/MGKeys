@@ -9,6 +9,8 @@ unknown_with_desc = {
     "m7lDS+oP8q0pGg+CO7RvPg": "IODeviceTree:/chosen > 4JalTKSe5a9I+mb00ATvag",
     "Mi/ME+v1wZqkvXFU3xX3KA": "PerfLevelCapabilityOne4IOS (mismatched)",
     "njUcH4bm+JBmvASakDdObg": "IODeviceTree:/arm-io/isp > /4LCTfMhvzuiK6b557ir5Q",
+    "oOV1jhJbdV3AddkcCg0AEA": "MetalPerfLevelCapabilityOne4IOS (mismatched)",
     "qgfS+6l1exvcMW5Tfplv2Q": "AppleOceanComputeMCU > Carrier ID",
+    "TqtrpIdOXIIlhOraMmq/pQ": "PerfLevelCapabilityiPadM1 (mismatched)",
     "yF2IQrYS4yyREV4ZkbLysw": "AppleFillmoreDevice, local-mac-address-64"
 }

@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 307 keys
-// Deobfuscated: 276 keys (89.9%)
+// Total: 308 keys
+// Deobfuscated: 277 keys (89.94%)
 
 static const struct tKeyMapping legacyKeyMappingTable[] = {
     "/2V8H9h/+z0UxNUr9aRLeQ", "boot-nonce",
@@ -46,6 +46,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "5QM8apssQbhm2ZrUx5g5Tw", "pipelined-stillimage-capability",
     "5Xri+ec5Inj/4XBalFenVQ", "MainScreenPitch",
     "6PkKE66MnKm0yiOIQLknEg", "allow-32bit-apps",
+    "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon",
     "7ot70MKj7EdRIEEi91jlcg", "bitrate-3g",
     "7qHcAWI5X9b1SiyYIg/Byw", "ui-background-quality",
     "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability",
