@@ -61,6 +61,7 @@ deobfuscated_keys = {
     "2pxKjejpRGpWvUE+3yp5mQ": "cameraRestriction",
     "2Qf/8sQyx6voo3Mw3QKgZQ": "DeviceRequiresSoftwareBrightnessCalculations",
     "2sWGezz2RezScIJJgiIYQg": "IcefallInRestrictedMode",
+    "2tBx5IzZX4CpUVJ79LfsVg": "TribecaSettings",
     "2xSqkUxsVWmOBWk6StVOfQ": "LunaFlexSerialNumber",
     "2zyzecwSf2ZYRpB3tuQhOQ": "DeviceSupportsWirelessSplitting",
     "38C0kq9NiVaMsqjlUsCHcQ": "ota-activation",

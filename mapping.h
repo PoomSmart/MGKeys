@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 827 keys
-// Deobfuscated: 816 keys (98.67%)
+// Deobfuscated: 817 keys (98.79%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -67,7 +67,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "2pxKjejpRGpWvUE+3yp5mQ", "cameraRestriction",
     "2Qf/8sQyx6voo3Mw3QKgZQ", "DeviceRequiresSoftwareBrightnessCalculations",
     "2sWGezz2RezScIJJgiIYQg", "IcefallInRestrictedMode",
-    "2tBx5IzZX4CpUVJ79LfsVg", NULL, // tribeca
+    "2tBx5IzZX4CpUVJ79LfsVg", "TribecaSettings",
     "2xSqkUxsVWmOBWk6StVOfQ", "LunaFlexSerialNumber",
     "2zyzecwSf2ZYRpB3tuQhOQ", "DeviceSupportsWirelessSplitting",
     "38C0kq9NiVaMsqjlUsCHcQ", "ota-activation",
