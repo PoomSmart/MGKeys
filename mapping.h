@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 827 keys
-// Deobfuscated: 817 keys (98.79%)
+// Total: 828 keys
+// Deobfuscated: 818 keys (98.79%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -316,6 +316,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "GFBh/UJXPx/WDLe2qhu/xA", "DeviceSuportsExternalDriverKit",
     "ghpAuGJlPoauWijdtPi7sQ", "UserAssignedDeviceName",
     "gI6iODv8MZuiP0IA+efJCw", "WifiAddress",
+    "gizLvTWx1sMUYQ9EYr/N4g", "CountryOfOrigin",
     "gKzNJcweSCWA+gIGiUQJ5w", "mms",
     "gLd6IDfbVM+JiOhktEP7Bw", "SupplementalBuildVersion",
     "Glo+aTkt0Uw31BghCxnsyQ", "BridgeRestoreVersion",

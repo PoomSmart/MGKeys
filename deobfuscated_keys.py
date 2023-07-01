@@ -307,6 +307,7 @@ deobfuscated_keys = {
     "GFBh/UJXPx/WDLe2qhu/xA": "DeviceSuportsExternalDriverKit",
     "ghpAuGJlPoauWijdtPi7sQ": "UserAssignedDeviceName",
     "gI6iODv8MZuiP0IA+efJCw": "WifiAddress",
+    "gizLvTWx1sMUYQ9EYr/N4g": "CountryOfOrigin",
     "gKzNJcweSCWA+gIGiUQJ5w": "mms",
     "gLd6IDfbVM+JiOhktEP7Bw": "SupplementalBuildVersion",
     "Glo+aTkt0Uw31BghCxnsyQ": "BridgeRestoreVersion",
