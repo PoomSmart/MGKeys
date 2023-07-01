@@ -552,7 +552,6 @@ deobfuscated_keys = {
     "oPeik/9e8lQWMszEjbPzng": "ArtworkTraits",
     "OPzhvROZUqCZhgYMyve5BA": "sms",
     "OWi11Urd09rDmPVy1z5dOQ": "CoverglassSerialNumber",
-    "OwiopkU88VSKJX7zgoWPpQ": "external-driverkit",
     "OWLyWlUOIkl+eQB7Iq37xQ": "DesenseBuild",
     "oWUSugFxOVhHOKYv7DawLw": "DeviceSupportsSWProRes",
     "OyENNqRhuo8+RHkpbr/82A": "RoswellChipID",

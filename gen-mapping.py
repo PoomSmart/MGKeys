@@ -15,6 +15,9 @@ with open('hashes.txt', 'r') as hashes:
                 mapping[hash] = f'NULL, // {unknown_with_desc[hash]}'
             else:
                 mapping[hash] = 'NULL,'
+        for hash in deobfuscated_keys:
+            if hash not in mapping:
+                print(f'Warning: {hash} not found in hashes.txt')
         total = len(mapping)
         out.write('#include "struct.h"\n\n')
         out.write(f'// Total: {total} keys\n')
