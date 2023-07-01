@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 828 keys
-// Deobfuscated: 827 keys (99.88%)
+// Deobfuscated: 826 keys (99.76%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
