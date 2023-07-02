@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 308 keys
-// Deobfuscated: 278 keys (90.26%)
+// Deobfuscated: 279 keys (90.58%)
 
 static const struct tKeyMapping legacyKeyMappingTable[] = {
     "/2V8H9h/+z0UxNUr9aRLeQ", "boot-nonce",
@@ -11,7 +11,7 @@ static const struct tKeyMapping legacyKeyMappingTable[] = {
     "/l0Kz2akvSvEHTNmZeY0nQ", "chip-id",
     "+fgL2ovGydvB5CWd1JI1qg", "has-sphere",
     "+U0jSj4F2EfE+Vqj22IavA", "tnr-mode-back",
-    "04zgp3uYWXAEZCOV0wrVXQ", NULL,
+    "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents",
     "061e/gd5kFdZwwe1G2qXFQ", NULL,
     "0jjK6IVSQzA8doQeSwmujA", "software-bundle-version",
     "0kE9ab+OYAMDszxCc5nNTw", "MusicStoreCapability",
