@@ -4,6 +4,20 @@ Mapping of the obfuscated keys (or questions) used by iOS's MobileGestalt to the
 
 It is our job to de-obfuscate them all.
 
+## Patterns
+
+There are a few certain patterns of the key names, which can be useful for de-obfuscation.
+
+- Kebab case `some-key-name`
+- Pascal case of `DeviceSupportsXXX` (common)
+- Pascal case of `XXXCapability` (common)
+    - `FrontFacing(Camera)XXXCapability`
+    - `RearFacing(Camera)XXXCapability`
+- Pascal case of `SupportsXXX`
+- Pascal case of `HasXXX`
+- Pascal case of `IsXXX`
+- Pascal case of `XXXData` (usually come alongside another key without `Data` suffix in it)
+
 ## Credits (Keys De-obfuscation)
 - Jonathan Levin
 - [Timac](https://twitter.com/timacfr)
