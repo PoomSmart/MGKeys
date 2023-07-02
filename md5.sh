@@ -7,10 +7,10 @@ IN=$1
 OUT=$2
 [[ -z "$OUT" ]] && OUT="md5hashes.txt"
 
-clang -framework Foundation md5.m -o md5
+clang -framework Foundation util.m -o util
 
 rm -f $OUT
 while IFS= read -r line
 do
-    ./md5 $line >> $OUT
+    ./util md5 $line >> $OUT
 done < $IN

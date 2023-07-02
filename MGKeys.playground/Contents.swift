@@ -28,35 +28,4 @@ func MD5StringForObfuscatedKey(key: String) -> String? {
     return bytes.map( { String(format: "%02hhx", $0) } ).joined()
 }
 
-func obfuscatedToMD5(_ filename: String) -> Int {
-    errno = 0
-    let realPath = Bundle.main.path(forResource: filename, ofType: "txt")
-    if freopen(realPath, "r", stdin) == nil {
-        perror(realPath)
-        return 1
-    }
-    while let line = readLine() {
-        print(MD5StringForObfuscatedKey(key: line)!)
-    }
-    return 0
-}
-
-func toObfuscated(_ filename: String) -> Int {
-    errno = 0
-    let realPath = Bundle.main.path(forResource: filename, ofType: "txt")
-    if freopen(realPath, "r", stdin) == nil {
-        perror(realPath)
-        return 1
-    }
-    let dict = NSMutableDictionary()
-    while let line = readLine() {
-        let obfuscated = CalculateObfuscatedKey(key: line);
-        dict[obfuscated] = line
-    }
-    print(dict)
-    return 0
-}
-
-// obfuscatedToMD5("obfuscated")
-// toObfuscated("deobfuscated")
 print(CalculateObfuscatedKey(key: "DeviceIsPortableMac"))

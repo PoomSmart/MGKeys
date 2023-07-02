@@ -3,5 +3,7 @@ MGKeys.playground/playground.xcworkspace
 .DS_Store
 hashes.txt
 libMobileGestalt*.dylib
-md5
+util
 md5hashes.txt
+obfuscated.txt
+readable.txt
