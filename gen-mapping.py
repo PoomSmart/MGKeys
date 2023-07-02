@@ -6,21 +6,26 @@ def map(hashes_file, mapping_file, keys):
     mapping = {}
     with open(hashes_file, 'r') as hashes:
         with open(mapping_file, 'w') as out:
-            deobfuscated = 0
             for raw_hash in hashes:
                 hash = raw_hash.strip()
                 if hash in keys:
                     keys[hash] = keys[hash].replace('"', '\\"')
                     mapping[hash] = f'"{keys[hash]}",'
-                    deobfuscated += 1
                 elif hash in unknown_with_desc:
                     mapping[hash] = f'NULL, // {unknown_with_desc[hash]}'
                 else:
                     mapping[hash] = 'NULL,'
             for hash in keys:
                 if hash not in mapping:
+                    mapping[hash] = f'"{keys[hash]}",'
                     print(f'Warning: {hash} not found in {hashes_file}')
+            for hash in unknown_with_desc:
+                if hash not in mapping:
+                    mapping[hash] = f'NULL, // {unknown_with_desc[hash]}'
+                    print(f'Warning: {hash} not found in {hashes_file}')
+            mapping = dict(sorted(mapping.items(), key=lambda x: x[0].lower()))
             total = len(mapping)
+            deobfuscated = len(keys)
             out.write('#include "struct.h"\n\n')
             out.write(f'// Total: {total} keys\n')
             out.write(f'// Deobfuscated: {deobfuscated} keys ({round((deobfuscated / total) * 100, 2)}%)\n\n')

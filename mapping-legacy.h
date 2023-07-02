@@ -1,16 +1,16 @@
 #include "struct.h"
 
 // Total: 308 keys
-// Deobfuscated: 279 keys (90.58%)
+// Deobfuscated: 278 keys (90.26%)
 
 static const struct tKeyMapping keyMappingTable[] = {
+    "+fgL2ovGydvB5CWd1JI1qg", "has-sphere",
+    "+U0jSj4F2EfE+Vqj22IavA", "tnr-mode-back",
     "/2V8H9h/+z0UxNUr9aRLeQ", "boot-nonce",
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
     "/cMWdoU/88pcjJ1egxmIYw", "wlan.background-scan-cache",
     "/ej/HWmqnKV/QQptXhUZmg", "no-coreroutine",
     "/l0Kz2akvSvEHTNmZeY0nQ", "chip-id",
-    "+fgL2ovGydvB5CWd1JI1qg", "has-sphere",
-    "+U0jSj4F2EfE+Vqj22IavA", "tnr-mode-back",
     "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents",
     "061e/gd5kFdZwwe1G2qXFQ", NULL,
     "0jjK6IVSQzA8doQeSwmujA", "software-bundle-version",
@@ -178,7 +178,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "KWr9OM2iqeLQEhaHS0UshQ", NULL,
     "KXulcwjWtgzrg+u8qILKBQ", "LocationServicesCapability",
     "Lfx1lF4WO7V2u7mKQTQXGA", "LocalizedDeviceNameString",
-    "Lg1EJX11Jb7EbveB6+YgVQ", "720p",
     "lJMvqLXN5hYqj0ulelo/1Q", "SIMCapability",
     "lLP6eSW9thhnfm1jBFX21Q", "ScreenDimensionsCapability",
     "lMKshPs7fX9YxDSOEXnoiw", "effective-security-mode-sep",
@@ -215,6 +214,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oaIPJckrXuT73yxxtfGJAg", "EnforceGoogleMail",
     "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit",
     "oNUnoF4mZBXwKfYyCx0Vfw", "DelaySleepForHeadsetClickCapability",
+    "oOV1jhJbdV3AddkcCg0AEA", NULL, // MetalPerfLevelCapabilityOne4IOS (mismatched)
     "oTuH4/axV9s11/jKxB2z2A", "ui-no-parallax",
     "Ov9G2lRzQYbUyBYJ0KCMhA", NULL,
     "OwiopkU88VSKJX7zgoWPpQ", "external-driverkit",

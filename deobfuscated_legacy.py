@@ -154,7 +154,6 @@ keys_legacy = {
     "kTX3vfIkwQHB9e90qFxlDg": "PhotoStreamCapability",
     "KXulcwjWtgzrg+u8qILKBQ": "LocationServicesCapability",
     "Lfx1lF4WO7V2u7mKQTQXGA": "LocalizedDeviceNameString",
-    "Lg1EJX11Jb7EbveB6+YgVQ": "720p",
     "lJMvqLXN5hYqj0ulelo/1Q": "SIMCapability",
     "lLP6eSW9thhnfm1jBFX21Q": "ScreenDimensionsCapability",
     "lMKshPs7fX9YxDSOEXnoiw": "effective-security-mode-sep",
