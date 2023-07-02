@@ -2,6 +2,7 @@
 
 DYLIB=$1
 [[ -z "$DYLIB" ]] && DYLIB=libMobileGestalt.dylib
+HASHES="hashes.txt"
 READABLE="readable.txt"
 OBFUSCATED="obfuscated.txt"
 
@@ -11,7 +12,8 @@ clang -framework Foundation util.m -o util
 rm -f $OBFUSCATED
 while IFS= read -r line
 do
-    ./util obfuscate $line >> $OBFUSCATED
+    value=`./util obfuscate $line`
+    echo "$value: $line" >> $OBFUSCATED
 done < $READABLE
 
 sort -f $OBFUSCATED -o $OBFUSCATED
