@@ -3,7 +3,7 @@
 // Total: 308 keys
 // Deobfuscated: 279 keys (90.58%)
 
-static const struct tKeyMapping legacyKeyMappingTable[] = {
+static const struct tKeyMapping keyMappingTable[] = {
     "/2V8H9h/+z0UxNUr9aRLeQ", "boot-nonce",
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
     "/cMWdoU/88pcjJ1egxmIYw", "wlan.background-scan-cache",
