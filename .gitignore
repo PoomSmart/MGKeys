@@ -2,6 +2,6 @@ __pycache__
 MGKeys.playground/playground.xcworkspace
 .DS_Store
 hashes.txt
-libMobileGestalt.dylib
+libMobileGestalt*.dylib
 md5
 md5hashes.txt
