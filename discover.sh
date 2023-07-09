@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 DYLIB=$1
 [[ -z "$DYLIB" ]] && DYLIB=libMobileGestalt.dylib
 HASHES="hashes.txt"
