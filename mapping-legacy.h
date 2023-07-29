@@ -1,12 +1,13 @@
 #include "struct.h"
 
-// Total: 308 keys
-// Deobfuscated: 278 keys (90.26%)
+// Total: 309 keys
+// Deobfuscated: 278 keys (89.97%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+fgL2ovGydvB5CWd1JI1qg", "has-sphere",
     "+U0jSj4F2EfE+Vqj22IavA", "tnr-mode-back",
     "/2V8H9h/+z0UxNUr9aRLeQ", "boot-nonce",
+    "/4LCTfMhvzuiK6b557ir5Q", NULL,
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
     "/cMWdoU/88pcjJ1egxmIYw", "wlan.background-scan-cache",
     "/ej/HWmqnKV/QQptXhUZmg", "no-coreroutine",

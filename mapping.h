@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 1086 keys
-// Deobfuscated: 833 keys (76.7%)
+// Total: 1087 keys
+// Deobfuscated: 835 keys (76.82%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -17,7 +17,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "+xJ6RaQ6PDSsLjib8r5fgg", NULL,
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
     "/2V8H9h/+z0UxNUr9aRLeQ", NULL,
-    "/4LCTfMhvzuiK6b557ir5Q", NULL,
     "/6FWCRjN1yRdUABG9vF8ow", "WiFiCallingCapability",
     "/9luHerXthRoPoNt/PVkTg", "VibratorCapability",
     "/bfa1LxXd7G1WqHujpjsdA", "WatchSupportsMusicStreaming",
@@ -347,6 +346,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ELLSWiPOyh0roYBypZFHFA", "magnetometer",
     "emXA9B552rnSoI7xXE91DA", "DeviceLaunchTimeLimitScale",
     "eNgz35a7iZnVeEMwsBQZew", "BasebandChipId",
+    "eP/CPXY0Q1CoIqAWn/J97g", "DeviceSupportsLandscapeFaceID",
     "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability",
     "eQd5mlz0BN0amTp/2ccMoA", "SupportsForceTouch",
     "EqrsVvjcYDdxHBiQmGhAWw", "apple-internal-install",
@@ -962,6 +962,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "vIccod02kDxScKF5s2h6OA", "BasebandUniqueId",
     "vl45ziHlkqzh1Yt6+M9vBA", "displayport",
     "VLfT+eziZYKNjRASM6ntnQ", "FirmwareNonce",
+    "vme9Buk6XiWFCXoHApxNFA", "MarketingDeviceFamilyName",
     "vmZuX/fdqt3gKhonHYLyUw", NULL,
     "voS/bmBAz0Y1eNLoN8x9/Q", NULL,
     "vq2wpvLzyYLEApQs9cs52A", NULL,
