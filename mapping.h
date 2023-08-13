@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 1087 keys
-// Deobfuscated: 835 keys (76.82%)
+// Total: 1089 keys
+// Deobfuscated: 837 keys (76.86%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -123,6 +123,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "566JrJVMlDfnslGpwUzNlQ", "ChipID",
     "57eLnXynqDlQaGEi+9JAtQ", "call-forwarding",
     "5dyhCh3dm1vSOaNK+US1Qw", NULL,
+    "5hfTRTYOuOthOyRny6a38w", "continuity-camera",
     "5lAK1Xp+ezh1Qu+4jnHAOg", "SupportsSOS",
     "5MSZn7w3nnJp22VbpqaxLQ", "venice",
     "5mvQIwu3Mqqw/zOKmwGkWw", "ProximitySensorCalibrationDictionary",
@@ -992,6 +993,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "wu9wv8HhpA95iHT4Yyez7A", "SecurityDomain",
     "WXi7NQbOKnEX4vPQFeZAdQ", "DeviceSupportsSiriBargeIn",
     "wYMBabAO8VguyDDVgCsPdg", "WiFiChipsetRevision",
+    "X5yfJDYNipZXIS8R2a7RmA", "DeviceSupportsWalkingRadiusAnimation",
     "X7SF9XDG+CBhoPIXA1YlCg", NULL,
     "X9cK3qXzcFCrVpE258P2lQ", "horseman",
     "X9NA3D+PguwY0i0Uffl07Q", NULL,
