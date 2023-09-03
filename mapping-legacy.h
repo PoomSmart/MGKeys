@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 309 keys
-// Deobfuscated: 278 keys (89.97%)
+// Total: 308 keys
+// Deobfuscated: 278 keys (90.26%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+fgL2ovGydvB5CWd1JI1qg", "has-sphere",
@@ -215,7 +215,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oaIPJckrXuT73yxxtfGJAg", "EnforceGoogleMail",
     "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit",
     "oNUnoF4mZBXwKfYyCx0Vfw", "DelaySleepForHeadsetClickCapability",
-    "oOV1jhJbdV3AddkcCg0AEA", NULL, // MetalPerfLevelCapabilityOne4IOS (mismatched)
     "oTuH4/axV9s11/jKxB2z2A", "ui-no-parallax",
     "Ov9G2lRzQYbUyBYJ0KCMhA", NULL,
     "OwiopkU88VSKJX7zgoWPpQ", "external-driverkit",

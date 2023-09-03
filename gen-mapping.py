@@ -19,10 +19,11 @@ def map(hashes_file, mapping_file, keys):
                 if hash not in mapping:
                     mapping[hash] = f'"{keys[hash]}",'
                     print(f'Warning: {hash} not found in {hashes_file}')
-            for hash in unknown_with_desc:
-                if hash not in mapping:
-                    mapping[hash] = f'NULL, // {unknown_with_desc[hash]}'
-                    print(f'Warning: {hash} not found in {hashes_file}')
+            if hashes_file == 'hashes.txt':
+                for hash in unknown_with_desc:
+                    if hash not in mapping:
+                        mapping[hash] = f'NULL, // {unknown_with_desc[hash]}'
+                        print(f'Warning: {hash} not found in {hashes_file}')
             mapping = dict(sorted(mapping.items(), key=lambda x: x[0].lower()))
             total = len(mapping)
             deobfuscated = len(keys)

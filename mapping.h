@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 1089 keys
-// Deobfuscated: 837 keys (76.86%)
+// Total: 1090 keys
+// Deobfuscated: 837 keys (76.79%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -863,6 +863,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "SCNOHu+KqRX0xhIlj5KXaA", "H264EncoderCapability",
     "sFTm4FEVKVfdZ0ChdwQY1g", "WifiAntennaSKUVersion",
     "sHiXbHqHvvRS3I/qo/rH2Q", "SIMTrayStatus2",
+    "sI1x188eYDcARhSzXxk3Cg", NULL, // MetalPerfLevelCapabilityOne4IPhoneAndiPad (mismatched)
     "SIC/2YcTF6ydv8Hfcn9THw", NULL,
     "sigsyX/a/CpMjoZnrgwIgg", "HEVCDecoder12bitSupported",
     "sJ0n0UZHSUVJbmyy2p54Cw", "unified-ipod",
