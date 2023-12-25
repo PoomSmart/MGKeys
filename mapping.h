@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 1090 keys
-// Deobfuscated: 837 keys (76.79%)
+// Total: 1100 keys
+// Deobfuscated: 845 keys (76.82%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -90,6 +90,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "2ViNo1fbaEkg2vdTmCiW7g", NULL,
     "2xSqkUxsVWmOBWk6StVOfQ", "LunaFlexSerialNumber",
     "2zyzecwSf2ZYRpB3tuQhOQ", "DeviceSupportsWirelessSplitting",
+    "37NVydb//GP/GrhuTN+exg", "DeviceSupports80ChargeLimit",
     "38C0kq9NiVaMsqjlUsCHcQ", "ota-activation",
     "39ZkJVEsL4pmCXbg+89QmQ", "accelerometer",
     "3hD7TZt4FFvCgra7E8PkWw", NULL,
@@ -140,6 +141,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "67x5O+zO+JwnGgmKlq+qdA", "DiagData",
     "68eiAurB2LJ96Vz/CzaAcA", "DeviceSupportsMTP",
     "6iI7/9cVUGIjdrSvIXEt4A", "RearCameraCapability",
+    "6JkXMDhnrEMvLiRlYJL6zA", "RingerButtonNormalizedCGRect",
     "6k70IxahfOQTZbGwu++QwA", "additional-text-tones",
     "6MnVtR+c9LeR46bMxvR5Yw", "RegionalBehaviorNoVOIP",
     "6pjDdEw65TFyL1FmIdszXw", "hd-video-capture",
@@ -292,6 +294,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "cq/jTAQ8zJab+ibcGUzJew", NULL,
     "CQ6gFmgMhpnnISvG6VakBQ", "MobileSubscriberCountryCode",
     "cRjPy4Ef+KZwJ+nfPeBV5Q", "DeviceSupportsSwimmingWorkouts",
+    "cT44WE1EohiwRzhsZ8xEsw", "RingerButtonCapability",
     "ct5Dh6u0D6WDJKg2PrMFVQ", "FaceTimePreferredEncoding",
     "CUMH6bG4DFnu7ZREp5YkUQ", NULL,
     "cux58RcuSiBhpxWnT3pE4A", "FrontFacingCameraVideoCapture4kMaxFPS",
@@ -322,9 +325,11 @@ static const struct tKeyMapping keyMappingTable[] = {
     "DrrXMX9VWX7bMj0MZuhTUA", "DeviceKeyboardCalibration",
     "DrSqlXYNVfYXCvAsuUrUDA", "DebugBoardRevision",
     "DtSpvgyOyNVwNa5W0zigqg", "DeviceSupportsMomentCapture",
+    "dUipfYkyvM80t4IkmMBVgQ", NULL, // IODeviceTree:/product
     "DViRIxZ/ZwO007CLcEYvZw", "SoftwareBundleVersion",
     "dW6ROVcD3o5ACa4jvALJ6A", NULL,
     "DWrhyh1BwYypYmW5q78Wuw", "armv7",
+    "dz7F2FFseAysXoUZqaANZw", "DeviceSupportsEUCapabilities",
     "DzLC4o1jZ4hWtP8aB6An6g", "SDIOManufacturerTuple",
     "e+pTfaabi1k1kfdk2vl1Kw", NULL,
     "E0wrprlNya8gngoVpPXj2w", "DeviceSupportsCorrectedTemperature",
@@ -385,6 +390,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "FkD7K642S082lnfw/ohHzg", "BasebandFirmwareManifestData",
     "fkWvcjYnYzGRhVKiBoYzgA", "HasPKA",
     "flgGiGu1dR1hEWcC1cTLTw", NULL,
+    "FLmEtGw+OD98VLXasx7W6A", "DeviceSupportsWirelessChargingEnergyUseNotification",
     "FNvQ6lBvJIUcYBzQ8ggOUQ", "SavageUID",
     "FOs+LbLUs+TajsEE4xkbrw", "gas-gauge-battery",
     "FQHZ8VqG8mVzDQ+g085l8w", NULL,
@@ -556,6 +562,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "K57p2Tit1BlJ8rFbLl/Nqg", "DeviceSupportseARC",
     "k5lVWbXuiZHLA17KGiVUAA", "BluetoothAddress",
     "k7QIBwZJJOVw+Sej/8h8VA", "CPUArchitecture",
+    "Kao6GNYdAy5hwXblxeGYJQ", "DeviceSupportsBatteryInformation",
     "kc+QzHP4Frf2NvP+mclQ2A", NULL,
     "KFwMMyiMoa8pLgGLwo78Vw", NULL,
     "KGlZoljMyZQSxfhROj0IFg", "data-plan",
@@ -581,6 +588,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "KzUQgIyBRinkweVMNUCOWA", "ArcModuleSerialNumber",
     "L+KOzmOzO5DiJUZl21QGVg", "StarkCapability",
     "l/n0Z7pMB8k0GyTKz3v3Tw", "AirplaneMode",
+    "l1CWke97nbaAcWDqA6T5LA", "DeviceSupportsElton",
     "l1MfXa14uBR9cvO8D9wc9w", NULL,
     "L2Oq7vNNUKuv+iJ4m9xtiw", "SIMTrayStatus",
     "l3rf7ZBrcaYn5mY5o7xiIg", "HardwareSupportsSecureDoubleClick",
@@ -818,6 +826,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "qwXfFvH5jPXPxrny0XuGtQ", "BuildID",
     "QY61T8CLLwG/yu92ScTYtw", NULL,
     "QZgogo2DypSAZfkRW4dP/A", "InternationalMobileEquipmentIdentity",
+    "qzHhHrOpIDLAq2balBdVZg", "RingerButtonCGRect",
     "r/++Z94rbTcHrTtZ/rCU4w", NULL,
     "R1AF5xVFhlNjSbjBZJqQeA", NULL,
     "R1tbjTooZCgq2KmzlTaX+g", NULL,
@@ -856,6 +865,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "S5Bf9bF00BTHrySCydAkdg", NULL,
     "s7nuHoZIYNoOHCqT9iyZkQ", "DeviceSupportsInductiveCharging",
     "s8TgWYc7BjtSNbtuycqauw", "DeviceSupportsLaguna",
+    "sad18VQX7AeS+291aKhJlw", NULL, // IODeviceTree:/buttons
     "SaW+DA+cbiqDHrex8MTABA", "DeviceSupportsEnvironmentalDosimetry",
     "sBBgbCSIQcUOXwgaDW/Xew", NULL,
     "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC",
