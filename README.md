@@ -4,6 +4,8 @@ Mapping of the obfuscated keys (or questions) used by iOS's MobileGestalt to the
 
 It is our job to de-obfuscate them all.
 
+The keys are currently based on iOS 17.5b1.
+
 ## Patterns
 
 There are a few certain patterns of the key names, which can be useful for de-obfuscation.
