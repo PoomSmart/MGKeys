@@ -99,6 +99,7 @@ keys_legacy = {
     "MWJNrFKpHkBEm8jAdJf1xw": "AirplayMirroringCapability",
     "na77zbwlhy0V7shc4ORRgA": "post-effects",
     "nfoN5DvniQJQRqNth7F0fg": "HMERefreshRateInARKit",
+    "NnjMKIIAarYqUsQjrLAzCA": "avatar-camera",
     "nPGxu4rFOh+jGGPSoUFgwA": "DictationCapability",
     "nqZ6O+s733xoZqQZZ1NWRw": "AmbientLightSensorCapability",
     "NwAF2cQVdjOKc7KkqR9tIA": "GyroscopeCapability",

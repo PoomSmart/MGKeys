@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 176 keys
-// Deobfuscated: 169 keys (96.02%)
+// Total: 177 keys
+// Deobfuscated: 170 keys (96.05%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
@@ -109,6 +109,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability",
     "na77zbwlhy0V7shc4ORRgA", "post-effects",
     "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit",
+    "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera",
     "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability",
     "nqZ6O+s733xoZqQZZ1NWRw", "AmbientLightSensorCapability",
     "NwAF2cQVdjOKc7KkqR9tIA", "GyroscopeCapability",
