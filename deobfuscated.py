@@ -420,7 +420,7 @@ keys = {
     "hykQtM0zkNe2/IY69+3PPQ": "ApNonce",
     "HzddeW2/HtdBNAc5tsFtDg": "SecondaryBluetoothMacAddressData",
     "I32sGclpgl5VujQRJxyhKQ": "IsUIBuild",
-    "I3lidq+FVH2CeOi/ARa0tg": "GenerativeModelSystemsCapability",
+    "I3lidq+FVH2CeOi/ARa0tg": "generative-model-systems",
     "I4TfkcdXWazwTr1al8Ml5w": "StrictWakeKeyboardCases",
     "i8+iwUtLtB5jT+WNvqwrEA": "encrypted-data-partition",
     "I83EgnDEGxinSKU4QAykmA": "rear-max-video-frame_rate",

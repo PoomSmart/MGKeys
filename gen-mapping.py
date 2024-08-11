@@ -1,5 +1,6 @@
 from deobfuscated import keys
 from deobfuscated_legacy import keys_legacy
+from obfuscate import calculate_obfuscated_key
 from unknown_keys_with_desc import *
 
 def map(hashes_file, mapping_file, keys):
@@ -10,6 +11,9 @@ def map(hashes_file, mapping_file, keys):
             for raw_hash in hashes:
                 hash = raw_hash.strip()
                 if hash in keys:
+                    if calculate_obfuscated_key(keys[hash]) != hash:
+                        print(f'Error: {hash} does not match {keys[hash]}')
+                        exit(1)
                     keys[hash] = keys[hash].replace('"', '\\"')
                     mapping[hash] = f'"{keys[hash]}",'
                     deobfuscated += 1
