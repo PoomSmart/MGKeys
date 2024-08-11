@@ -25,9 +25,9 @@ There are a few certain patterns of the key names, which can be useful for de-ob
 1. Extract `libMobileGestalt.dylib` from the dyld shared cache of an iOS device
 2. Run `deobfuscate.sh` script to get the new unmapped obfuscated keys
 3. Throw the dylib into Hopper or IDA to find the human-readable function that is referenced by each key
-4. Verify that the function name converts to the obfuscated key it references to
-5. Update the key mapping in `deobfuscated.py`
-6. Run `deobfuscate.sh` again
+4. Update the key mapping in `deobfuscated.py`
+5. Run `deobfuscate.sh` again to update the mapping and to also verify each function name converts to the obfuscated key it references to
+6. Move all keys that fail to convert to `unknown_keys_with_desc.py`, if any
 
 ## Credits (Keys De-obfuscation)
 - Jonathan Levin
