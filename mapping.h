@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 964 keys (86.46%)
+// Deobfuscated: 967 keys (86.73%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -386,8 +386,8 @@ static const struct tKeyMapping keyMappingTable[] = {
     "FBw/2WrPE2supEKosxxoTw", "WatchAppButtonCapability",
     "fdh+s6j3VijuyrK7xLjd7g", "main-screen-class",
     "FDsm68UVR7l3wErusGLgKg", "hw-snapshots-need-purplegfx",
-    "FE4Tff1EICGXaI27X3P/dw", NULL, // DeviceSupportsBrowserEngine
-    "Fe55gxpfp6SByfqjASqF5A", NULL, // DeviceSupportsBrowserEngineEmbedded
+    "FE4Tff1EICGXaI27X3P/dw", "web-browser-engine",
+    "Fe55gxpfp6SByfqjASqF5A", "embedded-web-browser-engine",
     "feC7TgoAAKLjn/KU8JAKFA", "DeviceSupportsExternalHDR",
     "fGpT09KNGDBjFXnqcVbgbw", "RearFacingCameraHFRCapability",
     "Fh2Ga0/Sj4T3Qn5Z9A9BMw", "DeviceSupports4k",
@@ -880,7 +880,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "SCNOHu+KqRX0xhIlj5KXaA", "H264EncoderCapability",
     "sFTm4FEVKVfdZ0ChdwQY1g", "WifiAntennaSKUVersion",
     "sHiXbHqHvvRS3I/qo/rH2Q", "SIMTrayStatus2",
-    "sI1x188eYDcARhSzXxk3Cg", NULL, // MetalPerfLevelCapabilityOne4IPhoneAndiPad (mismatched)
+    "sI1x188eYDcARhSzXxk3Cg", "iphone-performance-gaming-tier",
     "SIC/2YcTF6ydv8Hfcn9THw", NULL,
     "sigsyX/a/CpMjoZnrgwIgg", "HEVCDecoder12bitSupported",
     "sJ0n0UZHSUVJbmyy2p54Cw", "unified-ipod",
