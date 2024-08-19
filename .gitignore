@@ -7,3 +7,6 @@ util
 md5hashes.txt
 obfuscated.txt
 readable.txt
+check-readable.sh
+out-readable.txt
+hashcat.txt

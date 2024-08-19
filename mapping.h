@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 967 keys (86.73%)
+// Deobfuscated: 970 keys (87.0%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -658,7 +658,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "mG0AnH/Vy1veoqoLRAIgTA", "MedusaFloatingLiveAppCapability",
     "Mgwtle8wzQEz/0vzBk47FQ", "DeviceSupportsLineIn",
     "Mh+drGtyBfLYKN02sROzxg", "delay-sleep-for-headset-click",
-    "mH5IrpyGkVtmgdqs68KHRg", NULL,
+    "mH5IrpyGkVtmgdqs68KHRg", "gyro",
     "Mi/ME+v1wZqkvXFU3xX3KA", "iphone-ipad-minimum-performance-a12",
     "Mif7940cFpfaXIAHwkYgHQ", NULL,
     "MjqwTHDneTCNeqhZ7vCvUw", "DeviceSupportsHiResBuildings",
@@ -859,7 +859,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "rt/G6Vk3NTGWs5N9WEjztQ", NULL,
     "rtIWWK0kM4F+ZMkIqhE7yQ", "DeviceStingHousingColor",
     "RvCUAjrf7O/zAzV1StnBlg", "IsComputeNode",
-    "rwnje21oPXH375umjxV6YQ", NULL,
+    "rwnje21oPXH375umjxV6YQ", "accel",
     "rXbje18EX3b6I7u/pXBYeg", "RequiresPairedRemote",
     "rxUlSnmihTL8oDg9Hrgq/A", "MixAndMatchPrevention",
     "RXyKSjeF239SL2vOcru01A", "MobileEquipmentInfoBaseVersion",
@@ -1062,7 +1062,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Y2Y67z0Nq/XdDXgW2EeaVg", "FMFAllowed",
     "y4GIxpQP4MO/j3wWUJdiyg", "DeviceSupportsAvatars",
     "y5dppxx/LzxoNuW+iIKR3g", "DeviceCornerRadius",
-    "y66yh6E28lG6AIdLLwEvSQ", NULL,
+    "y66yh6E28lG6AIdLLwEvSQ", "disp0",
     "YAbRmHobt+BRHuSPm2OGQw", "DeviceSupportsVirtualResearchEnvironment",
     "ybGkijAwLTwevankfVzsDQ", "MainScreenCanvasSizes",
     "YcNAX0Gc6KejQPKSrA9kvg", "front-burst",
