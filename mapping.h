@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 970 keys (87.0%)
+// Deobfuscated: 972 keys (87.17%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -228,7 +228,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Aixt/MEN2O2B7f+8m4TxUA", "HasExtendedColorDisplay",
     "AJFQheZDyUbvI6RmBMT9Cg", "HasBaseband",
     "AklmqJyJMChzHsYT0aiBbw", "LaunchTimeLimitScaleSupported",
-    "aL9+NE29t3Wm2lEAE+atZQ", NULL,
+    "aL9+NE29t3Wm2lEAE+atZQ", "vaxholm",
     "aNFMPe3XMOjAHDzk1h0eeA", NULL,
     "aNZeCyuWxI6SE/KwZ129wA", "name",
     "aoAKcHLuTUp/o3squcJkhA", "CompassCalibrationDictionary",
@@ -689,7 +689,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "n/aVhqpGjESEbIjvJbEHKg", "SphereCapability",
     "n/G0fQIQiom+pb4tHA4Mmw", "device-colors",
     "n6blIRZ4IumqHl/toNJcpg", "ScreenCaptureHeight",
-    "N6PmkZnK1VRMvFokb0jS/Q", NULL,
+    "N6PmkZnK1VRMvFokb0jS/Q", "fillmore",
     "N8lZxRgC7lfdRS3dRLn+Ag", "HEVCDecoder8bitSupported",
     "na6PSBfq05lkAfWkwAwaGg", "ExternalPowerSourceConnected",
     "NaA/zJV7myg2w4YNmSe4yQ", "WifiChipset",
