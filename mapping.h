@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 990 keys (88.79%)
+// Deobfuscated: 1000 keys (89.69%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -196,7 +196,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "91LyMcx4z1w3SGVeqteMnA", "BasebandRegionSKU",
     "96GRvvjuBKkU4HzNsYcHPA", "MinimumSupportediTunesVersion",
     "97JDvERpVwO+GHtthIh7hA", "RegulatoryModelNumber",
-    "9Bp5z20HsA1f7dqvelXKXA", NULL,
+    "9Bp5z20HsA1f7dqvelXKXA", "supports-maps-optical-heading",
     "9f5ODNAt2gufqSI82eYnLw", NULL,
     "9MZ5AdH43csAUajl/dU+IQ", "SupportedDeviceFamilies",
     "9n2qz3uDC5nSe1xZG1/Bkw", "CarrierInstallCapability",
@@ -664,11 +664,11 @@ static const struct tKeyMapping keyMappingTable[] = {
     "MjqwTHDneTCNeqhZ7vCvUw", "DeviceSupportsHiResBuildings",
     "Mk4ZslaChmO+6s3h7L1w6Q", "DeviceSupports1080p",
     "mL1lk3ZVGDFUQhxU9YLW6Q", "FrontFacingCameraHFRVideoCapture1080pMaxFPS",
-    "MlDJggkQz38CLQh3AVv7VQ", NULL,
+    "MlDJggkQz38CLQh3AVv7VQ", "supports-absolute-altimeter",
     "mm4/5+X4Z+eStXyipfwWVQ", "rear-cam-telephoto-capability",
     "mmu76v66k1dAtghToInT8g", "UIParallaxCapability",
     "MQJ1mlVrhOwaUUVJehJSVA", "WatchKeyboardCapability",
-    "MQoTKg93BM8ZhBaB3WUPdw", NULL,
+    "MQoTKg93BM8ZhBaB3WUPdw", "form-factor",
     "MrC93gcyPVLHmEbzUu9uzQ", "IsVirtualDevice",
     "MTa8c+pEdbK0tHGXP06xOw", "AllowYouTubePlugin",
     "mtHZd1H8XJ2DMVtNVUSkag", "wifi",
@@ -706,7 +706,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "nJU6/TSuJTVJlJ7t5/Z/ug", "DeviceSupportsMapsOpticalHeading",
     "njUcH4bm+JBmvASakDdObg", "LiDARCalibrationPrCL",
     "nK4D+jDUuTGFFwRFPC2lWg", "DeviceSupportsFloorCounting",
-    "NKo9tzEYqtHAfQYMFsc66Q", NULL,
+    "NKo9tzEYqtHAfQYMFsc66Q", "s8001\")",
     "NkQOJZ1xdFk5SV55PFKlIg", "wlan",
     "NlddTE7HnMJiw5OzTqbrYA", NULL,
     "NLWYUp5icK9sRsPDI7XJtw", "IsComputeController",
@@ -716,7 +716,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "npI2l0ybDY9Um4z/T8K/Sg", NULL,
     "NPzjaX07XnS4KcMZ+l8ymA", "ExternalChargeCapability",
     "NrXe/KHDNhJ4r2SC2bMQyA", "any-telephony",
-    "NsIeRLGugrogpTZiayi1VA", NULL,
+    "NsIeRLGugrogpTZiayi1VA", "country-of-origin",
     "nSo8opze5rFk+EdBoR6tBw", "RestrictedCountryCodes",
     "NszbG6qiAztVal4mpDQRkg", "CameraAppUIVersion",
     "nteaxwXwZWYUI9z46VDRnA", "video-camera",
@@ -905,10 +905,10 @@ static const struct tKeyMapping keyMappingTable[] = {
     "sYxZdpH3i8nwjZNet0QuAw", "fcm-type",
     "SZy8T5ma/+a0wJc0ntiaaA", "PhoneNumber2",
     "T0FD6BT+PiWc2duMVlTRww", "DeviceIsPortableMac",
-    "t56wS9db+T2F2bxBpYSX8Q", NULL,
+    "t56wS9db+T2F2bxBpYSX8Q", NULL, // IODeviceTree:/arm-io/disp0, starts with e, DisplayDriverICChipID
     "TACCxk6y28d14yJN09RtTg", "DeviceSupportsLanguageDownloadUI",
     "tad3RCjcWdkyLSVI8kUBtA", "caller-id",
-    "tAryHM5IUMkdtvVqqu1tcA", NULL,
+    "tAryHM5IUMkdtvVqqu1tcA", NULL, // IODeviceTree:/product, starts with a, AmbientLightSensorSerialNumber
     "tbBVomzeDyPq15QV5VGQGg", "DeviceSupportsVoiceOverCanUseSiriVoice",
     "tbdNCtok0BwuLN11WwnwsQ", "DeviceSupportsAutoDim",
     "tBrEf4ccS4Q6wtUiNB0WKw", "DeviceSupportsLongFormAudio",
@@ -932,7 +932,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "TucF/tpjeAln1I0f3g0K3w", "does-not-support-gamekit",
     "tUIqcYyzHuWBvBQHsLk8IQ", "international-settings",
     "tuwdHA2NDGnLajCo5K3UUA", "voice-control",
-    "twWCmmM9I0dxwv7Zs9v48Q", NULL,
+    "twWCmmM9I0dxwv7Zs9v48Q", NULL, // IODeviceTree:/product/audio, starts with a, DeviceSupportseARC
     "TXZxlSojLMQyLqusm9aa/g", "DeviceEnclosureRGBColor",
     "Ty4lICNS1jQh45sB3wQd7A", "AlwaysOnDisplayMaxMemory",
     "Ty5/C8UDfdjcdR853kulmA", "FrontFacingCameraBurstCapability",
@@ -957,7 +957,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "uKc7FPnEO++lVhHWHFlGbQ", "ipad",
     "uksZ8eaKeV5sUpLNBPafww", "FrontCameraOffsetFromDisplayCenter",
     "ulMliLomP737aAOJ/w/evA", "IsSimulator",
-    "uNNFSosc1xQM/7bwlrqLXA", NULL,
+    "uNNFSosc1xQM/7bwlrqLXA", NULL, // IODeviceTree:/arm-io/aop/iop-aop-nub/als, starts with m, DisplayMaxNits
     "uO3aPe7lfB1XxSiz/1xBvA", "CertificateProductionStatus",
     "UoeNJcQ336tc+F5/1r4tqQ", "DeviceSupportsAdvancedMapRendering",
     "us1armjE6TKGvh2WIrNgEQ", NULL, // IODeviceTree:/defaults, starts with a, AlwaysOnDisplayMaxMemory
@@ -967,7 +967,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "UZyrJHlX635ocWEjBkt9YA", "UIProceduralWallpaperCapability",
     "v/BP9Nx/zfo9bKi9JR2p+g", "3d-imagery",
     "V0d6pv080gHL3QQWNs9aog", "DeviceSupportsLowPowerSoundClassification",
-    "v1/EHDarbU55OfoXm2EiGA", NULL,
+    "v1/EHDarbU55OfoXm2EiGA", NULL, // IODeviceTree:/product, starts with s, OnDeviceSiriCapability
     "v2Q3tLoD4+o/XazHC/0FyA", "DeviceSupportsYCbCr10",
     "V2Ykm/0M3CA6nyNhwNInsg", "64-bit",
     "v5YVEwERRin1v+reUNjJ5w", "ComputerName",
@@ -986,17 +986,17 @@ static const struct tKeyMapping keyMappingTable[] = {
     "VLfT+eziZYKNjRASM6ntnQ", "FirmwareNonce",
     "vme9Buk6XiWFCXoHApxNFA", "MarketingDeviceFamilyName",
     "vmZuX/fdqt3gKhonHYLyUw", "aggregate-cam-video-zoom",
-    "voS/bmBAz0Y1eNLoN8x9/Q", NULL,
-    "vq2wpvLzyYLEApQs9cs52A", NULL,
-    "vQg8hRTy1PC2j9L+8Jd+vg", NULL,
+    "voS/bmBAz0Y1eNLoN8x9/Q", NULL, // IODeviceTree:/product/camera, starts with p, front-depth-camera
+    "vq2wpvLzyYLEApQs9cs52A", "panel-serial-number",
+    "vQg8hRTy1PC2j9L+8Jd+vg", NULL, // IODeviceTree:/product/audio, starts with s, DeviceSupportsVoiceOverCanUseSiriVoice
     "VqRhf8vgXr9B+SYvpnX39g", "BoardRevision",
     "VrWzQGQK9Fbp/RqeQ08VzA", "car-integration",
-    "vTKPWiAZkQifTv/4/uOnQQ", NULL,
+    "vTKPWiAZkQifTv/4/uOnQQ", NULL, // IODeviceTree:/product/camera, starts with f, FrontFacingCameraSuperWideCameraCapability
     "VuGdqp8UBpi9vPWHlPluVQ", "CompatibleAppVariants",
     "W/xqvBX9L07XHb0BOtYycQ", "ThreadRadioMacAddress64Bit",
     "W5kTfIuxkKpHVdWTk42C9A", "n78a-mode",
     "W7MyZ3Yxoy1qD6FrI0mLUQ", "RF-exposure-separation-distance",
-    "wAbB2fAjUqUc6lNBelfWMA", NULL,
+    "wAbB2fAjUqUc6lNBelfWMA", NULL, // IODeviceTree:/product, starts with n, DeviceSupportsPeriodicALSUpdates
     "WAfNjeiwOd/k6+VU6D6SIQ", "ExtendedLOMMacAddress",
     "waGD2UTpntjbDXD1r3oALQ", "DeviceSupportsSiriHub",
     "waWRQ4fj6cyMuJ+wTWJs1g", "RearCameraOffsetFromDisplayCenter",
@@ -1015,7 +1015,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "WXi7NQbOKnEX4vPQFeZAdQ", "DeviceSupportsSiriBargeIn",
     "wYMBabAO8VguyDDVgCsPdg", "WiFiChipsetRevision",
     "X5yfJDYNipZXIS8R2a7RmA", "DeviceSupportsWalkingRadiusAnimation",
-    "X7SF9XDG+CBhoPIXA1YlCg", NULL,
+    "X7SF9XDG+CBhoPIXA1YlCg", "ThreadRadioMacAddressData",
     "X9cK3qXzcFCrVpE258P2lQ", "horseman",
     "X9NA3D+PguwY0i0Uffl07Q", "camera-rear",
     "Xa9nxhMDoHTdmrn/FufA3g", "WatchSupportsListeningOnGesture",
@@ -1026,7 +1026,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "XEzIXVPlevxuEIpZrMY+8A", "Skey",
     "XFtUsQP3AyqT4CazSb5VCw", "DeviceSupportsCarIntegration",
     "XFx5cRZ0tJYl+xJUCEgjnQ", "NFCRadioCalibrationDataPresent",
-    "xgs6iXf0KFHUJ9d4FKaRYg", NULL,
+    "xgs6iXf0KFHUJ9d4FKaRYg", NULL, // IODeviceTree:/product, starts with s, DeviceSupportsGrey
     "XI87Zkcr5j1B/p2dom/B6A", "AWDLCapability",
     "XIcF5FOyQlt/H79oFw9ciA", "PipelinedStillImageProcessingCapability",
     "xJUG7IKySthRrPcxII184g", "enforce-shutter-click",
@@ -1054,7 +1054,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "xXBT4e92qXwQo3SYmACj3w", "die-id",
     "XxnEk9uiIk5vCdbWEGt7lA", "DeviceSupportsLiquidDetection_CorrosionMitigation",
     "XYlJKKkj2hztRP1NWWnhlw", "ResearchFuse",
-    "XyppJjhSQE2982ZYgXlh2g", NULL,
+    "XyppJjhSQE2982ZYgXlh2g", NULL, // IODeviceTree:/stockholm, starts with s, nfc
     "xYu8vn4nnbLnNTbBe0FT+w", "WAGraphicQuality",
     "xZm4Ky2/qswyf7ykvlchYg", "CPUType",
     "y0jtYciPmcx3ywPM582WZw", "ContinuityCapability",
@@ -1073,7 +1073,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "yf309VokHnvuZ4SyOixR5A", "HasPartiallyOccludedDisplay",
     "YgC2TeHCEwzJ/ixqmNCzwQ", "DeviceHasNAN",
     "yhHcB0iH0d1XzPO/CFd3ow", "DeviceSupportsApplePencil",
-    "yhZxZlqgBWwf4bN9t6fFyA", NULL,
+    "yhZxZlqgBWwf4bN9t6fFyA", "always-on-time",
     "YiUtBQygkHRhLcdO3LFB4A", "DeviceSupportsTelephonyOverUSB",
     "yjP8DgByZmLk04Ta6f6DWQ", "PartitionStyle",
     "yl8qmYPdAhFLeDBho10sdQ", "FaceTimeDecodings",
@@ -1106,16 +1106,16 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ZeGw3VKUymUAbp4noKsxoQ", "FrontFacingCameraMaxVideoZoomFactor",
     "ZepchaN1K8XQJaBUMMlV5w", "iAP2Capability",
     "ZEU7pCEskBhjQ4AOMuALDw", "HEVCDecoder10bitSupported",
-    "Zg7DduDoSCy6vY6mhy3n2w", NULL,
+    "Zg7DduDoSCy6vY6mhy3n2w", NULL, // IODeviceTree:/product, starts with i, DeviceSupportsDynamicIsland
     "ZgIjA7Nwd2jSo13lhDO1Iw", "RegionalBehaviorShutterClick",
     "zHeENZu+wbg7PUprwNwBWg", "RegionInfo",
-    "Zhoou87qmFpFwcFsm7Jlyg", NULL,
+    "Zhoou87qmFpFwcFsm7Jlyg", "vsh-compensation-minimum-nits",
     "ZiSlYxYSkyaYImU3lrSXWw", "gps",
     "Zmd7xYUw9EutGXifzpvfsA", "WatchSupportsHighQualityClockFaceGraphics",
     "znvmheFkjr6hiqIK9TrCVw", "pressure",
     "zP3kBA1Biwz2d6PTIIbmUQ", "ActivationProtocol",
     "zPHFWx4ZItDiTXNT2onrWQ", "MobileEquipmentInfoDisplayCSN",
-    "ZrKzmIA8JSV7qJtGrX3yIw", NULL,
+    "ZrKzmIA8JSV7qJtGrX3yIw", "ephemeral-data-mode",
     "ZT0Z0SqGF/esuJWDmk8mGw", NULL,
     "zxMIgVSILN6S5ee6MZhf+Q", "NFCRadio",
     "ZYqko/XM5zD3XBfN5RmaXA", "MedusaPinnedAppCapability",
