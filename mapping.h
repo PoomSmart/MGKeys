@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 972 keys (87.17%)
+// Deobfuscated: 976 keys (87.53%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -67,7 +67,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "1N14oS9TeyskaTU1DxpwoQ", "load-thumbnails-while-scrolling",
     "1N37hGont/jibw4G2hwdRg", "DeviceSupportsUnconditionalPluckItCollection",
     "1oMPwMsqxTa9BJxUs8v06w", "PlatinumCapability",
-    "1oUugT++JJx5gOVyB2la7w", NULL,
+    "1oUugT++JJx5gOVyB2la7w", "siri-hub",
     "1plD8faLv1bhScZQ3t0PLQ", "IsServicePart",
     "1qDdT/85SS7sxriK0wIbbg", "main-screen-orientation",
     "1qJmMHedWOh43VwRKPdDrw", "iTunesFamilyID",
@@ -269,7 +269,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "BOPZue5C0v42pU9iJFYE3A", "location-reminders",
     "BOYfUi496moe56A0RWFbqQ", "sensitive-ui",
     "BQwz+BT9b5mS7OPh2WGD6A", "SecondaryEthernetMacAddress",
-    "brr2lQq9584zVkiuALaADA", NULL,
+    "brr2lQq9584zVkiuALaADA", "scandium",
     "bt5D9RI67C9koJO1oZ5cfg", "EOSHalleyConfiguration",
     "bUJD9zcOcitJwFA0ieIkxA", "DeviceBackGlassMaterial",
     "bwLsbkp4shhHuNB5VpRa8w", "YonkersUID",
@@ -747,7 +747,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "OjzOua0LkOegX7pQdgMksw", "main-screen-height",
     "ol92SaBpqIvQs+KBljuwGA", "kConferenceCallType",
     "oLjiDs+BWEdMVbjE0x6cnw", "DeviceSupportsStudioLightPortraitPreview",
-    "OmiBcaNEpjOcuQrO5/Yrbw", NULL,
+    "OmiBcaNEpjOcuQrO5/Yrbw", "defaults",
     "OoFyZnd3oLS2Lw/KQTccGA", "SupportsTouchRemote",
     "oOV1jhJbdV3AddkcCg0AEA", NULL, // MetalPerfLevelCapabilityOne4IOS (mismatched)
     "oPeik/9e8lQWMszEjbPzng", "ArtworkTraits",
@@ -971,7 +971,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "v2Q3tLoD4+o/XazHC/0FyA", "DeviceSupportsYCbCr10",
     "V2Ykm/0M3CA6nyNhwNInsg", "64-bit",
     "v5YVEwERRin1v+reUNjJ5w", "ComputerName",
-    "v7h4TrJdmukTl8gpzVl3DQ", NULL,
+    "v7h4TrJdmukTl8gpzVl3DQ", "grimaldi",
     "V9pLLbPQhyb75bbdTioZVw", "DeviceSupportsHardwareDetents",
     "v9YZN998zL0OLA3q6SpPQA", "HasIcefall",
     "vaiFeAcMTIDXMSxTr8JwCw", "BasebandPostponementStatus",
