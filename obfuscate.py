@@ -13,7 +13,7 @@ def md5_string_for_obfuscated_key(key: str):
     
     base64_key = key + "=="
     try:
-        data = base64.b64encode(base64_key)
+        data = base64.b64decode(base64_key)
     except base64.binascii.Error:
         return None
     

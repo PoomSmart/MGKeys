@@ -10,3 +10,5 @@ readable.txt
 check-readable.sh
 out-readable.txt
 hashcat.txt
+temp-md5-hashes.txt
+potfile

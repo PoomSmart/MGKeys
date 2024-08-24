@@ -1,9 +1,12 @@
 from deobfuscated import keys
 from deobfuscated_legacy import keys_legacy
-from obfuscate import calculate_obfuscated_key
+from obfuscate import calculate_obfuscated_key, md5_string_for_obfuscated_key
 from unknown_keys_with_desc import *
 
+potfile = ''
+
 def map(hashes_file, mapping_file, keys):
+    global potfile
     mapping = {}
     deobfuscated = 0
     with open(hashes_file, 'r') as hashes:
@@ -14,6 +17,8 @@ def map(hashes_file, mapping_file, keys):
                     if calculate_obfuscated_key(keys[hash]) != hash:
                         print(f'Error: {hash} does not match {keys[hash]}')
                         exit(1)
+                    md5 = md5_string_for_obfuscated_key(hash)
+                    potfile += f'{md5}:MGCopyAnswer{keys[hash]}\n'
                     keys[hash] = keys[hash].replace('"', '\\"')
                     mapping[hash] = f'"{keys[hash]}",'
                     deobfuscated += 1
@@ -41,3 +46,6 @@ def map(hashes_file, mapping_file, keys):
 
 map('hashes.txt', 'mapping.h', keys)
 map('hashes_legacy.txt', 'mapping-legacy.h', keys_legacy)
+
+with open('potfile', 'w') as out:
+    out.write(potfile)
