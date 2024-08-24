@@ -182,7 +182,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "8fyX2yEg28cYgJ10Yl+ueA", "QuickNoteCapability",
     "8gVfz9/8R1OtWBBtI0o/+Q", "DeviceSupportsTimeInDaylight",
     "8Kc1MRjWTfDiGKX6E/9XqQ", NULL,
-    "8kcKPCGGyCpf66MMl5TVkA", NULL,
+    "8kcKPCGGyCpf66MMl5TVkA", NULL, // IODeviceTree:/multi-touch, starts with m
     "8LAJHwc8DUQZwV2TSwsysA", "RearFacingCameraStageLightPortraitCaptureCapability",
     "8olRm6C1xqr7AJGpLRnpSw", "PearlIDCapability",
     "8OTc3mN30ACaEwecgpKfXA", "CloudPhotoLibraryCapability",
@@ -229,7 +229,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "AJFQheZDyUbvI6RmBMT9Cg", "HasBaseband",
     "AklmqJyJMChzHsYT0aiBbw", "LaunchTimeLimitScaleSupported",
     "aL9+NE29t3Wm2lEAE+atZQ", "vaxholm",
-    "aNFMPe3XMOjAHDzk1h0eeA", NULL,
+    "aNFMPe3XMOjAHDzk1h0eeA", NULL, // IODeviceTree:/stockholm, starts with e
     "aNZeCyuWxI6SE/KwZ129wA", "name",
     "aoAKcHLuTUp/o3squcJkhA", "CompassCalibrationDictionary",
     "AOIh1l3cIyDXlP4KB/084A", "iap2-protocol-supported",
@@ -673,7 +673,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "MTa8c+pEdbK0tHGXP06xOw", "AllowYouTubePlugin",
     "mtHZd1H8XJ2DMVtNVUSkag", "wifi",
     "mtrAoWJ3gsq+I90ZnQ0vQw", "DeviceClassNumber",
-    "mug/QuG6jZ3CYR9p7OWQaw", NULL,
+    "mug/QuG6jZ3CYR9p7OWQaw", NULL, // IODeviceTree:/opal, starts with b
     "mumHZHMLEfAuTkkd28fHlQ", "DeviceColor",
     "MvBKQ+GSnR3DjkovgNL+3w", "airplay-no-mirroring",
     "mVenV0u+B3ShrqRddinaFQ", "homescreen-wallpaper",
@@ -960,7 +960,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "uNNFSosc1xQM/7bwlrqLXA", NULL,
     "uO3aPe7lfB1XxSiz/1xBvA", "CertificateProductionStatus",
     "UoeNJcQ336tc+F5/1r4tqQ", "DeviceSupportsAdvancedMapRendering",
-    "us1armjE6TKGvh2WIrNgEQ", NULL,
+    "us1armjE6TKGvh2WIrNgEQ", NULL, // IODeviceTree:/defaults, starts with a
     "uyejyEdaxNWSRQQwHmXz1A", "DiskUsage",
     "UYZtXbMcIyMRZQ9pjDxRvA", "ui-weather-quality",
     "UZfUiD1Aqy3GOwg72SQcLQ", "RearFacingSuperWideCameraModuleSerialNumber",
@@ -1068,7 +1068,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "YcNAX0Gc6KejQPKSrA9kvg", "front-burst",
     "YdPNjYPBzyE0jJl2X/CayQ", "RotateToWakeStatus",
     "yeaE9+OrN2WJlWkDroMtZg", "bitrate-wifi",
-    "yeQy+rgNoD7+YIY6mSVOhg", NULL,
+    "yeQy+rgNoD7+YIY6mSVOhg", NULL, // IODeviceTree:/opal, starts with e
     "yF2IQrYS4yyREV4ZkbLysw", "ThreadRadioMacAddress64BitData",
     "yf309VokHnvuZ4SyOixR5A", "HasPartiallyOccludedDisplay",
     "YgC2TeHCEwzJ/ixqmNCzwQ", "DeviceHasNAN",
@@ -1099,7 +1099,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Z3gOHeppbL6+rblIe8H5Ag", "BasebandRegionSKURadioTechnology",
     "z5G/N9jcMdgPm8UegLwbKg", "IsEmulatedDevice",
     "ZApuwHXWV8RCz0iVzMnqLw", "telephony",
-    "ZcPQWuQwUJtMR5Oj99uc8w", NULL, // iodevicetree:/backlight
+    "ZcPQWuQwUJtMR5Oj99uc8w", NULL, // IODeviceTree:/backlight
     "zDBaE8nqtDP8hY4pOa6iMw", "t7000\")",
     "ZeeiT4Cdn8HNANoqroPEAA", "SiriOfflineCapability",
     "ZEF0po63sTgpVrc9Ce7YNQ", "DMin",
