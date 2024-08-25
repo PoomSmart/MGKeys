@@ -1,4 +1,4 @@
-unknown_with_desc = {
+unknown_keys_desc = {
     "+xJ6RaQ6PDSsLjib8r5fgg": "IODeviceTree:/product/camera, starts with p, DeviceSupportsCameraCaptureOnTouchDown",
     "0gkWjKWKuS2gqzTaFHKxqw": "IODeviceTree/product/audio, starts with s, DeviceSupportsAdvancedVoiceProcessorChatFlavor",
     "1HWDBfJwBJZ8TDHcPDafmQ": "IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard",

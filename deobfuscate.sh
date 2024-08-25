@@ -2,6 +2,7 @@
 
 set -e
 
+DYLIB="libMobileGestalt.dylib"
 ARCH=$1
 [[ -z "$ARCH" ]] && ARCH=arm64e
 

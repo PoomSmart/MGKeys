@@ -4,7 +4,7 @@ Mapping of the obfuscated keys (or questions) used by iOS's MobileGestalt to the
 
 It is our job to de-obfuscate them all.
 
-The keys are currently based on iOS 18.1b2.
+The keys are currently based on iOS 18.0b7/18.1b2.
 
 ## Patterns
 
@@ -22,7 +22,7 @@ There are a few certain patterns of the key names, which can be useful for de-ob
 
 ## Typical Workflow
 
-1. Extract `libMobileGestalt.dylib` from the dyld shared cache of an iOS device
+1. Extract `libMobileGestalt.dylib` from the `dyld_shared_cache` of an iOS device
 2. Run `deobfuscate.sh` script to get the new unmapped obfuscated keys
 3. Throw the dylib into Hopper or IDA to find the human-readable function that is referenced by each key
 4. Update the key mapping in `deobfuscated.py`

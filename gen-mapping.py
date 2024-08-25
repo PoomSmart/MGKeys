@@ -1,7 +1,7 @@
 from deobfuscated import keys
 from deobfuscated_legacy import keys_legacy
 from obfuscate import calculate_obfuscated_key, md5_string_for_obfuscated_key
-from unknown_keys_with_desc import *
+from keys_desc import unknown_keys_desc
 
 '''
 This script generates a mapping file (mapping.h) for all keys in hashes.txt and hashes_legacy.txt. The mapped values are the deobfuscated keys.
@@ -33,17 +33,17 @@ def map(hashes_file, mapping_file, keys):
                     keys[hash] = keys[hash].replace('"', '\\"')
                     mapping[hash] = f'"{keys[hash]}",'
                     deobfuscated += 1
-                elif hash in unknown_with_desc:
-                    mapping[hash] = f'NULL, // {unknown_with_desc[hash]}'
+                elif hash in unknown_keys_desc:
+                    mapping[hash] = f'NULL, // {unknown_keys_desc[hash]}'
                 else:
                     mapping[hash] = 'NULL,'
             for hash in keys:
                 if hash not in mapping:
                     print(f'Warning: {hash} not found in {hashes_file}')
             if hashes_file == HASHES:
-                for hash in unknown_with_desc:
+                for hash in unknown_keys_desc:
                     if hash not in mapping:
-                        mapping[hash] = f'NULL, // {unknown_with_desc[hash]}'
+                        mapping[hash] = f'NULL, // {unknown_keys_desc[hash]}'
                         print(f'Warning: {hash} not found in {hashes_file}')
             mapping = dict(sorted(mapping.items(), key=lambda x: x[0].lower()))
             total = len(mapping)
