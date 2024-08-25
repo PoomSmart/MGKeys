@@ -6,8 +6,8 @@ MGKeys.playground/playground.xcworkspace
 # Input
 libMobileGestalt*.dylib
 
-# Executable
-obfuscate
+# Executables
+util
 
 # Artifacts
 *.txt

@@ -5,7 +5,7 @@
 // Total gestalt keys: 176 keys
 // Deobfuscated gestalt: 169 keys (95.48%)
 
-static const struct tKeyMapping keyMappingTable[] = {
+static const struct tKeyMapping keyMappingTableLegacy[] = {
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
     "/4LCTfMhvzuiK6b557ir5Q", NULL,
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",

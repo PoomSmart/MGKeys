@@ -12,12 +12,14 @@ HASHES = 'hashes.txt'
 HASHES_LEGACY = 'hashes_legacy.txt'
 MAPPING = 'mapping.h'
 MAPPING_LEGACY = 'mapping-legacy.h'
+TABLE = 'keyMappingTable'
+TABLE_LEGACY = 'keyMappingTableLegacy'
 POTFILE = 'potfile'
 GEN_NON_GESTALT_KEY = True
 
 POTFILE_CONTENT = ''
 
-def map(hashes_file, mapping_file, keys):
+def map(hashes_file, mapping_file, table_name, keys):
     global POTFILE_CONTENT
     mapping = {}
     deobfuscated = 0
@@ -68,13 +70,13 @@ def map(hashes_file, mapping_file, keys):
             out.write(f'// Total gestalt keys: {total - non_gestalt_keys} keys\n')
             out.write(f'// Deobfuscated gestalt: {deobfuscated - non_gestalt_keys} keys ({round(((deobfuscated - non_gestalt_keys) / total) * 100, 2)}%)\n')
             out.write('\n')
-            out.write('static const struct tKeyMapping keyMappingTable[] = {\n')
+            out.write(f'static const struct tKeyMapping {table_name}[] = {{\n')
             for hash in mapping:
                 out.write(f'    "{hash}", {mapping[hash]}\n')
             out.write('    NULL, NULL\n};\n')
 
-map(HASHES, MAPPING, keys)
-map(HASHES_LEGACY, MAPPING_LEGACY, keys_legacy)
+map(HASHES, MAPPING, TABLE, keys)
+map(HASHES_LEGACY, MAPPING_LEGACY, TABLE_LEGACY, keys_legacy)
 
 with open(POTFILE, 'w') as out:
     out.write(POTFILE_CONTENT)

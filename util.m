@@ -1,6 +1,7 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <Foundation/Foundation.h>
 #import "mapping.h"
+#import "mapping-legacy.h"
 
 NSString *obfuscate(const char *inString) {
     char buffer[256] = { 0 };
@@ -35,6 +36,14 @@ NSString *mapDeobfuscated(NSString *inString) {
         const char *obfuscatedKey = keyMappingTable[i].obfuscatedKey;
         if (strcmp(inStringChars, obfuscatedKey) == 0) {
             const char *deobfuscatedKey = keyMappingTable[i].key;
+            if (deobfuscatedKey == NULL) return @"NULL";
+            return [NSString stringWithUTF8String:deobfuscatedKey];
+        }
+    }
+    for (int i = 0; i < sizeof(keyMappingTableLegacy) / sizeof(keyMappingTableLegacy[0]); i++) {
+        const char *obfuscatedKey = keyMappingTableLegacy[i].obfuscatedKey;
+        if (strcmp(inStringChars, obfuscatedKey) == 0) {
+            const char *deobfuscatedKey = keyMappingTableLegacy[i].key;
             if (deobfuscatedKey == NULL) return @"NULL";
             return [NSString stringWithUTF8String:deobfuscatedKey];
         }
