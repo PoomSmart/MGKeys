@@ -1,9 +1,9 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 1000 keys (89.69%)
-// Total gestalt keys: 1000 keys
-// Deobfuscated gestalt: 885 keys (79.37%)
+// Deobfuscated: 1003 keys (89.96%)
+// Total gestalt keys: 995 keys
+// Deobfuscated gestalt: 883 keys (79.19%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",
@@ -259,14 +259,14 @@ static const struct tKeyMapping keyMappingTable[] = {
     "BdS2M69XMEc9v/jsHBC3Eg", "ThreadRadioCapability",
     "bG+mTz0gYzxMfCms9/WzlQ", NULL,
     "Bg8VW4HdQj+GVY+191T3nQ", "DeviceSupportsSideButtonClickSpeed",
-    "BGIXXp6VsbLlQg+8+0sBAA", NULL,
+    "BGIXXp6VsbLlQg+8+0sBAA", "chrome-identifier", // non-gestalt-key
     "bGUN8lS6sYzy3xhePubp8A", "KeyboardMutePreservesRegionalShutterClickBehavior",
     "bhPjDx/0UDk9mzia6ksZ+A", "nike-support",
     "Bim3FC83Te8QX1kfSpqYKQ", "KeyboardMutePreservesRegionalShutterClickBehaviorForLegacyDevices",
     "Birtx7GxrxCCUzsE1JQO8Q", "LowPowerWalletMode",
-    "BjJV766k5l7T4e9KHEKuBw", NULL,
+    "BjJV766k5l7T4e9KHEKuBw", "wireless-splitter", // non-gestalt-key
     "bl+nF6e86pLBiPP4pVJ24g", "PhotoCapability",
-    "bmYssgjtQNKMy3Zhf8N+2w", NULL,
+    "bmYssgjtQNKMy3Zhf8N+2w", "stage-light-portrait-preview", // non-gestalt-key
     "BoNz1QXiAEUgic9RdMVLIg", "FaceTimeEncodings",
     "BOPZue5C0v42pU9iJFYE3A", "location-reminders",
     "BOYfUi496moe56A0RWFbqQ", "sensitive-ui",
@@ -683,11 +683,11 @@ static const struct tKeyMapping keyMappingTable[] = {
     "MWduuAGptrl7qIzWqBmOqQ", "AWDID",
     "MWpHV1VYKXmaKqhgbmTWCg", "ptp-large-files",
     "mx9l9PlJACEcOixUVDZEjg", "EphemeralDataModeOverride",
-    "MXZ7vg7hul895QdsLUBJFA", "boot-manifest-hash",
+    "MXZ7vg7hul895QdsLUBJFA", "boot-manifest-hash", // non-gestalt-key
     "mY5R+ZIWxy5BDEEZTeWlHQ", "WatchSupportsSiriCommute",
     "MYKMJDMFE/lhvOVXgtDNuw", "RendersLetterPressSlowly",
     "mZfUC7qo4pURNhyMHZ62RQ", "BuildVersion",
-    "MzxVeXMzucmEMx2lw8Pg1Q", "opposed-power-vol-buttons",
+    "MzxVeXMzucmEMx2lw8Pg1Q", "opposed-power-vol-buttons", // non-gestalt-key
     "n/aVhqpGjESEbIjvJbEHKg", "SphereCapability",
     "n/G0fQIQiom+pb4tHA4Mmw", "device-colors",
     "n6blIRZ4IumqHl/toNJcpg", "ScreenCaptureHeight",
