@@ -11,6 +11,8 @@ The keys are currently based on iOS 18.0b7/18.1b2.
 There are a few certain patterns of the key names, which can be useful for de-obfuscation.
 
 - Kebab case `some-key-name`
+    - `has-xxx`
+    - `supports-xxx`
 - Pascal case of `DeviceSupportsXXX` (common)
 - Pascal case of `XXXCapability` (common)
     - `FrontFacing(Camera)XXXCapability`
