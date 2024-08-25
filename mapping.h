@@ -3,7 +3,8 @@
 // Total: 1115 keys
 // Deobfuscated: 1020 keys (91.48%)
 // Total gestalt keys: 957 keys
-// Deobfuscated gestalt: 862 keys (77.31%)
+// Deobfuscated gestalt: 862 keys (90.07%)
+// Unexplored: 64 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+3Uf0Pm5F8Xy7Onyvko0vA", "DeviceClass",

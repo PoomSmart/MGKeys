@@ -22,8 +22,9 @@ POTFILE_CONTENT = ''
 def map(hashes_file, mapping_file, table_name, keys):
     global POTFILE_CONTENT
     mapping = {}
-    deobfuscated = 0
+    deobfuscated_keys = 0
     non_gestalt_keys = 0
+    unexplored_keys = 0
     with open(hashes_file, 'r') as hashes:
         with open(mapping_file, 'w') as out:
             for raw_hash in hashes:
@@ -44,7 +45,7 @@ def map(hashes_file, mapping_file, table_name, keys):
                         mapping[hash] = f'"{keys[hash]}", // {desc}'
                     else:
                         mapping[hash] = f'"{keys[hash]}",'
-                    deobfuscated += 1
+                    deobfuscated_keys += 1
                 elif hash in unknown_keys_desc:
                     desc = unknown_keys_desc[hash]
                     if NON_KEY_DESC in desc:
@@ -53,6 +54,7 @@ def map(hashes_file, mapping_file, table_name, keys):
                         non_gestalt_keys += 1
                     mapping[hash] = f'NULL, // {desc}'
                 else:
+                    unexplored_keys += 1
                     mapping[hash] = 'NULL,'
             for hash in keys:
                 if hash not in mapping:
@@ -66,9 +68,10 @@ def map(hashes_file, mapping_file, table_name, keys):
             total = len(mapping)
             out.write('#include "struct.h"\n\n')
             out.write(f'// Total: {total} keys\n')
-            out.write(f'// Deobfuscated: {deobfuscated} keys ({round((deobfuscated / total) * 100, 2)}%)\n')
+            out.write(f'// Deobfuscated: {deobfuscated_keys} keys ({round((deobfuscated_keys / total) * 100, 2)}%)\n')
             out.write(f'// Total gestalt keys: {total - non_gestalt_keys} keys\n')
-            out.write(f'// Deobfuscated gestalt: {deobfuscated - non_gestalt_keys} keys ({round(((deobfuscated - non_gestalt_keys) / total) * 100, 2)}%)\n')
+            out.write(f'// Deobfuscated gestalt: {deobfuscated_keys - non_gestalt_keys} keys ({round(((deobfuscated_keys - non_gestalt_keys) / (total - non_gestalt_keys)) * 100, 2)}%)\n')
+            out.write(f'// Unexplored: {unexplored_keys} keys\n')
             out.write('\n')
             out.write(f'static const struct tKeyMapping {table_name}[] = {{\n')
             for hash in mapping:
