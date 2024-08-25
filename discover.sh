@@ -28,6 +28,9 @@ rm -f $MAYBE_NON_GESTALT_KEYS
 while IFS= read -r hash
 do
     deobfuscated=`./util map-deobfuscated $hash`
+    if [[ $deobfuscated == DeviceSupports* ]] || [[ $deobfuscated == *FacingCamera* ]] || [[ $deobfuscated == *Capability ]] || [[ $deobfuscated == FaceTime* ]]; then
+        continue
+    fi
     echo "$hash: $deobfuscated" >> $MAYBE_NON_GESTALT_KEYS
 done < temp-$MAYBE_NON_GESTALT_KEYS
 
