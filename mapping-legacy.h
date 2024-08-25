@@ -2,6 +2,8 @@
 
 // Total: 177 keys
 // Deobfuscated: 170 keys (96.05%)
+// Total gestalt keys: 176 keys
+// Deobfuscated gestalt: 169 keys (95.48%)
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
@@ -171,7 +173,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "XPqbAKO9OGRsZmYTfs99Pw", "OpenGLES2Capability",
     "yAP29WFvj9TYheRKoEJDIw", "MainScreenWidth",
     "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability",
-    "Yk5H+MlMreeaBLjv6PPFDw", "camera-front",
+    "Yk5H+MlMreeaBLjv6PPFDw", "camera-front", // non-gestalt-key
     "YWQYAm8X1mwtoYPwpLF6YA", "YouTubePluginCapability",
     "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability",
     "z5qxAI4VRmvofBOSFvwxPg", "HardwareSnapshotsRequirePurpleGfxCapability",

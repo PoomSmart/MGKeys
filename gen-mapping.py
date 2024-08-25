@@ -1,7 +1,7 @@
 from deobfuscated import keys
 from deobfuscated_legacy import keys_legacy
 from obfuscate import calculate_obfuscated_key, md5_string_for_obfuscated_key
-from keys_desc import unknown_keys_desc
+from keys_desc import NON_KEY_DESC, known_keys_desc, unknown_keys_desc
 
 '''
 This script generates a mapping file (mapping.h) for all keys in hashes.txt and hashes_legacy.txt. The mapped values are the deobfuscated keys.
@@ -13,6 +13,7 @@ HASHES_LEGACY = 'hashes_legacy.txt'
 MAPPING = 'mapping.h'
 MAPPING_LEGACY = 'mapping-legacy.h'
 POTFILE = 'potfile'
+GEN_NON_GESTALT_KEY = True
 
 POTFILE_CONTENT = ''
 
@@ -20,6 +21,7 @@ def map(hashes_file, mapping_file, keys):
     global POTFILE_CONTENT
     mapping = {}
     deobfuscated = 0
+    non_gestalt_keys = 0
     with open(hashes_file, 'r') as hashes:
         with open(mapping_file, 'w') as out:
             for raw_hash in hashes:
@@ -31,10 +33,23 @@ def map(hashes_file, mapping_file, keys):
                     md5 = md5_string_for_obfuscated_key(hash)
                     POTFILE_CONTENT += f'{md5}:MGCopyAnswer{keys[hash]}\n'
                     keys[hash] = keys[hash].replace('"', '\\"')
-                    mapping[hash] = f'"{keys[hash]}",'
+                    if hash in known_keys_desc:
+                        desc = known_keys_desc[hash]
+                        if NON_KEY_DESC in desc:
+                            if not GEN_NON_GESTALT_KEY:
+                                continue
+                            non_gestalt_keys += 1
+                        mapping[hash] = f'"{keys[hash]}", // {desc}'
+                    else:
+                        mapping[hash] = f'"{keys[hash]}",'
                     deobfuscated += 1
                 elif hash in unknown_keys_desc:
-                    mapping[hash] = f'NULL, // {unknown_keys_desc[hash]}'
+                    desc = unknown_keys_desc[hash]
+                    if NON_KEY_DESC in desc:
+                        if not GEN_NON_GESTALT_KEY:
+                            continue
+                        non_gestalt_keys += 1
+                    mapping[hash] = f'NULL, // {desc}'
                 else:
                     mapping[hash] = 'NULL,'
             for hash in keys:
@@ -49,7 +64,10 @@ def map(hashes_file, mapping_file, keys):
             total = len(mapping)
             out.write('#include "struct.h"\n\n')
             out.write(f'// Total: {total} keys\n')
-            out.write(f'// Deobfuscated: {deobfuscated} keys ({round((deobfuscated / total) * 100, 2)}%)\n\n')
+            out.write(f'// Deobfuscated: {deobfuscated} keys ({round((deobfuscated / total) * 100, 2)}%)\n')
+            out.write(f'// Total gestalt keys: {total - non_gestalt_keys} keys\n')
+            out.write(f'// Deobfuscated gestalt: {deobfuscated - non_gestalt_keys} keys ({round(((deobfuscated - non_gestalt_keys) / total) * 100, 2)}%)\n')
+            out.write('\n')
             out.write('static const struct tKeyMapping keyMappingTable[] = {\n')
             for hash in mapping:
                 out.write(f'    "{hash}", {mapping[hash]}\n')

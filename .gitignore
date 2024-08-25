@@ -6,6 +6,9 @@ MGKeys.playground/playground.xcworkspace
 # Input
 libMobileGestalt*.dylib
 
+# Executable
+obfuscate
+
 # Artifacts
 *.txt
 !false-positive.txt

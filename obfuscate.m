@@ -1,5 +1,6 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <Foundation/Foundation.h>
+#import "mapping.h"
 
 NSString *obfuscate(const char *inString) {
     char buffer[256] = { 0 };
@@ -28,6 +29,19 @@ NSString *md5(NSString *inObfuscatedKey) {
     return md5String;
 }
 
+NSString *mapDeobfuscated(NSString *inString) {
+    const char *inStringChars = [inString UTF8String];
+    for (int i = 0; i < sizeof(keyMappingTable) / sizeof(keyMappingTable[0]); i++) {
+        const char *obfuscatedKey = keyMappingTable[i].obfuscatedKey;
+        if (strcmp(inStringChars, obfuscatedKey) == 0) {
+            const char *deobfuscatedKey = keyMappingTable[i].key;
+            if (deobfuscatedKey == NULL) return @"NULL";
+            return [NSString stringWithUTF8String:deobfuscatedKey];
+        }
+    }
+    return @"CANNOT FIND KEY";
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         if (argc < 3) {
@@ -42,6 +56,8 @@ int main(int argc, const char * argv[]) {
             printf("%s\n", [obfuscate([key UTF8String]) UTF8String]);
         } else if ([mode isEqualToString:@"md5"]) {
             printf("%s\n", [md5(key) UTF8String]);
+        } else if ([mode isEqualToString:@"map-deobfuscated"]) {
+            printf("%s\n", [mapDeobfuscated(key) UTF8String]);
         } else {
             printf("Unknown mode: %s\n", [mode UTF8String]);
             return 1;

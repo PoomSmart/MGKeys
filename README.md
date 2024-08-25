@@ -20,6 +20,10 @@ There are a few certain patterns of the key names, which can be useful for de-ob
 - Pascal case of `IsXXX`
 - Pascal case of `XXXData` (usually come alongside another key without `Data` suffix in it)
 
+## Non-Gestalt Keys
+
+There are also keys which are obfuscated the same way but are not considered as MobileGestalt keys. That is, you can't use `MGCopyAnswer` to get the value of the key. Instead, they are used for retrieving the value from the `IODeviceTree`, in an obfuscated manner. These keys are mostly in the kebab case, having their pascal case equivalent which is actually used by `MGCopyAnswer`. In the mapping files, these keys are marked with a comment `// non-gestalt-key`.
+
 ## Typical Workflow
 
 1. Extract `libMobileGestalt.dylib` from the `dyld_shared_cache` of an iOS device
