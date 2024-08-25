@@ -2,7 +2,7 @@
 
 if [ -z $1 ]
 then
-    echo "must provide search location"
+    echo "Must provide the search location"
     return 1
 fi
 

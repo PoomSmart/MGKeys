@@ -3,10 +3,21 @@ from deobfuscated_legacy import keys_legacy
 from obfuscate import calculate_obfuscated_key, md5_string_for_obfuscated_key
 from unknown_keys_with_desc import *
 
-potfile = ''
+'''
+This script generates a mapping file (mapping.h) for all keys in hashes.txt and hashes_legacy.txt. The mapped values are the deobfuscated keys.
+This script also generates a potfile (potfile) for hashcat.
+'''
+
+HASHES = 'hashes.txt'
+HASHES_LEGACY = 'hashes_legacy.txt'
+MAPPING = 'mapping.h'
+MAPPING_LEGACY = 'mapping-legacy.h'
+POTFILE = 'potfile'
+
+POTFILE_CONTENT = ''
 
 def map(hashes_file, mapping_file, keys):
-    global potfile
+    global POTFILE_CONTENT
     mapping = {}
     deobfuscated = 0
     with open(hashes_file, 'r') as hashes:
@@ -18,7 +29,7 @@ def map(hashes_file, mapping_file, keys):
                         print(f'Error: {hash} does not match {keys[hash]}')
                         exit(1)
                     md5 = md5_string_for_obfuscated_key(hash)
-                    potfile += f'{md5}:MGCopyAnswer{keys[hash]}\n'
+                    POTFILE_CONTENT += f'{md5}:MGCopyAnswer{keys[hash]}\n'
                     keys[hash] = keys[hash].replace('"', '\\"')
                     mapping[hash] = f'"{keys[hash]}",'
                     deobfuscated += 1
@@ -29,7 +40,7 @@ def map(hashes_file, mapping_file, keys):
             for hash in keys:
                 if hash not in mapping:
                     print(f'Warning: {hash} not found in {hashes_file}')
-            if hashes_file == 'hashes.txt':
+            if hashes_file == HASHES:
                 for hash in unknown_with_desc:
                     if hash not in mapping:
                         mapping[hash] = f'NULL, // {unknown_with_desc[hash]}'
@@ -44,8 +55,8 @@ def map(hashes_file, mapping_file, keys):
                 out.write(f'    "{hash}", {mapping[hash]}\n')
             out.write('    NULL, NULL\n};\n')
 
-map('hashes.txt', 'mapping.h', keys)
-map('hashes_legacy.txt', 'mapping-legacy.h', keys_legacy)
+map(HASHES, MAPPING, keys)
+map(HASHES_LEGACY, MAPPING_LEGACY, keys_legacy)
 
-with open('potfile', 'w') as out:
-    out.write(potfile)
+with open(POTFILE, 'w') as out:
+    out.write(POTFILE_CONTENT)
