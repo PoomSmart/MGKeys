@@ -27,7 +27,7 @@ There are a few certain patterns of the key names, which can be useful for de-ob
 3. Throw the dylib into Hopper or IDA to find the human-readable function that is referenced by each key
 4. Update the key mapping in `deobfuscated.py`
 5. Run `deobfuscate.sh` again to update the mapping and to also verify each function name converts to the obfuscated key it references to
-6. Move all keys that fail to convert to `unknown_keys_with_desc.py`, if any
+6. Move all keys that fail to convert to `unknown_keys_desc` of `keys_desc.py`, if any
 
 ## Credits (Keys De-obfuscation)
 - Jonathan Levin
