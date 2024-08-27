@@ -11,6 +11,7 @@ This script also generates a potfile (potfile) for hashcat.
 HASHES = 'hashes.txt'
 HASHES_LEGACY = 'hashes_legacy.txt'
 MAPPING = 'mapping.h'
+MAPPING_GESTALT = 'mapping-gestalt.h'
 MAPPING_LEGACY = 'mapping-legacy.h'
 TABLE = 'keyMappingTable'
 TABLE_LEGACY = 'keyMappingTableLegacy'
@@ -19,8 +20,9 @@ GEN_NON_GESTALT_KEY = True
 
 POTFILE_CONTENT = ''
 
-def map(hashes_file, mapping_file, table_name, keys):
+def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
     global POTFILE_CONTENT
+    keys = the_keys.copy()
     mapping = {}
     deobfuscated_keys = 0
     non_gestalt_keys = 0
@@ -34,12 +36,13 @@ def map(hashes_file, mapping_file, table_name, keys):
                         print(f'Error: {hash} does not match {keys[hash]}')
                         exit(1)
                     md5 = md5_string_for_obfuscated_key(hash)
-                    POTFILE_CONTENT += f'{md5}:MGCopyAnswer{keys[hash]}\n'
+                    if not only_gestalt:
+                        POTFILE_CONTENT += f'{md5}:MGCopyAnswer{keys[hash]}\n'
                     keys[hash] = keys[hash].replace('"', '\\"')
                     if hash in known_keys_desc:
                         desc = known_keys_desc[hash]
                         if NON_KEY_DESC in desc:
-                            if not GEN_NON_GESTALT_KEY:
+                            if only_gestalt or not GEN_NON_GESTALT_KEY:
                                 continue
                             non_gestalt_keys += 1
                         mapping[hash] = f'"{keys[hash]}", // {desc}'
@@ -49,28 +52,30 @@ def map(hashes_file, mapping_file, table_name, keys):
                 elif hash in unknown_keys_desc:
                     desc = unknown_keys_desc[hash]
                     if NON_KEY_DESC in desc:
-                        if not GEN_NON_GESTALT_KEY:
+                        if only_gestalt or not GEN_NON_GESTALT_KEY:
                             continue
                         non_gestalt_keys += 1
                     mapping[hash] = f'NULL, // {desc}'
                 else:
                     unexplored_keys += 1
                     mapping[hash] = 'NULL,'
-            for hash in keys:
-                if hash not in mapping:
-                    print(f'Warning: {hash} not found in {hashes_file}')
-            if hashes_file == HASHES:
-                for hash in unknown_keys_desc:
+            if not only_gestalt:
+                for hash in keys:
                     if hash not in mapping:
-                        mapping[hash] = f'NULL, // {unknown_keys_desc[hash]}'
                         print(f'Warning: {hash} not found in {hashes_file}')
+                if hashes_file == HASHES:
+                    for hash in unknown_keys_desc:
+                        if hash not in mapping:
+                            mapping[hash] = f'NULL, // {unknown_keys_desc[hash]}'
+                            print(f'Warning: {hash} not found in {hashes_file}')
             mapping = dict(sorted(mapping.items(), key=lambda x: x[0].lower()))
             total = len(mapping)
             out.write('#include "struct.h"\n\n')
             out.write(f'// Total: {total} keys\n')
             out.write(f'// Deobfuscated: {deobfuscated_keys} keys ({round((deobfuscated_keys / total) * 100, 2)}%)\n')
-            out.write(f'// Total gestalt keys: {total - non_gestalt_keys} keys\n')
-            out.write(f'// Deobfuscated gestalt: {deobfuscated_keys - non_gestalt_keys} keys ({round(((deobfuscated_keys - non_gestalt_keys) / (total - non_gestalt_keys)) * 100, 2)}%)\n')
+            if not only_gestalt:
+                out.write(f'// Total gestalt keys: {total - non_gestalt_keys} keys\n')
+                out.write(f'// Deobfuscated gestalt: {deobfuscated_keys - non_gestalt_keys} keys ({round(((deobfuscated_keys - non_gestalt_keys) / (total - non_gestalt_keys)) * 100, 2)}%)\n')
             out.write(f'// Unexplored: {unexplored_keys} keys\n')
             out.write('\n')
             out.write(f'static const struct tKeyMapping {table_name}[] = {{\n')
@@ -78,8 +83,9 @@ def map(hashes_file, mapping_file, table_name, keys):
                 out.write(f'    "{hash}", {mapping[hash]}\n')
             out.write('    NULL, NULL\n};\n')
 
-map(HASHES, MAPPING, TABLE, keys)
-map(HASHES_LEGACY, MAPPING_LEGACY, TABLE_LEGACY, keys_legacy)
+map(HASHES, MAPPING, TABLE, False, keys)
+map(HASHES, MAPPING_GESTALT, TABLE, True, keys)
+map(HASHES_LEGACY, MAPPING_LEGACY, TABLE_LEGACY, False, keys_legacy)
 
 with open(POTFILE, 'w') as out:
     out.write(POTFILE_CONTENT)
