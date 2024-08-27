@@ -25,6 +25,7 @@ def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
     keys = the_keys.copy()
     mapping = {}
     deobfuscated_keys = 0
+    deobfuscated_gestalt_keys = 0
     non_gestalt_keys = 0
     unexplored_keys = 0
     with open(hashes_file, 'r') as hashes:
@@ -45,8 +46,11 @@ def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
                             if only_gestalt or not GEN_NON_GESTALT_KEY:
                                 continue
                             non_gestalt_keys += 1
+                        else:
+                            deobfuscated_gestalt_keys += 1
                         mapping[hash] = f'"{keys[hash]}", // {desc}'
                     else:
+                        deobfuscated_gestalt_keys += 1
                         mapping[hash] = f'"{keys[hash]}",'
                     deobfuscated_keys += 1
                 elif hash in unknown_keys_desc:
@@ -75,7 +79,7 @@ def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
             out.write(f'// Deobfuscated: {deobfuscated_keys} keys ({round((deobfuscated_keys / total) * 100, 2)}%)\n')
             if not only_gestalt:
                 out.write(f'// Total gestalt keys: {total - non_gestalt_keys} keys\n')
-                out.write(f'// Deobfuscated gestalt: {deobfuscated_keys - non_gestalt_keys} keys ({round(((deobfuscated_keys - non_gestalt_keys) / (total - non_gestalt_keys)) * 100, 2)}%)\n')
+                out.write(f'// Deobfuscated gestalt: {deobfuscated_gestalt_keys} keys ({round((deobfuscated_gestalt_keys / (total - non_gestalt_keys)) * 100, 2)}%)\n')
             out.write(f'// Unexplored: {unexplored_keys} keys\n')
             out.write('\n')
             out.write(f'static const struct tKeyMapping {table_name}[] = {{\n')
