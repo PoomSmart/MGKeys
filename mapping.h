@@ -2,8 +2,8 @@
 
 // Total: 1115 keys
 // Deobfuscated: 1047 keys (93.9%)
-// Total gestalt keys: 863 keys
-// Deobfuscated gestalt: 862 keys (99.88%)
+// Total gestalt keys: 862 keys
+// Deobfuscated gestalt: 861 keys (99.88%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -668,7 +668,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Mk4ZslaChmO+6s3h7L1w6Q", "DeviceSupports1080p",
     "mL1lk3ZVGDFUQhxU9YLW6Q", "FrontFacingCameraHFRVideoCapture1080pMaxFPS",
     "MlDJggkQz38CLQh3AVv7VQ", "supports-absolute-altimeter", // non-gestalt-key
-    "mm4/5+X4Z+eStXyipfwWVQ", "rear-cam-telephoto-capability",
+    "mm4/5+X4Z+eStXyipfwWVQ", "rear-cam-telephoto-capability", // non-gestalt-key
     "mmu76v66k1dAtghToInT8g", "UIParallaxCapability",
     "MQJ1mlVrhOwaUUVJehJSVA", "WatchKeyboardCapability",
     "MQoTKg93BM8ZhBaB3WUPdw", "form-factor", // non-gestalt-key
