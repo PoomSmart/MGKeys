@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 1047 keys (93.9%)
+// Deobfuscated: 1049 keys (94.08%)
 // Total gestalt keys: 862 keys
 // Deobfuscated gestalt: 861 keys (99.88%)
 // Unexplored: 0 keys
@@ -258,7 +258,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "bbtR9jQx50Fv5Af/affNtA", "PhysicalHardwareNameString",
     "bbyFCcrPE+k6ZXIVbXSFUw", NULL, // non-gestalt-key, IODeviceTree:/product, starts with u, DevicePrefersBuildingStrokes
     "BdS2M69XMEc9v/jsHBC3Eg", "ThreadRadioCapability",
-    "bG+mTz0gYzxMfCms9/WzlQ", NULL, // non-gestalt-key, IODeviceTree:/product/camera, starts with r, RearFacingCameraSuperWideCameraCapability
+    "bG+mTz0gYzxMfCms9/WzlQ", "rear-cam-superwide-capability", // non-gestalt-key
     "Bg8VW4HdQj+GVY+191T3nQ", "DeviceSupportsSideButtonClickSpeed",
     "BGIXXp6VsbLlQg+8+0sBAA", "chrome-identifier", // non-gestalt-key
     "bGUN8lS6sYzy3xhePubp8A", "KeyboardMutePreservesRegionalShutterClickBehavior",
@@ -994,7 +994,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "vQg8hRTy1PC2j9L+8Jd+vg", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with s, DeviceSupportsVoiceOverCanUseSiriVoice
     "VqRhf8vgXr9B+SYvpnX39g", "BoardRevision",
     "VrWzQGQK9Fbp/RqeQ08VzA", "car-integration", // non-gestalt-key
-    "vTKPWiAZkQifTv/4/uOnQQ", NULL, // non-gestalt-key, IODeviceTree:/product/camera, starts with f, FrontFacingCameraSuperWideCameraCapability
+    "vTKPWiAZkQifTv/4/uOnQQ", "front-cam-superwide-capability", // non-gestalt-key
     "VuGdqp8UBpi9vPWHlPluVQ", "CompatibleAppVariants",
     "W/xqvBX9L07XHb0BOtYycQ", "ThreadRadioMacAddress64Bit",
     "W5kTfIuxkKpHVdWTk42C9A", "n78a-mode", // non-gestalt-key
