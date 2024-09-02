@@ -72,6 +72,7 @@ keys_legacy = {
     "hSjeLvzobsJCklk4+pzu3g": "MarketingSOCNameString",
     "htWSrEg/cfn3squdzvER/w": "MLEHW",
     "hVVttq0KhS190K5SkaajpQ": "FrontFacingCameraCapability",
+    "I+ptihXW+rMeySVUWURNiw": "mac-address-bluetooth1",
     "I2IvpG8yJdNpvO4csuB9EA": "LocationRemindersCapability",
     "iAu0GZogf4TG69GSO5rHcg": "DeviceSupportsARKit",
     "iSVbuFLd369ug7uTvmUtkQ": "SensitiveUICapability",

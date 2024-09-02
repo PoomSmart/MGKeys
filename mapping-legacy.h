@@ -1,9 +1,9 @@
 #include "struct.h"
 
 // Total: 177 keys
-// Deobfuscated: 170 keys (96.05%)
-// Total gestalt keys: 168 keys
-// Deobfuscated gestalt: 163 keys (97.02%)
+// Deobfuscated: 171 keys (96.61%)
+// Total gestalt keys: 167 keys
+// Deobfuscated gestalt: 162 keys (97.01%)
 // Unexplored: 5 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
@@ -82,7 +82,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "hSjeLvzobsJCklk4+pzu3g", "MarketingSOCNameString",
     "htWSrEg/cfn3squdzvER/w", "MLEHW",
     "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability",
-    "I+ptihXW+rMeySVUWURNiw", NULL, // non-gestalt-key, IODeviceTree:/product, starts with m, SecondaryBluetoothMacAddressData
+    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key
     "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability",
     "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit",
     "iSVbuFLd369ug7uTvmUtkQ", "SensitiveUICapability",
@@ -110,7 +110,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "mMpmRVTiFjGCIUUH1v5aVg", "EncodeAACCapability",
     "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha",
     "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability",
-    "na77zbwlhy0V7shc4ORRgA", "post-effects",
+    "na77zbwlhy0V7shc4ORRgA", "post-effects", // non-gestalt-key
     "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit",
     "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera",
     "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability",
