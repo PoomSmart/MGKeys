@@ -34,7 +34,7 @@ def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
                 hash = raw_hash.strip()
                 if hash in keys:
                     if calculate_obfuscated_key(keys[hash]) != hash:
-                        print(f'Error: {hash} does not match {keys[hash]}')
+                        print(f'Error: {hash} is not deobfuscated to {keys[hash]}')
                         exit(1)
                     md5 = md5_string_for_obfuscated_key(hash)
                     if not only_gestalt:
@@ -67,11 +67,6 @@ def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
                 for hash in keys:
                     if hash not in mapping:
                         print(f'Warning: {hash} not found in {hashes_file}')
-                if hashes_file == HASHES:
-                    for hash in unknown_keys_desc:
-                        if hash not in mapping:
-                            mapping[hash] = f'NULL, // {unknown_keys_desc[hash]}'
-                            print(f'Warning: {hash} not found in {hashes_file}')
             mapping = dict(sorted(mapping.items(), key=lambda x: x[0].lower()))
             total = len(mapping)
             out.write('#include "struct.h"\n\n')

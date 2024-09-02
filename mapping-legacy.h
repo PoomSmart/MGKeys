@@ -2,13 +2,13 @@
 
 // Total: 177 keys
 // Deobfuscated: 170 keys (96.05%)
-// Total gestalt keys: 176 keys
-// Deobfuscated gestalt: 169 keys (96.02%)
-// Unexplored: 7 keys
+// Total gestalt keys: 168 keys
+// Deobfuscated gestalt: 163 keys (97.02%)
+// Unexplored: 5 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
-    "/4LCTfMhvzuiK6b557ir5Q", NULL,
+    "/4LCTfMhvzuiK6b557ir5Q", NULL, // non-gestalt-key, IODeviceTree:/arm-io/isp, starts with o, LiDARCalibrationPrCL
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
     "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents",
     "061e/gd5kFdZwwe1G2qXFQ", NULL,
@@ -38,14 +38,14 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "8lHIyh53plXuU5ZXCCtc1A", "AirDropRestriction",
     "8P5JZjT7LnaofwK60pBM1w", "MicrophoneCapability",
     "8QDlnfTo4K3713bkcH+E9A", "iPadCapability",
-    "8vIFqHe5lcMGo7TvbNLmyg", "home-button-type",
+    "8vIFqHe5lcMGo7TvbNLmyg", "home-button-type", // non-gestalt-key
     "9s1QcGZXIyfHeOT8b/+m/A", "LTEDeviceCapability",
     "9ZQAcDmoSgmTrmVL06N7hA", "AppleInternalInstallCapability",
     "A8aFtN08Oqt21846jqnftQ", "SiriGestureCapability",
     "Af/UTHptqxLPG5sy0wQTiw", "TorpedoCapability",
     "AFgMLiOUXwdf4T83wrVcxw", "MMSCapability",
     "AFSjHTczUWJZWdEzHqndnQ", "720pPlaybackCapability",
-    "aH78kNnsHDm9yHe6vSJYNw", "builtin-mics",
+    "aH78kNnsHDm9yHe6vSJYNw", "builtin-mics", // non-gestalt-key
     "aIzBwNZS8VUrxL+9grefTA", "GameKitCapability",
     "Ar0GS4uq6WcJ33OpIF14XQ", "HealthKitCapability",
     "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability",
@@ -67,7 +67,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "eDiwRLHFAmDNNPtULAcEZA", "TelephonyMaximumGeneration",
     "ePAkIesI8SUJiAx8uRCcEA", "HDRImageCaptureCapability",
     "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability",
-    "F2M6lgy8EHCyR6hc00hMcg", "effective-security-mode",
+    "F2M6lgy8EHCyR6hc00hMcg", "effective-security-mode", // non-gestalt-key
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier",
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability",
     "FgjnMkPJPpI4C38dWETwtw", "flash",
@@ -82,7 +82,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "hSjeLvzobsJCklk4+pzu3g", "MarketingSOCNameString",
     "htWSrEg/cfn3squdzvER/w", "MLEHW",
     "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability",
-    "I+ptihXW+rMeySVUWURNiw", NULL,
+    "I+ptihXW+rMeySVUWURNiw", NULL, // non-gestalt-key, IODeviceTree:/product, starts with m, SecondaryBluetoothMacAddressData
     "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability",
     "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit",
     "iSVbuFLd369ug7uTvmUtkQ", "SensitiveUICapability",
@@ -141,7 +141,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC",
     "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability",
     "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus",
-    "T9MMpvl0fu59PO8lXi/Cxg", "effective-production-status",
+    "T9MMpvl0fu59PO8lXi/Cxg", "effective-production-status", // non-gestalt-key
     "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability",
     "TcGqIE272OpkCMRaIOaPgw", "MarketingNameString",
     "THaCQIAEgw5Zqceq9LAe0g", "HiccoughInterval",
@@ -170,7 +170,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "x7jCqsR180Lcm6rYguygmg", "MainScreenHeight",
     "XACgWnmwo1t6swUPu+/UUQ", "AutoFocusCameraCapability",
     "XcmwH6K+Nop/mDqy50Nrqw", "HorsemanCapability",
-    "XEp4h49dagkYL6YrtjW1Kw", "wifi-module-sn",
+    "XEp4h49dagkYL6YrtjW1Kw", "wifi-module-sn", // non-gestalt-key
     "XPqbAKO9OGRsZmYTfs99Pw", "OpenGLES2Capability",
     "yAP29WFvj9TYheRKoEJDIw", "MainScreenWidth",
     "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability",
@@ -181,7 +181,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability",
     "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability",
     "ziO64HFBPR9QpsOGnkVjJQ", "HiDPICapability",
-    "zJUWenIp94snlzBD1cub3g", "function-button_halleffect",
+    "zJUWenIp94snlzBD1cub3g", "function-button_halleffect", // non-gestalt-key
     "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus",
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability",
     NULL, NULL
