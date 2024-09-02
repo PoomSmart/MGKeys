@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 1049 keys (94.08%)
+// Deobfuscated: 1051 keys (94.26%)
 // Total gestalt keys: 862 keys
 // Deobfuscated gestalt: 861 keys (99.88%)
 // Unexplored: 0 keys
@@ -711,7 +711,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "nK4D+jDUuTGFFwRFPC2lWg", "DeviceSupportsFloorCounting",
     "NKo9tzEYqtHAfQYMFsc66Q", "s8001\")", // non-gestalt-key
     "NkQOJZ1xdFk5SV55PFKlIg", "wlan", // non-gestalt-key
-    "NlddTE7HnMJiw5OzTqbrYA", NULL, // non-gestalt-key, IODeviceTree:/buttons, starts with f, volume-buttons
+    "NlddTE7HnMJiw5OzTqbrYA", "function-button_volup", // non-gestalt-key
     "NLWYUp5icK9sRsPDI7XJtw", "IsComputeController",
     "Nmhz54v5ZLqj2I4NPFIFqQ", "BasebandSerialNumber",
     "nmOy2K5HzAAs2QNAi8wR+Q", "SupportsRotateToWake",
@@ -757,7 +757,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "OPzhvROZUqCZhgYMyve5BA", "sms",
     "OtnrTIhWBtyPo45BcApMTw", NULL, // non-gestalt-key, IODeviceTree:/product/haptics, starts with s, haptics
     "oTuH4/axV9s11/jKxB2z2A", "ui-no-parallax", // non-gestalt-key
-    "Ov9G2lRzQYbUyBYJ0KCMhA", NULL, // non-gestalt-key, IODeviceTree:/buttons, starts with f, Skey
+    "Ov9G2lRzQYbUyBYJ0KCMhA", "function-button_skey", // non-gestalt-key
     "OWi11Urd09rDmPVy1z5dOQ", "CoverglassSerialNumber",
     "OWLyWlUOIkl+eQB7Iq37xQ", "DesenseBuild",
     "oWUSugFxOVhHOKYv7DawLw", "DeviceSupportsSWProRes",
