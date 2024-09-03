@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 1061 keys (95.16%)
+// Deobfuscated: 1070 keys (95.96%)
 // Total gestalt keys: 862 keys
 // Deobfuscated gestalt: 861 keys (99.88%)
 // Unexplored: 0 keys
@@ -45,7 +45,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "0D3qCmmfJ/i1mpmjOsV7EA", "ScreenSerialNumber",
     "0dnM19zBqLw5ZPhIo4GEkg", "SecureElement",
     "0GizaJLOyfzgAbxQ/5aniA", "DeviceHousingColorUncooked",
-    "0gkWjKWKuS2gqzTaFHKxqw", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with s, DeviceSupportsAdvancedVoiceProcessorChatFlavor
+    "0gkWjKWKuS2gqzTaFHKxqw", "supports-advanced-vp-chatflavor", // non-gestalt-key
     "0GUU+Z8xIu+7TE+scKXscg", "OysterCapability",
     "0jjK6IVSQzA8doQeSwmujA", "software-bundle-version",
     "0KHhsv2F/BGA9AppFljmKg", "AttestationUniqueDeviceID",
@@ -110,7 +110,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "475wW3fne+tyzGr4wleUSQ", "CarrierBundleInfoArray",
     "4D8XW4YwJI7QvyPhv1TEdw", "DeviceSupportsRaiseToSpeak",
     "4ec+Q3FdQ1N0HeNpOPsmfA", "DeviceSupportsThunderbolt",
-    "4eFYRO4KDf8py/Zf3iHWZw", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with s, SpeakerCalibrationSpTs
+    "4eFYRO4KDf8py/Zf3iHWZw", "speaker-thiele-small", // non-gestalt-key
     "4fT83+9coO3VAUnlxuOOcw", "SupportsEDUMU",
     "4I0hOaR3n80379Vka7u+Xg", "volume-buttons",
     "4JalTKSe5a9I+mb00ATvag", "display-boot-rotation", // non-gestalt-key
@@ -318,7 +318,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "D4AU4tOIuGKN3G/uix65cQ", "RegionalBehaviorAll",
     "D6/BMDrlb8V3WSiqL8gL+w", "DeviceSupportsBatteryModuleAuthentication",
     "D6PT05dEJ0f9Ayk7Yi92RA", "front-max-video-fps-1080p", // non-gestalt-key
-    "dbYxhQWXkJhjp8uPhoMDvw", NULL, // non-gestalt-key, IODeviceTree:/product/camera, starts with p, DeviceSupportsPortraitIntensityAdjustments
+    "dbYxhQWXkJhjp8uPhoMDvw", "portrait-lighting-strength", // non-gestalt-key
     "DcQNvnO5Uhpc1jjGIrzyng", "BatterySerialNumber",
     "DCy89X5oErFAps95GX38mQ", "live-photo-auto", // non-gestalt-key
     "DdNpmCCXbeMGbqj0kAMCdw", "piezo-clicker",
@@ -369,7 +369,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ESA7FmyB3KbJFNBAsBejcg", "ui-pip", // non-gestalt-key
     "eu8pUYR7yo+AlS9aojlgwg", "DeviceSupports4G",
     "euampscYbKXqj/bSaHD0QA", "IsPwrOpposedVol",
-    "EuGnCiDhD1LBnMc96k/GQQ", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with s, SpeakerCalibrationSpGa
+    "EuGnCiDhD1LBnMc96k/GQQ", "speaker-trim-gains", // non-gestalt-key
     "EuwCLwMXh+X5LErHKwvuIw", "MultiTouchMaxBootTime",
     "evtY5EeJ8V0nFhmrj/OYjg", "NFCUniqueChipID",
     "eW5H/Gwg0uqbMqFot70pYg", "PerfLevelCapability",
@@ -494,7 +494,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "I3lidq+FVH2CeOi/ARa0tg", "generative-model-systems",
     "I4TfkcdXWazwTr1al8Ml5w", "StrictWakeKeyboardCases",
     "I6rd1SCXpRqBMDTPBbcWzA", "mic-trim-gains", // non-gestalt-key
-    "i6wlxJoKNXBiVXJHJ1EHBg", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with s, DeviceSupportsStereoAudioRecording
+    "i6wlxJoKNXBiVXJHJ1EHBg", "stereo-sound-recording", // non-gestalt-key
     "i8+iwUtLtB5jT+WNvqwrEA", "encrypted-data-partition",
     "I83EgnDEGxinSKU4QAykmA", "rear-max-video-frame_rate", // non-gestalt-key
     "iaegRQa4jNGOuTA6hnZmcQ", "DeviceCoverMaterial",
@@ -550,7 +550,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "jJ+5tnncQBcHo5T26MI5jA", "debug-board-revision",
     "jKFTzVOYcfTfNBh+yDrprw", "RearFacingCameraHFRVideoCapture1080pMaxFPS",
     "jkr5aFPOh/d6zTzNKYthBw", "DualSIMActivationPolicyCapable",
-    "jkRyJt34tZOjsO1YhVc0mw", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with s, AutomaticMicMode
+    "jkRyJt34tZOjsO1YhVc0mw", "supports-auto-mic-mode", // non-gestalt-key
     "JkZlE8z9YwHjE1hnbMhcgA", "DeviceSupportsHDRDeferredProcessing",
     "JljZ8PqQJB8QlFC2NsgOPw", NULL, // non-gestalt-key, IODeviceTree:/product, starts with e, WorkoutUltraMode
     "JLP/IinyzetEPztvoNUNKg", "AggregateDevicePhotoZoomFactor",
@@ -576,7 +576,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "k7QIBwZJJOVw+Sej/8h8VA", "CPUArchitecture",
     "Kao6GNYdAy5hwXblxeGYJQ", "DeviceSupportsBatteryInformation",
     "kc+QzHP4Frf2NvP+mclQ2A", "wifi-chipset", // non-gestalt-key
-    "KFwMMyiMoa8pLgGLwo78Vw", NULL, // non-gestalt-key, IODeviceTree:/product, starts with h, DeviceSupportsAppleLPM
+    "KFwMMyiMoa8pLgGLwo78Vw", "has-applelpm", // non-gestalt-key
     "KGlZoljMyZQSxfhROj0IFg", "data-plan",
     "khE304sL66yzf7K+2e+0cw", "DeviceSupportsUSBTypeCDisplay",
     "kj5Hw7ZKY+hm7ZCs0Caznw", "ScreenCaptureWidth",
@@ -755,7 +755,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oOV1jhJbdV3AddkcCg0AEA", NULL, // MetalPerfLevelCapabilityOne4IOS (mismatched)
     "oPeik/9e8lQWMszEjbPzng", "ArtworkTraits",
     "OPzhvROZUqCZhgYMyve5BA", "sms",
-    "OtnrTIhWBtyPo45BcApMTw", NULL, // non-gestalt-key, IODeviceTree:/product/haptics, starts with s, haptics
+    "OtnrTIhWBtyPo45BcApMTw", "supports-3rd-party-haptics", // non-gestalt-key
     "oTuH4/axV9s11/jKxB2z2A", "ui-no-parallax", // non-gestalt-key
     "Ov9G2lRzQYbUyBYJ0KCMhA", "function-button_skey", // non-gestalt-key
     "OWi11Urd09rDmPVy1z5dOQ", "CoverglassSerialNumber",
@@ -804,7 +804,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Q/BI7GKNZY13TpxbqA8nhQ", "rear-max-video-fps-720p", // non-gestalt-key
     "Q1Ty5w8gxMWHx3p4lQ1fhA", "MLBSerialNumber",
     "Q2jR+AUT9PTHUrP/mkdfxQ", "NVRAMDictionary",
-    "Q2y7EshBFzIifIPKAPVBBA", NULL, // non-gestalt-key, IODeviceTree:/product/camera, starts with c, CameraAppUIVersion
+    "Q2y7EshBFzIifIPKAPVBBA", "camera-ui-version", // non-gestalt-key
     "q3JBrhzy5fyJ1+LAITPW0w", "BluetoothLE2Capability",
     "Q4b8YIwPgnznT5hs4qXjaA", "rear-burst-image-duration", // non-gestalt-key
     "q4cLktMwtrx8dCJAQTeqTg", "PanoramaCameraCapability",
