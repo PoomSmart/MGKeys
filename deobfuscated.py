@@ -1057,6 +1057,7 @@ keys = {
     "zP3kBA1Biwz2d6PTIIbmUQ": "ActivationProtocol",
     "zPHFWx4ZItDiTXNT2onrWQ": "MobileEquipmentInfoDisplayCSN",
     "ZrKzmIA8JSV7qJtGrX3yIw": "ephemeral-data-mode",
+    "ZT0Z0SqGF/esuJWDmk8mGw": "single-camera-portrait",
     "zxMIgVSILN6S5ee6MZhf+Q": "NFCRadio",
     "ZYqko/XM5zD3XBfN5RmaXA": "MedusaPinnedAppCapability",
 }

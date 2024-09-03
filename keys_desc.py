@@ -57,7 +57,6 @@ unknown_keys_desc = {
     "xgs6iXf0KFHUJ9d4FKaRYg": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with s, DeviceSupportsGrey",
     "yeQy+rgNoD7+YIY6mSVOhg": f"{NON_KEY_DESC}, IODeviceTree:/opal, starts with e",
     "Zg7DduDoSCy6vY6mhy3n2w": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with i, DeviceSupportsDynamicIsland",
-    "ZT0Z0SqGF/esuJWDmk8mGw": f"{NON_KEY_DESC}, IODeviceTree:/product/camera, starts with s, DeviceSupportsSingleCameraPortrait",
 }
 
 known_keys_desc = {
@@ -269,4 +268,5 @@ known_keys_desc = {
     "zJUWenIp94snlzBD1cub3g": NON_KEY_DESC,
     "znvmheFkjr6hiqIK9TrCVw": NON_KEY_DESC,
     "ZrKzmIA8JSV7qJtGrX3yIw": NON_KEY_DESC,
+    "ZT0Z0SqGF/esuJWDmk8mGw": NON_KEY_DESC,
 }

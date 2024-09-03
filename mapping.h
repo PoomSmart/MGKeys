@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 1060 keys (95.07%)
+// Deobfuscated: 1061 keys (95.16%)
 // Total gestalt keys: 862 keys
 // Deobfuscated gestalt: 861 keys (99.88%)
 // Unexplored: 0 keys
@@ -1119,7 +1119,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "zP3kBA1Biwz2d6PTIIbmUQ", "ActivationProtocol",
     "zPHFWx4ZItDiTXNT2onrWQ", "MobileEquipmentInfoDisplayCSN",
     "ZrKzmIA8JSV7qJtGrX3yIw", "ephemeral-data-mode", // non-gestalt-key
-    "ZT0Z0SqGF/esuJWDmk8mGw", NULL, // non-gestalt-key, IODeviceTree:/product/camera, starts with s, DeviceSupportsSingleCameraPortrait
+    "ZT0Z0SqGF/esuJWDmk8mGw", "single-camera-portrait", // non-gestalt-key
     "zxMIgVSILN6S5ee6MZhf+Q", "NFCRadio",
     "ZYqko/XM5zD3XBfN5RmaXA", "MedusaPinnedAppCapability",
     NULL, NULL
