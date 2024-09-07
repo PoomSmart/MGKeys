@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 862 keys
-// Deobfuscated: 861 keys (99.88%)
+// Total: 859 keys
+// Deobfuscated: 858 keys (99.88%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -483,11 +483,9 @@ static const struct tKeyMapping keyMappingTable[] = {
     "LJ8aZhTg8lXUeVxHzT+hMw", "TimeSyncCapability",
     "LkWb+FyA1+ef2UD1Fx+kAw", "RearFacingCameraHDROnCapability",
     "lo3szoQ4sLy7o3+ZD0GcAQ", "ambient-light-sensor",
-    "Lrs7l5cKWJ1Gk5ZzgMAKyQ", "sandman-support",
     "lSpe1QHIya0aeNrjLTtaJA", "hidpi",
     "LTI8wHvEYKy8zR1IXBW1uQ", "ArtworkTraitDisplayGamut",
     "lU5WxNTusw4lrrBSEBiZeQ", "ThreadRadioMacAddressForProvisioningData",
-    "lUryPpLkvlffpEKiNnEchA", "slow-letterpress-rendering",
     "LUy+wqFiBmou5hwM5OWbmA", "OceanComputeCarrierSlot",
     "LvCIFE6lOM10QDqIEyYWRA", "PeekUICapability",
     "lwHRTZNO5Jq87pVlzdNGIA", "DeviceSupports720p",
@@ -524,7 +522,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "MYKMJDMFE/lhvOVXgtDNuw", "RendersLetterPressSlowly",
     "mZfUC7qo4pURNhyMHZ62RQ", "BuildVersion",
     "n/aVhqpGjESEbIjvJbEHKg", "SphereCapability",
-    "n/G0fQIQiom+pb4tHA4Mmw", "device-colors",
     "n6blIRZ4IumqHl/toNJcpg", "ScreenCaptureHeight",
     "N8lZxRgC7lfdRS3dRLn+Ag", "HEVCDecoder8bitSupported",
     "na6PSBfq05lkAfWkwAwaGg", "ExternalPowerSourceConnected",

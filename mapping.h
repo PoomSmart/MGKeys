@@ -2,8 +2,8 @@
 
 // Total: 1115 keys
 // Deobfuscated: 1092 keys (97.94%)
-// Total gestalt keys: 862 keys
-// Deobfuscated gestalt: 861 keys (99.88%)
+// Total gestalt keys: 859 keys
+// Deobfuscated gestalt: 858 keys (99.88%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -632,12 +632,12 @@ static const struct tKeyMapping keyMappingTable[] = {
     "lo3szoQ4sLy7o3+ZD0GcAQ", "ambient-light-sensor",
     "lOIgg/0YE73mNKAiUbUiWQ", "raw-panel-serial-number", // non-gestalt-key
     "lR7sjp4tOz3cMWoEMlZrLA", NULL, // non-gestalt-key, IODeviceTree:/product, starts with u, DevicePrefers3DBuildingStrokes
-    "Lrs7l5cKWJ1Gk5ZzgMAKyQ", "sandman-support",
+    "Lrs7l5cKWJ1Gk5ZzgMAKyQ", "sandman-support", // non-gestalt-key
     "lSpe1QHIya0aeNrjLTtaJA", "hidpi",
     "LTI8wHvEYKy8zR1IXBW1uQ", "ArtworkTraitDisplayGamut",
     "lU5WxNTusw4lrrBSEBiZeQ", "ThreadRadioMacAddressForProvisioningData",
     "Lu6Mgo1O0+EoGMk1OtnMRg", "rear-max-video-fps-1080p", // non-gestalt-key
-    "lUryPpLkvlffpEKiNnEchA", "slow-letterpress-rendering",
+    "lUryPpLkvlffpEKiNnEchA", "slow-letterpress-rendering", // non-gestalt-key
     "LUy+wqFiBmou5hwM5OWbmA", "OceanComputeCarrierSlot",
     "LvCIFE6lOM10QDqIEyYWRA", "PeekUICapability",
     "lvmEUCUwik8sO0yGU1rBOA", "rear-max-video-fps-4k", // non-gestalt-key
@@ -690,7 +690,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "mZfUC7qo4pURNhyMHZ62RQ", "BuildVersion",
     "MzxVeXMzucmEMx2lw8Pg1Q", "opposed-power-vol-buttons", // non-gestalt-key
     "n/aVhqpGjESEbIjvJbEHKg", "SphereCapability",
-    "n/G0fQIQiom+pb4tHA4Mmw", "device-colors",
+    "n/G0fQIQiom+pb4tHA4Mmw", "device-colors", // non-gestalt-key
     "n6blIRZ4IumqHl/toNJcpg", "ScreenCaptureHeight",
     "N6PmkZnK1VRMvFokb0jS/Q", "fillmore", // non-gestalt-key
     "N8lZxRgC7lfdRS3dRLn+Ag", "HEVCDecoder8bitSupported",
