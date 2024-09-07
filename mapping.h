@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1115 keys
-// Deobfuscated: 1092 keys (97.94%)
+// Deobfuscated: 1094 keys (98.12%)
 // Total gestalt keys: 859 keys
 // Deobfuscated gestalt: 858 keys (99.88%)
 // Unexplored: 0 keys
@@ -448,7 +448,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "grEfqkFsEkgnJH1nl9sodw", "effective-production-status-sep",
     "gukw/2mRLE2GyqXJFEu7ng", "rear-hdr-on", // non-gestalt-key
     "guykxGaRwHdenUK8fJRl8w", "gamekit",
-    "GvmsjQ/68T7do2CJxUhMig", NULL, // non-gestalt-key, IODeviceTree:/product, starts with b, RemoteBluetoothAddressData
+    "GvmsjQ/68T7do2CJxUhMig", "bluetooth-dev-addr0", // non-gestalt-key
     "GxXmRWHjsY5yAVhMfCH6Lg", "BridgeBuild",
     "H+r3Nk8ByXIY9ub/M8broA", "DeviceSupportsHeartHealthAlerts",
     "h0OUwg53vKp+IPdzLG4NrA", "mesa", // non-gestalt-key
@@ -935,7 +935,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "TucF/tpjeAln1I0f3g0K3w", "does-not-support-gamekit", // non-gestalt-key
     "tUIqcYyzHuWBvBQHsLk8IQ", "international-settings",
     "tuwdHA2NDGnLajCo5K3UUA", "voice-control",
-    "twWCmmM9I0dxwv7Zs9v48Q", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with a, DeviceSupportseARC
+    "twWCmmM9I0dxwv7Zs9v48Q", "audio-earc-support", // non-gestalt-key
     "TXZxlSojLMQyLqusm9aa/g", "DeviceEnclosureRGBColor",
     "Ty4lICNS1jQh45sB3wQd7A", "AlwaysOnDisplayMaxMemory",
     "Ty5/C8UDfdjcdR853kulmA", "FrontFacingCameraBurstCapability",
