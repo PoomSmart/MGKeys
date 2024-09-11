@@ -127,6 +127,7 @@ known_keys_desc = {
     "h0OUwg53vKp+IPdzLG4NrA": NON_KEY_DESC,
     "H4f1y1sEDUUUROeb4FZJ4A": NON_KEY_DESC,
     "h9v96tCehBWUil/aJ7UrcA": NON_KEY_DESC,
+    "HdWhWK8BN8j/O9k8/OHblQ": NON_KEY_DESC,
     "hh/NoWpEoq1VF4lGDdPUpw": NON_KEY_DESC,
     "hK/qlAUuu8u6SvIRkKmjQQ": NON_KEY_DESC,
     "hRBbURJnULvXsPGk42A8Ng": NON_KEY_DESC,

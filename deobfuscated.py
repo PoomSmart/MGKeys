@@ -984,7 +984,7 @@ keys = {
     "WbcphnnzI6Yb5r/AzwiyUA": "mix-n-match-prevention-status",
     "wBVgxg3VYUU5gawcgq7MXg": "SupportedKeyboards",
     "WC6wwFV23k19BlUQIAwDTg": "RearFacingCameraMaxVideoZoomFactor",
-    "Wft7kODl9Y2uX/sb47GoEA": "supports-aod-vibrancy"
+    "Wft7kODl9Y2uX/sb47GoEA": "supports-aod-vibrancy",
     "wH7fRq4TDdYG2pN1KDQW/A": "FrontFacingIRStructuredLightProjectorModuleSerialNumber",
     "whbsdxpLirBFgUbLH3+0JA": "DeviceSupportsAdaptiveMapsUI",
     "wlxZYdEZITDTzgs/OnnV+Q": "personal-hotspot",

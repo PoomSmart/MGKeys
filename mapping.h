@@ -2,8 +2,8 @@
 
 // Total: 1124 keys
 // Deobfuscated: 1103 keys (98.13%)
-// Total gestalt keys: 866 keys
-// Deobfuscated gestalt: 865 keys (99.88%)
+// Total gestalt keys: 865 keys
+// Deobfuscated gestalt: 864 keys (99.88%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -468,7 +468,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "h9v96tCehBWUil/aJ7UrcA", "ui-pinned-app", // non-gestalt-key
     "HBf5L3fT108kze+YWeiy+w", "VSHCompensationMinimumNits",
     "HCzWusHQwZDea6nNhaKndw", "DeviceSupportsCollisionSOS",
-    "HdWhWK8BN8j/O9k8/OHblQ", "supports-always-listening",
+    "HdWhWK8BN8j/O9k8/OHblQ", "supports-always-listening", // non-gestalt-key
     "heP+NTlvkhJ2zzWIUznawA", "MobileEquipmentInfoBaseProfile",
     "hewg+QX1h57eGJGphdCong", "DeviceSupportsPortraitLightEffectFilters",
     "hfs43coKE3iWlCwnqPgBpg", "IceFallID",
