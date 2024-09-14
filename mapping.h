@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1124 keys
-// Deobfuscated: 1103 keys (98.13%)
+// Deobfuscated: 1105 keys (98.31%)
 // Total gestalt keys: 865 keys
 // Deobfuscated gestalt: 864 keys (99.88%)
 // Unexplored: 0 keys
@@ -623,7 +623,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "LE2kQ7U1iM32AmlhYvlagg", "SavageSerialNumber",
     "LeSRsiLoJCMhjn6nd6GWbQ", "FirmwareVersion",
     "Leuy56dCZmAMYoVCQGTfPA", "DeviceSupportsPeriodicALSUpdates",
-    "lFFadhW8h/hfpcu601hyqg", NULL, // non-gestalt-key, IODeviceTree:/M2qC9+75568xA1E3I+r+dg, starts with h, DeviceSupportsInductiveCharging
+    "lFFadhW8h/hfpcu601hyqg", "has-ironman-charging", // non-gestalt-key
     "Lg1EJX11Jb7EbveB6+YgVQ", "720p",
     "lHMDJnC58naUz2rOCJyVIw", "IntegratedCircuitCardIdentifier2",
     "li+w2foswFu0srn5UxdOug", "arm64e",
@@ -653,7 +653,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "M+eWZ6Zk/aJIsnIrv4zdAg", "unique-chip-id", // non-gestalt-key
     "m+FD6mX8VZzP95hOhM+jow", "hw-encode-snapshots",
     "M+WPVivF4iTnm1CC8c6h+A", "DeviceAlwaysPrewarmActuator",
-    "M2qC9+75568xA1E3I+r+dg", NULL, // non-gestalt-key, IODeviceTree:/, starts with s
+    "M2qC9+75568xA1E3I+r+dg", "smc-ext-charger", // non-gestalt-key
     "m4alZgBFhxNuTZyrEM2nbA", "MacFormFactor",
     "m4UsCAgXhbdnwLebiyKMiw", "UIReachability",
     "m7lDS+oP8q0pGg+CO7RvPg", "DisplayBootRotation",
