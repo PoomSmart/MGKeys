@@ -17,42 +17,50 @@ TABLE = 'keyMappingTable'
 TABLE_LEGACY = 'keyMappingTableLegacy'
 POTFILE = 'potfile'
 GEN_NON_GESTALT_KEY = True
+USE_MAPPING_AS_SOURCE = False
 
 POTFILE_CONTENT = ''
 
 def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
-    global POTFILE_CONTENT
     keys = the_keys.copy()
     mapping = {}
     deobfuscated_keys = 0
     deobfuscated_gestalt_keys = 0
     non_gestalt_keys = 0
     unexplored_keys = 0
+
+    def add_key(hash):
+        global POTFILE_CONTENT
+        nonlocal deobfuscated_gestalt_keys, non_gestalt_keys, deobfuscated_keys, only_gestalt
+        if calculate_obfuscated_key(keys[hash]) != hash:
+            print(f'Error: {hash} is not deobfuscated to {keys[hash]}')
+            exit(1)
+        md5 = md5_string_for_obfuscated_key(hash)
+        if not only_gestalt:
+            POTFILE_CONTENT += f'{md5}:MGCopyAnswer{keys[hash]}\n'
+        keys[hash] = keys[hash].replace('"', '\\"')
+        if hash in known_keys_desc:
+            desc = known_keys_desc[hash]
+            if NON_KEY_DESC in desc:
+                if only_gestalt or not GEN_NON_GESTALT_KEY:
+                    return False
+                non_gestalt_keys += 1
+            else:
+                deobfuscated_gestalt_keys += 1
+            mapping[hash] = f'"{keys[hash]}", // {desc}'
+        else:
+            deobfuscated_gestalt_keys += 1
+            mapping[hash] = f'"{keys[hash]}",'
+        deobfuscated_keys += 1
+        return True
+
     with open(hashes_file, 'r') as hashes:
         with open(mapping_file, 'w') as out:
             for raw_hash in hashes:
                 hash = raw_hash.strip()
                 if hash in keys:
-                    if calculate_obfuscated_key(keys[hash]) != hash:
-                        print(f'Error: {hash} is not deobfuscated to {keys[hash]}')
-                        exit(1)
-                    md5 = md5_string_for_obfuscated_key(hash)
-                    if not only_gestalt:
-                        POTFILE_CONTENT += f'{md5}:MGCopyAnswer{keys[hash]}\n'
-                    keys[hash] = keys[hash].replace('"', '\\"')
-                    if hash in known_keys_desc:
-                        desc = known_keys_desc[hash]
-                        if NON_KEY_DESC in desc:
-                            if only_gestalt or not GEN_NON_GESTALT_KEY:
-                                continue
-                            non_gestalt_keys += 1
-                        else:
-                            deobfuscated_gestalt_keys += 1
-                        mapping[hash] = f'"{keys[hash]}", // {desc}'
-                    else:
-                        deobfuscated_gestalt_keys += 1
-                        mapping[hash] = f'"{keys[hash]}",'
-                    deobfuscated_keys += 1
+                    if not add_key(hash):
+                        continue
                 elif hash in unknown_keys_desc:
                     desc = unknown_keys_desc[hash]
                     if NON_KEY_DESC in desc:
@@ -66,7 +74,11 @@ def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
             if not only_gestalt:
                 for hash in keys:
                     if hash not in mapping:
-                        print(f'Warning: {hash} not found in {hashes_file}')
+                        if USE_MAPPING_AS_SOURCE:
+                            if not add_key(hash):
+                                continue
+                        else:
+                            print(f'Warning: {hash} not found in {hashes_file}')
             mapping = dict(sorted(mapping.items(), key=lambda x: x[0].lower()))
             total = len(mapping)
             out.write('#include "struct.h"\n\n')

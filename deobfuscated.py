@@ -583,6 +583,7 @@ keys = {
     "kyszW/uUGJFTVNQwFaf6og": "DeviceSupportsEnhancedAC3",
     "kyxFFGn+VS4L9a/bsvm19Q": "Image4Supported",
     "KzUQgIyBRinkweVMNUCOWA": "ArcModuleSerialNumber",
+    "l/bXsek3q5yjYDwoPAktVQ": "DeviceSupportsAlwaysAPVoiceTrigger",
     "l/n0Z7pMB8k0GyTKz3v3Tw": "AirplaneMode",
     "L+KOzmOzO5DiJUZl21QGVg": "StarkCapability",
     "l1CWke97nbaAcWDqA6T5LA": "DeviceSupportsElton",

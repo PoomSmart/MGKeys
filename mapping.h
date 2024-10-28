@@ -1,9 +1,9 @@
 #include "struct.h"
 
-// Total: 1124 keys
-// Deobfuscated: 1105 keys (98.31%)
-// Total gestalt keys: 865 keys
-// Deobfuscated gestalt: 864 keys (99.88%)
+// Total: 1126 keys
+// Deobfuscated: 1106 keys (98.22%)
+// Total gestalt keys: 866 keys
+// Deobfuscated gestalt: 865 keys (99.88%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -604,6 +604,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "kyxFFGn+VS4L9a/bsvm19Q", "Image4Supported",
     "KzUQgIyBRinkweVMNUCOWA", "ArcModuleSerialNumber",
     "L+KOzmOzO5DiJUZl21QGVg", "StarkCapability",
+    "l/bXsek3q5yjYDwoPAktVQ", "DeviceSupportsAlwaysAPVoiceTrigger",
     "l/n0Z7pMB8k0GyTKz3v3Tw", "AirplaneMode",
     "l1CWke97nbaAcWDqA6T5LA", "DeviceSupportsElton",
     "l1MfXa14uBR9cvO8D9wc9w", "ui-floating-live-app", // non-gestalt-key
@@ -726,6 +727,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "NrXe/KHDNhJ4r2SC2bMQyA", "any-telephony",
     "NsIeRLGugrogpTZiayi1VA", "country-of-origin", // non-gestalt-key
     "nSo8opze5rFk+EdBoR6tBw", "RestrictedCountryCodes",
+    "NsUsZwajdZDN+suOIwkPvg", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with s, DeviceSupportsAlwaysAPVoiceTrigger
     "NszbG6qiAztVal4mpDQRkg", "CameraAppUIVersion",
     "nteaxwXwZWYUI9z46VDRnA", "video-camera",
     "nudr7/i2XcxAX6widrWShg", "certificate-security-mode", // non-gestalt-key
