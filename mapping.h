@@ -1,9 +1,9 @@
 #include "struct.h"
 
-// Total: 1126 keys
-// Deobfuscated: 1106 keys (98.22%)
-// Total gestalt keys: 866 keys
-// Deobfuscated gestalt: 865 keys (99.88%)
+// Total: 1128 keys
+// Deobfuscated: 1108 keys (98.23%)
+// Total gestalt keys: 867 keys
+// Deobfuscated gestalt: 866 keys (99.88%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -507,6 +507,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ibhfX8FQ6b809N632Ey98g", "Allow32BitApps",
     "iBLsDETxB4ATmspGucaJyg", "IsLargeFormatPhone",
     "IBqcPacFMPIX8HMWob444A", "AirDropCapability",
+    "IeLBv/yfMuo0Xyt5DncOEg", "untrusted-remote-sysdiag", // non-gestalt-key
     "ieuwDGiHrHoYRjSl6gT+1A", "supports-concurrent-hp-lp-mics", // non-gestalt-key
     "IFBSPGnQVFrGFW+ujtZu6Q", "RegionalBehaviorNTSC",
     "IFHQSJ65DoElWQl/+eCfNQ", "fast-switch-options", // non-gestalt-key
@@ -1023,6 +1024,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "wOVK1nhmiAawowdbIwgyaQ", "RearFacingCameraVideoCaptureFPS",
     "WPEkba78QeFFU/wgqpOx6w", "UserIntentPhysicalButtonNormalizedCGRect",
     "Wr2SycNVQwBrdup3ok+LxQ", "SpeakerCalibrationSpTS",
+    "WTpITolfF3P09otI1pn2gw", "DeviceSupportsUntrustedRemoteSysdiagnose",
     "wtUF1NceYeLT6IHovZvocw", "DeviceSubBrand",
     "wu9wv8HhpA95iHT4Yyez7A", "SecurityDomain",
     "WXi7NQbOKnEX4vPQFeZAdQ", "DeviceSupportsSiriBargeIn",
