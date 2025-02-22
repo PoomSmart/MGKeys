@@ -71,14 +71,13 @@ def map(hashes_file, mapping_file, table_name, only_gestalt, the_keys):
                 else:
                     unexplored_keys += 1
                     mapping[hash] = 'NULL,'
-            if not only_gestalt:
-                for hash in keys:
-                    if hash not in mapping:
-                        if USE_MAPPING_AS_SOURCE:
-                            if not add_key(hash):
-                                continue
-                        else:
-                            print(f'Warning: {hash} not found in {hashes_file}')
+            for hash in keys:
+                if hash not in mapping:
+                    if USE_MAPPING_AS_SOURCE:
+                        if not add_key(hash):
+                            continue
+                    else:
+                        print(f'Warning: {hash} not found in {hashes_file}')
             mapping = dict(sorted(mapping.items(), key=lambda x: x[0].lower()))
             total = len(mapping)
             out.write('#include "struct.h"\n\n')
