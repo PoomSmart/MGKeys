@@ -968,6 +968,7 @@ keys = {
     "VGDDUFPWHbX/Ie9RSI0yDQ": "DeviceIsMuseCapable",
     "VHTcx7WQq0V7YgGKZisRWA": "FDRSealingStatus",
     "vIccod02kDxScKF5s2h6OA": "BasebandUniqueId",
+    "VikxgsK3LmzdJGsKgCEZLA": "IsFactorySignedRestore",
     "vl45ziHlkqzh1Yt6+M9vBA": "displayport",
     "VLfT+eziZYKNjRASM6ntnQ": "FirmwareNonce",
     "vme9Buk6XiWFCXoHApxNFA": "MarketingDeviceFamilyName",
