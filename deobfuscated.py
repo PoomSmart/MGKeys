@@ -737,6 +737,7 @@ keys = {
     "oLjiDs+BWEdMVbjE0x6cnw": "DeviceSupportsStudioLightPortraitPreview",
     "OmiBcaNEpjOcuQrO5/Yrbw": "defaults",
     "OoFyZnd3oLS2Lw/KQTccGA": "SupportsTouchRemote",
+    "oOV1jhJbdV3AddkcCg0AEA": "apple-graphics-performance-tier",
     "oPeik/9e8lQWMszEjbPzng": "ArtworkTraits",
     "OPzhvROZUqCZhgYMyve5BA": "sms",
     "OtnrTIhWBtyPo45BcApMTw": "supports-3rd-party-haptics",

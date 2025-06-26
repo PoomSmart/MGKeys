@@ -18,7 +18,6 @@ unknown_keys_desc = {
     "lR7sjp4tOz3cMWoEMlZrLA": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with u, DevicePrefers3DBuildingStrokes",
     "mug/QuG6jZ3CYR9p7OWQaw": f"{NON_KEY_DESC}, IODeviceTree:/opal, starts with b",
     "NsUsZwajdZDN+suOIwkPvg": f"{NON_KEY_DESC}, IODeviceTree:/product/audio, starts with s, DeviceSupportsAlwaysAPVoiceTrigger",
-    "oOV1jhJbdV3AddkcCg0AEA": "MetalPerfLevelCapabilityOne4IOS (mismatched)",
     "P1djMN/L3B6otgGpO9WYkw": f"{NON_KEY_DESC}, IODeviceTree:/, starts with s, SiliconBringupBoard",
     "t56wS9db+T2F2bxBpYSX8Q": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/disp0, starts with e, DisplayDriverICChipID",
     "uNNFSosc1xQM/7bwlrqLXA": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/aop/iop-aop-nub/als, starts with m, DisplayMaxNits",

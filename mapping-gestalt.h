@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 867 keys
-// Deobfuscated: 866 keys (99.88%)
+// Total: 868 keys
+// Deobfuscated: 868 keys (100.0%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -577,7 +577,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ol92SaBpqIvQs+KBljuwGA", "kConferenceCallType",
     "oLjiDs+BWEdMVbjE0x6cnw", "DeviceSupportsStudioLightPortraitPreview",
     "OoFyZnd3oLS2Lw/KQTccGA", "SupportsTouchRemote",
-    "oOV1jhJbdV3AddkcCg0AEA", NULL, // MetalPerfLevelCapabilityOne4IOS (mismatched)
+    "oOV1jhJbdV3AddkcCg0AEA", "apple-graphics-performance-tier",
     "oPeik/9e8lQWMszEjbPzng", "ArtworkTraits",
     "OPzhvROZUqCZhgYMyve5BA", "sms",
     "OWi11Urd09rDmPVy1z5dOQ", "CoverglassSerialNumber",
@@ -760,6 +760,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "VGDDUFPWHbX/Ie9RSI0yDQ", "DeviceIsMuseCapable",
     "VHTcx7WQq0V7YgGKZisRWA", "FDRSealingStatus",
     "vIccod02kDxScKF5s2h6OA", "BasebandUniqueId",
+    "VikxgsK3LmzdJGsKgCEZLA", "IsFactorySignedRestore",
     "vl45ziHlkqzh1Yt6+M9vBA", "displayport",
     "VLfT+eziZYKNjRASM6ntnQ", "FirmwareNonce",
     "vme9Buk6XiWFCXoHApxNFA", "MarketingDeviceFamilyName",
