@@ -3,7 +3,6 @@ NON_KEY_DESC = 'non-gestalt-key'
 unknown_keys_desc = {
     "/4LCTfMhvzuiK6b557ir5Q": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/isp, starts with o, LiDARCalibrationPrCL",
     "1HWDBfJwBJZ8TDHcPDafmQ": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard",
-    "3Hj0jFscGt094g65Fag7eQ": f"{NON_KEY_DESC}, Hardware platform, starts with t",
     "8kcKPCGGyCpf66MMl5TVkA": f"{NON_KEY_DESC}, IODeviceTree:/multi-touch, starts with m, MultiTouchMaxBootTime",
     "9f5ODNAt2gufqSI82eYnLw": f"{NON_KEY_DESC}, IODeviceTree:/multi-touch, starts with c, DeviceSupportsCorrectedTemperature",
     "bbyFCcrPE+k6ZXIVbXSFUw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with u, DevicePrefersBuildingStrokes",
