@@ -4,7 +4,11 @@ MGKeys.playground/playground.xcworkspace
 .DS_Store
 
 # Input
-libMobileGestalt*.dylib
+*.ipsw
+*.dylib*
+dyld_shared_cache/
+extracted_dylibs/
+*__*
 
 # Executables
 util
@@ -12,6 +16,8 @@ util
 # Artifacts
 *.txt
 !false-positive.txt
+checksums*
+*fcs_keys.json
 potfile
 
 # Experimental

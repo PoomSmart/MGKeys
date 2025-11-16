@@ -9,7 +9,28 @@ OBFUSCATED="discover-obfuscated.txt"
 OBFUSCATED_MAPPED="discover-obfuscated-mapped.txt"
 MAYBE_NON_GESTALT_KEYS="maybe-non-gestalt-keys.txt"
 
-nm -g --defined-only $DYLIB | awk '{print $3}' | grep "^_MobileGestalt_" | grep -v "_obj$" | sed -e 's/^_MobileGestalt_get_//' -e 's/^_MobileGestalt_copy_//' | awk '{print toupper(substr($0,1,1))substr($0,2)}' > $READABLE
+# Try llvm-nm first (most robust), fallback to nm, then strings
+if command -v llvm-nm &> /dev/null && llvm-nm -g --defined-only $DYLIB 2>/dev/null | awk '{print $3}' | grep "^_MobileGestalt_" | grep -v "_obj$" | sed -e 's/^_MobileGestalt_get_//' -e 's/^_MobileGestalt_copy_//' | awk '{print toupper(substr($0,1,1))substr($0,2)}' > $READABLE 2>/dev/null && [ -s $READABLE ]; then
+    echo "Using llvm-nm for symbol extraction"
+elif nm -g --defined-only $DYLIB 2>/dev/null | awk '{print $3}' | grep "^_MobileGestalt_" | grep -v "_obj$" | sed -e 's/^_MobileGestalt_get_//' -e 's/^_MobileGestalt_copy_//' | awk '{print toupper(substr($0,1,1))substr($0,2)}' > $READABLE 2>/dev/null && [ -s $READABLE ]; then
+    echo "Using nm for symbol extraction"
+else
+    echo "Warning: nm tools failed, using strings extraction (may include false positives)"
+    # Use strings with GNU strings if available, otherwise BSD strings
+    if command -v gstrings &> /dev/null; then
+        gstrings -a $DYLIB 2>/dev/null | grep "^_MobileGestalt_" | grep -v "_obj$" | sed -e 's/^_MobileGestalt_get_//' -e 's/^_MobileGestalt_copy_//' | awk '{print toupper(substr($0,1,1))substr($0,2)}' | sort -u > $READABLE
+    else
+        # Force strings to work even with malformed Mach-O
+        /usr/bin/strings - < $DYLIB 2>/dev/null | grep "^_MobileGestalt_" | grep -v "_obj$" | sed -e 's/^_MobileGestalt_get_//' -e 's/^_MobileGestalt_copy_//' | awk '{print toupper(substr($0,1,1))substr($0,2)}' | sort -u > $READABLE
+    fi
+fi
+
+if [ ! -s $READABLE ]; then
+    echo "Error: Failed to extract any symbols from $DYLIB"
+    exit 1
+fi
+
+echo "Extracted $(wc -l < $READABLE | tr -d ' ') symbols"
 clang -framework Foundation util.m -o util -Wno-deprecated-declarations
 
 rm -f $OBFUSCATED $OBFUSCATED_MAPPED

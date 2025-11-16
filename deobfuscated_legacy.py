@@ -9,6 +9,7 @@ keys_legacy = {
     "1BLBa4NFd3uQekgmXCBOCA": "BluetoothCapability",
     "1ciXUB/TiXolnLnb9oa0+Q": "EncryptedDataPartitionCapability",
     "1h6a0FG2nwMsUDVnYfaxxA": "MainScreenOrientation",
+    "cHla4KIe1wv0OvpRVrzy/w": "hide-non-default-apps",
     "1pkwRjExGQ/Xzy/LnAC98A": "LoadThumbnailsWhileScrollingCapability",
     "1pwZX5NfL1wgOY5dftDTmA": "CameraRestriction",
     "1tvy6WfYKVGumYi6Y8E5Og": "AccelerometerCapability",
