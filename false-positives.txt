@@ -5,6 +5,7 @@ AMFDRDecodeCertificate
 AMFDRDecodeTrustObject
 AmountRestoreAvailable
 AppleBiometricServices
+BatteryCurrentCapacity
 BBUpdaterExtremeCreate
 BluetoothLE2Capability
 CalibrationDataPresent

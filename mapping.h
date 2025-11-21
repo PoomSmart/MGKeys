@@ -1,10 +1,10 @@
 #include "struct.h"
 
-// Total: 1176 keys
-// Deobfuscated: 1137 keys (96.68%)
-// Total gestalt keys: 915 keys
-// Deobfuscated gestalt: 895 keys (97.81%)
-// Unexplored: 20 keys
+// Total: 1175 keys
+// Deobfuscated: 1137 keys (96.77%)
+// Total gestalt keys: 914 keys
+// Deobfuscated gestalt: 895 keys (97.92%)
+// Unexplored: 19 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+1TeoctsaQC55zwHZ6MESg", "ProductTypeDescForAudio",
@@ -269,7 +269,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "b2BKAEe88VRfp2WXEjJOyA", "SIMStatus2",
     "b4e7mEbjqfewD6oXmo9U5g", NULL,
     "b5K3g59Aj+Cc982n9FQv8A", "display-rotation", // non-gestalt-key
-    "BatteryCurrentCapacity", NULL,
     "Bb01MNJ0ezfSmzucKZXrsg", "DynamicFunctionRowSerialNumber",
     "bbtR9jQx50Fv5Af/affNtA", "PhysicalHardwareNameString",
     "bbyFCcrPE+k6ZXIVbXSFUw", NULL, // non-gestalt-key, IODeviceTree:/product, starts with u, DevicePrefersBuildingStrokes

@@ -1,8 +1,8 @@
 #include "struct.h"
 
-// Total: 915 keys
-// Deobfuscated: 895 keys (97.81%)
-// Unexplored: 20 keys
+// Total: 914 keys
+// Deobfuscated: 895 keys (97.92%)
+// Unexplored: 19 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+1TeoctsaQC55zwHZ6MESg", "ProductTypeDescForAudio",
@@ -207,7 +207,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "AX/UKxSHwm+OuFRIdvNAfg", "DeviceSupportsAutoLowLightVideo",
     "b2BKAEe88VRfp2WXEjJOyA", "SIMStatus2",
     "b4e7mEbjqfewD6oXmo9U5g", NULL,
-    "BatteryCurrentCapacity", NULL,
     "Bb01MNJ0ezfSmzucKZXrsg", "DynamicFunctionRowSerialNumber",
     "bbtR9jQx50Fv5Af/affNtA", "PhysicalHardwareNameString",
     "BdS2M69XMEc9v/jsHBC3Eg", "ThreadRadioCapability",
