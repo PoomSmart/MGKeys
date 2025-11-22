@@ -341,6 +341,7 @@ keys = {
     "DxmNcovWWN464hwZdGfonA": "CameraButtonNormalizedCGRect",
     "dz7F2FFseAysXoUZqaANZw": "DeviceSupportsEUCapabilities",
     "DzLC4o1jZ4hWtP8aB6An6g": "SDIOManufacturerTuple",
+    "e+pTfaabi1k1kfdk2vl1Kw": "luna-serial-number",
     "e0HV2blYUDBk/MsMEQACNA": "DeviceSupportsBreathingDisturbancesMeasurements",
     "E0wrprlNya8gngoVpPXj2w": "DeviceSupportsCorrectedTemperature",
     "E4vGMChwcVRKD8hMVxnRvg": "DeviceSupportsUSLegallyCompliantBloodOxygen",
