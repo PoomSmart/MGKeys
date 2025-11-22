@@ -1,5 +1,6 @@
 /usr/libexec/lockdownd
 720PPlaybackCapability
+airPlaySecureVideoPath
 AMFDRCreateWithOptions
 AMFDRDecodeCertificate
 AMFDRDecodeTrustObject

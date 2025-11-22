@@ -1,8 +1,8 @@
 #include "struct.h"
 
-// Total: 914 keys
-// Deobfuscated: 895 keys (97.92%)
-// Unexplored: 19 keys
+// Total: 913 keys
+// Deobfuscated: 895 keys (98.03%)
+// Unexplored: 18 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+1TeoctsaQC55zwHZ6MESg", "ProductTypeDescForAudio",
@@ -185,7 +185,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "aDuN0jCthN9lLu4qQ9OrEA", "CameraIMUDistanceType",
     "AFXhxraF1bvyaCMlBIOZPA", "RequiredBatteryLevelForSoftwareUpdate",
     "AGrtXj3nqzz8KFfFHK7/sA", "ThreadRadioMacAddressForProvisioning",
-    "airPlaySecureVideoPath", NULL,
     "Aixt/MEN2O2B7f+8m4TxUA", "HasExtendedColorDisplay",
     "AJFQheZDyUbvI6RmBMT9Cg", "HasBaseband",
     "AklmqJyJMChzHsYT0aiBbw", "LaunchTimeLimitScaleSupported",

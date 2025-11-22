@@ -1,10 +1,10 @@
 #include "struct.h"
 
-// Total: 1175 keys
-// Deobfuscated: 1137 keys (96.77%)
-// Total gestalt keys: 914 keys
-// Deobfuscated gestalt: 895 keys (97.92%)
-// Unexplored: 19 keys
+// Total: 1174 keys
+// Deobfuscated: 1137 keys (96.85%)
+// Total gestalt keys: 913 keys
+// Deobfuscated gestalt: 895 keys (98.03%)
+// Unexplored: 18 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+1TeoctsaQC55zwHZ6MESg", "ProductTypeDescForAudio",
@@ -240,7 +240,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "aHrkhDFY/f2ophZ5/MqX0w", "face-detection-support", // non-gestalt-key
     "Ai0zsJQ3+sTFkU6/lLbd5A", "opal", // non-gestalt-key
     "aIJva0DAnD6KdrSpPF11xQ", "s8003\")", // non-gestalt-key
-    "airPlaySecureVideoPath", NULL,
     "Aixt/MEN2O2B7f+8m4TxUA", "HasExtendedColorDisplay",
     "AJFQheZDyUbvI6RmBMT9Cg", "HasBaseband",
     "AklmqJyJMChzHsYT0aiBbw", "LaunchTimeLimitScaleSupported",
