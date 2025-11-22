@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 913 keys
-// Deobfuscated: 896 keys (98.14%)
+// Deobfuscated: 902 keys (98.8%)
 // Unexplored: 11 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -205,7 +205,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "awLQ2KgwSTZswuKgSSjmEQ", "DisplayMaxNits",
     "AX/UKxSHwm+OuFRIdvNAfg", "DeviceSupportsAutoLowLightVideo",
     "b2BKAEe88VRfp2WXEjJOyA", "SIMStatus2",
-    "b4e7mEbjqfewD6oXmo9U5g", NULL, // hwModelDescriptionForPowerPerf
+    "b4e7mEbjqfewD6oXmo9U5g", "HWModelDescriptionForPowerPerf",
     "Bb01MNJ0ezfSmzucKZXrsg", "DynamicFunctionRowSerialNumber",
     "bbtR9jQx50Fv5Af/affNtA", "PhysicalHardwareNameString",
     "BdS2M69XMEc9v/jsHBC3Eg", "ThreadRadioCapability",
@@ -272,7 +272,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "DrSqlXYNVfYXCvAsuUrUDA", "DebugBoardRevision",
     "DtSpvgyOyNVwNa5W0zigqg", "DeviceSupportsMomentCapture",
     "DViRIxZ/ZwO007CLcEYvZw", "SoftwareBundleVersion",
-    "dW5fpt/6HhaTbnK/UqL6cA", NULL, // hwModelDescriptionForAudio
+    "dW5fpt/6HhaTbnK/UqL6cA", "HWModelDescriptionForAudio",
     "DWrhyh1BwYypYmW5q78Wuw", "armv7",
     "DxmNcovWWN464hwZdGfonA", "CameraButtonNormalizedCGRect",
     "dz7F2FFseAysXoUZqaANZw", "DeviceSupportsEUCapabilities",
@@ -613,7 +613,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oOV1jhJbdV3AddkcCg0AEA", "apple-graphics-performance-tier",
     "oPeik/9e8lQWMszEjbPzng", "ArtworkTraits",
     "OPzhvROZUqCZhgYMyve5BA", "sms",
-    "oQNDePXjSD1z7W0ddqt9tg", NULL, // hwModelDescriptionForAutomatedTesting
+    "oQNDePXjSD1z7W0ddqt9tg", "HWModelDescriptionForAutomatedTesting",
     "OWi11Urd09rDmPVy1z5dOQ", "CoverglassSerialNumber",
     "OWLyWlUOIkl+eQB7Iq37xQ", "DesenseBuild",
     "oWUSugFxOVhHOKYv7DawLw", "DeviceSupportsSWProRes",
@@ -766,7 +766,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "UAMiw+ItKRaA1yk2uyzKGQ", "UnifiedGamingPerfLeveliPadTier2",
     "uB6I2WImAHd8DEGuqYcMbw", "WifiFirmwareVersion",
     "UCG5MkVahJxG1YULbbd5Bg", "MedusaOverlayAppCapability",
-    "uCIk6n9Am5fsV2cTjhqFQw", NULL, // hwModelDescriptionForAnalytics
+    "uCIk6n9Am5fsV2cTjhqFQw", "HWModelDescriptionForAnalytics",
     "UCLOC2TKe3vRkId34ubKWw", "AmbientLightSensorSerialNumber",
     "UcRWpMcvJDfLzn6utLj3XQ", "ApNonceRetrieve",
     "ud+MF+BkcM1zeTxPJCsHpg", "FrontFacingLowLightCameraCapability",
@@ -871,7 +871,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "y4GIxpQP4MO/j3wWUJdiyg", "DeviceSupportsAvatars",
     "y5dppxx/LzxoNuW+iIKR3g", "DeviceCornerRadius",
     "YAbRmHobt+BRHuSPm2OGQw", "DeviceSupportsVirtualResearchEnvironment",
-    "yAfB6E2v0++rHtdW7SDg8w", NULL, // hwModelDescriptionForCamera
+    "yAfB6E2v0++rHtdW7SDg8w", "HWModelDescriptionForCamera",
     "ybGkijAwLTwevankfVzsDQ", "MainScreenCanvasSizes",
     "YdPNjYPBzyE0jJl2X/CayQ", "RotateToWakeStatus",
     "yF2IQrYS4yyREV4ZkbLysw", "ThreadRadioMacAddress64BitData",
@@ -909,7 +909,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ZepchaN1K8XQJaBUMMlV5w", "iAP2Capability",
     "ZEU7pCEskBhjQ4AOMuALDw", "HEVCDecoder10bitSupported",
     "ZgIjA7Nwd2jSo13lhDO1Iw", "RegionalBehaviorShutterClick",
-    "ZGraRMW0TsxCvONeeJ5C2w", NULL, // hwModelDescriptionForUserVisibility
+    "ZGraRMW0TsxCvONeeJ5C2w", "HWModelDescriptionForUserVisibility",
     "zgtZIGG9jkHrBSZYHkVBtg", NULL,
     "zHeENZu+wbg7PUprwNwBWg", "RegionInfo",
     "ZiSlYxYSkyaYImU3lrSXWw", "gps",

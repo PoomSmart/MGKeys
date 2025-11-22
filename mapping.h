@@ -1,9 +1,9 @@
 #include "struct.h"
 
 // Total: 1174 keys
-// Deobfuscated: 1138 keys (96.93%)
+// Deobfuscated: 1144 keys (97.44%)
 // Total gestalt keys: 913 keys
-// Deobfuscated gestalt: 896 keys (98.14%)
+// Deobfuscated gestalt: 902 keys (98.8%)
 // Unexplored: 11 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -266,7 +266,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "b/k0ZT2f/WGV2qJSyPJHoQ", "config-number", // non-gestalt-key
     "b/KizANb5o/dWqSP2GC23g", "public-key-accelerator", // non-gestalt-key
     "b2BKAEe88VRfp2WXEjJOyA", "SIMStatus2",
-    "b4e7mEbjqfewD6oXmo9U5g", NULL, // hwModelDescriptionForPowerPerf
+    "b4e7mEbjqfewD6oXmo9U5g", "HWModelDescriptionForPowerPerf",
     "b5K3g59Aj+Cc982n9FQv8A", "display-rotation", // non-gestalt-key
     "Bb01MNJ0ezfSmzucKZXrsg", "DynamicFunctionRowSerialNumber",
     "bbtR9jQx50Fv5Af/affNtA", "PhysicalHardwareNameString",
@@ -354,7 +354,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "DtSpvgyOyNVwNa5W0zigqg", "DeviceSupportsMomentCapture",
     "dUipfYkyvM80t4IkmMBVgQ", "watch-gestures", // non-gestalt-key
     "DViRIxZ/ZwO007CLcEYvZw", "SoftwareBundleVersion",
-    "dW5fpt/6HhaTbnK/UqL6cA", NULL, // hwModelDescriptionForAudio
+    "dW5fpt/6HhaTbnK/UqL6cA", "HWModelDescriptionForAudio",
     "dW6ROVcD3o5ACa4jvALJ6A", NULL, // non-gestalt-key, IODeviceTree:/product, starts with d, DynamicFunctionRowSerialNumber
     "DWrhyh1BwYypYmW5q78Wuw", "armv7",
     "DxmNcovWWN464hwZdGfonA", "CameraButtonNormalizedCGRect",
@@ -796,7 +796,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oOV1jhJbdV3AddkcCg0AEA", "apple-graphics-performance-tier",
     "oPeik/9e8lQWMszEjbPzng", "ArtworkTraits",
     "OPzhvROZUqCZhgYMyve5BA", "sms",
-    "oQNDePXjSD1z7W0ddqt9tg", NULL, // hwModelDescriptionForAutomatedTesting
+    "oQNDePXjSD1z7W0ddqt9tg", "HWModelDescriptionForAutomatedTesting",
     "OtnrTIhWBtyPo45BcApMTw", "supports-3rd-party-haptics", // non-gestalt-key
     "oTuH4/axV9s11/jKxB2z2A", "ui-no-parallax", // non-gestalt-key
     "Ov9G2lRzQYbUyBYJ0KCMhA", "function-button_skey", // non-gestalt-key
@@ -994,7 +994,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "UAMiw+ItKRaA1yk2uyzKGQ", "UnifiedGamingPerfLeveliPadTier2",
     "uB6I2WImAHd8DEGuqYcMbw", "WifiFirmwareVersion",
     "UCG5MkVahJxG1YULbbd5Bg", "MedusaOverlayAppCapability",
-    "uCIk6n9Am5fsV2cTjhqFQw", NULL, // hwModelDescriptionForAnalytics
+    "uCIk6n9Am5fsV2cTjhqFQw", "HWModelDescriptionForAnalytics",
     "UCLOC2TKe3vRkId34ubKWw", "AmbientLightSensorSerialNumber",
     "UcRWpMcvJDfLzn6utLj3XQ", "ApNonceRetrieve",
     "ud+MF+BkcM1zeTxPJCsHpg", "FrontFacingLowLightCameraCapability",
@@ -1122,7 +1122,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "y5dppxx/LzxoNuW+iIKR3g", "DeviceCornerRadius",
     "y66yh6E28lG6AIdLLwEvSQ", "disp0", // non-gestalt-key
     "YAbRmHobt+BRHuSPm2OGQw", "DeviceSupportsVirtualResearchEnvironment",
-    "yAfB6E2v0++rHtdW7SDg8w", NULL, // hwModelDescriptionForCamera
+    "yAfB6E2v0++rHtdW7SDg8w", "HWModelDescriptionForCamera",
     "ybGkijAwLTwevankfVzsDQ", "MainScreenCanvasSizes",
     "YcNAX0Gc6KejQPKSrA9kvg", "front-burst", // non-gestalt-key
     "YdPNjYPBzyE0jJl2X/CayQ", "RotateToWakeStatus",
@@ -1168,7 +1168,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ZEU7pCEskBhjQ4AOMuALDw", "HEVCDecoder10bitSupported",
     "Zg7DduDoSCy6vY6mhy3n2w", "island-notch-location", // non-gestalt-key
     "ZgIjA7Nwd2jSo13lhDO1Iw", "RegionalBehaviorShutterClick",
-    "ZGraRMW0TsxCvONeeJ5C2w", NULL, // hwModelDescriptionForUserVisibility
+    "ZGraRMW0TsxCvONeeJ5C2w", "HWModelDescriptionForUserVisibility",
     "zgtZIGG9jkHrBSZYHkVBtg", NULL,
     "zHeENZu+wbg7PUprwNwBWg", "RegionInfo",
     "Zhoou87qmFpFwcFsm7Jlyg", "vsh-compensation-minimum-nits", // non-gestalt-key
