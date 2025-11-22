@@ -1,8 +1,8 @@
 #include "struct.h"
 
-// Total: 913 keys
-// Deobfuscated: 902 keys (98.8%)
-// Unexplored: 11 keys
+// Total: 912 keys
+// Deobfuscated: 904 keys (99.12%)
+// Unexplored: 8 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+1TeoctsaQC55zwHZ6MESg", "ProductTypeDescForAudio",
@@ -245,7 +245,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "cT44WE1EohiwRzhsZ8xEsw", "RingerButtonCapability",
     "ct5Dh6u0D6WDJKg2PrMFVQ", "FaceTimePreferredEncoding",
     "cux58RcuSiBhpxWnT3pE4A", "FrontFacingCameraVideoCapture4kMaxFPS",
-    "cVdYn5ajyDgnkT7YmtD1Gg", NULL,
+    "cVdYn5ajyDgnkT7YmtD1Gg", "RunnableArchitectures",
     "cW+7coMzO/hTtCCDcSvNOw", "RequiresNaturalVolumeButtonArrangement",
     "CwvKxM2cEogD3p+HYgaW0Q", "CameraButtonCapability",
     "cWWKdUn+rIclZ60ZGAVhBw", "CameraHDR2Capability",
@@ -351,7 +351,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "gD8SNRcHQeIxCAvsp+2vjA", "WSKU",
     "GdXjx1ixZYvN9Gg8iSf68A", "SupportsPerseus",
     "GEsznZwAYGOa1a67QU1Uew", "ProductTypeDescForPowerPerf",
-    "GGIIDN/ANr8X2WrgS6nBYQ", NULL,
+    "GGIIDN/ANr8X2WrgS6nBYQ", "HWModelUniqueStr",
     "ghpAuGJlPoauWijdtPi7sQ", "UserAssignedDeviceName",
     "gI6iODv8MZuiP0IA+efJCw", "WifiAddress",
     "gizLvTWx1sMUYQ9EYr/N4g", "CountryOfOrigin",
@@ -477,7 +477,6 @@ static const struct tKeyMapping keyMappingTable[] = {
     "kKgJsWN/rBUAkimOtm/wbA", "arm64",
     "kkSkHTEei96N1ZehicOgoA", "AppCapacityTVOS",
     "KMgjmT+dsqBCXu1YQEcOFg", "RegionalBehaviorValid",
-    "KmJdtQ7p3aYKq6iffPIrZg", NULL,
     "Knrkxkj5zZTf/FrPNQClgg", "GroundhogEnabled",
     "Kq9K9xqDoUiUP7JEfg+pNw", "DeviceSupportsDoNotDisturbWhileDriving",
     "kt7gXeIiU0dLEKrgUSsLVw", "opengles-1",
