@@ -453,6 +453,7 @@ keys = {
     "GxXmRWHjsY5yAVhMfCH6Lg": "BridgeBuild",
     "H+r3Nk8ByXIY9ub/M8broA": "DeviceSupportsHeartHealthAlerts",
     "h0OUwg53vKp+IPdzLG4NrA": "mesa",
+    "h1UG2n5HnANzU4rX8pT85g": "DeviceDBVDependentVSHCompensationTraits",
     "H4f1y1sEDUUUROeb4FZJ4A": "natural-volume-arrangement",
     "H5HW20mJr/djc40tAehkww": "BasebandKeyHashInformation",
     "H5TSt7Pu4zNCD5RvHuk5CQ": "PhoneNumber",

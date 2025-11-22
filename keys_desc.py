@@ -5,9 +5,11 @@ unknown_keys_desc = {
     "1HWDBfJwBJZ8TDHcPDafmQ": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard",
     "8kcKPCGGyCpf66MMl5TVkA": f"{NON_KEY_DESC}, IODeviceTree:/multi-touch, starts with m, MultiTouchMaxBootTime",
     "9f5ODNAt2gufqSI82eYnLw": f"{NON_KEY_DESC}, IODeviceTree:/multi-touch, starts with c, DeviceSupportsCorrectedTemperature",
+    "b4e7mEbjqfewD6oXmo9U5g": "hwModelDescriptionForPowerPerf",
     "bbyFCcrPE+k6ZXIVbXSFUw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with u, DevicePrefersBuildingStrokes",
     "bxQyyA/qJ3QQXTiHBsW2eg": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with o, BuddyLanguagesAnimationRequiresOptimization",
     "D3LeXyjrxDFYSi6pWFEL4A": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with u, DeviceSupportsTrafficAlpha",
+    "dW5fpt/6HhaTbnK/UqL6cA": "hwModelDescriptionForAudio",
     "dW6ROVcD3o5ACa4jvALJ6A": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with d, DynamicFunctionRowSerialNumber",
     "e+pTfaabi1k1kfdk2vl1Kw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with l, LunaFlexSerialNumber",
     "E3qwwdwgUSy6FV6VC+Uf3A": f"{NON_KEY_DESC}, IODeviceTree:/chosen, starts with r, ResearchFuse",
@@ -17,10 +19,14 @@ unknown_keys_desc = {
     "lR7sjp4tOz3cMWoEMlZrLA": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with u, DevicePrefers3DBuildingStrokes",
     "mug/QuG6jZ3CYR9p7OWQaw": f"{NON_KEY_DESC}, IODeviceTree:/opal, starts with b",
     "NsUsZwajdZDN+suOIwkPvg": f"{NON_KEY_DESC}, IODeviceTree:/product/audio, starts with s, DeviceSupportsAlwaysAPVoiceTrigger",
+    "oQNDePXjSD1z7W0ddqt9tg": "hwModelDescriptionForAutomatedTesting",
     "P1djMN/L3B6otgGpO9WYkw": f"{NON_KEY_DESC}, IODeviceTree:/, starts with s, SiliconBringupBoard",
     "t56wS9db+T2F2bxBpYSX8Q": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/disp0, starts with e, DisplayDriverICChipID",
+    "uCIk6n9Am5fsV2cTjhqFQw": "hwModelDescriptionForAnalytics",
     "uNNFSosc1xQM/7bwlrqLXA": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/aop/iop-aop-nub/als, starts with m, DisplayMaxNits",
     "wAbB2fAjUqUc6lNBelfWMA": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with n, DeviceSupportsPeriodicALSUpdates",
+    "yAfB6E2v0++rHtdW7SDg8w": "hwModelDescriptionForCamera",
+    "ZGraRMW0TsxCvONeeJ5C2w": "hwModelDescriptionForUserVisibility",
 }
 
 known_keys_desc = {
