@@ -17,6 +17,7 @@ HASHES_LEGACY_FILE = Path('hashes_legacy.txt')
 MAPPING_FILE = Path('mapping.h')
 MAPPING_GESTALT_FILE = Path('mapping-gestalt.h')
 MAPPING_LEGACY_FILE = Path('mapping-legacy.h')
+MAPPING_GESTALT_LEGACY_FILE = Path('mapping-gestalt-legacy.h')
 TABLE_NAME = 'keyMappingTable'
 TABLE_LEGACY_NAME = 'keyMappingTableLegacy'
 POTFILE = Path('potfile')
@@ -152,6 +153,7 @@ if __name__ == '__main__':
     generate_mapping(HASHES_FILE, MAPPING_FILE, TABLE_NAME, False, keys)
     generate_mapping(HASHES_FILE, MAPPING_GESTALT_FILE, TABLE_NAME, True, keys, add_version=True)
     generate_mapping(HASHES_LEGACY_FILE, MAPPING_LEGACY_FILE, TABLE_LEGACY_NAME, False, keys_legacy)
+    generate_mapping(HASHES_LEGACY_FILE, MAPPING_GESTALT_LEGACY_FILE, TABLE_LEGACY_NAME, True, keys_legacy, add_version=True)
 
     with POTFILE.open('w') as out:
         out.write(potfile_content)
