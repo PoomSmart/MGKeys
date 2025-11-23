@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 904 keys
-// Deobfuscated: 904 keys (100.0%)
+// Total: 907 keys
+// Deobfuscated: 907 keys (100.0%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -202,6 +202,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "awim/yUQvLyTrKsoKhg2bA", "DeviceSupportsELabel", // iOS pre-12.0
     "awLQ2KgwSTZswuKgSSjmEQ", "DisplayMaxNits", // iOS 26.0-
     "AX/UKxSHwm+OuFRIdvNAfg", "DeviceSupportsAutoLowLightVideo", // iOS pre-12.0
+    "aYjxnADoQ2HXS8J+swzuNg", "DeviceSupportsDarwinInitConfigFromNVRAM", // iOS 26.2
     "b2BKAEe88VRfp2WXEjJOyA", "SIMStatus2", // iOS pre-12.0
     "b4e7mEbjqfewD6oXmo9U5g", "HWModelDescriptionForPowerPerf", // iOS 26.0
     "Bb01MNJ0ezfSmzucKZXrsg", "DynamicFunctionRowSerialNumber", // iOS 26.0-
@@ -274,6 +275,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "DxmNcovWWN464hwZdGfonA", "CameraButtonNormalizedCGRect", // iOS 26.0-
     "dz7F2FFseAysXoUZqaANZw", "DeviceSupportsEUCapabilities", // iOS 26.0-
     "DzLC4o1jZ4hWtP8aB6An6g", "SDIOManufacturerTuple", // iOS pre-12.0
+    "E+9+cggZ2rXU0z8mWiOung", "AllowPhoneApp", // iOS 26.2
     "e0HV2blYUDBk/MsMEQACNA", "DeviceSupportsBreathingDisturbancesMeasurements", // iOS 26.0-
     "E0wrprlNya8gngoVpPXj2w", "DeviceSupportsCorrectedTemperature", // iOS 26.0-
     "E4vGMChwcVRKD8hMVxnRvg", "DeviceSupportsUSLegallyCompliantBloodOxygen", // iOS 26.0
@@ -900,6 +902,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ZeGw3VKUymUAbp4noKsxoQ", "FrontFacingCameraMaxVideoZoomFactor", // iOS pre-12.0
     "ZepchaN1K8XQJaBUMMlV5w", "iAP2Capability", // iOS pre-12.0
     "ZEU7pCEskBhjQ4AOMuALDw", "HEVCDecoder10bitSupported", // iOS pre-12.0
+    "ZfUfxSFklLDVCKbgOE7kpg", "OSMigrationCapability", // iOS 26.2
     "ZgIjA7Nwd2jSo13lhDO1Iw", "RegionalBehaviorShutterClick", // iOS pre-12.0
     "ZGraRMW0TsxCvONeeJ5C2w", "HWModelDescriptionForUserVisibility", // iOS 26.0
     "zHeENZu+wbg7PUprwNwBWg", "RegionInfo", // iOS pre-12.0

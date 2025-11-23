@@ -1,9 +1,9 @@
 #include "struct.h"
 
-// Total: 1174 keys
-// Deobfuscated: 1153 keys (98.21%)
-// Total gestalt keys: 904 keys
-// Deobfuscated gestalt: 904 keys (100.0%)
+// Total: 1177 keys
+// Deobfuscated: 1156 keys (98.22%)
+// Total gestalt keys: 907 keys
+// Deobfuscated gestalt: 907 keys (100.0%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -262,6 +262,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "awim/yUQvLyTrKsoKhg2bA", "DeviceSupportsELabel",
     "awLQ2KgwSTZswuKgSSjmEQ", "DisplayMaxNits",
     "AX/UKxSHwm+OuFRIdvNAfg", "DeviceSupportsAutoLowLightVideo",
+    "aYjxnADoQ2HXS8J+swzuNg", "DeviceSupportsDarwinInitConfigFromNVRAM",
     "AzZxA+yTHLc+/XimTirrVw", "p3-color-space-video-recording", // non-gestalt-key
     "b/k0ZT2f/WGV2qJSyPJHoQ", "config-number", // non-gestalt-key
     "b/KizANb5o/dWqSP2GC23g", "public-key-accelerator", // non-gestalt-key
@@ -360,6 +361,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "DxmNcovWWN464hwZdGfonA", "CameraButtonNormalizedCGRect",
     "dz7F2FFseAysXoUZqaANZw", "DeviceSupportsEUCapabilities",
     "DzLC4o1jZ4hWtP8aB6An6g", "SDIOManufacturerTuple",
+    "E+9+cggZ2rXU0z8mWiOung", "AllowPhoneApp",
     "e+pTfaabi1k1kfdk2vl1Kw", "luna-serial-number", // non-gestalt-key
     "e0HV2blYUDBk/MsMEQACNA", "DeviceSupportsBreathingDisturbancesMeasurements",
     "E0wrprlNya8gngoVpPXj2w", "DeviceSupportsCorrectedTemperature",
@@ -1166,6 +1168,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ZeGw3VKUymUAbp4noKsxoQ", "FrontFacingCameraMaxVideoZoomFactor",
     "ZepchaN1K8XQJaBUMMlV5w", "iAP2Capability",
     "ZEU7pCEskBhjQ4AOMuALDw", "HEVCDecoder10bitSupported",
+    "ZfUfxSFklLDVCKbgOE7kpg", "OSMigrationCapability",
     "Zg7DduDoSCy6vY6mhy3n2w", "island-notch-location", // non-gestalt-key
     "ZgIjA7Nwd2jSo13lhDO1Iw", "RegionalBehaviorShutterClick",
     "ZGraRMW0TsxCvONeeJ5C2w", "HWModelDescriptionForUserVisibility",
