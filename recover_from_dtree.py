@@ -1,18 +1,26 @@
 import json
-import sys
-import os
+import argparse
+from pathlib import Path
+from typing import Dict, Set, Any, Optional
 
-# Add current directory to sys.path to import keys_desc and obfuscate
-sys.path.append(os.getcwd())
-
+# Import from local modules
 try:
     from keys_desc import unknown_keys_desc, known_keys_desc
     from obfuscate import calculate_obfuscated_key
-except ImportError:
-    print("Error: Could not import necessary modules")
-    sys.exit(1)
+except ImportError as e:
+    print(f"Error: Could not import necessary modules: {e}")
+    print("Make sure you're running this script from the MGKeys directory")
+    exit(1)
 
-def extract_properties(node_list, candidates):
+
+def extract_properties(node_list: Any, candidates: Set[str]) -> None:
+    """
+    Recursively extract property names from DeviceTree nodes.
+    
+    Args:
+        node_list: List of DeviceTree nodes
+        candidates: Set to accumulate candidate property names
+    """
     if not isinstance(node_list, list):
         return
 
@@ -34,15 +42,41 @@ def extract_properties(node_list, candidates):
                     # Property name is a candidate
                     candidates.add(prop_name)
 
-def main():
+
+def load_devicetree(file_path: Path) -> Optional[Dict[str, Any]]:
+    """
+    Load DeviceTree JSON file.
+    
+    Args:
+        file_path: Path to devicetree.json
+        
+    Returns:
+        Parsed JSON data or None if error
+    """
+    if not file_path.exists():
+        print(f"Error: {file_path} not found")
+        return None
+    
     try:
-        with open("devicetree.json", "r") as f:
-            dt = json.load(f)
-    except FileNotFoundError:
-        print("Error: devicetree.json not found")
+        with file_path.open("r") as f:
+            return json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"Error: Failed to parse JSON: {e}")
+        return None
+
+
+def main(devicetree_file: Path) -> None:
+    """
+    Main function to recover keys from DeviceTree.
+    
+    Args:
+        devicetree_file: Path to devicetree.json file
+    """
+    dt = load_devicetree(devicetree_file)
+    if dt is None:
         return
 
-    candidates = set()
+    candidates: Set[str] = set()
     
     # Root might be a dict with "device-tree"
     if isinstance(dt, dict) and "device-tree" in dt:
@@ -67,18 +101,47 @@ def main():
     all_hashes = {**unknown_keys_desc, **known_keys_desc}
     
     for candidate in candidates:
-        h = calculate_obfuscated_key(candidate)
+        obfuscated_hash = calculate_obfuscated_key(candidate)
         
-        if h in unknown_keys_desc:
-            print(f"FOUND NEW: {h} -> {candidate}")
+        if obfuscated_hash in unknown_keys_desc:
+            print(f"FOUND NEW: {obfuscated_hash} -> {candidate}")
             new_found_count += 1
             found_count += 1
-        elif h in known_keys_desc:
-            # print(f"FOUND KNOWN: {h} -> {candidate}")
+        elif obfuscated_hash in known_keys_desc:
+            # Uncomment to see known matches
+            # print(f"FOUND KNOWN: {obfuscated_hash} -> {candidate}")
             found_count += 1
             
     print(f"Total matches found: {found_count}")
     print(f"New keys recovered: {new_found_count}")
 
+
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(
+        description="Recover MobileGestalt keys from DeviceTree JSON",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python3 recover_from_dtree.py
+  python3 recover_from_dtree.py path/to/devicetree.json
+  python3 recover_from_dtree.py --file custom.json
+        """
+    )
+    parser.add_argument(
+        "file",
+        nargs="?",
+        default="devicetree.json",
+        help="Path to devicetree.json file (default: devicetree.json)"
+    )
+    parser.add_argument(
+        "-f", "--file",
+        dest="file_flag",
+        help="Alternative way to specify file path"
+    )
+    
+    args = parser.parse_args()
+    
+    # Use --file flag if provided, otherwise positional arg
+    file_path = Path(args.file_flag if args.file_flag else args.file)
+    
+    main(file_path)

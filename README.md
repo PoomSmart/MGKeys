@@ -26,7 +26,20 @@ There are a few certain patterns of the key names, which can be useful for de-ob
 
 There are also keys which are obfuscated the same way but are not considered as MobileGestalt keys. That is, you can't use `MGCopyAnswer` to get the value of the key. Instead, they are used for retrieving the value from the `IODeviceTree`, in an obfuscated manner. These keys are mostly in the kebab case, having their pascal case equivalent which is actually used by `MGCopyAnswer`. In the mapping files, these keys are marked with a comment `// non-gestalt-key`.
 
-## Typical Workflow
+## Getting Started
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/PoomSmart/MGKeys.git
+cd MGKeys
+
+# Install dependencies (optional, for development)
+pip3 install -r requirements.txt
+```
+
+### Typical Workflow
 
 1. Extract `libMobileGestalt.dylib` from the `dyld_shared_cache` of an iOS device
 2. Run `deobfuscate.sh` script to get the new unmapped obfuscated keys
@@ -35,57 +48,111 @@ There are also keys which are obfuscated the same way but are not considered as 
 5. Run `deobfuscate.sh` again to update the mapping and to also verify each function name converts to the obfuscated key it references to
 6. Move all keys that fail to convert to `unknown_keys_desc` of `keys_desc.py`, if any
 
-## Automated Discovery
+## Usage
 
-You can use `discover-version.sh` to automate the process of downloading an IPSW (or extracting remotely), extracting `libMobileGestalt.dylib`, and running the discovery scripts.
+All scripts support `--help` flags for detailed usage information. Run any script with `--help` to see available options and examples.
 
-Usage:
+### Automated Discovery
+
+Use `discover-version.sh` to automate downloading an IPSW, extracting `libMobileGestalt.dylib`, and running discovery:
+
 ```bash
 ./discover-version.sh <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract]
-```
 
-Examples:
-```bash
-# Download IPSW for iPhone 14 Pro, iOS 16.5
+# Examples
 ./discover-version.sh iPhone15,2 16.5
-
-# Use remote extraction (faster, no full download) for a specific build
 ./discover-version.sh iPhone15,2 20F66 --remote-extract
 ```
 
-## Advanced Recovery Workflows
+### Manual Discovery
 
-### Guessing Keys
-If you have hints about the key (e.g., from `keys_desc.py`), you can use `guess_keys.py` to generate and verify potential key names:
+For manual key discovery from an extracted dylib:
+
 ```bash
-python3 guess_keys.py
+# Run discovery with default architecture (arm64e)
+./discover.sh
+
+# Specify architecture
+./discover.sh --arch arm64
+
+# See all options
+./discover.sh --help
 ```
 
-### Recovering from DeviceTree
-Some keys are properties in the IODeviceTree. You can extract them from an IPSW or a DeviceTree file:
+### Advanced Recovery Methods
 
-1. **Dump DeviceTree to JSON:**
-   Use `dump_dtree.sh` with an IPSW file, a raw DeviceTree file, or specify a device and version for remote extraction:
-   
-   **Local File:**
-   ```bash
-   ./dump_dtree.sh <path/to/ipsw_or_dtree>
-   ```
+#### Guessing Keys from Hints
 
-   **Remote Extraction:**
-   ```bash
-   ./dump_dtree.sh -d <DEVICE> -v <VERSION> [-b <BUILD>]
-   # Example:
-   ./dump_dtree.sh -d iPhone15,2 -v 16.5
-   ```
-   
-   This will generate `devicetree.json`.
+If you have hints about unknown keys (from `keys_desc.py`):
 
-2. **Recover Keys:**
-   Run `recover_from_dtree.py` to parse the JSON and check for matching keys:
-   ```bash
-   python3 recover_from_dtree.py
-   ```
+```bash
+# Attempt to guess all unknown keys
+python3 guess_keys.py
+
+# Target a specific key with verbose output
+python3 guess_keys.py --key <OBFUSCATED_KEY> --verbose
+
+# See all options
+python3 guess_keys.py --help
+```
+
+#### Recovering from DeviceTree
+
+Extract keys from IODeviceTree properties:
+
+```bash
+# 1. Dump DeviceTree to JSON
+./dump_dtree.sh <path/to/ipsw_or_dtree>
+# Or from remote IPSW
+./dump_dtree.sh -d <DEVICE> -v <VERSION>
+
+# 2. Recover keys from the JSON
+python3 recover_from_dtree.py
+
+# See all options
+./dump_dtree.sh --help
+python3 recover_from_dtree.py --help
+```
+
+## Development
+
+### Running Tests
+
+```bash
+# Install dependencies
+pip3 install -r requirements.txt
+
+# Run all tests
+pytest
+
+# Run with coverage
+pytest --cov=. test_*.py
+
+# Run specific test file
+pytest test_obfuscate.py -v
+```
+
+### Type Checking
+
+The Python scripts include comprehensive type hints:
+
+```bash
+# Install mypy (included in requirements.txt)
+pip3 install -r requirements.txt
+
+# Run type checker
+mypy *.py
+```
+
+### Script Reference
+
+All scripts support `--help` for detailed usage. Features:
+
+- **Python scripts** (`*.py`): Type hints, pathlib, argparse, comprehensive error handling
+- **Shell scripts** (`*.sh`): Help messages, prerequisite checks, input validation
+- **Tests** (`test_*.py`): Comprehensive unit tests for core logic
+
+Run any script with `--help` to see available options and examples.
 
 ## Credits (Keys De-obfuscation)
 - Jonathan Levin

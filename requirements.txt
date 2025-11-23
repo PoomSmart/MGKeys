@@ -1,0 +1,6 @@
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0  # For test coverage reports
+
+# Type checking (optional but recommended)
+mypy>=1.0.0

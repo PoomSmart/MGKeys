@@ -14,8 +14,16 @@ extracted_dylibs/
 util
 
 # Artifacts
-*.txt
-!false-positive.txt
+all-hashes.txt
+discover-obfuscated-mapped.txt
+discover-obfuscated.txt
+hashcat.txt
+hashes.txt
+maybe-non-gestalt-keys.txt
+md5hashes.txt
+obfuscated.txt
+out-readable.txt
+readable.txt
 checksums*
 *fcs_keys.json
 potfile
