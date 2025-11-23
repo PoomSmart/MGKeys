@@ -4,7 +4,7 @@
 // Deobfuscated: 1148 keys (97.79%)
 // Total gestalt keys: 912 keys
 // Deobfuscated gestalt: 904 keys (99.12%)
-// Unexplored: 8 keys
+// Unexplored: 7 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+1TeoctsaQC55zwHZ6MESg", "ProductTypeDescForAudio",
@@ -1169,7 +1169,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Zg7DduDoSCy6vY6mhy3n2w", "island-notch-location", // non-gestalt-key
     "ZgIjA7Nwd2jSo13lhDO1Iw", "RegionalBehaviorShutterClick",
     "ZGraRMW0TsxCvONeeJ5C2w", "HWModelDescriptionForUserVisibility",
-    "zgtZIGG9jkHrBSZYHkVBtg", NULL,
+    "zgtZIGG9jkHrBSZYHkVBtg", NULL, // DeviceDisablesAODByDefault
     "zHeENZu+wbg7PUprwNwBWg", "RegionInfo",
     "Zhoou87qmFpFwcFsm7Jlyg", "vsh-compensation-minimum-nits", // non-gestalt-key
     "ZiSlYxYSkyaYImU3lrSXWw", "gps",

@@ -20,6 +20,7 @@ unknown_keys_desc = {
     "t56wS9db+T2F2bxBpYSX8Q": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/disp0, starts with e, DisplayDriverICChipID",
     "uNNFSosc1xQM/7bwlrqLXA": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/aop/iop-aop-nub/als, starts with m, DisplayMaxNits",
     "wAbB2fAjUqUc6lNBelfWMA": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with n, DeviceSupportsPeriodicALSUpdates",
+    "zgtZIGG9jkHrBSZYHkVBtg": "DeviceDisablesAODByDefault",
 }
 
 known_keys_desc = {

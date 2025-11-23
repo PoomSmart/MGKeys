@@ -2,7 +2,7 @@
 
 // Total: 912 keys
 // Deobfuscated: 904 keys (99.12%)
-// Unexplored: 8 keys
+// Unexplored: 7 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
     "+1TeoctsaQC55zwHZ6MESg", "ProductTypeDescForAudio",
@@ -909,7 +909,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ZEU7pCEskBhjQ4AOMuALDw", "HEVCDecoder10bitSupported",
     "ZgIjA7Nwd2jSo13lhDO1Iw", "RegionalBehaviorShutterClick",
     "ZGraRMW0TsxCvONeeJ5C2w", "HWModelDescriptionForUserVisibility",
-    "zgtZIGG9jkHrBSZYHkVBtg", NULL,
+    "zgtZIGG9jkHrBSZYHkVBtg", NULL, // DeviceDisablesAODByDefault
     "zHeENZu+wbg7PUprwNwBWg", "RegionInfo",
     "ZiSlYxYSkyaYImU3lrSXWw", "gps",
     "Zmd7xYUw9EutGXifzpvfsA", "WatchSupportsHighQualityClockFaceGraphics",
