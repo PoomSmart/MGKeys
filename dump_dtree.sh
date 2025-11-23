@@ -43,7 +43,11 @@ else
 fi
 
 echo "Dumping DeviceTree to devicetree.json..."
-ipsw dtree --json "$DT_FILE" > devicetree.json
+if command -v jq &> /dev/null; then
+    ipsw dtree --json "$DT_FILE" | jq . > devicetree.json
+else
+    ipsw dtree --json "$DT_FILE" | python3 -m json.tool > devicetree.json
+fi
 
 if [ $? -eq 0 ]; then
     echo "Success! Saved to devicetree.json"
