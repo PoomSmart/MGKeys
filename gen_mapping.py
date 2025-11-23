@@ -5,6 +5,7 @@ from deobfuscated import keys
 from deobfuscated_legacy import keys_legacy
 from obfuscate import calculate_obfuscated_key, md5_string_for_obfuscated_key
 from keys_desc import NON_KEY_DESC, known_keys_desc, unknown_keys_desc
+from keys_versions import KEY_IOS_VERSIONS
 
 '''
 This script generates a mapping file (mapping.h) for all keys in hashes.txt and hashes_legacy.txt. The mapped values are the deobfuscated keys.
@@ -30,7 +31,8 @@ def process_key(
     keys_map: Dict[str, str],
     mapping: Dict[str, str],
     only_gestalt: bool,
-    stats: Dict[str, int]
+    stats: Dict[str, int],
+    add_version: bool = False
 ) -> bool:
     global potfile_content
     
@@ -45,6 +47,11 @@ def process_key(
     # Escape quotes for C string
     escaped_key = keys_map[obfuscated_key].replace('"', '\\"')
     
+    # Get version info if requested
+    version_comment = ''
+    if add_version and obfuscated_key in KEY_IOS_VERSIONS:
+        version_comment = f' // iOS {KEY_IOS_VERSIONS[obfuscated_key]}'
+    
     if obfuscated_key in known_keys_desc:
         desc = known_keys_desc[obfuscated_key]
         if NON_KEY_DESC in desc:
@@ -53,10 +60,13 @@ def process_key(
             stats['non_gestalt_keys'] += 1
         else:
             stats['deobfuscated_gestalt_keys'] += 1
-        mapping[obfuscated_key] = f'"{escaped_key}", // {desc}'
+        mapping[obfuscated_key] = f'"{escaped_key}", // {desc}{version_comment}'
     else:
         stats['deobfuscated_gestalt_keys'] += 1
-        mapping[obfuscated_key] = f'"{escaped_key}",'
+        if version_comment:
+            mapping[obfuscated_key] = f'"{escaped_key}",{version_comment}'
+        else:
+            mapping[obfuscated_key] = f'"{escaped_key}",'
         
     stats['deobfuscated_keys'] += 1
     return True
@@ -66,7 +76,8 @@ def generate_mapping(
     mapping_path: Path,
     table_name: str,
     only_gestalt: bool,
-    input_keys: Dict[str, str]
+    input_keys: Dict[str, str],
+    add_version: bool = False
 ) -> None:
     # Create a copy to avoid modifying the original dictionary if it's used elsewhere
     keys_map = input_keys.copy()
@@ -93,7 +104,7 @@ def generate_mapping(
                 
             if obfuscated_key in keys_map:
                 seen_keys.add(obfuscated_key)
-                if not process_key(obfuscated_key, keys_map, mapping, only_gestalt, stats):
+                if not process_key(obfuscated_key, keys_map, mapping, only_gestalt, stats, add_version):
                     continue
             elif obfuscated_key in unknown_keys_desc:
                 desc = unknown_keys_desc[obfuscated_key]
@@ -109,7 +120,7 @@ def generate_mapping(
     for obfuscated_key in keys_map:
         if obfuscated_key not in seen_keys:
             if USE_MAPPING_AS_SOURCE:
-                if not process_key(obfuscated_key, keys_map, mapping, only_gestalt, stats):
+                if not process_key(obfuscated_key, keys_map, mapping, only_gestalt, stats, add_version):
                     continue
             else:
                 print(f'Warning: {obfuscated_key} not found in {hashes_path}')
@@ -139,7 +150,7 @@ def generate_mapping(
 
 if __name__ == '__main__':
     generate_mapping(HASHES_FILE, MAPPING_FILE, TABLE_NAME, False, keys)
-    generate_mapping(HASHES_FILE, MAPPING_GESTALT_FILE, TABLE_NAME, True, keys)
+    generate_mapping(HASHES_FILE, MAPPING_GESTALT_FILE, TABLE_NAME, True, keys, add_version=True)
     generate_mapping(HASHES_LEGACY_FILE, MAPPING_LEGACY_FILE, TABLE_LEGACY_NAME, False, keys_legacy)
 
     with POTFILE.open('w') as out:
