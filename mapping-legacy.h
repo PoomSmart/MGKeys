@@ -1,9 +1,9 @@
 #include "struct.h"
 
-// Total: 177 keys
-// Deobfuscated: 171 keys (96.61%)
-// Total gestalt keys: 167 keys
-// Deobfuscated gestalt: 162 keys (97.01%)
+// Total: 178 keys
+// Deobfuscated: 172 keys (96.63%)
+// Total gestalt keys: 168 keys
+// Deobfuscated gestalt: 163 keys (97.02%)
 // Unexplored: 5 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
@@ -57,6 +57,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "C69C6jJjSxkwtSCq81shww", "CallForwardingCapability",
     "Ca/ykCYJcbVY9gaO9SvKiQ", "YouTubeCapability",
     "CgrU9s3DgLoemGDRXszlnQ", "3GVeniceCapability",
+    "cHla4KIe1wv0OvpRVrzy/w", "hide-non-default-apps",
     "Cp9cxpL94276NKHivShdCg", "HomeScreenWallpaperCapability",
     "cqjRgfBVUDsi5vrXdQOcng", "OpenGLES3Capability",
     "drPpRw0Jmqcxv1XQPn/q/Q", "CameraFrontFlashCapability",
