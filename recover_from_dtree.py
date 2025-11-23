@@ -97,9 +97,6 @@ def main(devicetree_file: Path) -> None:
     found_count = 0
     new_found_count = 0
     
-    # Check against all keys
-    all_hashes = {**unknown_keys_desc, **known_keys_desc}
-    
     for candidate in candidates:
         obfuscated_hash = calculate_obfuscated_key(candidate)
         
