@@ -1,7 +1,6 @@
 NON_KEY_DESC = 'non-gestalt-key'
 
 unknown_keys_desc = {
-    "/4LCTfMhvzuiK6b557ir5Q": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/isp, starts with o, LiDARCalibrationPrCL",
     "0gZY31xMzJDuUNTTnWT0Nw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with s, DeviceSupportsPulseWidthMaximization",
     "1HWDBfJwBJZ8TDHcPDafmQ": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard",
     "4H26SkyfcrZOrMAtjC6Cfw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with s, DeviceSupportsHypertensivePatternMeasurements",
@@ -29,6 +28,7 @@ unknown_keys_desc = {
 
 known_keys_desc = {
     "/2V8H9h/+z0UxNUr9aRLeQ": NON_KEY_DESC,
+    "/4LCTfMhvzuiK6b557ir5Q": NON_KEY_DESC,
     "/cMWdoU/88pcjJ1egxmIYw": NON_KEY_DESC,
     "/ej/HWmqnKV/QQptXhUZmg": NON_KEY_DESC,
     "/l0Kz2akvSvEHTNmZeY0nQ": NON_KEY_DESC,

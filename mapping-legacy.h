@@ -1,14 +1,14 @@
 #include "struct.h"
 
 // Total: 178 keys
-// Deobfuscated: 172 keys (96.63%)
+// Deobfuscated: 173 keys (97.19%)
 // Total gestalt keys: 168 keys
 // Deobfuscated gestalt: 163 keys (97.02%)
 // Unexplored: 5 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
-    "/4LCTfMhvzuiK6b557ir5Q", NULL, // non-gestalt-key, IODeviceTree:/arm-io/isp, starts with o, LiDARCalibrationPrCL
+    "/4LCTfMhvzuiK6b557ir5Q", "pearl-calibration-data", // non-gestalt-key
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
     "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents",
     "061e/gd5kFdZwwe1G2qXFQ", NULL,

@@ -1,4 +1,5 @@
 keys_legacy = {
+    "/4LCTfMhvzuiK6b557ir5Q": "pearl-calibration-data",
     "/8aKho3RQEvq1PxPnN2ziQ": "MetalCapability",
     "+zD41v0XRR72ItZHfisZuQ": "PTPLargeFilesCapability",
     "04zgp3uYWXAEZCOV0wrVXQ": "hardware-detents",

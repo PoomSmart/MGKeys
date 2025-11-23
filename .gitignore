@@ -19,6 +19,7 @@ util
 checksums*
 *fcs_keys.json
 potfile
+devicetree.json
 
 # Experimental
 check-readable.sh

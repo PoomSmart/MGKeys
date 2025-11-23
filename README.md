@@ -35,6 +35,48 @@ There are also keys which are obfuscated the same way but are not considered as 
 5. Run `deobfuscate.sh` again to update the mapping and to also verify each function name converts to the obfuscated key it references to
 6. Move all keys that fail to convert to `unknown_keys_desc` of `keys_desc.py`, if any
 
+## Automated Discovery
+
+You can use `discover-version.sh` to automate the process of downloading an IPSW (or extracting remotely), extracting `libMobileGestalt.dylib`, and running the discovery scripts.
+
+Usage:
+```bash
+./discover-version.sh <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract]
+```
+
+Examples:
+```bash
+# Download IPSW for iPhone 14 Pro, iOS 16.5
+./discover-version.sh iPhone15,2 16.5
+
+# Use remote extraction (faster, no full download) for a specific build
+./discover-version.sh iPhone15,2 20F66 --remote-extract
+```
+
+## Advanced Recovery Workflows
+
+### Guessing Keys
+If you have hints about the key (e.g., from `keys_desc.py`), you can use `guess_keys.py` to generate and verify potential key names:
+```bash
+python3 guess_keys.py
+```
+
+### Recovering from DeviceTree
+Some keys are properties in the IODeviceTree. You can extract them from an IPSW or a DeviceTree file:
+
+1. **Dump DeviceTree to JSON:**
+   Use `dump_dtree.sh` with an IPSW file or a raw DeviceTree file:
+   ```bash
+   ./dump_dtree.sh <path/to/ipsw_or_dtree>
+   ```
+   This will generate `devicetree.json`.
+
+2. **Recover Keys:**
+   Run `recover_from_dtree.py` to parse the JSON and check for matching keys:
+   ```bash
+   python3 recover_from_dtree.py
+   ```
+
 ## Credits (Keys De-obfuscation)
 - Jonathan Levin
 - [Timac](https://twitter.com/timacfr)
