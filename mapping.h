@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1174 keys
-// Deobfuscated: 1151 keys (98.04%)
+// Deobfuscated: 1153 keys (98.21%)
 // Total gestalt keys: 904 keys
 // Deobfuscated gestalt: 904 keys (100.0%)
 // Unexplored: 0 keys
@@ -48,7 +48,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "0GizaJLOyfzgAbxQ/5aniA", "DeviceHousingColorUncooked",
     "0gkWjKWKuS2gqzTaFHKxqw", "supports-advanced-vp-chatflavor", // non-gestalt-key
     "0GUU+Z8xIu+7TE+scKXscg", "OysterCapability",
-    "0gZY31xMzJDuUNTTnWT0Nw", NULL, // non-gestalt-key, IODeviceTree:/product, starts with s, DeviceSupportsPulseWidthMaximization
+    "0gZY31xMzJDuUNTTnWT0Nw", "supports-gray-dimming", // non-gestalt-key
     "0jjK6IVSQzA8doQeSwmujA", "software-bundle-version",
     "0KHhsv2F/BGA9AppFljmKg", "AttestationUniqueDeviceID",
     "0l4wqBtWEAK1tOkeBHkU6Q", "main-screen-pitch",
@@ -788,7 +788,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Oji6HRoPi7rH7HPdWVakuw", "HasInternalSettingsBundle",
     "OJTdSHEAfpOvV6m6o+Ou1w", "moment-capture", // non-gestalt-key
     "OjzOua0LkOegX7pQdgMksw", "main-screen-height",
-    "OkDaAJOK5NQMwkckKbxWZw", NULL, // non-gestalt-key, IODeviceTree:/backlight, starts with s, DeviceSupportsGammaContrastPreservation
+    "OkDaAJOK5NQMwkckKbxWZw", "supports-gcp", // non-gestalt-key
     "ol92SaBpqIvQs+KBljuwGA", "kConferenceCallType",
     "oLjiDs+BWEdMVbjE0x6cnw", "DeviceSupportsStudioLightPortraitPreview",
     "OmiBcaNEpjOcuQrO5/Yrbw", "defaults", // non-gestalt-key

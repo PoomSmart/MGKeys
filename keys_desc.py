@@ -1,7 +1,6 @@
 NON_KEY_DESC = 'non-gestalt-key'
 
 unknown_keys_desc = {
-    "0gZY31xMzJDuUNTTnWT0Nw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with s, DeviceSupportsPulseWidthMaximization",
     "1HWDBfJwBJZ8TDHcPDafmQ": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard",
     "4H26SkyfcrZOrMAtjC6Cfw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with s, DeviceSupportsHypertensivePatternMeasurements",
     "8kcKPCGGyCpf66MMl5TVkA": f"{NON_KEY_DESC}, IODeviceTree:/multi-touch, starts with m, MultiTouchMaxBootTime",
@@ -17,7 +16,6 @@ unknown_keys_desc = {
     "lR7sjp4tOz3cMWoEMlZrLA": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with u, DevicePrefers3DBuildingStrokes",
     "mug/QuG6jZ3CYR9p7OWQaw": f"{NON_KEY_DESC}, IODeviceTree:/opal, starts with b",
     "NsUsZwajdZDN+suOIwkPvg": f"{NON_KEY_DESC}, IODeviceTree:/product/audio, starts with s, DeviceSupportsAlwaysAPVoiceTrigger",
-    "OkDaAJOK5NQMwkckKbxWZw": f"{NON_KEY_DESC}, IODeviceTree:/backlight, starts with s, DeviceSupportsGammaContrastPreservation",
     "P1djMN/L3B6otgGpO9WYkw": f"{NON_KEY_DESC}, IODeviceTree:/, starts with s, SiliconBringupBoard",
     "t56wS9db+T2F2bxBpYSX8Q": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/disp0, starts with e, DisplayDriverICChipID",
     "uNNFSosc1xQM/7bwlrqLXA": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/aop/iop-aop-nub/als, starts with m, DisplayMaxNits",
@@ -41,6 +39,7 @@ known_keys_desc = {
     "+xJ6RaQ6PDSsLjib8r5fgg": NON_KEY_DESC,
     "0/QVFV5/X0h5iDjrdYYcog": NON_KEY_DESC,
     "0gkWjKWKuS2gqzTaFHKxqw": NON_KEY_DESC,
+    "0gZY31xMzJDuUNTTnWT0Nw": NON_KEY_DESC,
     "0vvGMT0ltmG03nFfaXxoHg": NON_KEY_DESC,
     "1oUugT++JJx5gOVyB2la7w": NON_KEY_DESC,
     "1z6Kk4xUAVLdaBPGugsDSA": NON_KEY_DESC,
@@ -203,6 +202,7 @@ known_keys_desc = {
     "nudr7/i2XcxAX6widrWShg": NON_KEY_DESC,
     "OCKVZEIuMz4sxhLz7vmQ5w": NON_KEY_DESC,
     "OJTdSHEAfpOvV6m6o+Ou1w": NON_KEY_DESC,
+    "OkDaAJOK5NQMwkckKbxWZw": NON_KEY_DESC,
     "OmiBcaNEpjOcuQrO5/Yrbw": NON_KEY_DESC,
     "OtnrTIhWBtyPo45BcApMTw": NON_KEY_DESC,
     "oTuH4/axV9s11/jKxB2z2A": NON_KEY_DESC,
