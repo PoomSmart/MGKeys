@@ -9,7 +9,6 @@ MGKeys.playground/playground.xcworkspace
 dyld_shared_cache/
 extracted_dylibs/
 *__*
-version-*.txt
 
 # Executables
 util
