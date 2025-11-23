@@ -65,10 +65,20 @@ python3 guess_keys.py
 Some keys are properties in the IODeviceTree. You can extract them from an IPSW or a DeviceTree file:
 
 1. **Dump DeviceTree to JSON:**
-   Use `dump_dtree.sh` with an IPSW file or a raw DeviceTree file:
+   Use `dump_dtree.sh` with an IPSW file, a raw DeviceTree file, or specify a device and version for remote extraction:
+   
+   **Local File:**
    ```bash
    ./dump_dtree.sh <path/to/ipsw_or_dtree>
    ```
+
+   **Remote Extraction:**
+   ```bash
+   ./dump_dtree.sh -d <DEVICE> -v <VERSION> [-b <BUILD>]
+   # Example:
+   ./dump_dtree.sh -d iPhone15,2 -v 16.5
+   ```
+   
    This will generate `devicetree.json`.
 
 2. **Recover Keys:**
