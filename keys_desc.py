@@ -2,7 +2,9 @@ NON_KEY_DESC = 'non-gestalt-key'
 
 unknown_keys_desc = {
     "/4LCTfMhvzuiK6b557ir5Q": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/isp, starts with o, LiDARCalibrationPrCL",
+    "0gZY31xMzJDuUNTTnWT0Nw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with s, DeviceSupportsPulseWidthMaximization",
     "1HWDBfJwBJZ8TDHcPDafmQ": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard",
+    "4H26SkyfcrZOrMAtjC6Cfw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with s, DeviceSupportsHypertensivePatternMeasurements",
     "8kcKPCGGyCpf66MMl5TVkA": f"{NON_KEY_DESC}, IODeviceTree:/multi-touch, starts with m, MultiTouchMaxBootTime",
     "9f5ODNAt2gufqSI82eYnLw": f"{NON_KEY_DESC}, IODeviceTree:/multi-touch, starts with c, DeviceSupportsCorrectedTemperature",
     "bbyFCcrPE+k6ZXIVbXSFUw": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with u, DevicePrefersBuildingStrokes",
@@ -16,11 +18,13 @@ unknown_keys_desc = {
     "lR7sjp4tOz3cMWoEMlZrLA": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with u, DevicePrefers3DBuildingStrokes",
     "mug/QuG6jZ3CYR9p7OWQaw": f"{NON_KEY_DESC}, IODeviceTree:/opal, starts with b",
     "NsUsZwajdZDN+suOIwkPvg": f"{NON_KEY_DESC}, IODeviceTree:/product/audio, starts with s, DeviceSupportsAlwaysAPVoiceTrigger",
+    "OkDaAJOK5NQMwkckKbxWZw": f"{NON_KEY_DESC}, IODeviceTree:/backlight, starts with s, DeviceSupportsGammaContrastPreservation",
     "P1djMN/L3B6otgGpO9WYkw": f"{NON_KEY_DESC}, IODeviceTree:/, starts with s, SiliconBringupBoard",
     "t56wS9db+T2F2bxBpYSX8Q": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/disp0, starts with e, DisplayDriverICChipID",
     "uNNFSosc1xQM/7bwlrqLXA": f"{NON_KEY_DESC}, IODeviceTree:/arm-io/aop/iop-aop-nub/als, starts with m, DisplayMaxNits",
+    "vf61bz2yUWqBb+jD25ZK+w": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with s, SoCSKU",
     "wAbB2fAjUqUc6lNBelfWMA": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with n, DeviceSupportsPeriodicALSUpdates",
-    "zgtZIGG9jkHrBSZYHkVBtg": "DeviceDisablesAODByDefault",
+    "zgtZIGG9jkHrBSZYHkVBtg": f"{NON_KEY_DESC}, IODeviceTree:/product, starts with a, DeviceDisablesAODByDefault",
 }
 
 known_keys_desc = {
@@ -95,6 +99,7 @@ known_keys_desc = {
     "cmkS/KVB6ubxH76sLbumbw": NON_KEY_DESC,
     "cq/jTAQ8zJab+ibcGUzJew": NON_KEY_DESC,
     "CUMH6bG4DFnu7ZREp5YkUQ": NON_KEY_DESC,
+    "cYhEo8URqAG7WXq16D9i6w": NON_KEY_DESC,
     "D6PT05dEJ0f9Ayk7Yi92RA": NON_KEY_DESC,
     "dbYxhQWXkJhjp8uPhoMDvw": NON_KEY_DESC,
     "DCy89X5oErFAps95GX38mQ": NON_KEY_DESC,
@@ -149,6 +154,7 @@ known_keys_desc = {
     "JOlwW/P8Cw3CDCoFunq8og": NON_KEY_DESC,
     "JQr1mcESYcN648vrcZPJEA": NON_KEY_DESC,
     "jw9WzWmThYzveJbsV+GZMA": NON_KEY_DESC,
+    "Jxfcf2mlZRcufg9IahY14A": NON_KEY_DESC,
     "K0tZN4PayAx7RgB0M+oohw": NON_KEY_DESC,
     "kc+QzHP4Frf2NvP+mclQ2A": NON_KEY_DESC,
     "KFwMMyiMoa8pLgGLwo78Vw": NON_KEY_DESC,
@@ -183,6 +189,7 @@ known_keys_desc = {
     "mm4/5+X4Z+eStXyipfwWVQ": NON_KEY_DESC,
     "MQoTKg93BM8ZhBaB3WUPdw": NON_KEY_DESC,
     "MvBKQ+GSnR3DjkovgNL+3w": NON_KEY_DESC,
+    "MvVy/Q3+03B+dvsOd5g0MA": NON_KEY_DESC,
     "MXZ7vg7hul895QdsLUBJFA": NON_KEY_DESC,
     "MzxVeXMzucmEMx2lw8Pg1Q": NON_KEY_DESC,
     "n/G0fQIQiom+pb4tHA4Mmw": NON_KEY_DESC,
