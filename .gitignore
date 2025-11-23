@@ -6,6 +6,7 @@ MGKeys.playground/playground.xcworkspace
 # Input
 *.ipsw
 *.dylib*
+*.plist
 dyld_shared_cache/
 extracted_dylibs/
 *__*
