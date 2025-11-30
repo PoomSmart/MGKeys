@@ -7,7 +7,7 @@
 static const struct tKeyMapping keyMappingTableLegacy[] = {
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability", // iOS 12.0-
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
-    "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents",
+    "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents", // iOS 13.7-
     "061e/gd5kFdZwwe1G2qXFQ", NULL,
     "0kE9ab+OYAMDszxCc5nNTw", "MusicStoreCapability",
     "0tONs5niVymiPVtijnw9hg", "CallerIDCapability",
@@ -44,7 +44,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "aIzBwNZS8VUrxL+9grefTA", "GameKitCapability",
     "Ar0GS4uq6WcJ33OpIF14XQ", "HealthKitCapability",
     "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability",
-    "BfEIy3W3t0Wxf7Hf7LEsAw", "PearlCameraCapability",
+    "BfEIy3W3t0Wxf7Hf7LEsAw", "PearlCameraCapability", // iOS 13.7-
     "BfM9558OSUj9vu/OmyjLnw", "AssistantCapability",
     "BhXj+5n3+0HcPoSArDGX7g", "EffectiveSecurityMode", // iOS pre-8.4
     "bstETUHlPlCFu+l1GRvM0A", "TVOutCrossfadeCapability",
@@ -131,7 +131,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "qMmeMcIsFZrRu0jfOy3I9Q", "HideNonDefaultApplicationsCapability",
     "Rh3jQ1k4bhpCfR4FimhRZw", "AppStoreCapability",
     "S9ZweBMsbQwCL6t3Zpj4fg", "IOSurfaceBackedImagesCapability",
-    "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC",
+    "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC", // iOS 13.7-
     "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability",
     "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus", // iOS pre-8.4
     "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability",
@@ -141,7 +141,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "tpRXJz7izvvkGMRnTXaVWg", "WatchCompanionCapability",
     "tRBbYA5BLkf/wzaof1WfyQ", "SIMPhonebookCapability",
     "tZOIwbmkkjP5Nggu8/70dw", "MainScreenClass",
-    "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics",
+    "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.7-
     "Ue0GVAyEOkP5kyQgcXKlxg", NULL,
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported",
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS pre-8.4
@@ -149,7 +149,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "UtO2BMC/uvWNvjPhK2EXiQ", "ARMV6ExecutionCapability",
     "uYXqOrxG58efKTnlBA3PXw", "AdditionalTextTonesCapability",
     "V3vz1JOFx829T5VapwzRxQ", "SimultaneousCallAndDataSupported",
-    "v5AoJC7hPGHbysTMLip12A", "SupportsTapToWake",
+    "v5AoJC7hPGHbysTMLip12A", "SupportsTapToWake", // iOS 13.7-
     "V5QFNbWGgrw+UZPvgIbDvQ", "ASTC", // iOS 12.0-
     "VhcvUOAVhvIns8SosbTDrg", "NotGreenTeaDeviceCapability",
     "VOKmP/SJjhnx1AaT13J7QA", "MultitaskingGesturesCapability",
