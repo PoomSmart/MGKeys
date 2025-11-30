@@ -77,7 +77,9 @@ if [[ "$REMOTE_EXTRACT" == true ]]; then
         IPSW_CMD="ipsw download ipsw --device \"$DEVICE\" --version \"$VERSION\" --dyld --dyld-arch \"$ARCH\" --confirm"
     fi
 
-    if eval "$IPSW_CMD" 2>/dev/null; then
+    if ! eval "$IPSW_CMD" 2>&1; then
+        log_error "IPSW remote extraction command failed"
+    else
         log_info "Successfully extracted dyld_shared_cache from IPSW"
 
         # Find the extracted dylib
