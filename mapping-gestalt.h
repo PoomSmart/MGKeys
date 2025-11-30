@@ -32,7 +32,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "0D3qCmmfJ/i1mpmjOsV7EA", "ScreenSerialNumber", // iOS 13.7-
     "0dnM19zBqLw5ZPhIo4GEkg", "SecureElement", // iOS pre-8.4
     "0GizaJLOyfzgAbxQ/5aniA", "DeviceHousingColorUncooked", // iOS 14.3-
-    "0GUU+Z8xIu+7TE+scKXscg", "OysterCapability", // iOS 26.0-
+    "0GUU+Z8xIu+7TE+scKXscg", "OysterCapability", // iOS 17.0
     "0jjK6IVSQzA8doQeSwmujA", "software-bundle-version", // iOS 14.3-
     "0KHhsv2F/BGA9AppFljmKg", "AttestationUniqueDeviceID", // iOS 14.3-
     "0l4wqBtWEAK1tOkeBHkU6Q", "main-screen-pitch", // iOS pre-8.4
@@ -46,7 +46,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "0Y4fmR6ZHZPxDZFfPtBnRQ", "SysCfg", // iOS pre-8.4
     "0Yu30fwSQVPKvHVla17kXw", "umts-device", // iOS pre-8.4
     "16N2bLOzcgJEsZToEX21Zg", "accessibility", // iOS pre-8.4
-    "1Bk5Dr0hTb0bYXl04068MQ", "DeviceSupportsTwilight", // iOS 26.0-
+    "1Bk5Dr0hTb0bYXl04068MQ", "DeviceSupportsTwilight", // iOS 17.4
     "1CFbwvaGHR/89vDu2VjnpQ", "DeviceSupportsLowLatency", // iOS 14.3-
     "1cPL2NOPt23mHxhn0J4xPA", "DeviceSupportsGrayDimming", // iOS 26.0
     "1DQNgySZSIjPqLWroIzfiQ", "BacklightCapability", // iOS pre-8.4
@@ -74,7 +74,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "2tBx5IzZX4CpUVJ79LfsVg", "TribecaSettings", // iOS 26.0-
     "2xSqkUxsVWmOBWk6StVOfQ", "LunaFlexSerialNumber", // iOS 12.0-
     "2zyzecwSf2ZYRpB3tuQhOQ", "DeviceSupportsWirelessSplitting", // iOS 13.7-
-    "37NVydb//GP/GrhuTN+exg", "DeviceSupports80ChargeLimit", // iOS 26.0-
+    "37NVydb//GP/GrhuTN+exg", "DeviceSupports80ChargeLimit", // iOS 17.3
     "38C0kq9NiVaMsqjlUsCHcQ", "ota-activation", // iOS pre-8.4
     "39ZkJVEsL4pmCXbg+89QmQ", "accelerometer", // iOS pre-8.4
     "3kmXfug8VcxLI5yEmsqQKw", "InDiagnosticsMode", // iOS 10.3-
@@ -84,7 +84,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "4+qmMh9JBDh72Nq6fD64RQ", "gyroscope", // iOS pre-8.4
     "475wW3fne+tyzGr4wleUSQ", "CarrierBundleInfoArray", // iOS pre-8.4
     "4D8XW4YwJI7QvyPhv1TEdw", "DeviceSupportsRaiseToSpeak", // iOS 12.0-
-    "4ec+Q3FdQ1N0HeNpOPsmfA", "DeviceSupportsThunderbolt", // iOS 26.0-
+    "4ec+Q3FdQ1N0HeNpOPsmfA", "DeviceSupportsThunderbolt", // iOS 16.0
     "4fh9efw4o1yaFqkXNCXoeA", "DeviceSupportsHypertensivePatternMeasurements", // iOS 26.0
     "4fT83+9coO3VAUnlxuOOcw", "SupportsEDUMU", // iOS 9.3-
     "4I0hOaR3n80379Vka7u+Xg", "volume-buttons", // iOS pre-8.4
@@ -99,7 +99,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "52jOwM53SViDv1B3wZIIOg", "DeviceSupportsAdvancedVoiceProcessorChatFlavor", // iOS 26.0-
     "566JrJVMlDfnslGpwUzNlQ", "ChipID", // iOS pre-8.4
     "57eLnXynqDlQaGEi+9JAtQ", "call-forwarding", // iOS pre-8.4
-    "5hfTRTYOuOthOyRny6a38w", "continuity-camera", // iOS 26.0-
+    "5hfTRTYOuOthOyRny6a38w", "continuity-camera", // iOS 17.0
     "5lAK1Xp+ezh1Qu+4jnHAOg", "SupportsSOS", // iOS 10.3-
     "5MSZn7w3nnJp22VbpqaxLQ", "venice", // iOS pre-8.4
     "5mvQIwu3Mqqw/zOKmwGkWw", "ProximitySensorCalibrationDictionary", // iOS pre-8.4
@@ -118,14 +118,14 @@ static const struct tKeyMapping keyMappingTable[] = {
     "6IejgN+1Fmu5/QrZFOIeNw", "DeviceSupportsPulseWidthMaximization", // iOS 26.0
     "6IFOueGt1uQWk1sz50VIVg", "WatchSupportsVoiceEditing", // iOS 26.0
     "6iI7/9cVUGIjdrSvIXEt4A", "RearCameraCapability", // iOS pre-8.4
-    "6JkXMDhnrEMvLiRlYJL6zA", "RingerButtonNormalizedCGRect", // iOS 26.0-
+    "6JkXMDhnrEMvLiRlYJL6zA", "RingerButtonNormalizedCGRect", // iOS 17.3
     "6k70IxahfOQTZbGwu++QwA", "additional-text-tones", // iOS pre-8.4
     "6MnVtR+c9LeR46bMxvR5Yw", "RegionalBehaviorNoVOIP", // iOS pre-8.4
     "6pjDdEw65TFyL1FmIdszXw", "hd-video-capture", // iOS pre-8.4
     "6RrxXzvfw2GZeUPLKXxrmA", "RearFacingCamera60fpsVideoCaptureCapability", // iOS pre-8.4
     "6S9CvPHPtzHQqKudHSfsag", "haptics", // iOS 14.3-
     "6UUmcaeT7rJoyUVmoPJd4A", "ProximitySensorCalibration", // iOS pre-8.4
-    "6VRApe6L2vc1r2s+xts9/w", "DeviceSupportsIndependentOutputOnSpeaker", // iOS 26.0-
+    "6VRApe6L2vc1r2s+xts9/w", "DeviceSupportsIndependentOutputOnSpeaker", // iOS 17.4
     "6WdGcQGw4VLzrgxJo+bcrw", "UniqueChipIDString", // iOS 26.0-
     "7AqG7ADB9UZgLLYKd9ZhrQ", "DeviceSupportsContextualVolume", // iOS 26.0
     "7D54DikSnFQnbDEBwlKQTQ", "DevicePrefersCheapTrafficShaders", // iOS pre-8.4
@@ -148,7 +148,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "8bY/L3i3rmxrl4ZjFZZpgQ", "siri-gesture", // iOS pre-8.4
     "8DHlxr5ECKhTSL3HmlZQGQ", "RestoreOSBuild", // iOS pre-8.4
     "8fyX2yEg28cYgJ10Yl+ueA", "QuickNoteCapability", // iOS 26.0-
-    "8gVfz9/8R1OtWBBtI0o/+Q", "DeviceSupportsTimeInDaylight", // iOS 26.0-
+    "8gVfz9/8R1OtWBBtI0o/+Q", "DeviceSupportsTimeInDaylight", // iOS 17.0
     "8LAJHwc8DUQZwV2TSwsysA", "RearFacingCameraStageLightPortraitCaptureCapability", // iOS 13.7-
     "8olRm6C1xqr7AJGpLRnpSw", "PearlIDCapability", // iOS 12.0-
     "8OTc3mN30ACaEwecgpKfXA", "CloudPhotoLibraryCapability", // iOS 12.0-
@@ -180,7 +180,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "aadL+4GFBDe6DdsUD2HGGw", "StoreDemoMode", // iOS 26.0-
     "aCQx2Qq/TChnNAq1rr6Egw", "DeviceSupportsAlwaysOnCompass", // iOS 9.3-
     "aD51uqjUwgRKjAC04BCrxg", "VolumeUpButtonCGRect", // iOS 26.0-
-    "aDuN0jCthN9lLu4qQ9OrEA", "CameraIMUDistanceType", // iOS 26.0-
+    "aDuN0jCthN9lLu4qQ9OrEA", "CameraIMUDistanceType", // iOS 17.0
     "AFXhxraF1bvyaCMlBIOZPA", "RequiredBatteryLevelForSoftwareUpdate", // iOS pre-8.4
     "AGrtXj3nqzz8KFfFHK7/sA", "ThreadRadioMacAddressForProvisioning", // iOS 26.0-
     "Aixt/MEN2O2B7f+8m4TxUA", "HasExtendedColorDisplay", // iOS 9.3-
@@ -209,9 +209,9 @@ static const struct tKeyMapping keyMappingTable[] = {
     "bbtR9jQx50Fv5Af/affNtA", "PhysicalHardwareNameString", // iOS 14.3-
     "BdS2M69XMEc9v/jsHBC3Eg", "ThreadRadioCapability", // iOS 26.0-
     "Bg8VW4HdQj+GVY+191T3nQ", "DeviceSupportsSideButtonClickSpeed", // iOS 13.7-
-    "bGUN8lS6sYzy3xhePubp8A", "KeyboardMutePreservesRegionalShutterClickBehavior", // iOS 26.0-
+    "bGUN8lS6sYzy3xhePubp8A", "KeyboardMutePreservesRegionalShutterClickBehavior", // iOS 16.0
     "bhPjDx/0UDk9mzia6ksZ+A", "nike-support", // iOS 14.3-
-    "Bim3FC83Te8QX1kfSpqYKQ", "KeyboardMutePreservesRegionalShutterClickBehaviorForLegacyDevices", // iOS 26.0-
+    "Bim3FC83Te8QX1kfSpqYKQ", "KeyboardMutePreservesRegionalShutterClickBehaviorForLegacyDevices", // iOS 17.0
     "Birtx7GxrxCCUzsE1JQO8Q", "LowPowerWalletMode", // iOS pre-8.4
     "bl+nF6e86pLBiPP4pVJ24g", "PhotoCapability", // iOS pre-8.4
     "BoNz1QXiAEUgic9RdMVLIg", "FaceTimeEncodings", // iOS pre-8.4
@@ -228,7 +228,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "c7fCSBIbX1mFaRoKT5zTIw", "WifiVendor", // iOS pre-8.4
     "cBy4BcYs5YWtFHbBpt4C6A", "DeviceSupportsHaptics", // iOS 10.3-
     "ce5pjDJVSOxjcg1HwmAezA", "opengles-2", // iOS pre-8.4
-    "ceKgtkUE4F9ywcr57zdUWA", "DeviceSupportsAOP2", // iOS 26.0-
+    "ceKgtkUE4F9ywcr57zdUWA", "DeviceSupportsAOP2", // iOS 18.0
     "ChBMzkxYdT9Xmw3QN5kMWA", "DeviceSupportsSimplisticRoadMesh", // iOS pre-8.4
     "CJcvxERO5v/3IWjDFKZKRw", "DeviceBackingColor", // iOS 10.3-
     "CK3I7fFGkgeqzKEhGew9rQ", "FaceTimeFrontCameraTemporalNoiseReductionMode", // iOS pre-8.4
@@ -236,17 +236,17 @@ static const struct tKeyMapping keyMappingTable[] = {
     "CN/XFuy/9Fdv0yE+28kwRQ", "cell-broadcast", // iOS pre-8.4
     "CN64p1hw1JVdTHCfBdgPLQ", "BasebandStatus", // iOS pre-8.4
     "CnoPCMssOh+xPJJo6pvnog", "WatchSupportsAutoPlaylistPlayback", // iOS 12.0-
-    "CoWnN4xo783YGn4wLrUatA", "DeviceSupportsDisplayPort", // iOS 26.0-
+    "CoWnN4xo783YGn4wLrUatA", "DeviceSupportsDisplayPort", // iOS 16.0
     "CPiqZJJPocpjc5C5qe1tiw", "ArrowUniqueChipID", // iOS 13.7-
     "CpVSHukvtqlJzCgSdoHW5w", "SBAllowSensitiveUI", // iOS pre-8.4
     "CQ6gFmgMhpnnISvG6VakBQ", "MobileSubscriberCountryCode", // iOS pre-8.4
     "cRjPy4Ef+KZwJ+nfPeBV5Q", "DeviceSupportsSwimmingWorkouts", // iOS 10.3-
-    "cT44WE1EohiwRzhsZ8xEsw", "RingerButtonCapability", // iOS 26.0-
+    "cT44WE1EohiwRzhsZ8xEsw", "RingerButtonCapability", // iOS 17.3
     "ct5Dh6u0D6WDJKg2PrMFVQ", "FaceTimePreferredEncoding", // iOS pre-8.4
     "cux58RcuSiBhpxWnT3pE4A", "FrontFacingCameraVideoCapture4kMaxFPS", // iOS 10.3-
     "cVdYn5ajyDgnkT7YmtD1Gg", "RunnableArchitectures", // iOS 26.0
     "cW+7coMzO/hTtCCDcSvNOw", "RequiresNaturalVolumeButtonArrangement", // iOS 26.0-
-    "CwvKxM2cEogD3p+HYgaW0Q", "CameraButtonCapability", // iOS 26.0-
+    "CwvKxM2cEogD3p+HYgaW0Q", "CameraButtonCapability", // iOS 18.0
     "cWWKdUn+rIclZ60ZGAVhBw", "CameraHDR2Capability", // iOS 12.0-
     "cX1+ZsVacGTXWVKB9enYow", "shoebox", // iOS pre-8.4
     "cZflGJ39lJHTCPy35/N14Q", "SiliconBringupBoard", // iOS pre-8.4
@@ -264,20 +264,20 @@ static const struct tKeyMapping keyMappingTable[] = {
     "dJvRNnysMoubdy0ZCK2aRQ", "JasperSerialNumber", // iOS 13.7-
     "DoMjIR2qPkxXtP/kDu/gfQ", "DeviceSupportsSecureDoubleClick", // iOS 14.3-
     "dp7SlZZQotrh8McQoH1xFA", "rear-facing-camera", // iOS pre-8.4
-    "dQf5OObttLFgJniqrS19qA", "FrontCameraRotationForISP", // iOS 26.0-
-    "drMm12aFyD64om7eXVFRVA", "DeviceSupportsDynamicEndOfCharge", // iOS 26.0-
+    "dQf5OObttLFgJniqrS19qA", "FrontCameraRotationForISP", // iOS 17.4
+    "drMm12aFyD64om7eXVFRVA", "DeviceSupportsDynamicEndOfCharge", // iOS 16.0
     "DrrXMX9VWX7bMj0MZuhTUA", "DeviceKeyboardCalibration", // iOS 13.7-
     "DrSqlXYNVfYXCvAsuUrUDA", "DebugBoardRevision", // iOS pre-8.4
     "DtSpvgyOyNVwNa5W0zigqg", "DeviceSupportsMomentCapture", // iOS 13.7-
     "DViRIxZ/ZwO007CLcEYvZw", "SoftwareBundleVersion", // iOS pre-8.4
     "dW5fpt/6HhaTbnK/UqL6cA", "HWModelDescriptionForAudio", // iOS 26.0
     "DWrhyh1BwYypYmW5q78Wuw", "armv7", // iOS pre-8.4
-    "DxmNcovWWN464hwZdGfonA", "CameraButtonNormalizedCGRect", // iOS 26.0-
-    "dz7F2FFseAysXoUZqaANZw", "DeviceSupportsEUCapabilities", // iOS 26.0-
+    "DxmNcovWWN464hwZdGfonA", "CameraButtonNormalizedCGRect", // iOS 18.0
+    "dz7F2FFseAysXoUZqaANZw", "DeviceSupportsEUCapabilities", // iOS 17.3
     "DzLC4o1jZ4hWtP8aB6An6g", "SDIOManufacturerTuple", // iOS pre-8.4
     "E+9+cggZ2rXU0z8mWiOung", "AllowPhoneApp", // iOS 26.2
-    "e0HV2blYUDBk/MsMEQACNA", "DeviceSupportsBreathingDisturbancesMeasurements", // iOS 26.0-
-    "E0wrprlNya8gngoVpPXj2w", "DeviceSupportsCorrectedTemperature", // iOS 26.0-
+    "e0HV2blYUDBk/MsMEQACNA", "DeviceSupportsBreathingDisturbancesMeasurements", // iOS 18.0
+    "E0wrprlNya8gngoVpPXj2w", "DeviceSupportsCorrectedTemperature", // iOS 16.0
     "E4vGMChwcVRKD8hMVxnRvg", "DeviceSupportsUSLegallyCompliantBloodOxygen", // iOS 26.0
     "e4ZSDal1Fg7QfCA7rlNmSQ", "DeviceSupportsLiveActivities", // iOS 26.0-
     "e8KVLQDfW5n4LxdE3N84Xw", "DeviceSupportsCyclingAutoStartReminders", // iOS 26.0-
@@ -293,7 +293,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ELLSWiPOyh0roYBypZFHFA", "magnetometer", // iOS pre-8.4
     "emXA9B552rnSoI7xXE91DA", "DeviceLaunchTimeLimitScale", // iOS 9.3-
     "eNgz35a7iZnVeEMwsBQZew", "BasebandChipId", // iOS pre-8.4
-    "eP/CPXY0Q1CoIqAWn/J97g", "DeviceSupportsLandscapeFaceID", // iOS 26.0-
+    "eP/CPXY0Q1CoIqAWn/J97g", "DeviceSupportsLandscapeFaceID", // iOS 17.0
     "eQd5mlz0BN0amTp/2ccMoA", "SupportsForceTouch", // iOS 9.3-
     "EqrsVvjcYDdxHBiQmGhAWw", "apple-internal-install", // iOS pre-8.4
     "ErupMbaQrM6KypD4K0kTDQ", "OpenGLESVersion", // iOS pre-8.4
@@ -311,8 +311,8 @@ static const struct tKeyMapping keyMappingTable[] = {
     "F1Xz9g1JORibBS9DYPUPrg", "BlueLightReductionSupported", // iOS 9.3-
     "f2DlVMUVcV+MeWs/g2ku+g", "BatteryCurrentCapacity", // iOS pre-8.4
     "f8peylp799CJta4Ev/vz8A", "hiccough-interval", // iOS pre-8.4
-    "fbpzGGoBNcvDLt4LlZGnfA", "DeviceSupportsSingleDisplayEnhancedMultitasking", // iOS 26.0-
-    "FBw/2WrPE2supEKosxxoTw", "WatchAppButtonCapability", // iOS 26.0-
+    "fbpzGGoBNcvDLt4LlZGnfA", "DeviceSupportsSingleDisplayEnhancedMultitasking", // iOS 16.1
+    "FBw/2WrPE2supEKosxxoTw", "WatchAppButtonCapability", // iOS 16.0
     "fdh+s6j3VijuyrK7xLjd7g", "main-screen-class", // iOS pre-8.4
     "FDsm68UVR7l3wErusGLgKg", "hw-snapshots-need-purplegfx", // iOS pre-8.4
     "FE4Tff1EICGXaI27X3P/dw", "web-browser-engine", // iOS 26.0-
@@ -326,13 +326,13 @@ static const struct tKeyMapping keyMappingTable[] = {
     "fJZs6N8SqTS4RuQVh3szxA", "camera-front-flash", // iOS 9.3-
     "FkD7K642S082lnfw/ohHzg", "BasebandFirmwareManifestData", // iOS pre-8.4
     "fkWvcjYnYzGRhVKiBoYzgA", "HasPKA", // iOS 9.3-
-    "FLmEtGw+OD98VLXasx7W6A", "DeviceSupportsWirelessChargingEnergyUseNotification", // iOS 26.0-
+    "FLmEtGw+OD98VLXasx7W6A", "DeviceSupportsWirelessChargingEnergyUseNotification", // iOS 17.3
     "FNvQ6lBvJIUcYBzQ8ggOUQ", "SavageUID", // iOS 12.0-
     "FOs+LbLUs+TajsEE4xkbrw", "gas-gauge-battery", // iOS pre-8.4
     "fqNtLlgbYfa9gSNrhg7VGQ", "encode-aac", // iOS pre-8.4
     "frZQaeyWLUvLjeuEK43hmg", "InverseDeviceID", // iOS pre-8.4
     "FtgLNPlv55lerm7FY/kClw", "AbsoluteDepthLimit", // iOS 26.0-
-    "fu+4kyf8VcMBtgbMyJlLtg", "WorkoutUltraMode", // iOS 26.0-
+    "fu+4kyf8VcMBtgbMyJlLtg", "WorkoutUltraMode", // iOS 16.1
     "fucd7llSuoCNHrrvLS1QQg", "watch-companion", // iOS pre-8.4
     "fuKL2rMywRgQF1wowOA/cg", "DeviceBrand", // iOS 10.3-
     "fv8ZXM/NhUHQBQqCSk19cA", "FrontFacingCameraAutoHDRCapability", // iOS pre-8.4
@@ -353,14 +353,14 @@ static const struct tKeyMapping keyMappingTable[] = {
     "GGIIDN/ANr8X2WrgS6nBYQ", "HWModelUniqueStr", // iOS 26.0
     "ghpAuGJlPoauWijdtPi7sQ", "UserAssignedDeviceName", // iOS pre-8.4
     "gI6iODv8MZuiP0IA+efJCw", "WifiAddress", // iOS pre-8.4
-    "gizLvTWx1sMUYQ9EYr/N4g", "CountryOfOrigin", // iOS 26.0-
+    "gizLvTWx1sMUYQ9EYr/N4g", "CountryOfOrigin", // iOS 17.0
     "gKzNJcweSCWA+gIGiUQJ5w", "mms", // iOS pre-8.4
-    "gLd6IDfbVM+JiOhktEP7Bw", "SupplementalBuildVersion", // iOS 26.0-
+    "gLd6IDfbVM+JiOhktEP7Bw", "SupplementalBuildVersion", // iOS 16.0
     "Glo+aTkt0Uw31BghCxnsyQ", "BridgeRestoreVersion", // iOS 10.3-
-    "gme55xrmjlSlBkahnZq36A", "MetalPerfLevelCapability", // iOS 26.0-
+    "gme55xrmjlSlBkahnZq36A", "MetalPerfLevelCapability", // iOS 17.0
     "gnQwi8RnEeMG9qBe3IUKrg", "DeviceCoverGlassMaterial", // iOS 10.3-
     "GO5/TJivIXtQkTkFWkRc9A", "certificate-production-status", // iOS 14.3-
-    "GPIs61LYNpcwZqwlFr7bbg", "DeviceSupportsCompassOrienteering", // iOS 26.0-
+    "GPIs61LYNpcwZqwlFr7bbg", "DeviceSupportsCompassOrienteering", // iOS 16.0
     "gPoIZFd4NhmSKrk67qH80w", "SBCanForceDebuggingInfo", // iOS pre-8.4
     "gq0j1GmcIcaD4DjJoo9pfg", "RearFacingCameraStillDurationForBurst", // iOS 9.3-
     "GqAdWRLnC7oYQrNYF48VYA", "SubProductType", // iOS 26.0
@@ -379,7 +379,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "H97G3GzDYb4wY5kwJ0AKfQ", "ForwardCameraCapability", // iOS pre-8.4
     "h9jDsbgj7xIVeIQ8S3/X3Q", "ProductType", // iOS pre-8.4
     "HBf5L3fT108kze+YWeiy+w", "VSHCompensationMinimumNits", // iOS 26.0-
-    "HCzWusHQwZDea6nNhaKndw", "DeviceSupportsCollisionSOS", // iOS 26.0-
+    "HCzWusHQwZDea6nNhaKndw", "DeviceSupportsCollisionSOS", // iOS 16.0
     "heP+NTlvkhJ2zzWIUznawA", "MobileEquipmentInfoBaseProfile", // iOS pre-8.4
     "hewg+QX1h57eGJGphdCong", "DeviceSupportsPortraitLightEffectFilters", // iOS 12.0-
     "hfs43coKE3iWlCwnqPgBpg", "IceFallID", // iOS 10.3-
@@ -418,7 +418,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "IhNb6V2L1pt+hBlZMsm5FQ", "DeviceSupportsDCP", // iOS 14.3-
     "IIYjwu1lbAyGz5t0c4ECoA", "MainDisplayRotation", // iOS 9.3-
     "iJAKoV0Bp88r37qG+kkXzw", "DeviceMemorySize", // iOS 26.0-
-    "Ijs+pw5tRyxqSy5kfgZNuQ", "DeviceSupportsAbsoluteDepth", // iOS 26.0-
+    "Ijs+pw5tRyxqSy5kfgZNuQ", "DeviceSupportsAbsoluteDepth", // iOS 16.0
     "ik8OQ5JoYhyK8AoTx29MuA", "DeviceSupportsOnDemandPhotoAnalysis", // iOS 12.0-
     "il2TbGC66RCTKaEgSOVlgQ", "DeviceSupportsMultiUser", // iOS 26.0-
     "ILaGO+KV5JAOq7Q5GEwbWQ", "AvailableDisplayZoomSizes", // iOS 9.3-
@@ -434,7 +434,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "izFv/qj3IUhqAIiEuYH6xw", "MusicStore", // iOS pre-8.4
     "j1pdCAYnpIEYMqIAitm3JA", "DeviceSupportsCinnamon", // iOS 12.0-
     "J1QHVh74Nnd6Rqyiq71/yw", "AVDDecodingRate", // iOS 26.0-
-    "j39y4QUrP6cvZY8Pjyv64w", "PearlMotionDetectionCapability", // iOS 26.0-
+    "j39y4QUrP6cvZY8Pjyv64w", "PearlMotionDetectionCapability", // iOS 17.0
     "j4dedPnpeXouudM1+j3dsQ", "IntegratedCircuitCardIdentifier", // iOS pre-8.4
     "j8/Omm6s1lsmTDFsXjsBfA", "DeviceSupportsAlwaysOnTime", // iOS 13.7-
     "J912s3mVzhReVtPv4HwqNQ", "FaceTimeCameraRequiresFastSwitchOptions", // iOS pre-8.4
@@ -463,11 +463,11 @@ static const struct tKeyMapping keyMappingTable[] = {
     "JXmZWYUbLoumvz7hu/GL0A", "FaceTimeBackCameraTemporalNoiseReductionMode", // iOS pre-8.4
     "jxx29Cq5bGHDnkcha4y/Rw", "SpeakerCalibrationMiGa", // iOS 12.0-
     "k+KTni1jrwErpcDMEnn3aw", "MobileDeviceMinimumVersion", // iOS 12.0-
-    "K/R1GfGfCkXvEhaPS2Vrng", "DeviceSupportsSiriUnderstandingOnDevice", // iOS 26.0-
+    "K/R1GfGfCkXvEhaPS2Vrng", "DeviceSupportsSiriUnderstandingOnDevice", // iOS 17.0
     "K57p2Tit1BlJ8rFbLl/Nqg", "DeviceSupportseARC", // iOS 26.0-
     "k5lVWbXuiZHLA17KGiVUAA", "BluetoothAddress", // iOS pre-8.4
     "k7QIBwZJJOVw+Sej/8h8VA", "CPUArchitecture", // iOS pre-8.4
-    "Kao6GNYdAy5hwXblxeGYJQ", "DeviceSupportsBatteryInformation", // iOS 26.0-
+    "Kao6GNYdAy5hwXblxeGYJQ", "DeviceSupportsBatteryInformation", // iOS 17.3
     "KGlZoljMyZQSxfhROj0IFg", "data-plan", // iOS pre-8.4
     "khE304sL66yzf7K+2e+0cw", "DeviceSupportsUSBTypeCDisplay", // iOS 26.0-
     "kj5Hw7ZKY+hm7ZCs0Caznw", "ScreenCaptureWidth", // iOS 26.0-
@@ -475,7 +475,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "kKgJsWN/rBUAkimOtm/wbA", "arm64", // iOS pre-8.4
     "kkSkHTEei96N1ZehicOgoA", "AppCapacityTVOS", // iOS 9.3-
     "KMgjmT+dsqBCXu1YQEcOFg", "RegionalBehaviorValid", // iOS pre-8.4
-    "Knrkxkj5zZTf/FrPNQClgg", "GroundhogEnabled", // iOS 26.0-
+    "Knrkxkj5zZTf/FrPNQClgg", "GroundhogEnabled", // iOS 16.4
     "Kq9K9xqDoUiUP7JEfg+pNw", "DeviceSupportsDoNotDisturbWhileDriving", // iOS 12.0-
     "kt7gXeIiU0dLEKrgUSsLVw", "opengles-1", // iOS pre-8.4
     "kT9JwUR2xPCTHTdgvG3UdA", "torpedo", // iOS 14.3-
@@ -485,9 +485,9 @@ static const struct tKeyMapping keyMappingTable[] = {
     "kyxFFGn+VS4L9a/bsvm19Q", "Image4Supported", // iOS pre-8.4
     "KzUQgIyBRinkweVMNUCOWA", "ArcModuleSerialNumber", // iOS 12.0-
     "L+KOzmOzO5DiJUZl21QGVg", "StarkCapability", // iOS pre-8.4
-    "l/bXsek3q5yjYDwoPAktVQ", "DeviceSupportsAlwaysAPVoiceTrigger", // iOS 26.0-
+    "l/bXsek3q5yjYDwoPAktVQ", "DeviceSupportsAlwaysAPVoiceTrigger", // iOS 18.2
     "l/n0Z7pMB8k0GyTKz3v3Tw", "AirplaneMode", // iOS pre-8.4
-    "l1CWke97nbaAcWDqA6T5LA", "DeviceSupportsElton", // iOS 26.0-
+    "l1CWke97nbaAcWDqA6T5LA", "DeviceSupportsElton", // iOS 17.3
     "L2Oq7vNNUKuv+iJ4m9xtiw", "SIMTrayStatus", // iOS pre-8.4
     "l3rf7ZBrcaYn5mY5o7xiIg", "HardwareSupportsSecureDoubleClick", // iOS 26.0-
     "L47fh6KehOmR+AseqK2Xsw", "DeviceSupportsCCK", // iOS 9.3-
@@ -519,7 +519,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "m+FD6mX8VZzP95hOhM+jow", "hw-encode-snapshots", // iOS pre-8.4
     "M+WPVivF4iTnm1CC8c6h+A", "DeviceAlwaysPrewarmActuator", // iOS 12.0-
     "M1n2sAqf33NAOgZRGxQYBA", "DeviceSupportsPersonalTranslator", // iOS 26.0
-    "m4alZgBFhxNuTZyrEM2nbA", "MacFormFactor", // iOS 26.0-
+    "m4alZgBFhxNuTZyrEM2nbA", "MacFormFactor", // iOS 16.4
     "m4UsCAgXhbdnwLebiyKMiw", "UIReachability", // iOS pre-8.4
     "m7lDS+oP8q0pGg+CO7RvPg", "DisplayBootRotation", // iOS 13.7-
     "m9ORTKMgu9A+zF+A61Zz5A", "DeviceSupportsPhotosLocalLight", // iOS 12.0-
@@ -536,8 +536,8 @@ static const struct tKeyMapping keyMappingTable[] = {
     "MKE8hwsOxxRCtwBk2aDBZA", "ProductTypeDescForAutomatedTesting", // iOS 26.0
     "mL1lk3ZVGDFUQhxU9YLW6Q", "FrontFacingCameraHFRVideoCapture1080pMaxFPS", // iOS 13.7-
     "mmu76v66k1dAtghToInT8g", "UIParallaxCapability", // iOS pre-8.4
-    "MQJ1mlVrhOwaUUVJehJSVA", "WatchKeyboardCapability", // iOS 26.0-
-    "MrC93gcyPVLHmEbzUu9uzQ", "IsVirtualDevice", // iOS 26.0-
+    "MQJ1mlVrhOwaUUVJehJSVA", "WatchKeyboardCapability", // iOS 16.0
+    "MrC93gcyPVLHmEbzUu9uzQ", "IsVirtualDevice", // iOS 16.0
     "MTa8c+pEdbK0tHGXP06xOw", "AllowYouTubePlugin", // iOS pre-8.4
     "mtHZd1H8XJ2DMVtNVUSkag", "wifi", // iOS pre-8.4
     "mtrAoWJ3gsq+I90ZnQ0vQw", "DeviceClassNumber", // iOS pre-8.4
@@ -560,7 +560,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ND6ZSbBBgMgwtMfh+OL5Wg", "HighestSupportedVideoMode", // iOS pre-8.4
     "NDnoY3adyyskgiIQBNtlyQ", "DeviceIsNED", // iOS 14.3-
     "NE090Fbwd79LVOHj0AN+OA", "RecoveryOSVersion", // iOS 13.7-
-    "nfR1IphTGCaoFNu3NrCtWQ", "DeviceSupportsDynamicEndOfChargeLegacyHW", // iOS 26.0-
+    "nfR1IphTGCaoFNu3NrCtWQ", "DeviceSupportsDynamicEndOfChargeLegacyHW", // iOS 17.0
     "nFRqKto/RuQAV1P+0/qkBA", "UniqueDeviceIDData", // iOS pre-8.4
     "nhGhVMyvrWYe9U2ltAUImg", "ArrowChipID", // iOS 13.7-
     "Nhm02nvVOaQPimpOshlO1g", "FaceTimeBitRate2G", // iOS pre-8.4
@@ -592,7 +592,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "o0axLo6LGt8HbuEWdLZ92Q", "auto-focus-camera", // iOS pre-8.4
     "o60T6wXe1DDaO4a4gw10TA", "TristarID", // iOS 10.3-
     "O8mk69g6k/CbfeET9LtqQA", "RosalineSerialNumber", // iOS 12.0-
-    "oAX1wYJl2iL3BX2G9LA7iw", "ExclaveCapability", // iOS 26.0-
+    "oAX1wYJl2iL3BX2G9LA7iw", "ExclaveCapability", // iOS 17.0
     "oBbtJ8x+s1q0OkaiocPuog", "MainScreenStaticInfo", // iOS pre-8.4
     "OBqqs000I0SR+EbJ7VO8UQ", "HasSpringBoard", // iOS pre-8.4
     "ocYC+NyuthjbvU9CyI4Z8Q", "FrontFacingCameraStageLightPortraitCaptureCapability", // iOS 13.7-
@@ -605,7 +605,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ol92SaBpqIvQs+KBljuwGA", "kConferenceCallType", // iOS pre-8.4
     "oLjiDs+BWEdMVbjE0x6cnw", "DeviceSupportsStudioLightPortraitPreview", // iOS 12.0-
     "OoFyZnd3oLS2Lw/KQTccGA", "SupportsTouchRemote", // iOS 9.3-
-    "oOV1jhJbdV3AddkcCg0AEA", "apple-graphics-performance-tier", // iOS 26.0-
+    "oOV1jhJbdV3AddkcCg0AEA", "apple-graphics-performance-tier", // iOS 17.0
     "oPeik/9e8lQWMszEjbPzng", "ArtworkTraits", // iOS 9.3-
     "OPzhvROZUqCZhgYMyve5BA", "sms", // iOS pre-8.4
     "oQNDePXjSD1z7W0ddqt9tg", "HWModelDescriptionForAutomatedTesting", // iOS 26.0
@@ -614,7 +614,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "oWUSugFxOVhHOKYv7DawLw", "DeviceSupportsSWProRes", // iOS 26.0-
     "OyENNqRhuo8+RHkpbr/82A", "RoswellChipID", // iOS 12.0-
     "oYicEKzVTz4/CxxE05pEgQ", "TargetSubType", // iOS 26.0-
-    "P5Go9WVVA604m7rKhbVndw", "ProductVersionExtra", // iOS 26.0-
+    "P5Go9WVVA604m7rKhbVndw", "ProductVersionExtra", // iOS 16.0
     "P6z8eNrRPcv0AcKPML0iow", "wi-fi", // iOS pre-8.4
     "paR6NqTecAD44x45kzV87g", "AudioPlaybackCapability", // iOS pre-8.4
     "pB5sZVvnp+QjZQtt2KfQvA", "BasebandChipset", // iOS pre-8.4
@@ -622,8 +622,8 @@ static const struct tKeyMapping keyMappingTable[] = {
     "PcQWbThCb7iLEW+EoqZdEQ", "NandControllerUID", // iOS 12.0-
     "PdprWthPO6YyrO6p1vLRgQ", "VolumeDownButtonCGRect", // iOS 26.0-
     "PFnuFyqMMnGUQQnTqS5byg", "DeviceSupportsAbsoluteAltimeter", // iOS 14.3-
-    "pFpC81KCZegLf4FenQZ2OA", "multitouch", // iOS 26.0-
-    "PJKxdi6epBZAu1rqAsrcjQ", "AV1DecodingCapability", // iOS 26.0-
+    "pFpC81KCZegLf4FenQZ2OA", "multitouch", // iOS 17.0
+    "PJKxdi6epBZAu1rqAsrcjQ", "AV1DecodingCapability", // iOS 16.4
     "plaYa8bKJaAF5Erc5nvZ+g", "RearFacingCameraBurstCapability", // iOS pre-8.4
     "PLQ6xgfGji63NbFu+sjeYg", "WLANBkgScanCache", // iOS pre-8.4
     "pLzf7OiX5nWAPUMj7BfI4Q", "SupportsIrisCapture", // iOS 9.3-
@@ -634,8 +634,8 @@ static const struct tKeyMapping keyMappingTable[] = {
     "PpmzzBVLpZVubmP0tCIymg", "WirelessChargingCapability", // iOS 9.3-
     "pQzfsK0Ado+nkNFgPRIA8Q", "DeviceSupportsLivePhotoAuto", // iOS 12.0-
     "PQzmRjKVMistuIVsqs6QXA", "BasebandFirmwareVersion", // iOS pre-8.4
-    "PR+xeEtTAiUN0R25+EYGfw", "DeviceSupportsCarPlay2", // iOS 26.0-
-    "PsIXZ7uVWznKaTEXDbFSYA", "CameraButtonCGRect", // iOS 26.0-
+    "PR+xeEtTAiUN0R25+EYGfw", "DeviceSupportsCarPlay2", // iOS 16.0
+    "PsIXZ7uVWznKaTEXDbFSYA", "CameraButtonCGRect", // iOS 18.0
     "psOb+c5by4e5OqReDiFm7w", "DeviceCoverGlassCoating", // iOS 26.0-
     "PTfO3r9syJ45k+OItTlD3Q", "ui-no-procedural-wallpaper", // iOS 14.3-
     "PTQ+ABwag03BwO/CKvIK/A", "DeviceSupportsSiriSpeaks", // iOS 12.0-
@@ -658,13 +658,13 @@ static const struct tKeyMapping keyMappingTable[] = {
     "qgfS+6l1exvcMW5Tfplv2Q", "OceanComputeCarrierID", // iOS 26.0-
     "QGmb9t2ZMFVwOImO6fewgQ", "all-features", // iOS pre-8.4
     "qHVhw5NhezD+ljFUPvQb4g", "nike-ipod", // iOS pre-8.4
-    "QHxt+hGLaBPbQJbXiUJX3w", "DeviceSupportsBootChime", // iOS 26.0-
+    "QHxt+hGLaBPbQJbXiUJX3w", "DeviceSupportsBootChime", // iOS 16.0
     "QJSuJ2zhdxYX/7DUA2JtUw", "EffectiveSecurityModeSEP", // iOS pre-8.4
     "qlcdNkarcGLcbW3HvBhwaA", "FrontFacingCameraModuleSerialNumber", // iOS 12.0-
     "qNNddlUK+B/YlooNoymwgA", "ProductVersion", // iOS pre-8.4
     "qOwiNS0eFEq9oi3MNsgxWg", "FirmwarePreflightInfo", // iOS pre-8.4
     "Qq9/Mya05P4ToEr1pMpGGg", "BootManifestHash", // iOS pre-8.4
-    "qRxbmK4B8fGc06Iwe8YptQ", "ADSCapability", // iOS 26.0-
+    "qRxbmK4B8fGc06Iwe8YptQ", "ADSCapability", // iOS 17.0
     "QtLcewkuPtPV0RpO+i0Zzw", "MarketingVersion", // iOS 9.3-
     "QuSuh/r6w4M730U5XhKzrg", "DeviceSupportsVSHCompensation", // iOS 13.7-
     "QVwCp3Lu9RLnxw7LO9DBfQ", "RearFacingCameraTimeOfFlightCameraCapability", // iOS 13.7-
@@ -672,22 +672,22 @@ static const struct tKeyMapping keyMappingTable[] = {
     "qWGVjnlN/wWMhlWgfNcSBg", "DeviceSupports9Pin", // iOS pre-8.4
     "qwXfFvH5jPXPxrny0XuGtQ", "BuildID", // iOS 12.0-
     "QZgogo2DypSAZfkRW4dP/A", "InternationalMobileEquipmentIdentity", // iOS pre-8.4
-    "qzHhHrOpIDLAq2balBdVZg", "RingerButtonCGRect", // iOS 26.0-
+    "qzHhHrOpIDLAq2balBdVZg", "RingerButtonCGRect", // iOS 17.3
     "r5pA2qLgR86BQKwgMjPWzg", "LynxSerialNumber", // iOS 12.0-
     "r5QUsvvgcb2Qmuflua13fQ", "DeviceRequiresProximityAmeliorations", // iOS 12.0-
     "RA3I5nhSK65i1ZxkRxQKfg", "HasThinBezel", // iOS pre-8.4
-    "RbiXiBQAmypd3Btw3jADAw", "DeviceSupportsAppleLPM", // iOS 26.0-
+    "RbiXiBQAmypd3Btw3jADAw", "DeviceSupportsAppleLPM", // iOS 16.4
     "re6Zb+zwFKJNlkQTUeT+/w", "UniqueDeviceID", // iOS pre-8.4
     "RECLuzbJ6oh8q4NKR8RtNg", "multitasking", // iOS pre-8.4
     "rGc8UCjL0zBt51mv81FtIg", "DeviceSupportsActiveNFCReadingOnly", // iOS 14.3-
     "RgoxDxYGuZ0GzijFt6kSQQ", "StockholmJcopInfo", // iOS 9.3-
     "rJkMAGeVLdhP5+10G5hVcA", "UserIntentPhysicalButtonCGRectString", // iOS 12.0-
-    "rJl1HTk57uav5OTZZAyc6g", "DeviceSupportsWatchSpeakerPlayback", // iOS 26.0-
+    "rJl1HTk57uav5OTZZAyc6g", "DeviceSupportsWatchSpeakerPlayback", // iOS 18.0
     "rkFHO5dZmWxy3QdOx7r7kA", "MobileEquipmentInfoCSN", // iOS pre-8.4
     "rkqlwPcRHwixY4gapPjanw", "DeviceName", // iOS pre-8.4
     "RLlZndRrTB3oIDuZEihtpQ", "RearFacingCameraAutoHDRCapability", // iOS pre-8.4
     "RNcdWbM8+dO5tx82A+YCcQ", "ProvisioningUniqueDeviceID", // iOS 14.3-
-    "rtIWWK0kM4F+ZMkIqhE7yQ", "DeviceStingHousingColor", // iOS 26.0-
+    "rtIWWK0kM4F+ZMkIqhE7yQ", "DeviceStingHousingColor", // iOS 16.0
     "RvCUAjrf7O/zAzV1StnBlg", "IsComputeNode", // iOS 26.0-
     "rXbje18EX3b6I7u/pXBYeg", "RequiresPairedRemote", // iOS 26.0-
     "rxUlSnmihTL8oDg9Hrgq/A", "MixAndMatchPrevention", // iOS pre-8.4
@@ -700,17 +700,17 @@ static const struct tKeyMapping keyMappingTable[] = {
     "s2qnnwugvb7yAD70+Uho7g", "HapticsPowerControlFeatures", // iOS 14.3-
     "s2UwZpwDQcywU3de47/ilw", "microphone", // iOS pre-8.4
     "s7nuHoZIYNoOHCqT9iyZkQ", "DeviceSupportsInductiveCharging", // iOS 14.3-
-    "s8TgWYc7BjtSNbtuycqauw", "DeviceSupportsLaguna", // iOS 26.0-
+    "s8TgWYc7BjtSNbtuycqauw", "DeviceSupportsLaguna", // iOS 17.0
     "SAGvsp6O6kAQ4fEfDJpC4Q", "IsSolariumLowPerformanceDevice", // iOS 26.0
     "SaW+DA+cbiqDHrex8MTABA", "DeviceSupportsEnvironmentalDosimetry", // iOS 13.7-
     "SbXytSPZXB1jQ8GLZOxCPw", "VolumeDownButtonNormalizedCGRect", // iOS 26.0-
     "SCNOHu+KqRX0xhIlj5KXaA", "H264EncoderCapability", // iOS 12.0-
     "sFTm4FEVKVfdZ0ChdwQY1g", "WifiAntennaSKUVersion", // iOS 12.0-
     "sHiXbHqHvvRS3I/qo/rH2Q", "SIMTrayStatus2", // iOS 12.0-
-    "sI1x188eYDcARhSzXxk3Cg", "iphone-performance-gaming-tier", // iOS 26.0-
+    "sI1x188eYDcARhSzXxk3Cg", "iphone-performance-gaming-tier", // iOS 17.0
     "sigsyX/a/CpMjoZnrgwIgg", "HEVCDecoder12bitSupported", // iOS 12.0-
     "sJ0n0UZHSUVJbmyy2p54Cw", "unified-ipod", // iOS pre-8.4
-    "sjGZBQzow3yV/IOa0wCeoQ", "VMUniqueDeviceIDData", // iOS 26.0-
+    "sjGZBQzow3yV/IOa0wCeoQ", "VMUniqueDeviceIDData", // iOS 17.0
     "sJmYs82RucA1MWX5jHFSjA", "DeviceSupportsWebkit", // iOS 12.0-
     "SjQQ07G8UacM7E69G7dPbg", "DeviceSupportsSpatialOverCapture", // iOS 13.7-
     "sLe8lqXRlqZM74MNUoVcyQ", "BatteryIsCharging", // iOS pre-8.4
@@ -725,7 +725,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "STBQ8gY0pl0CK8VmRcks4w", "RearFacingCameraFocusPixelCalibrationCapability", // iOS 13.7-
     "SvI9oDkzw4XJFd+dKen/2Q", "DeviceVariant", // iOS pre-8.4
     "SZy8T5ma/+a0wJc0ntiaaA", "PhoneNumber2", // iOS 13.7-
-    "T0FD6BT+PiWc2duMVlTRww", "DeviceIsPortableMac", // iOS 26.0-
+    "T0FD6BT+PiWc2duMVlTRww", "DeviceIsPortableMac", // iOS 16.4
     "TACCxk6y28d14yJN09RtTg", "DeviceSupportsLanguageDownloadUI", // iOS 26.0-
     "tad3RCjcWdkyLSVI8kUBtA", "caller-id", // iOS pre-8.4
     "tbBVomzeDyPq15QV5VGQGg", "DeviceSupportsVoiceOverCanUseSiriVoice", // iOS 13.7-
@@ -737,12 +737,12 @@ static const struct tKeyMapping keyMappingTable[] = {
     "THo7EIAWJiQExmTeHpevLg", "FrontFacingCameraVariableFrameRateCapability", // iOS 14.3-
     "TLU8Pwcsys+5y2UFoMOjPA", "DeviceCoprocessorIsT1", // iOS 26.0-
     "ToJGxfcjkIerYyeL2e8c4A", "BasebandBoardSnum", // iOS pre-8.4
-    "ToLFRidm+eJGWnpw6W4Wwg", "HumanReadableProductVersionString", // iOS 26.0-
+    "ToLFRidm+eJGWnpw6W4Wwg", "HumanReadableProductVersionString", // iOS 16.4
     "TpY9O1U1rtUk/m0BvlO58A", "DeviceDefaultsToAnalyticsOptIn", // iOS 26.0-
     "TqAfAH10ANDgiG7V2u8BkQ", "FrontFacingCameraHFRVideoCapture720pMaxFPS", // iOS 13.7-
-    "Tqr2NqCLwGszJc3HOaPlTw", "driverkit", // iOS 26.0-
+    "Tqr2NqCLwGszJc3HOaPlTw", "driverkit", // iOS 16.0
     "TqrlqJOZiAuRx8Qu3SVr+Q", "SecondaryWifiMacAddressData", // iOS pre-8.4
-    "TqtrpIdOXIIlhOraMmq/pQ", "ipad-minimum-performance-m1", // iOS 26.0-
+    "TqtrpIdOXIIlhOraMmq/pQ", "ipad-minimum-performance-m1", // iOS 17.0
     "TR6Z82EVZEKMVUdHfkhDmQ", "DeviceSupportsBrook", // iOS 14.3-
     "Tr9qG122eEQiKGfr6EGRdQ", "RegionalBehaviorEUVolumeLimit", // iOS pre-8.4
     "trBC4VS5gVmCv6Wg41Hryw", "DeviceSupportsFairPlaySecureVideoPath", // iOS 26.0-
@@ -765,10 +765,10 @@ static const struct tKeyMapping keyMappingTable[] = {
     "UCLOC2TKe3vRkId34ubKWw", "AmbientLightSensorSerialNumber", // iOS 12.0-
     "UcRWpMcvJDfLzn6utLj3XQ", "ApNonceRetrieve", // iOS 12.0-
     "ud+MF+BkcM1zeTxPJCsHpg", "FrontFacingLowLightCameraCapability", // iOS 14.3-
-    "UDftNoVOBIs9cSeia57q1A", "DeviceHasEmbeddedSIMOnlyBoard", // iOS 26.0-
+    "UDftNoVOBIs9cSeia57q1A", "DeviceHasEmbeddedSIMOnlyBoard", // iOS 17.0
     "ueuuYQk48HGWm/cJlHq/Dw", "fcc-logos-via-software", // iOS pre-8.4
     "UFqkf9tcH1ltsOMzpdwSUw", "multitasking-gestures", // iOS pre-8.4
-    "ugia43pinTp0pukSIYQ7uA", "DeviceSupportsBeacon", // iOS 26.0-
+    "ugia43pinTp0pukSIYQ7uA", "DeviceSupportsBeacon", // iOS 16.0
     "UHwjAM1cqBLCR1OuYouf8A", "PhotoSharingCapability", // iOS 12.0-
     "uKc7FPnEO++lVhHWHFlGbQ", "ipad", // iOS pre-8.4
     "uksZ8eaKeV5sUpLNBPafww", "FrontCameraOffsetFromDisplayCenter", // iOS 12.0-
@@ -792,10 +792,10 @@ static const struct tKeyMapping keyMappingTable[] = {
     "VGDDUFPWHbX/Ie9RSI0yDQ", "DeviceIsMuseCapable", // iOS 13.7-
     "VHTcx7WQq0V7YgGKZisRWA", "FDRSealingStatus", // iOS pre-8.4
     "vIccod02kDxScKF5s2h6OA", "BasebandUniqueId", // iOS pre-8.4
-    "VikxgsK3LmzdJGsKgCEZLA", "IsFactorySignedRestore", // iOS 26.0-
+    "VikxgsK3LmzdJGsKgCEZLA", "IsFactorySignedRestore", // iOS 18.5
     "vl45ziHlkqzh1Yt6+M9vBA", "displayport", // iOS pre-8.4
     "VLfT+eziZYKNjRASM6ntnQ", "FirmwareNonce", // iOS pre-8.4
-    "vme9Buk6XiWFCXoHApxNFA", "MarketingDeviceFamilyName", // iOS 26.0-
+    "vme9Buk6XiWFCXoHApxNFA", "MarketingDeviceFamilyName", // iOS 17.0
     "VqRhf8vgXr9B+SYvpnX39g", "BoardRevision", // iOS 13.7-
     "VuGdqp8UBpi9vPWHlPluVQ", "CompatibleAppVariants", // iOS 14.3-
     "W/xqvBX9L07XHb0BOtYycQ", "ThreadRadioMacAddress64Bit", // iOS 14.3-
@@ -812,12 +812,12 @@ static const struct tKeyMapping keyMappingTable[] = {
     "wOVK1nhmiAawowdbIwgyaQ", "RearFacingCameraVideoCaptureFPS", // iOS pre-8.4
     "WPEkba78QeFFU/wgqpOx6w", "UserIntentPhysicalButtonNormalizedCGRect", // iOS 12.0-
     "Wr2SycNVQwBrdup3ok+LxQ", "SpeakerCalibrationSpTS", // iOS 12.0-
-    "WTpITolfF3P09otI1pn2gw", "DeviceSupportsUntrustedRemoteSysdiagnose", // iOS 26.0-
+    "WTpITolfF3P09otI1pn2gw", "DeviceSupportsUntrustedRemoteSysdiagnose", // iOS 18.4
     "wtUF1NceYeLT6IHovZvocw", "DeviceSubBrand", // iOS 10.3-
     "wu9wv8HhpA95iHT4Yyez7A", "SecurityDomain", // iOS 13.7-
     "WXi7NQbOKnEX4vPQFeZAdQ", "DeviceSupportsSiriBargeIn", // iOS 13.7-
     "wYMBabAO8VguyDDVgCsPdg", "WiFiChipsetRevision", // iOS 26.0-
-    "X5yfJDYNipZXIS8R2a7RmA", "DeviceSupportsWalkingRadiusAnimation", // iOS 26.0-
+    "X5yfJDYNipZXIS8R2a7RmA", "DeviceSupportsWalkingRadiusAnimation", // iOS 17.0
     "X6NGcYcvHmbqlR8hLXASJA", "DeviceSupportsSpatialAudioCapture", // iOS 26.0
     "X7SF9XDG+CBhoPIXA1YlCg", "ThreadRadioMacAddressData", // iOS 14.3-
     "X9cK3qXzcFCrVpE258P2lQ", "horseman", // iOS 14.3-
@@ -842,7 +842,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "XnXl4MhKZx3zRKvA7ZwIYQ", "DeviceLowBatteryLevel", // iOS 14.3-
     "xOEH0P1H/1jmYe2t54+5cQ", "MobileEquipmentIdentifier", // iOS pre-8.4
     "xOJfWykLmQCc8lKlzMlrLA", "assistant", // iOS pre-8.4
-    "xojWvSTQWT7Icy+xfVzjAQ", "FramebufferIdentifier", // iOS 26.0-
+    "xojWvSTQWT7Icy+xfVzjAQ", "FramebufferIdentifier", // iOS 17.4
     "XQBHOWjPt2P+uNqlLm1P7A", "BasebandClass", // iOS pre-8.4
     "xqvkN8MjIzTv37omKFzrwg", "DeviceSupportsLiveVideoRendering", // iOS 26.0-
     "XriAxQ+JY1z5nt5f3ftXVw", "DeviceSupportsCameraHaptics", // iOS 12.0-
@@ -873,10 +873,10 @@ static const struct tKeyMapping keyMappingTable[] = {
     "YgC2TeHCEwzJ/ixqmNCzwQ", "DeviceHasNAN", // iOS 14.3-
     "yhHcB0iH0d1XzPO/CFd3ow", "DeviceSupportsApplePencil", // iOS 9.3-
     "YiUtBQygkHRhLcdO3LFB4A", "DeviceSupportsTelephonyOverUSB", // iOS 13.7-
-    "yjP8DgByZmLk04Ta6f6DWQ", "PartitionStyle", // iOS 26.0-
-    "ykpu7qyhqFweVMKtxNylWA", "DeviceSupportsAODVibrancy", // iOS 26.0-
+    "yjP8DgByZmLk04Ta6f6DWQ", "PartitionStyle", // iOS 17.0
+    "ykpu7qyhqFweVMKtxNylWA", "DeviceSupportsAODVibrancy", // iOS 18.0
     "yl8qmYPdAhFLeDBho10sdQ", "FaceTimeDecodings", // iOS pre-8.4
-    "YlEtTtHlNesRBMal1CqRaA", "DeviceSupportsDynamicIsland", // iOS 26.0-
+    "YlEtTtHlNesRBMal1CqRaA", "DeviceSupportsDynamicIsland", // iOS 17.4
     "yLfrxjB6AbZTASUIAcqi2Q", "AutomaticMicMode", // iOS 26.0-
     "YlK+0xmxNWhNn/+r8SM8kA", "DeviceSupportsStereoAudioRecording", // iOS 12.0-
     "yMmSdMRKEHRTCQ72ltCH1w", "airplay-mirroring", // iOS pre-8.4
@@ -885,7 +885,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "yRZv0s7Dpj8ZBk0S+0+nMA", "contains-cellular-radio", // iOS pre-8.4
     "yUCaqT4KOwJpYEb+XDPq7g", "SIMStatus", // iOS pre-8.4
     "YUobJKXH3+ukrUe13TXL3Q", "BasebandPostponementStatusBlob", // iOS pre-8.4
-    "yUqD8AXE/c+IggkuYoxrqA", "ChromeIdentifier", // iOS 26.0-
+    "yUqD8AXE/c+IggkuYoxrqA", "ChromeIdentifier", // iOS 17.4
     "YVNo6vlMjhgQ9yGYV8gatw", "PanelSerialNumber", // iOS 10.3-
     "yZf3GTRMGTuwSV/lD7Cagw", "DeviceSupportsTapToWake", // iOS 12.0-
     "YzrS+WPEMqyh/FBv/n/jvA", "RearFacingTelephotoCameraCapability", // iOS 10.3-

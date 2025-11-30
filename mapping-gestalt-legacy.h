@@ -18,7 +18,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "1h6a0FG2nwMsUDVnYfaxxA", "MainScreenOrientation",
     "1pkwRjExGQ/Xzy/LnAC98A", "LoadThumbnailsWhileScrollingCapability",
     "1pwZX5NfL1wgOY5dftDTmA", "CameraRestriction",
-    "1tvy6WfYKVGumYi6Y8E5Og", "AccelerometerCapability",
+    "1tvy6WfYKVGumYi6Y8E5Og", "AccelerometerCapability", // iOS 17.0
     "1ZJLuPSZ7T410f25nyus0g", "BluetoothLECapability",
     "2RMKoChpU7jtotAG7NYV4Q", "VOIPCapability",
     "3lh7gCvtytf3CQisb6LSJA", "ane", // iOS 12.0-
@@ -62,7 +62,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "Ecx7M8v2wk05Fch3pFE/GA", "NikeIpodCapability", // iOS 12.0-
     "eDiwRLHFAmDNNPtULAcEZA", "TelephonyMaximumGeneration",
     "ePAkIesI8SUJiAx8uRCcEA", "HDRImageCaptureCapability",
-    "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability",
+    "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability", // iOS 17.0
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier", // iOS 12.0-
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability",
     "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 10.3-
@@ -105,10 +105,10 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha", // iOS 12.0-
     "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability", // iOS 12.0-
     "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit",
-    "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera",
+    "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera", // iOS 17.0
     "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability",
     "nqZ6O+s733xoZqQZZ1NWRw", "AmbientLightSensorCapability",
-    "NwAF2cQVdjOKc7KkqR9tIA", "GyroscopeCapability",
+    "NwAF2cQVdjOKc7KkqR9tIA", "GyroscopeCapability", // iOS 17.0
     "NXYYZO2ABdr0PLnSomHJ2w", "C2KDeviceCapability",
     "o/P6XwYugOD7HAAAmhpTuw", "VoiceControlCapability",
     "o2KLXtN1mTtM9u/2MpYnaA", "MagnetometerCapability",
@@ -166,7 +166,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "yAP29WFvj9TYheRKoEJDIw", "MainScreenWidth",
     "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability", // iOS 12.0-
     "YWQYAm8X1mwtoYPwpLF6YA", "YouTubePluginCapability",
-    "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability",
+    "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability", // iOS 17.0
     "z5qxAI4VRmvofBOSFvwxPg", "HardwareSnapshotsRequirePurpleGfxCapability",
     "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability",
     "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability",
