@@ -5,7 +5,7 @@ from deobfuscated import keys
 from deobfuscated_legacy import keys_legacy
 from obfuscate import calculate_obfuscated_key, md5_string_for_obfuscated_key
 from keys_desc import NON_KEY_DESC, known_keys_desc, unknown_keys_desc
-from keys_versions import KEY_IOS_VERSIONS
+from keys_versions import KEY_IOS_VERSIONS, KEY_IOS_REMOVED
 
 '''
 This script generates a mapping file (mapping.h) for all keys in hashes.txt and hashes_legacy.txt. The mapped values are the deobfuscated keys.
@@ -36,23 +36,28 @@ def process_key(
     add_version: bool = False
 ) -> bool:
     global potfile_content
-    
+
     if calculate_obfuscated_key(keys_map[obfuscated_key]) != obfuscated_key:
         print(f'Error: {obfuscated_key} is not deobfuscated to {keys_map[obfuscated_key]}')
         exit(1)
-        
+
     md5 = md5_string_for_obfuscated_key(obfuscated_key)
     if not only_gestalt:
         potfile_content += f'{md5}:MGCopyAnswer{keys_map[obfuscated_key]}\n'
-        
+
     # Escape quotes for C string
     escaped_key = keys_map[obfuscated_key].replace('"', '\\"')
-    
+
     # Get version info if requested
     version_comment = ''
     if add_version and obfuscated_key in KEY_IOS_VERSIONS:
-        version_comment = f' // iOS {KEY_IOS_VERSIONS[obfuscated_key]}'
-    
+        intro_version = KEY_IOS_VERSIONS[obfuscated_key]
+        if obfuscated_key in KEY_IOS_REMOVED:
+            removed_version = KEY_IOS_REMOVED[obfuscated_key]
+            version_comment = f' // iOS {intro_version}–{removed_version}'
+        else:
+            version_comment = f' // iOS {intro_version}+'
+
     if obfuscated_key in known_keys_desc:
         desc = known_keys_desc[obfuscated_key]
         if NON_KEY_DESC in desc:
@@ -68,7 +73,7 @@ def process_key(
             mapping[obfuscated_key] = f'"{escaped_key}",{version_comment}'
         else:
             mapping[obfuscated_key] = f'"{escaped_key}",'
-        
+
     stats['deobfuscated_keys'] += 1
     return True
 
@@ -83,14 +88,14 @@ def generate_mapping(
     # Create a copy to avoid modifying the original dictionary if it's used elsewhere
     keys_map = input_keys.copy()
     mapping: Dict[str, str] = {}
-    
+
     stats = {
         'deobfuscated_keys': 0,
         'deobfuscated_gestalt_keys': 0,
         'non_gestalt_keys': 0,
         'unexplored_keys': 0
     }
-    
+
     seen_keys = set()
 
     if not hashes_path.exists():
@@ -102,7 +107,7 @@ def generate_mapping(
             obfuscated_key = raw_hash.strip()
             if not obfuscated_key:
                 continue
-                
+
             if obfuscated_key in keys_map:
                 seen_keys.add(obfuscated_key)
                 if not process_key(obfuscated_key, keys_map, mapping, only_gestalt, stats, add_version):
@@ -129,19 +134,19 @@ def generate_mapping(
     # Sort mapping
     sorted_mapping = dict(sorted(mapping.items(), key=lambda x: x[0].lower()))
     total = len(sorted_mapping)
-    
+
     with mapping_path.open('w') as out:
         out.write('#include "struct.h"\n\n')
         out.write(f'// Total: {total} keys\n')
         percentage = round((stats['deobfuscated_keys'] / total) * 100, 2) if total > 0 else 0
         out.write(f'// Deobfuscated: {stats["deobfuscated_keys"]} keys ({percentage}%)\n')
-        
+
         if not only_gestalt:
             gestalt_total = total - stats['non_gestalt_keys']
             out.write(f'// Total gestalt keys: {gestalt_total} keys\n')
             gestalt_percentage = round((stats['deobfuscated_gestalt_keys'] / gestalt_total) * 100, 2) if gestalt_total > 0 else 0
             out.write(f'// Deobfuscated gestalt: {stats["deobfuscated_gestalt_keys"]} keys ({gestalt_percentage}%)\n')
-            
+
         out.write(f'// Unexplored: {stats["unexplored_keys"]} keys\n')
         out.write('\n')
         out.write(f'static const struct tKeyMapping {table_name}[] = {{\n')

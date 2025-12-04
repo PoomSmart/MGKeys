@@ -70,11 +70,15 @@ fi
 if [[ "$REMOTE_EXTRACT" == true ]]; then
     log_info "Attempting IPSW remote extraction..."
 
+    # Download to dyld_shared_cache folder
+    CACHE_BASE_DIR="dyld_shared_cache"
+    mkdir -p "$CACHE_BASE_DIR"
+
     # Use appropriate flag for version or build
     if [[ -n "$BUILD" ]]; then
-        IPSW_CMD="ipsw download ipsw --device \"$DEVICE\" --build \"$BUILD\" --dyld --dyld-arch \"$ARCH\" --confirm"
+        IPSW_CMD="ipsw download ipsw --device \"$DEVICE\" --build \"$BUILD\" --dyld --dyld-arch \"$ARCH\" --output \"$CACHE_BASE_DIR\" --confirm"
     else
-        IPSW_CMD="ipsw download ipsw --device \"$DEVICE\" --version \"$VERSION\" --dyld --dyld-arch \"$ARCH\" --confirm"
+        IPSW_CMD="ipsw download ipsw --device \"$DEVICE\" --version \"$VERSION\" --dyld --dyld-arch \"$ARCH\" --output \"$CACHE_BASE_DIR\" --confirm"
     fi
 
     if ! eval "$IPSW_CMD" 2>&1; then
@@ -82,21 +86,44 @@ if [[ "$REMOTE_EXTRACT" == true ]]; then
     else
         log_info "Successfully extracted dyld_shared_cache from IPSW"
 
-        # Find the extracted dylib
-        DYLIB=$(find . -name "libMobileGestalt*.dylib" -type f | head -1)
+        # Find the extracted cache directory (format: BUILD__DEVICE)
+        CACHE_DIR=$(find "$CACHE_BASE_DIR" -maxdepth 1 -type d -name "*__${DEVICE}" | head -1)
 
-        if [[ -n "$DYLIB" ]]; then
-            # Copy to standard location (ignore error if files are identical)
-            cp "$DYLIB" libMobileGestalt.dylib 2>/dev/null || true
-            log_info "Using dylib: libMobileGestalt.dylib"
+        if [[ -n "$CACHE_DIR" ]]; then
+            log_info "Found cache directory: $CACHE_DIR"
 
-            # Run discovery
-            log_info "Running key discovery..."
-            bash discover.sh
-            bash deobfuscate.sh "$ARCH"
+            # Find the cache file
+            CACHE_FILE=$(find "$CACHE_DIR" -name "dyld_shared_cache_${ARCH}" -type f | head -1)
 
-            log_info "Discovery complete!"
-            exit 0
+            if [[ -n "$CACHE_FILE" ]]; then
+                log_info "Extracting libMobileGestalt.dylib from cache..."
+                DYLIB_DIR="extracted_dylibs"
+                mkdir -p "$DYLIB_DIR"
+
+                if ipsw dyld extract "$CACHE_FILE" libMobileGestalt.dylib --output "$DYLIB_DIR" --force 2>/dev/null; then
+                    DYLIB=$(find "$DYLIB_DIR" -name "*libMobileGestalt*.dylib" -type f | head -1)
+
+                    if [[ -n "$DYLIB" ]]; then
+                        # Copy to standard location (ignore error if files are identical)
+                        cp "$DYLIB" libMobileGestalt.dylib 2>/dev/null || true
+                        log_info "Using dylib: libMobileGestalt.dylib"
+
+                        # Run discovery
+                        log_info "Running key discovery..."
+                        bash discover.sh
+                        bash deobfuscate.sh "$ARCH"
+
+                        log_info "Discovery complete!"
+                        exit 0
+                    fi
+                else
+                    log_error "Failed to extract libMobileGestalt.dylib from cache"
+                fi
+            else
+                log_error "Could not find dyld_shared_cache_${ARCH} in $CACHE_DIR"
+            fi
+        else
+            log_error "Could not find cache directory for $DEVICE"
         fi
     fi
 fi
@@ -153,7 +180,7 @@ log_info "Extracting libMobileGestalt.dylib from cache..."
 DYLIB_DIR="extracted_dylibs"
 mkdir -p "$DYLIB_DIR"
 
-if ipsw dyld extract "$CACHE_FILE" libMobileGestalt.dylib --output "$DYLIB_DIR" 2>/dev/null; then
+if ipsw dyld extract "$CACHE_FILE" libMobileGestalt.dylib --output "$DYLIB_DIR" --force 2>/dev/null; then
     log_info "Extracted using 'libMobileGestalt.dylib' pattern"
 else
     log_error "Failed to extract libMobileGestalt.dylib"
