@@ -46,13 +46,13 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability",
     "BfEIy3W3t0Wxf7Hf7LEsAw", "PearlCameraCapability", // iOS 13.7–14.3
     "BfM9558OSUj9vu/OmyjLnw", "AssistantCapability",
-    "BhXj+5n3+0HcPoSArDGX7g", "EffectiveSecurityMode", // iOS 8.0–13.7
+    "BhXj+5n3+0HcPoSArDGX7g", "EffectiveSecurityMode", // iOS 7.0–13.7
     "bstETUHlPlCFu+l1GRvM0A", "TVOutCrossfadeCapability",
     "BstyjvaCtwqls0MfbkGTSg", "DisplayMirroringCapability", // iOS 8.4–14.3
     "C69C6jJjSxkwtSCq81shww", "CallForwardingCapability",
     "Ca/ykCYJcbVY9gaO9SvKiQ", "YouTubeCapability",
     "CgrU9s3DgLoemGDRXszlnQ", "3GVeniceCapability",
-    "cHla4KIe1wv0OvpRVrzy/w", "hide-non-default-apps", // iOS 8.0+
+    "cHla4KIe1wv0OvpRVrzy/w", "hide-non-default-apps", // iOS 7.0+
     "Cp9cxpL94276NKHivShdCg", "HomeScreenWallpaperCapability",
     "cqjRgfBVUDsi5vrXdQOcng", "OpenGLES3Capability",
     "drPpRw0Jmqcxv1XQPn/q/Q", "CameraFrontFlashCapability", // iOS 9.3–14.3
@@ -65,7 +65,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability", // iOS 17.0–26.0
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier", // iOS 12.0–14.3
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability",
-    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 8.0–13.7
+    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0–13.7
     "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability", // iOS 8.4–14.3
     "G/ss4ZCOHb2osL8sLnZj7w", "reverse-zoom",
     "g9b89U/AXTtd//2tEk1Dyw", "APNCapability",
@@ -102,7 +102,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "lp0YX+xu6UPp4SeF2oyLcQ", "EnforceCameraShutterClick",
     "lrd6CRt0Uo4zpYyWWX0O0Q", "ContainsCellularRadioCapability",
     "mMpmRVTiFjGCIUUH1v5aVg", "EncodeAACCapability",
-    "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha", // iOS 8.0–14.3
+    "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha", // iOS 7.0–14.3
     "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability", // iOS 8.4–14.3
     "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit",
     "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera", // iOS 17.0–26.0
@@ -124,7 +124,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability",
     "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability",
     "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability",
-    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 8.0–13.7
+    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0–13.7
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability",
     "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability",
     "QEmhOZosE0IT4YJkQWh3Dg", NULL,
@@ -133,7 +133,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "S9ZweBMsbQwCL6t3Zpj4fg", "IOSurfaceBackedImagesCapability",
     "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC", // iOS 13.7–14.3
     "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability",
-    "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus", // iOS 8.0–13.7
+    "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus", // iOS 7.0–13.7
     "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability",
     "TcGqIE272OpkCMRaIOaPgw", "MarketingNameString",
     "THaCQIAEgw5Zqceq9LAe0g", "HiccoughInterval",
@@ -144,7 +144,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.7–14.3
     "Ue0GVAyEOkP5kyQgcXKlxg", NULL,
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported",
-    "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 8.0–13.7
+    "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0–13.7
     "uOwIrmQD0GqKtBErL94XJg", "CameraCapability",
     "UtO2BMC/uvWNvjPhK2EXiQ", "ARMV6ExecutionCapability",
     "uYXqOrxG58efKTnlBA3PXw", "AdditionalTextTonesCapability",
@@ -171,7 +171,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability",
     "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability",
     "ziO64HFBPR9QpsOGnkVjJQ", "HiDPICapability",
-    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 8.0–13.7
+    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0–13.7
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability",
     NULL, NULL
 };
