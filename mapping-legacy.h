@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 198 keys
-// Deobfuscated: 176 keys (88.89%)
+// Deobfuscated: 179 keys (90.4%)
 // Total gestalt keys: 169 keys
 // Deobfuscated gestalt: 164 keys (97.04%)
 // Unexplored: 5 keys
@@ -34,7 +34,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "59MRw0x/zCNPzV6/uGS8cg", "PiezoClickerCapability", // iOS unknown
     "5JleoNS+AEM3ev96t8z0Qw", NULL, // non-gestalt-key, IOService:/, starts with A, iOS 9.0+ (removed in 9.3)
     "5Xri+ec5Inj/4XBalFenVQ", "MainScreenPitch", // iOS unknown
-    "61o7Kdx4PeNILOhWfiXBtA", NULL, // non-gestalt-key, IODeviceTree:/arm-io/vxd, starts with h?, iOS 7.0+ (removed in 8.4)
+    "61o7Kdx4PeNILOhWfiXBtA", "h264-playback-level", // non-gestalt-key // iOS 7.0+ (removed in 8.4)
     "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon", // iOS 12.0+ (removed in 26.0)
     "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability", // iOS unknown
     "84iheBmhAmsxIlcxG4a0zA", "VideoStillsCapability", // iOS 8.4+ (removed in 12.4)
@@ -157,7 +157,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC", // iOS unknown
     "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability", // iOS unknown
     "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus", // iOS 7.0+ (removed in 12.4)
-    "SVhNgqwqzg0Lk5so04T35Q", NULL, // non-gestalt-key, IODeviceTree:/baseband, starts with f, iOS 8.0+ (removed in 9.3)
+    "SVhNgqwqzg0Lk5so04T35Q", "function-bb_ap_time_sync", // non-gestalt-key // iOS 8.0+ (removed in 9.3)
     "T9MMpvl0fu59PO8lXi/Cxg", "effective-production-status", // non-gestalt-key // iOS 7.0+ (removed in 12.4)
     "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability", // iOS unknown
     "TcGqIE272OpkCMRaIOaPgw", "MarketingNameString", // iOS unknown
@@ -173,7 +173,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 12.4)
     "uOwIrmQD0GqKtBErL94XJg", "CameraCapability", // iOS unknown
     "UtO2BMC/uvWNvjPhK2EXiQ", "ARMV6ExecutionCapability", // iOS unknown
-    "uX7jRkb03eqRdXSWq5ItkA", NULL, // non-gestalt-key, IODeviceTree:/product/maps, starts with a?, iOS 7.0+ (removed in 8.4)
+    "uX7jRkb03eqRdXSWq5ItkA", "adaptive-ui", // non-gestalt-key // iOS 7.0+ (removed in 8.4)
     "uYXqOrxG58efKTnlBA3PXw", "AdditionalTextTonesCapability", // iOS unknown
     "V3vz1JOFx829T5VapwzRxQ", "SimultaneousCallAndDataSupported", // iOS unknown
     "v5AoJC7hPGHbysTMLip12A", "SupportsTapToWake", // iOS unknown
