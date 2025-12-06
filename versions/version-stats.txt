@@ -19,7 +19,9 @@ iOS 11.3       699 total keys  (  +3 new)
 iOS 12.0       751 total keys  ( +53 new)
 iOS 12.4       761 total keys  ( +10 new)
 iOS 13.0       829 total keys  ( +68 new)
-iOS 13.5       855 total keys  ( +29 new)
+iOS 13.2       832 total keys  (  +3 new)
+iOS 13.4       852 total keys  ( +23 new)
+iOS 13.5       855 total keys  (  +3 new)
 iOS 14.0       915 total keys  ( +67 new)
 iOS 14.3       923 total keys  ( +11 new)
 iOS 14.5       930 total keys  (  +7 new)
@@ -35,8 +37,8 @@ iOS 18.2      1090 total keys  (  +1 new)
 iOS 18.4      1091 total keys  (  +1 new)
 iOS 18.5      1092 total keys  (  +1 new)
 iOS 26.0      1174 total keys  ( +90 new)
-iOS 26.2      1177 total keys  (  +3 new)
-iOS unknown    131 new keys
+iOS 26.2      1179 total keys  (  +5 new)
+iOS unknown    129 new keys
 
 Removed Keys by Version:
 ------------------------------------------------------------
@@ -46,7 +48,7 @@ iOS 9.3          4 keys removed
 iOS 10.0.1      26 keys removed
 iOS 11.0         6 keys removed
 iOS 11.3         1 keys removed
-iOS 13.5         3 keys removed
+iOS 13.4         3 keys removed
 iOS 14.0         8 keys removed
 iOS 14.3         3 keys removed
 iOS 15.0         3 keys removed

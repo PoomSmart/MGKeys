@@ -84,7 +84,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "GFBh/UJXPx/WDLe2qhu/xA", "DeviceSuportsExternalDriverKit", // iOS unknown
     "GjhB2cGBYAYQHDA9fKOWNw", "PhotoAdjustmentsCapability", // iOS unknown
     "gow0CqXZBgAxbnq78oLJQQ", "PlatformStandAloneContactsCapability", // iOS unknown
-    "gQxJNkIEjqfrFzqdebHB4w", "hme-in-arkit", // non-gestalt-key // iOS 13.0+ (removed in 13.5)
+    "gQxJNkIEjqfrFzqdebHB4w", "hme-in-arkit", // non-gestalt-key // iOS 13.0+ (removed in 13.4)
     "H6fcS+aUfwP3KiWwU9YybQ", "MultitaskingCapability", // iOS unknown
     "hL9+1F/mUsx9B1NfYn4T/g", "OTAActivationCapability", // iOS unknown
     "hSjeLvzobsJCklk4+pzu3g", "MarketingSOCNameString", // iOS unknown
@@ -125,7 +125,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha", // iOS 7.0+ (removed in 10.0.1)
     "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability", // iOS 8.4+ (removed in 10.0.1)
     "na77zbwlhy0V7shc4ORRgA", "post-effects", // non-gestalt-key // iOS 7.0+ (removed in 14.3)
-    "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit", // iOS 13.0+ (removed in 13.5)
+    "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit", // iOS 13.0+ (removed in 13.4)
     "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera", // iOS 17.0+ (removed in 26.0)
     "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability", // iOS unknown
     "nqZ6O+s733xoZqQZZ1NWRw", "AmbientLightSensorCapability", // iOS unknown
@@ -135,7 +135,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "o2KLXtN1mTtM9u/2MpYnaA", "MagnetometerCapability", // iOS unknown
     "O3i4ewDkn5ARnjq2xIm/Sg", "MainScreenScale", // iOS unknown
     "oaIPJckrXuT73yxxtfGJAg", "EnforceGoogleMail", // iOS unknown
-    "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit", // iOS 13.0+ (removed in 13.5)
+    "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit", // iOS 13.0+ (removed in 13.4)
     "oNUnoF4mZBXwKfYyCx0Vfw", "DelaySleepForHeadsetClickCapability", // iOS unknown
     "OwiopkU88VSKJX7zgoWPpQ", "external-driverkit", // iOS unknown
     "OySq8itgJ0AKORPMwrKkvA", "AccessibilityCapability", // iOS unknown
