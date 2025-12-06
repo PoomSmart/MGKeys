@@ -72,6 +72,7 @@ keys = {
     "1Rm/mWYEI5ttaC0dJ3sHBQ": "BootNonce",
     "1uZbhSbBhsNCsVSsopZ4qg": "dictation",
     "1X0zc2JwBdYOQrMAyP81DQ": "lte-device",
+    "1XU1vjgruwDJdBGH+Gx9lg": "darwin-init-config-from-nvram",
     "1z6Kk4xUAVLdaBPGugsDSA": "navigation",
     "2/q9qmqGigMfkzY830Zf2g": "YonkersChipID",
     "2aIAScwtFNCz+Y7WesMOCA": "mac-address-wifi1",

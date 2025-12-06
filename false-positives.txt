@@ -49,6 +49,7 @@ SpeakerCalibrationSpTS
 sPostEffectsCapability
 taActivationCapability
 tpLargeFilesCapability
+uenerativeModelSystems
 ull6FeaturesCapability
 upportsVSHCompensation
 UserAssignedDeviceName
