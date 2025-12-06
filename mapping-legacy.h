@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 198 keys
-// Deobfuscated: 179 keys (90.4%)
+// Deobfuscated: 180 keys (90.91%)
 // Total gestalt keys: 169 keys
 // Deobfuscated gestalt: 164 keys (97.04%)
 // Unexplored: 5 keys
@@ -94,7 +94,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key // iOS 8.0+ (removed in 15.5)
     "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability", // iOS 8.4+ (removed in 12.4)
     "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit", // iOS unknown
-    "ibPgs24d3M4hvYwCtW6YAw", NULL, // non-gestalt-key, IODeviceTree:/arm-io > wlan, starts with w, DeviceSupportsLowLatency, iOS 14.0+ (removed in 15.0)
+    "ibPgs24d3M4hvYwCtW6YAw", "wlan.lowlatency", // non-gestalt-key // iOS 14.0+ (removed in 15.0)
     "iSVbuFLd369ug7uTvmUtkQ", "SensitiveUICapability", // iOS unknown
     "jaHzwmQrBwNlt5n0dOa7DA", "SystemTelephonyOfAnyKindCapability", // iOS unknown
     "jewva1LRTg17HDPWdj+TLw", NULL, // iOS 9.3+ (removed in 12.4)

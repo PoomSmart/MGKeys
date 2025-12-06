@@ -80,6 +80,7 @@ keys_legacy = {
     "I+ptihXW+rMeySVUWURNiw": "mac-address-bluetooth1",
     "I2IvpG8yJdNpvO4csuB9EA": "LocationRemindersCapability",
     "iAu0GZogf4TG69GSO5rHcg": "DeviceSupportsARKit",
+    "ibPgs24d3M4hvYwCtW6YAw": "wlan.lowlatency",
     "iSVbuFLd369ug7uTvmUtkQ": "SensitiveUICapability",
     "jaHzwmQrBwNlt5n0dOa7DA": "SystemTelephonyOfAnyKindCapability",
     "JIkPhorQU+H4FIGKvfqoUg": "TVOutSettingsCapability",
