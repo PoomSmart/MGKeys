@@ -28,7 +28,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "4TKtw5gG9r8CE3BlOrjLhg", "UnifiedIPodCapability",
     "59MRw0x/zCNPzV6/uGS8cg", "PiezoClickerCapability",
     "5Xri+ec5Inj/4XBalFenVQ", "MainScreenPitch",
-    "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon", // iOS 12.0+ (removed in 26.0)
+    "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon", // iOS 11.0+ (removed in 26.0)
     "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability",
     "84iheBmhAmsxIlcxG4a0zA", "VideoStillsCapability", // iOS 8.4+ (removed in 14.3)
     "8bazN693YkKz0MDmcZvjXw", "ExplicitContentRestriction",
