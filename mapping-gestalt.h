@@ -221,7 +221,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "bt5D9RI67C9koJO1oZ5cfg", "EOSHalleyConfiguration", // iOS 15.5+
     "bUJD9zcOcitJwFA0ieIkxA", "DeviceBackGlassMaterial", // iOS 10.0.1+
     "bwLsbkp4shhHuNB5VpRa8w", "YonkersUID", // iOS 12.0+
-    "BWoQXWXYITrPRpFyc9xTLw", "DeviceSupportsUSBTypeC", // iOS 12.0+
+    "BWoQXWXYITrPRpFyc9xTLw", "DeviceSupportsUSBTypeC", // iOS 12.4+
     "byGRtH44VNik9CzN/QKLCw", "nfc", // iOS 11.0+
     "bysMryc4yLwQjKvUQGGXXQ", "DevicePrefersProceduralAntiAliasing", // iOS 7.0+
     "c5uqoV7Z9ly+f4c5mYXILg", "OfflineDictationCapability", // iOS 7.0+
@@ -405,7 +405,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "HzddeW2/HtdBNAc5tsFtDg", "SecondaryBluetoothMacAddressData", // iOS 8.0+
     "I32sGclpgl5VujQRJxyhKQ", "IsUIBuild", // iOS 7.0+
     "I3lidq+FVH2CeOi/ARa0tg", "generative-model-systems", // iOS 26.0+
-    "I4TfkcdXWazwTr1al8Ml5w", "StrictWakeKeyboardCases", // iOS 12.0+
+    "I4TfkcdXWazwTr1al8Ml5w", "StrictWakeKeyboardCases", // iOS 12.4+
     "i8+iwUtLtB5jT+WNvqwrEA", "encrypted-data-partition", // iOS 7.0+
     "iaegRQa4jNGOuTA6hnZmcQ", "DeviceCoverMaterial", // iOS 8.0+
     "IAJzgzhEVk3SMNuEhChs2w", "RemoteBluetoothAddressData", // iOS 8.0+
@@ -432,7 +432,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "IweaHIDpz+rknAcb3+xg9g", "AggregateDeviceVideoZoomFactor", // iOS 10.0.1+
     "iyfxmLogGVIaH7aEgqwcIA", "green-tea", // iOS 7.0+
     "izFv/qj3IUhqAIiEuYH6xw", "MusicStore", // iOS 7.0+
-    "j1pdCAYnpIEYMqIAitm3JA", "DeviceSupportsCinnamon", // iOS 12.0+
+    "j1pdCAYnpIEYMqIAitm3JA", "DeviceSupportsCinnamon", // iOS 12.4+
     "J1QHVh74Nnd6Rqyiq71/yw", "AVDDecodingRate", // iOS 15.5+
     "j39y4QUrP6cvZY8Pjyv64w", "PearlMotionDetectionCapability", // iOS 17.0+
     "j4dedPnpeXouudM1+j3dsQ", "IntegratedCircuitCardIdentifier", // iOS 7.0+

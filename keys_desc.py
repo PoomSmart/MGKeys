@@ -26,7 +26,7 @@ unknown_keys_desc = {
     "NsUsZwajdZDN+suOIwkPvg": "IODeviceTree:/product/audio, starts with s, DeviceSupportsAlwaysAPVoiceTrigger",
     "P1djMN/L3B6otgGpO9WYkw": "IODeviceTree:/, starts with s, SiliconBringupBoard",
     "pQ60lr9FHtEUdZFqLI0C+g": "IOService:/5JleoNS+AEM3ev96t8z0Qw, starts with S",
-    "R836fJkaZ8xrq3rSCYjxSw": "IODeviceTree:/product, starts with c?",
+    "R836fJkaZ8xrq3rSCYjxSw": "IODeviceTree:/product, starts with c",
     "t56wS9db+T2F2bxBpYSX8Q": "IODeviceTree:/arm-io/disp0, starts with e, DisplayDriverICChipID",
     "ubcUOmdIWpYH7dNopZCfEg": "",
     "uNNFSosc1xQM/7bwlrqLXA": "IODeviceTree:/arm-io/aop/iop-aop-nub/als, starts with m, DisplayMaxNits",
