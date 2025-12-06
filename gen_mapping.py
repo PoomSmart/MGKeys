@@ -55,6 +55,8 @@ def process_key(
         if obfuscated_key in KEY_IOS_REMOVED:
             removed_version = KEY_IOS_REMOVED[obfuscated_key]
             version_comment = f' // iOS {intro_version}+ (removed in {removed_version})'
+        elif intro_version == 'unknown':
+            version_comment = f' // iOS {intro_version}'
         else:
             version_comment = f' // iOS {intro_version}+'
 

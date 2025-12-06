@@ -849,7 +849,6 @@ TTZrMo1OOEUELa7asaQ7xg
 TucF/tpjeAln1I0f3g0K3w
 tUIqcYyzHuWBvBQHsLk8IQ
 tuwdHA2NDGnLajCo5K3UUA
-tworkTraitDisplayGamut
 twWCmmM9I0dxwv7Zs9v48Q
 TXZxlSojLMQyLqusm9aa/g
 Ty4lICNS1jQh45sB3wQd7A
@@ -986,7 +985,6 @@ yf309VokHnvuZ4SyOixR5A
 YgC2TeHCEwzJ/ixqmNCzwQ
 yhHcB0iH0d1XzPO/CFd3ow
 yhZxZlqgBWwf4bN9t6fFyA
-yingerSwitchCapability
 YiUtBQygkHRhLcdO3LFB4A
 yl8qmYPdAhFLeDBho10sdQ
 YlK+0xmxNWhNn/+r8SM8kA

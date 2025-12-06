@@ -60,13 +60,23 @@ def generate_keys_versions():
     """Generate keys_versions.py from existing data."""
 
     # File paths
-    mapping_gestalt = Path('mapping-gestalt.h')
+    mapping_file = Path('mapping.h')  # Contains ALL keys including non-gestalt
+    mapping_legacy = Path('mapping-legacy.h')
     output_file = Path('keys_versions.py')
 
-    # Extract all hashes from mapping-gestalt.h
-    print(f"Reading hashes from {mapping_gestalt}...")
-    all_hashes = extract_hashes_from_mapping(mapping_gestalt)
-    print(f"Found {len(all_hashes)} total hashes in mapping-gestalt.h\n")
+    # Extract all hashes from mapping files
+    print(f"Reading hashes from {mapping_file}...")
+    main_hashes = extract_hashes_from_mapping(mapping_file)
+    print(f"Found {len(main_hashes)} hashes in mapping.h")
+
+    legacy_hashes = set()
+    if mapping_legacy.exists():
+        print(f"Reading hashes from {mapping_legacy}...")
+        legacy_hashes = extract_hashes_from_mapping(mapping_legacy)
+        print(f"Found {len(legacy_hashes)} hashes in mapping-legacy.h")
+
+    all_hashes = main_hashes | legacy_hashes
+    print(f"Total mapped keys: {len(all_hashes)}\n")
 
     # Auto-discover all version files in versions/ directory
     versions_dir = Path('versions')
@@ -139,14 +149,28 @@ def generate_keys_versions():
             if not comes_back:
                 removed_map[hash_str] = next_version_str
 
-    # Keys in mapping-gestalt.h but not in any version file
-    latest_version_str = version_data[-1][0] if version_data else "unknown"
-    unknown_keys = all_hashes - all_seen_keys
+    # Keys in mapping files but not in any version file
+    unmapped_keys = all_hashes - all_seen_keys
 
+    if unmapped_keys:
+        print(f"Found {len(unmapped_keys)} mapped keys not in any version file (marking as unknown)")
+        for hash_str in unmapped_keys:
+            version_map[hash_str] = "unknown"
+
+    # Keys in version files but not mapped yet
+    unknown_keys = all_seen_keys - all_hashes
     if unknown_keys:
-        print(f"Found {len(unknown_keys)} keys not in any version file (marking as post-{latest_version_str})")
-        for hash_str in unknown_keys:
-            version_map[hash_str] = f"post-{latest_version_str}"
+        print(f"Warning: Found {len(unknown_keys)} keys in version files but not in mapping files")
+        print(f"These unmapped keys are saved in unmapped-keys-from-versions.txt")
+
+        # Save unmapped keys to a file for reference
+        unmapped_file = Path('unmapped-keys-from-versions.txt')
+        with unmapped_file.open('w') as f:
+            f.write(f'# Keys found in version files but not in mapping-gestalt.h or mapping-legacy.h\n')
+            f.write(f'# Total: {len(unknown_keys)} unmapped keys\n')
+            f.write(f'# These keys need to be deobfuscated and added to deobfuscated.py\n\n')
+            for h in sorted(unknown_keys):
+                f.write(f'{h}\n')
 
     # Print statistics
     version_stats: dict[str, int] = {}

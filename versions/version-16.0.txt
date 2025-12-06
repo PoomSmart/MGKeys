@@ -780,7 +780,6 @@ RLlZndRrTB3oIDuZEihtpQ
 RN/FxX/3jy6LWaEIPR8qpA
 RN4AimpWqqD2JZCB67qtvQ
 RNcdWbM8+dO5tx82A+YCcQ
-rnDeviceSiriCapability
 RR4G+l3k5mfFFr6Igw88kQ
 RrhB72r1de9N65EG4pgqJw
 rt/G6Vk3NTGWs5N9WEjztQ
@@ -847,7 +846,6 @@ TTZrMo1OOEUELa7asaQ7xg
 TucF/tpjeAln1I0f3g0K3w
 tUIqcYyzHuWBvBQHsLk8IQ
 tuwdHA2NDGnLajCo5K3UUA
-tworkTraitDisplayGamut
 twWCmmM9I0dxwv7Zs9v48Q
 TXZxlSojLMQyLqusm9aa/g
 Ty4lICNS1jQh45sB3wQd7A

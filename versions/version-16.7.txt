@@ -850,7 +850,6 @@ tdUWKiiM7JdctnzQuvaVVA
 TF31PAB6aO8KAbPyNKSxKA
 THo7EIAWJiQExmTeHpevLg
 TLU8Pwcsys+5y2UFoMOjPA
-tnDeviceSiriCapability
 ToJGxfcjkIerYyeL2e8c4A
 ToLFRidm+eJGWnpw6W4Wwg
 tOLVnZop4m/g5/iuC7zlUw
@@ -865,7 +864,6 @@ TTZrMo1OOEUELa7asaQ7xg
 TucF/tpjeAln1I0f3g0K3w
 tUIqcYyzHuWBvBQHsLk8IQ
 tuwdHA2NDGnLajCo5K3UUA
-tworkTraitDisplayGamut
 twWCmmM9I0dxwv7Zs9v48Q
 TXZxlSojLMQyLqusm9aa/g
 Ty4lICNS1jQh45sB3wQd7A

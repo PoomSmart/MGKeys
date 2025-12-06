@@ -42,6 +42,7 @@ RegionalBehaviorNoWiFi
 RemoteBluetoothAddress
 RestrictedCountryCodes
 RingerButtonCapability
+rnDeviceSiriCapability
 SavageUpdaterSupported
 sonalHotspotCapability
 SpeakerCalibrationMiGa
@@ -49,10 +50,13 @@ SpeakerCalibrationSpGa
 SpeakerCalibrationSpTS
 sPostEffectsCapability
 taActivationCapability
+tnDeviceSiriCapability
 tpLargeFilesCapability
+tworkTraitDisplayGamut
 uenerativeModelSystems
 ull6FeaturesCapability
 upportsVSHCompensation
 UserAssignedDeviceName
 VideoCaptureCapability
 VolumeDownButtonCGRect
+yingerSwitchCapability
