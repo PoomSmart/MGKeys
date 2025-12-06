@@ -59,14 +59,11 @@ def process_key(
             version_comment = f' // iOS {intro_version}+'
 
     if obfuscated_key in known_keys_desc:
-        desc = known_keys_desc[obfuscated_key]
-        if NON_KEY_DESC in desc:
-            if only_gestalt or not GEN_NON_GESTALT_KEY:
-                return False
-            stats['non_gestalt_keys'] += 1
-        else:
-            stats['deobfuscated_gestalt_keys'] += 1
-        mapping[obfuscated_key] = f'"{escaped_key}", // {desc}{version_comment}'
+        # known_keys_desc now contains non-gestalt keys
+        if only_gestalt or not GEN_NON_GESTALT_KEY:
+            return False
+        stats['non_gestalt_keys'] += 1
+        mapping[obfuscated_key] = f'"{escaped_key}", // {NON_KEY_DESC}{version_comment}'
     else:
         stats['deobfuscated_gestalt_keys'] += 1
         if version_comment:
@@ -113,12 +110,12 @@ def generate_mapping(
                 if not process_key(obfuscated_key, keys_map, mapping, only_gestalt, stats, add_version):
                     continue
             elif obfuscated_key in unknown_keys_desc:
+                # unknown_keys_desc now contains IODeviceTree paths only
                 desc = unknown_keys_desc[obfuscated_key]
-                if NON_KEY_DESC in desc:
-                    if only_gestalt or not GEN_NON_GESTALT_KEY:
-                        continue
-                    stats['non_gestalt_keys'] += 1
-                mapping[obfuscated_key] = f'NULL, // {desc}'
+                if only_gestalt or not GEN_NON_GESTALT_KEY:
+                    continue
+                stats['non_gestalt_keys'] += 1
+                mapping[obfuscated_key] = f'NULL, // {NON_KEY_DESC}, {desc}'
             else:
                 stats['unexplored_keys'] += 1
                 mapping[obfuscated_key] = 'NULL,'

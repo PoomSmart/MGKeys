@@ -1,5 +1,4 @@
 import pytest
-from unittest.mock import patch
 from guess_keys import generate_guesses
 
 
