@@ -26,7 +26,8 @@ def extract_hashes_from_mapping(mapping_file: Path) -> set[str]:
     with mapping_file.open('r') as f:
         for line in f:
             # Match lines like:     "hash", "key_name",
-            match = re.match(r'\s*"([^"]+)",\s*"[^"]*",?', line)
+            # or:                   "hash", NULL,
+            match = re.match(r'\s*"([^"]+)",\s*(?:"[^"]*"|NULL),?', line)
             if match:
                 hashes.add(match.group(1))
 
@@ -168,7 +169,7 @@ def generate_keys_versions():
         with unmapped_file.open('w') as f:
             f.write(f'# Keys found in version files but not in mapping-gestalt.h or mapping-legacy.h\n')
             f.write(f'# Total: {len(unknown_keys)} unmapped keys\n')
-            f.write(f'# These keys need to be deobfuscated and added to deobfuscated.py\n\n')
+            f.write(f'# These keys need to be deobfuscated and added to an appropriate mapping file\n\n')
             for h in sorted(unknown_keys):
                 f.write(f'{h}\n')
 

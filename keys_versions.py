@@ -619,6 +619,7 @@ KEY_IOS_VERSIONS = {
     "Q5QHkCRPRmiX3L/5xxKrRg": "7.0",
     "QAL4CoosdFzdrO2SMJflLQ": "unknown",
     "QD3Nde07fjdK0R0KTbczEA": "12.4",
+    "QEmhOZosE0IT4YJkQWh3Dg": "unknown",
     "QFnvO2shAYI+d4bj3qXuFQ": "7.0",
     "QGmb9t2ZMFVwOImO6fewgQ": "7.0",
     "QHxt+hGLaBPbQJbXiUJX3w": "15.5",
