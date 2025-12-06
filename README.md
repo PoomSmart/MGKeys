@@ -39,15 +39,6 @@ cd MGKeys
 pip3 install -r requirements.txt
 ```
 
-### Typical Workflow
-
-1. Extract `libMobileGestalt.dylib` from the `dyld_shared_cache` of an iOS device
-2. Run `deobfuscate.sh` script to get the new unmapped obfuscated keys
-3. Throw the dylib into Hopper or IDA to find the human-readable function that is referenced by each key
-4. Update the key mapping in `deobfuscated.py`
-5. Run `deobfuscate.sh` again to update the mapping and to also verify each function name converts to the obfuscated key it references to
-6. Move all keys that fail to convert to `unknown_keys_desc` of `keys_desc.py`, if any
-
 ## Usage
 
 All scripts support `--help` flags for detailed usage information. Run any script with `--help` to see available options and examples.
