@@ -65,6 +65,7 @@ keys_legacy = {
     "FfP+vxxGg5AbBO0uzmp6rw": "GasGaugeBatteryCapability",
     "FgjnMkPJPpI4C38dWETwtw": "flash",
     "Fralg2R4+pkggafylKbVgw": "HearingAidLowEnergyAudioCapability",
+    "g/iV4vkeMLwXt8YPrhL+EQ": "front-flash",
     "G/ss4ZCOHb2osL8sLnZj7w": "reverse-zoom",
     "g9b89U/AXTtd//2tEk1Dyw": "APNCapability",
     "GFBh/UJXPx/WDLe2qhu/xA": "DeviceSuportsExternalDriverKit",

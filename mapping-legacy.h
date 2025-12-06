@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 198 keys
-// Deobfuscated: 180 keys (90.91%)
+// Deobfuscated: 181 keys (91.41%)
 // Total gestalt keys: 169 keys
 // Deobfuscated gestalt: 164 keys (97.04%)
 // Unexplored: 5 keys
@@ -78,7 +78,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability", // iOS unknown
     "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0+ (removed in 14.3)
     "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability", // iOS 8.4+ (removed in 10.0.1)
-    "g/iV4vkeMLwXt8YPrhL+EQ", NULL, // non-gestalt-key, IODeviceTree:/product/camera, starts with f, iOS 9.0+ (removed in 9.3)
+    "g/iV4vkeMLwXt8YPrhL+EQ", "front-flash", // non-gestalt-key // iOS 9.0+ (removed in 9.3)
     "G/ss4ZCOHb2osL8sLnZj7w", "reverse-zoom", // iOS unknown
     "g9b89U/AXTtd//2tEk1Dyw", "APNCapability", // iOS unknown
     "GFBh/UJXPx/WDLe2qhu/xA", "DeviceSuportsExternalDriverKit", // iOS unknown
