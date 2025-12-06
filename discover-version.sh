@@ -100,7 +100,8 @@ if [[ "$REMOTE_EXTRACT" == true ]]; then
                 DYLIB_DIR="extracted_dylibs"
                 mkdir -p "$DYLIB_DIR"
 
-                if ipsw dyld extract "$CACHE_FILE" libMobileGestalt.dylib --output "$DYLIB_DIR" --force 2>/dev/null; then
+                rm -f "$DYLIB_DIR"/libMobileGestalt.dylib
+                if ipsw dyld extract "$CACHE_FILE" libMobileGestalt.dylib --output "$DYLIB_DIR" 2>/dev/null; then
                     DYLIB=$(find "$DYLIB_DIR" -name "*libMobileGestalt*.dylib" -type f | head -1)
 
                     if [[ -n "$DYLIB" ]]; then
@@ -180,7 +181,8 @@ log_info "Extracting libMobileGestalt.dylib from cache..."
 DYLIB_DIR="extracted_dylibs"
 mkdir -p "$DYLIB_DIR"
 
-if ipsw dyld extract "$CACHE_FILE" libMobileGestalt.dylib --output "$DYLIB_DIR" --force 2>/dev/null; then
+rm -f "$DYLIB_DIR"/libMobileGestalt.dylib
+if ipsw dyld extract "$CACHE_FILE" libMobileGestalt.dylib --output "$DYLIB_DIR" 2>/dev/null; then
     log_info "Extracted using 'libMobileGestalt.dylib' pattern"
 else
     log_error "Failed to extract libMobileGestalt.dylib"
