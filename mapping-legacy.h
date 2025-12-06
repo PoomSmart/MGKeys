@@ -91,7 +91,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "htWSrEg/cfn3squdzvER/w", "MLEHW", // iOS 9.3+ (removed in 10.0.1)
     "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability", // iOS unknown
     "Hx+k29zX4XhjYZRkYUvWpw", "studio-light-portrait-preview", // non-gestalt-key // iOS 13.0+ (removed in 14.0)
-    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key // iOS 8.0+ (removed in 15.5)
+    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key // iOS 8.0+ (removed in 15.8)
     "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability", // iOS 8.4+ (removed in 10.0.1)
     "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit", // iOS unknown
     "ibPgs24d3M4hvYwCtW6YAw", "wlan.lowlatency", // non-gestalt-key // iOS 14.0+ (removed in 15.0)
@@ -195,14 +195,14 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "XPqbAKO9OGRsZmYTfs99Pw", "OpenGLES2Capability", // iOS unknown
     "yAP29WFvj9TYheRKoEJDIw", "MainScreenWidth", // iOS unknown
     "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability", // iOS 8.4+ (removed in 10.0.1)
-    "Yk5H+MlMreeaBLjv6PPFDw", "camera-front", // non-gestalt-key // iOS 7.0+ (removed in 15.5)
+    "Yk5H+MlMreeaBLjv6PPFDw", "camera-front", // non-gestalt-key // iOS 7.0+ (removed in 15.8)
     "YWQYAm8X1mwtoYPwpLF6YA", "YouTubePluginCapability", // iOS unknown
     "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability", // iOS 17.0+ (removed in 26.0)
     "z5qxAI4VRmvofBOSFvwxPg", "HardwareSnapshotsRequirePurpleGfxCapability", // iOS unknown
     "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability", // iOS unknown
     "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability", // iOS unknown
     "ziO64HFBPR9QpsOGnkVjJQ", "HiDPICapability", // iOS unknown
-    "zJUWenIp94snlzBD1cub3g", "function-button_halleffect", // non-gestalt-key // iOS 8.0+ (removed in 11.3)
+    "zJUWenIp94snlzBD1cub3g", "function-button_halleffect", // non-gestalt-key // iOS 8.0+ (removed in 11.2)
     "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0+ (removed in 14.3)
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability", // iOS unknown
     NULL, NULL
