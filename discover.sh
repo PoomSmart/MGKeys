@@ -100,12 +100,15 @@ fi
 echo "Extracted $(wc -l <$READABLE | tr -d ' ') symbols"
 
 rm -f $OBFUSCATED $OBFUSCATED_MAPPED
-while IFS= read -r readable
-do
-    hash=$(python3 obfuscate.py obfuscate "$readable")
-    echo "$hash: $readable" >> $OBFUSCATED_MAPPED
-    echo $hash >> $OBFUSCATED
-done < $READABLE
+
+mapfile -t readables < $READABLE
+if [ ${#readables[@]} -gt 0 ]; then
+    mapfile -t hashes < <(python3 obfuscate.py obfuscate "${readables[@]}")
+    for i in "${!readables[@]}"; do
+        echo "${hashes[$i]}: ${readables[$i]}" >> $OBFUSCATED_MAPPED
+        echo "${hashes[$i]}" >> $OBFUSCATED
+    done
+fi
 
 sort -f $OBFUSCATED_MAPPED -o $OBFUSCATED_MAPPED
 

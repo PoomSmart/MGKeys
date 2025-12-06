@@ -27,7 +27,7 @@ def process_maybe_non_gestalt_keys() -> None:
                     continue
 
                 # Skip if already marked as non-gestalt key
-                if NON_KEY_DESC in known_keys_desc.get(obfuscated_hash, ''):
+                if obfuscated_hash in known_keys_desc:
                     continue
                 if NON_KEY_DESC in unknown_keys_desc.get(obfuscated_hash, ''):
                     continue

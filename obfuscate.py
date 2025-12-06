@@ -28,21 +28,23 @@ def md5_string_for_obfuscated_key(key: str):
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 3:
-        print(f"Usage: {sys.argv[0]} <mode> <key>", file=sys.stderr)
+        print(f"Usage: {sys.argv[0]} <mode> <key1> [key2 ...]", file=sys.stderr)
         print("Modes: obfuscate, md5", file=sys.stderr)
         sys.exit(1)
 
     mode = sys.argv[1]
-    key = sys.argv[2]
+    keys = sys.argv[2:]
 
     if mode == "obfuscate":
-        print(calculate_obfuscated_key(key))
+        for key in keys:
+            print(calculate_obfuscated_key(key))
     elif mode == "md5":
-        result = md5_string_for_obfuscated_key(key)
-        if result:
-            print(result)
-        else:
-            sys.exit(1)
+        for key in keys:
+            result = md5_string_for_obfuscated_key(key)
+            if result:
+                print(result)
+            else:
+                sys.exit(1)
     else:
         print(f"Unknown mode: {mode}", file=sys.stderr)
         sys.exit(1)
