@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1179 keys
-// Deobfuscated: 1157 keys (98.13%)
+// Deobfuscated: 1158 keys (98.22%)
 // Total gestalt keys: 907 keys
 // Deobfuscated gestalt: 907 keys (100.0%)
 // Unexplored: 0 keys
@@ -591,7 +591,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "JQr1mcESYcN648vrcZPJEA", "front-flash-capability", // non-gestalt-key
     "Js8HVdVGRs8m5v94pMjkRw", "enforce-googlemail",
     "jSDzacs4RYWnWxn142UBLQ", "BluetoothAddressData",
-    "jtg9JUxH6Mf8k7m7j8omug", NULL, // non-gestalt-key, IODeviceTree:/product, starts with d, OSMigrationCapability
+    "jtg9JUxH6Mf8k7m7j8omug", "disablemigration", // non-gestalt-key
     "juE6wCsjVG4bfAhgHcUVcQ", "MultiLynxSerialNumberArray",
     "JUWcn+5Ss0nvr5w/jk4WEg", "device-name",
     "jw9WzWmThYzveJbsV+GZMA", "sika-support", // non-gestalt-key

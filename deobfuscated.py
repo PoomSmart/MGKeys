@@ -572,6 +572,7 @@ keys = {
     "JQr1mcESYcN648vrcZPJEA": "front-flash-capability",
     "Js8HVdVGRs8m5v94pMjkRw": "enforce-googlemail",
     "jSDzacs4RYWnWxn142UBLQ": "BluetoothAddressData",
+    "jtg9JUxH6Mf8k7m7j8omug": "disablemigration",
     "juE6wCsjVG4bfAhgHcUVcQ": "MultiLynxSerialNumberArray",
     "JUWcn+5Ss0nvr5w/jk4WEg": "device-name",
     "jw9WzWmThYzveJbsV+GZMA": "sika-support",
