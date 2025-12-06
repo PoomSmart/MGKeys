@@ -21,7 +21,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "1tvy6WfYKVGumYi6Y8E5Og", "AccelerometerCapability", // iOS 17.0+ (removed in 26.0)
     "1ZJLuPSZ7T410f25nyus0g", "BluetoothLECapability",
     "2RMKoChpU7jtotAG7NYV4Q", "VOIPCapability",
-    "3lh7gCvtytf3CQisb6LSJA", "ane", // iOS 12.0+ (removed in 13.0)
+    "3lh7gCvtytf3CQisb6LSJA", "ane", // iOS 12.0+ (removed in 13.7)
     "4/DY21tHB40GBdt7Xk8Sdg", "TouchIDCapability",
     "45gPwlxIWz7Mui/RUwUikg", "DeviceNameString",
     "4CQ7lOLjfmXp1J350TNTUQ", "TelephonyCapability",
@@ -65,7 +65,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability", // iOS 17.0+ (removed in 26.0)
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier", // iOS 12.0+ (removed in 14.3)
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability",
-    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0+ (removed in 13.0)
+    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0+ (removed in 13.7)
     "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability", // iOS 8.4+ (removed in 14.3)
     "G/ss4ZCOHb2osL8sLnZj7w", "reverse-zoom",
     "g9b89U/AXTtd//2tEk1Dyw", "APNCapability",
@@ -104,7 +104,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "mMpmRVTiFjGCIUUH1v5aVg", "EncodeAACCapability",
     "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha", // iOS 7.0+ (removed in 14.3)
     "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability", // iOS 8.4+ (removed in 14.3)
-    "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit",
+    "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit", // iOS 13.0+ (removed in 13.5)
     "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera", // iOS 17.0+ (removed in 26.0)
     "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability",
     "nqZ6O+s733xoZqQZZ1NWRw", "AmbientLightSensorCapability",
@@ -114,7 +114,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "o2KLXtN1mTtM9u/2MpYnaA", "MagnetometerCapability",
     "O3i4ewDkn5ARnjq2xIm/Sg", "MainScreenScale",
     "oaIPJckrXuT73yxxtfGJAg", "EnforceGoogleMail",
-    "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit",
+    "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit", // iOS 13.0+ (removed in 13.5)
     "oNUnoF4mZBXwKfYyCx0Vfw", "DelaySleepForHeadsetClickCapability",
     "OwiopkU88VSKJX7zgoWPpQ", "external-driverkit",
     "OySq8itgJ0AKORPMwrKkvA", "AccessibilityCapability",
@@ -124,7 +124,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability",
     "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability",
     "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability",
-    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0+ (removed in 13.0)
+    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0+ (removed in 13.7)
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability",
     "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability",
     "QEmhOZosE0IT4YJkQWh3Dg", NULL,
@@ -141,7 +141,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "tpRXJz7izvvkGMRnTXaVWg", "WatchCompanionCapability",
     "tRBbYA5BLkf/wzaof1WfyQ", "SIMPhonebookCapability",
     "tZOIwbmkkjP5Nggu8/70dw", "MainScreenClass",
-    "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.7+ (removed in 14.3)
+    "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.0+ (removed in 14.3)
     "Ue0GVAyEOkP5kyQgcXKlxg", NULL,
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported",
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 12.4)
@@ -171,7 +171,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability",
     "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability",
     "ziO64HFBPR9QpsOGnkVjJQ", "HiDPICapability",
-    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0+ (removed in 13.0)
+    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0+ (removed in 13.7)
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability",
     NULL, NULL
 };
