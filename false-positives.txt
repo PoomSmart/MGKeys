@@ -42,6 +42,7 @@ RegionalBehaviorNoWiFi
 RemoteBluetoothAddress
 RestrictedCountryCodes
 RingerButtonCapability
+SavageUpdaterSupported
 sonalHotspotCapability
 SpeakerCalibrationMiGa
 SpeakerCalibrationSpGa
