@@ -1,12 +1,13 @@
 #include "struct.h"
 
-// Total: 178 keys
-// Deobfuscated: 173 keys (97.19%)
-// Total gestalt keys: 168 keys
-// Deobfuscated gestalt: 163 keys (97.02%)
-// Unexplored: 5 keys
+// Total: 198 keys
+// Deobfuscated: 173 keys (87.37%)
+// Total gestalt keys: 188 keys
+// Deobfuscated gestalt: 163 keys (86.7%)
+// Unexplored: 25 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
+    "+vrh8Iw5J9DJaSEy7n+iiw", NULL,
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
     "/4LCTfMhvzuiK6b557ir5Q", "pearl-calibration-data", // non-gestalt-key
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
@@ -28,9 +29,12 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "4/DY21tHB40GBdt7Xk8Sdg", "TouchIDCapability",
     "45gPwlxIWz7Mui/RUwUikg", "DeviceNameString",
     "4CQ7lOLjfmXp1J350TNTUQ", "TelephonyCapability",
+    "4MI3+6oztazPJ1ZI2OdWDQ", NULL,
     "4TKtw5gG9r8CE3BlOrjLhg", "UnifiedIPodCapability",
     "59MRw0x/zCNPzV6/uGS8cg", "PiezoClickerCapability",
+    "5JleoNS+AEM3ev96t8z0Qw", NULL,
     "5Xri+ec5Inj/4XBalFenVQ", "MainScreenPitch",
+    "61o7Kdx4PeNILOhWfiXBtA", NULL,
     "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon",
     "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability",
     "84iheBmhAmsxIlcxG4a0zA", "VideoStillsCapability",
@@ -68,24 +72,29 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "eDiwRLHFAmDNNPtULAcEZA", "TelephonyMaximumGeneration",
     "ePAkIesI8SUJiAx8uRCcEA", "HDRImageCaptureCapability",
     "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability",
+    "EQvKwl1eIhCS1hb6EURKWg", NULL,
     "F2M6lgy8EHCyR6hc00hMcg", "effective-security-mode", // non-gestalt-key
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier",
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability",
     "FgjnMkPJPpI4C38dWETwtw", "flash",
     "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability",
+    "g/iV4vkeMLwXt8YPrhL+EQ", NULL,
     "G/ss4ZCOHb2osL8sLnZj7w", "reverse-zoom",
     "g9b89U/AXTtd//2tEk1Dyw", "APNCapability",
     "GFBh/UJXPx/WDLe2qhu/xA", "DeviceSuportsExternalDriverKit",
     "GjhB2cGBYAYQHDA9fKOWNw", "PhotoAdjustmentsCapability",
     "gow0CqXZBgAxbnq78oLJQQ", "PlatformStandAloneContactsCapability",
+    "gQxJNkIEjqfrFzqdebHB4w", NULL,
     "H6fcS+aUfwP3KiWwU9YybQ", "MultitaskingCapability",
     "hL9+1F/mUsx9B1NfYn4T/g", "OTAActivationCapability",
     "hSjeLvzobsJCklk4+pzu3g", "MarketingSOCNameString",
     "htWSrEg/cfn3squdzvER/w", "MLEHW",
     "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability",
+    "Hx+k29zX4XhjYZRkYUvWpw", NULL,
     "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key
     "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability",
     "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit",
+    "ibPgs24d3M4hvYwCtW6YAw", NULL,
     "iSVbuFLd369ug7uTvmUtkQ", "SensitiveUICapability",
     "jaHzwmQrBwNlt5n0dOa7DA", "SystemTelephonyOfAnyKindCapability",
     "jewva1LRTg17HDPWdj+TLw", NULL,
@@ -98,9 +107,13 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "K+5Xuejc6dNaKo6szngjSg", "DisplayFCCLogosViaSoftwareCapability",
     "K0deZit9WJp08kND9wq7cQ", "CellBroadcastCapability",
     "k0rC7smY1sjVXxjCLHVeJA", "CellularDataCapability",
+    "k547UCppzO+wXiwXZRFuwg", NULL,
     "kMHGt7N4hx12NopZFcIz6Q", "RingerSwitchCapability",
+    "KRT2emT8tNPMW9VUsXwT1A", NULL,
     "kTX3vfIkwQHB9e90qFxlDg", "PhotoStreamCapability",
     "KXulcwjWtgzrg+u8qILKBQ", "LocationServicesCapability",
+    "kZxeKVJr1te4KIfsML7vXw", NULL,
+    "L8PQcP8OFWzr3NCfs1QrrQ", NULL,
     "ld2eewXs5StVwdRtwYT8sw", "PersonalHotspotCapability",
     "Lfx1lF4WO7V2u7mKQTQXGA", "LocalizedDeviceNameString",
     "lJMvqLXN5hYqj0ulelo/1Q", "SIMCapability",
@@ -131,17 +144,20 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "pFXE4P/EKSiY0vBWvtT/HA", "HasAllFeaturesCapability",
     "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability",
     "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability",
+    "pQ60lr9FHtEUdZFqLI0C+g", NULL,
     "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability",
     "PUY/n3uJEk8GSE+RjkHHAA", "video-cap",
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability",
     "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability",
     "QEmhOZosE0IT4YJkQWh3Dg", NULL,
     "qMmeMcIsFZrRu0jfOy3I9Q", "HideNonDefaultApplicationsCapability",
+    "R836fJkaZ8xrq3rSCYjxSw", NULL,
     "Rh3jQ1k4bhpCfR4FimhRZw", "AppStoreCapability",
     "S9ZweBMsbQwCL6t3Zpj4fg", "IOSurfaceBackedImagesCapability",
     "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC",
     "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability",
     "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus",
+    "SVhNgqwqzg0Lk5so04T35Q", NULL,
     "T9MMpvl0fu59PO8lXi/Cxg", "effective-production-status", // non-gestalt-key
     "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability",
     "TcGqIE272OpkCMRaIOaPgw", "MarketingNameString",
@@ -151,22 +167,26 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "tRBbYA5BLkf/wzaof1WfyQ", "SIMPhonebookCapability",
     "tZOIwbmkkjP5Nggu8/70dw", "MainScreenClass",
     "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics",
+    "ubcUOmdIWpYH7dNopZCfEg", NULL,
     "Ue0GVAyEOkP5kyQgcXKlxg", NULL,
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported",
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder",
     "uOwIrmQD0GqKtBErL94XJg", "CameraCapability",
     "UtO2BMC/uvWNvjPhK2EXiQ", "ARMV6ExecutionCapability",
+    "uX7jRkb03eqRdXSWq5ItkA", NULL,
     "uYXqOrxG58efKTnlBA3PXw", "AdditionalTextTonesCapability",
     "V3vz1JOFx829T5VapwzRxQ", "SimultaneousCallAndDataSupported",
     "v5AoJC7hPGHbysTMLip12A", "SupportsTapToWake",
     "V5QFNbWGgrw+UZPvgIbDvQ", "ASTC",
     "VhcvUOAVhvIns8SosbTDrg", "NotGreenTeaDeviceCapability",
+    "Vn4SAODWQXeOOIVBe8CXTg", NULL,
     "VOKmP/SJjhnx1AaT13J7QA", "MultitaskingGesturesCapability",
     "vwZ4ohiPF3w3M1jzHbP30g", "HallEffectSensorCapability",
     "WAg9taYd5sCaLcjVswnjjw", "ConferenceCallType",
     "WKTZS6CQwtj1BP1m4SLo1A", "ShoeboxCapability",
     "WT7hF1YDP3DfFx+hSAr25Q", "ARMV7ExecutionCapability",
     "WWhvfhkzSG/RNghKi17E3A", "InternationalSettingsCapability",
+    "wXJsY4Sb2/qskFvLc+yfag", NULL,
     "x1RVzO1tUrUT+A3FOuaXew", "UMTSDeviceCapability",
     "x7jCqsR180Lcm6rYguygmg", "MainScreenHeight",
     "XACgWnmwo1t6swUPu+/UUQ", "AutoFocusCameraCapability",

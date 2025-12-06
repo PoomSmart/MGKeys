@@ -167,7 +167,7 @@ def generate_keys_versions():
         # Save unmapped keys to a file for reference
         unmapped_file = Path('unmapped-keys-from-versions.txt')
         with unmapped_file.open('w') as f:
-            f.write(f'# Keys found in version files but not in mapping-gestalt.h or mapping-legacy.h\n')
+            f.write(f'# Keys found in version files but not in mapping.h or mapping-legacy.h\n')
             f.write(f'# Total: {len(unknown_keys)} unmapped keys\n')
             f.write(f'# These keys need to be deobfuscated and added to an appropriate mapping file\n\n')
             for h in sorted(unknown_keys):
