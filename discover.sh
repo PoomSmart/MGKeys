@@ -14,8 +14,7 @@ OPTIONS:
 
 PREREQUISITES:
     - libMobileGestalt.dylib in current directory
-    - clang compiler (for building util)
-    - Foundation framework (macOS)
+    - python3
 
 EXAMPLES:
     # Use default architecture (arm64e)
@@ -63,15 +62,14 @@ if [ ! -f "$DYLIB" ]; then
     exit 1
 fi
 
-if [ ! -f "util.m" ]; then
-    echo "Error: util.m not found"
-    echo "This file is required to build the obfuscation utility"
+if ! command -v python3 &> /dev/null; then
+    echo "Error: python3 not found"
+    echo "Please install Python 3"
     exit 1
 fi
 
-if ! command -v clang &> /dev/null; then
-    echo "Error: clang compiler not found"
-    echo "Please install Xcode command line tools"
+if [ ! -f "obfuscate.py" ]; then
+    echo "Error: obfuscate.py not found"
     exit 1
 fi
 
@@ -101,17 +99,10 @@ fi
 
 echo "Extracted $(wc -l <$READABLE | tr -d ' ') symbols"
 
-# Compile util
-echo "Compiling obfuscation utility..."
-if ! clang -framework Foundation util.m -o util -Wno-deprecated-declarations; then
-    echo "Error: Failed to compile util"
-    exit 1
-fi
-
 rm -f $OBFUSCATED $OBFUSCATED_MAPPED
 while IFS= read -r readable
 do
-    hash=`./util obfuscate $readable`
+    hash=$(python3 obfuscate.py obfuscate "$readable")
     echo "$hash: $readable" >> $OBFUSCATED_MAPPED
     echo $hash >> $OBFUSCATED
 done < $READABLE
@@ -122,13 +113,13 @@ if [ ! -f "$HASHES" ]; then
     echo "Warning: $HASHES not found, skipping maybe-non-gestalt-keys generation"
 else
     grep -v -f $OBFUSCATED $HASHES | sort -f > temp-$MAYBE_NON_GESTALT_KEYS
-    
+
     if command -v python3 &> /dev/null; then
         python3 gen_maybe_non_gestalt_keys.py
     else
         echo "Warning: python3 not found, skipping maybe-non-gestalt-keys processing"
     fi
-    
+
     rm -f temp-$MAYBE_NON_GESTALT_KEYS
 fi
 

@@ -12,9 +12,6 @@ dyld_shared_cache/
 extracted_dylibs/
 *__*
 
-# Executables
-util
-
 # Artifacts
 all-hashes.txt
 discover-obfuscated-mapped.txt
