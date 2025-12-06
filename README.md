@@ -55,6 +55,24 @@ Use `discover-version.sh` to automate downloading an IPSW, extracting `libMobile
 ./discover-version.sh iPhone15,2 20F66 --remote-extract
 ```
 
+### Version Hash Extraction
+
+To extract hashes for version tracking without running discovery or updating mappings:
+
+```bash
+./extract-version-hashes.sh <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract]
+
+# Examples
+./extract-version-hashes.sh iPhone15,2 18.0
+./extract-version-hashes.sh iPhone13,1 17.4 arm64e --remote-extract
+```
+
+This script:
+- Downloads/extracts the IPSW and `libMobileGestalt.dylib`
+- Generates `versions/version-XX.txt` with extracted hashes
+- Does NOT run discovery or update mapping files
+- Useful for populating version history and key tracking
+
 ### Manual Discovery
 
 For manual key discovery from an extracted dylib:
@@ -161,6 +179,7 @@ All scripts support `--help` for detailed usage. Features:
 - **Python scripts** (`*.py`): Type hints, pathlib, argparse, comprehensive error handling
 - **Shell scripts** (`*.sh`): Help messages, prerequisite checks, input validation
 - **Tests** (`test_*.py`): Comprehensive unit tests for core logic
+- **Shared library** (`lib-ipsw-extract.sh`): Common IPSW extraction functions used by discovery scripts
 
 Run any script with `--help` to see available options and examples.
 
