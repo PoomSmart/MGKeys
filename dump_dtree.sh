@@ -90,42 +90,42 @@ if [[ -n "$DEVICE" ]]; then
         show_help
         exit 1
     fi
-    
+
     # Validate device identifier format (basic check)
     if ! [[ "$DEVICE" =~ ^[A-Za-z]+[0-9]+,[0-9]+ ]]; then
         echo "Warning: Device identifier '$DEVICE' may be invalid"
         echo "Expected format: ModelName##,# (e.g., iPhone15,2)"
     fi
-    
+
     echo "Getting IPSW URL for $DEVICE..."
     if [[ -n "$BUILD" ]]; then
         URL=$(ipsw download ipsw --device "$DEVICE" --build "$BUILD" --urls 2>/dev/null | head -n 1)
     else
         URL=$(ipsw download ipsw --device "$DEVICE" --version "$VERSION" --urls 2>/dev/null | head -n 1)
     fi
-    
+
     if [[ -z "$URL" ]]; then
         echo "Error: Could not find IPSW URL for device $DEVICE"
         [[ -n "$BUILD" ]] && echo "  Build: $BUILD" || echo "  Version: $VERSION"
         exit 1
     fi
-    
+
     echo "Found URL: $URL"
     echo "Extracting DeviceTree from remote IPSW..."
     if ! ipsw extract --remote --dtree "$URL"; then
         echo "Error: Failed to extract DeviceTree from remote IPSW"
         exit 1
     fi
-    
+
     # Find the extracted DeviceTree
     DT_FILE=$(find . -name "DeviceTree*" -type f -not -name "*.json" | head -n 1)
-    
+
 elif [[ -n "$INPUT" ]]; then
     if [[ ! -f "$INPUT" ]]; then
         echo "Error: Input file '$INPUT' does not exist"
         exit 1
     fi
-    
+
     if [[ "$INPUT" == *.ipsw ]]; then
         echo "Extracting DeviceTree from $INPUT..."
         if ! ipsw extract --dtree "$INPUT"; then

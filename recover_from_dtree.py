@@ -16,7 +16,7 @@ except ImportError as e:
 def extract_properties(node_list: Any, candidates: Set[str]) -> None:
     """
     Recursively extract property names from DeviceTree nodes.
-    
+
     Args:
         node_list: List of DeviceTree nodes
         candidates: Set to accumulate candidate property names
@@ -27,14 +27,14 @@ def extract_properties(node_list: Any, candidates: Set[str]) -> None:
     for item in node_list:
         if not isinstance(item, dict):
             continue
-            
+
         for node_name, node_body in item.items():
             # Node name might be a candidate (unlikely but possible)
             candidates.add(node_name)
-            
+
             if not isinstance(node_body, dict):
                 continue
-                
+
             for prop_name, prop_val in node_body.items():
                 if prop_name == "children":
                     extract_properties(prop_val, candidates)
@@ -46,17 +46,17 @@ def extract_properties(node_list: Any, candidates: Set[str]) -> None:
 def load_devicetree(file_path: Path) -> Optional[Dict[str, Any]]:
     """
     Load DeviceTree JSON file.
-    
+
     Args:
         file_path: Path to devicetree.json
-        
+
     Returns:
         Parsed JSON data or None if error
     """
     if not file_path.exists():
         print(f"Error: {file_path} not found")
         return None
-    
+
     try:
         with file_path.open("r") as f:
             return json.load(f)
@@ -68,7 +68,7 @@ def load_devicetree(file_path: Path) -> Optional[Dict[str, Any]]:
 def main(devicetree_file: Path) -> None:
     """
     Main function to recover keys from DeviceTree.
-    
+
     Args:
         devicetree_file: Path to devicetree.json file
     """
@@ -77,7 +77,7 @@ def main(devicetree_file: Path) -> None:
         return
 
     candidates: Set[str] = set()
-    
+
     # Root might be a dict with "device-tree"
     if isinstance(dt, dict) and "device-tree" in dt:
         # Add properties of device-tree itself
@@ -91,15 +91,15 @@ def main(devicetree_file: Path) -> None:
         extract_properties(dt, candidates)
     else:
         print("Unknown JSON structure root")
-            
+
     print(f"Extracted {len(candidates)} unique properties from DeviceTree")
 
     found_count = 0
     new_found_count = 0
-    
+
     for candidate in candidates:
         obfuscated_hash = calculate_obfuscated_key(candidate)
-        
+
         if obfuscated_hash in unknown_keys_desc:
             print(f"FOUND NEW: {obfuscated_hash} -> {candidate}")
             new_found_count += 1
@@ -108,7 +108,7 @@ def main(devicetree_file: Path) -> None:
             # Uncomment to see known matches
             # print(f"FOUND KNOWN: {obfuscated_hash} -> {candidate}")
             found_count += 1
-            
+
     print(f"Total matches found: {found_count}")
     print(f"New keys recovered: {new_found_count}")
 
@@ -135,10 +135,10 @@ Examples:
         dest="file_flag",
         help="Alternative way to specify file path"
     )
-    
+
     args = parser.parse_args()
-    
+
     # Use --file flag if provided, otherwise positional arg
     file_path = Path(args.file_flag if args.file_flag else args.file)
-    
+
     main(file_path)

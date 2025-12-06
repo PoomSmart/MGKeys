@@ -26,7 +26,7 @@ NSString *md5(NSString *inObfuscatedKey) {
 
     const uint8_t *md5Bytes = [md5Data bytes];
     NSString *md5String = [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x", md5Bytes[0], md5Bytes[1], md5Bytes[2], md5Bytes[3], md5Bytes[4], md5Bytes[5], md5Bytes[6], md5Bytes[7], md5Bytes[8], md5Bytes[9], md5Bytes[10], md5Bytes[11], md5Bytes[12], md5Bytes[13], md5Bytes[14], md5Bytes[15]];
-    
+
     return md5String;
 }
 
