@@ -1,209 +1,209 @@
 #include "struct.h"
 
 // Total: 198 keys
-// Deobfuscated: 173 keys (87.37%)
-// Total gestalt keys: 188 keys
-// Deobfuscated gestalt: 163 keys (86.7%)
-// Unexplored: 25 keys
+// Deobfuscated: 176 keys (88.89%)
+// Total gestalt keys: 169 keys
+// Deobfuscated gestalt: 164 keys (97.04%)
+// Unexplored: 5 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
-    "+vrh8Iw5J9DJaSEy7n+iiw", NULL,
-    "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability",
-    "/4LCTfMhvzuiK6b557ir5Q", "pearl-calibration-data", // non-gestalt-key
-    "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability",
-    "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents",
-    "061e/gd5kFdZwwe1G2qXFQ", NULL,
-    "0kE9ab+OYAMDszxCc5nNTw", "MusicStoreCapability",
-    "0tONs5niVymiPVtijnw9hg", "CallerIDCapability",
-    "0X+uIFfqTkodf6Lh20JY+w", "SMSCapability",
-    "0Ze/1/PMurdnnuNgYLsiSw", "OpenGLES1Capability",
-    "1BLBa4NFd3uQekgmXCBOCA", "BluetoothCapability",
-    "1ciXUB/TiXolnLnb9oa0+Q", "EncryptedDataPartitionCapability",
-    "1h6a0FG2nwMsUDVnYfaxxA", "MainScreenOrientation",
-    "1pkwRjExGQ/Xzy/LnAC98A", "LoadThumbnailsWhileScrollingCapability",
-    "1pwZX5NfL1wgOY5dftDTmA", "CameraRestriction",
-    "1tvy6WfYKVGumYi6Y8E5Og", "AccelerometerCapability",
-    "1ZJLuPSZ7T410f25nyus0g", "BluetoothLECapability",
-    "2RMKoChpU7jtotAG7NYV4Q", "VOIPCapability",
-    "3lh7gCvtytf3CQisb6LSJA", "ane",
-    "4/DY21tHB40GBdt7Xk8Sdg", "TouchIDCapability",
-    "45gPwlxIWz7Mui/RUwUikg", "DeviceNameString",
-    "4CQ7lOLjfmXp1J350TNTUQ", "TelephonyCapability",
-    "4MI3+6oztazPJ1ZI2OdWDQ", NULL,
-    "4TKtw5gG9r8CE3BlOrjLhg", "UnifiedIPodCapability",
-    "59MRw0x/zCNPzV6/uGS8cg", "PiezoClickerCapability",
-    "5JleoNS+AEM3ev96t8z0Qw", NULL,
-    "5Xri+ec5Inj/4XBalFenVQ", "MainScreenPitch",
-    "61o7Kdx4PeNILOhWfiXBtA", NULL,
-    "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon",
-    "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability",
-    "84iheBmhAmsxIlcxG4a0zA", "VideoStillsCapability",
-    "8bazN693YkKz0MDmcZvjXw", "ExplicitContentRestriction",
-    "8lHIyh53plXuU5ZXCCtc1A", "AirDropRestriction",
-    "8P5JZjT7LnaofwK60pBM1w", "MicrophoneCapability",
-    "8QDlnfTo4K3713bkcH+E9A", "iPadCapability",
-    "8vIFqHe5lcMGo7TvbNLmyg", "home-button-type", // non-gestalt-key
-    "9s1QcGZXIyfHeOT8b/+m/A", "LTEDeviceCapability",
-    "9ZQAcDmoSgmTrmVL06N7hA", "AppleInternalInstallCapability",
-    "A8aFtN08Oqt21846jqnftQ", "SiriGestureCapability",
-    "Af/UTHptqxLPG5sy0wQTiw", "TorpedoCapability",
-    "AFgMLiOUXwdf4T83wrVcxw", "MMSCapability",
-    "AFSjHTczUWJZWdEzHqndnQ", "720pPlaybackCapability",
-    "aH78kNnsHDm9yHe6vSJYNw", "builtin-mics", // non-gestalt-key
-    "aIzBwNZS8VUrxL+9grefTA", "GameKitCapability",
-    "Ar0GS4uq6WcJ33OpIF14XQ", "HealthKitCapability",
-    "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability",
-    "BfEIy3W3t0Wxf7Hf7LEsAw", "PearlCameraCapability",
-    "BfM9558OSUj9vu/OmyjLnw", "AssistantCapability",
-    "BhXj+5n3+0HcPoSArDGX7g", "EffectiveSecurityMode",
-    "bstETUHlPlCFu+l1GRvM0A", "TVOutCrossfadeCapability",
-    "BstyjvaCtwqls0MfbkGTSg", "DisplayMirroringCapability",
-    "C69C6jJjSxkwtSCq81shww", "CallForwardingCapability",
-    "Ca/ykCYJcbVY9gaO9SvKiQ", "YouTubeCapability",
-    "CgrU9s3DgLoemGDRXszlnQ", "3GVeniceCapability",
-    "cHla4KIe1wv0OvpRVrzy/w", "hide-non-default-apps",
-    "Cp9cxpL94276NKHivShdCg", "HomeScreenWallpaperCapability",
-    "cqjRgfBVUDsi5vrXdQOcng", "OpenGLES3Capability",
-    "drPpRw0Jmqcxv1XQPn/q/Q", "CameraFrontFlashCapability",
-    "dvaktw5A/h0zlsWpMg/COQ", "DeviceSupports64Bit",
-    "dZ2183tXAlFrXRtDcdiqJQ", "Peer2PeerCapability",
-    "E2iZGHvwvi387UKi9wC2Mg", "CameraFlashCapability",
-    "Ecx7M8v2wk05Fch3pFE/GA", "NikeIpodCapability",
-    "eDiwRLHFAmDNNPtULAcEZA", "TelephonyMaximumGeneration",
-    "ePAkIesI8SUJiAx8uRCcEA", "HDRImageCaptureCapability",
-    "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability",
-    "EQvKwl1eIhCS1hb6EURKWg", NULL,
-    "F2M6lgy8EHCyR6hc00hMcg", "effective-security-mode", // non-gestalt-key
-    "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier",
-    "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability",
-    "FgjnMkPJPpI4C38dWETwtw", "flash",
-    "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability",
-    "g/iV4vkeMLwXt8YPrhL+EQ", NULL,
-    "G/ss4ZCOHb2osL8sLnZj7w", "reverse-zoom",
-    "g9b89U/AXTtd//2tEk1Dyw", "APNCapability",
-    "GFBh/UJXPx/WDLe2qhu/xA", "DeviceSuportsExternalDriverKit",
-    "GjhB2cGBYAYQHDA9fKOWNw", "PhotoAdjustmentsCapability",
-    "gow0CqXZBgAxbnq78oLJQQ", "PlatformStandAloneContactsCapability",
-    "gQxJNkIEjqfrFzqdebHB4w", NULL,
-    "H6fcS+aUfwP3KiWwU9YybQ", "MultitaskingCapability",
-    "hL9+1F/mUsx9B1NfYn4T/g", "OTAActivationCapability",
-    "hSjeLvzobsJCklk4+pzu3g", "MarketingSOCNameString",
-    "htWSrEg/cfn3squdzvER/w", "MLEHW",
-    "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability",
-    "Hx+k29zX4XhjYZRkYUvWpw", NULL,
-    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key
-    "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability",
-    "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit",
-    "ibPgs24d3M4hvYwCtW6YAw", NULL,
-    "iSVbuFLd369ug7uTvmUtkQ", "SensitiveUICapability",
-    "jaHzwmQrBwNlt5n0dOa7DA", "SystemTelephonyOfAnyKindCapability",
-    "jewva1LRTg17HDPWdj+TLw", NULL,
-    "JIkPhorQU+H4FIGKvfqoUg", "TVOutSettingsCapability",
-    "JJfHGh5TTJt4RdbtmPioyw", "HDVideoCaptureCapability",
-    "jPfKgbKUk+Vl6s7DaotqIA", NULL,
-    "JuR8P7H4EAlo95lY7lgvtA", "WAPICapability",
-    "JVeuWWZ2F8AjVRs9kfKJ3Q", "WiFiCapability",
-    "jyEyRLza0L3StNXgFUCoTw", "GPSCapability",
-    "K+5Xuejc6dNaKo6szngjSg", "DisplayFCCLogosViaSoftwareCapability",
-    "K0deZit9WJp08kND9wq7cQ", "CellBroadcastCapability",
-    "k0rC7smY1sjVXxjCLHVeJA", "CellularDataCapability",
-    "k547UCppzO+wXiwXZRFuwg", NULL,
-    "kMHGt7N4hx12NopZFcIz6Q", "RingerSwitchCapability",
-    "KRT2emT8tNPMW9VUsXwT1A", NULL,
-    "kTX3vfIkwQHB9e90qFxlDg", "PhotoStreamCapability",
-    "KXulcwjWtgzrg+u8qILKBQ", "LocationServicesCapability",
-    "kZxeKVJr1te4KIfsML7vXw", NULL,
-    "L8PQcP8OFWzr3NCfs1QrrQ", NULL,
-    "ld2eewXs5StVwdRtwYT8sw", "PersonalHotspotCapability",
-    "Lfx1lF4WO7V2u7mKQTQXGA", "LocalizedDeviceNameString",
-    "lJMvqLXN5hYqj0ulelo/1Q", "SIMCapability",
-    "lLP6eSW9thhnfm1jBFX21Q", "ScreenDimensionsCapability",
-    "lM8BH5myz/qFGeIYnsiEoQ", "HearingAidAudioEqualizationCapability",
-    "lp0YX+xu6UPp4SeF2oyLcQ", "EnforceCameraShutterClick",
-    "lrd6CRt0Uo4zpYyWWX0O0Q", "ContainsCellularRadioCapability",
-    "mMpmRVTiFjGCIUUH1v5aVg", "EncodeAACCapability",
-    "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha",
-    "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability",
-    "na77zbwlhy0V7shc4ORRgA", "post-effects", // non-gestalt-key
-    "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit",
-    "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera",
-    "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability",
-    "nqZ6O+s733xoZqQZZ1NWRw", "AmbientLightSensorCapability",
-    "NwAF2cQVdjOKc7KkqR9tIA", "GyroscopeCapability",
-    "NXYYZO2ABdr0PLnSomHJ2w", "C2KDeviceCapability",
-    "o/P6XwYugOD7HAAAmhpTuw", "VoiceControlCapability",
-    "o2KLXtN1mTtM9u/2MpYnaA", "MagnetometerCapability",
-    "O3i4ewDkn5ARnjq2xIm/Sg", "MainScreenScale",
-    "oaIPJckrXuT73yxxtfGJAg", "EnforceGoogleMail",
-    "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit",
-    "oNUnoF4mZBXwKfYyCx0Vfw", "DelaySleepForHeadsetClickCapability",
-    "OwiopkU88VSKJX7zgoWPpQ", "external-driverkit",
-    "OySq8itgJ0AKORPMwrKkvA", "AccessibilityCapability",
-    "pdugFp4LGGarCxCXK0mWtg", "HardwareKeyboardCapability",
-    "PeKqfLHCeimBIYJfnFE9vw", "ApplicationInstallationCapability",
-    "pFXE4P/EKSiY0vBWvtT/HA", "HasAllFeaturesCapability",
-    "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability",
-    "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability",
-    "pQ60lr9FHtEUdZFqLI0C+g", NULL,
-    "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability",
-    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap",
-    "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability",
-    "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability",
-    "QEmhOZosE0IT4YJkQWh3Dg", NULL,
-    "qMmeMcIsFZrRu0jfOy3I9Q", "HideNonDefaultApplicationsCapability",
-    "R836fJkaZ8xrq3rSCYjxSw", NULL,
-    "Rh3jQ1k4bhpCfR4FimhRZw", "AppStoreCapability",
-    "S9ZweBMsbQwCL6t3Zpj4fg", "IOSurfaceBackedImagesCapability",
-    "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC",
-    "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability",
-    "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus",
-    "SVhNgqwqzg0Lk5so04T35Q", NULL,
-    "T9MMpvl0fu59PO8lXi/Cxg", "effective-production-status", // non-gestalt-key
-    "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability",
-    "TcGqIE272OpkCMRaIOaPgw", "MarketingNameString",
-    "THaCQIAEgw5Zqceq9LAe0g", "HiccoughInterval",
-    "TphKlAdEwSp2CSJmGi/WDA", "MobileWifi",
-    "tpRXJz7izvvkGMRnTXaVWg", "WatchCompanionCapability",
-    "tRBbYA5BLkf/wzaof1WfyQ", "SIMPhonebookCapability",
-    "tZOIwbmkkjP5Nggu8/70dw", "MainScreenClass",
-    "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics",
-    "ubcUOmdIWpYH7dNopZCfEg", NULL,
-    "Ue0GVAyEOkP5kyQgcXKlxg", NULL,
-    "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported",
-    "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder",
-    "uOwIrmQD0GqKtBErL94XJg", "CameraCapability",
-    "UtO2BMC/uvWNvjPhK2EXiQ", "ARMV6ExecutionCapability",
-    "uX7jRkb03eqRdXSWq5ItkA", NULL,
-    "uYXqOrxG58efKTnlBA3PXw", "AdditionalTextTonesCapability",
-    "V3vz1JOFx829T5VapwzRxQ", "SimultaneousCallAndDataSupported",
-    "v5AoJC7hPGHbysTMLip12A", "SupportsTapToWake",
-    "V5QFNbWGgrw+UZPvgIbDvQ", "ASTC",
-    "VhcvUOAVhvIns8SosbTDrg", "NotGreenTeaDeviceCapability",
-    "Vn4SAODWQXeOOIVBe8CXTg", NULL,
-    "VOKmP/SJjhnx1AaT13J7QA", "MultitaskingGesturesCapability",
-    "vwZ4ohiPF3w3M1jzHbP30g", "HallEffectSensorCapability",
-    "WAg9taYd5sCaLcjVswnjjw", "ConferenceCallType",
-    "WKTZS6CQwtj1BP1m4SLo1A", "ShoeboxCapability",
-    "WT7hF1YDP3DfFx+hSAr25Q", "ARMV7ExecutionCapability",
-    "WWhvfhkzSG/RNghKi17E3A", "InternationalSettingsCapability",
-    "wXJsY4Sb2/qskFvLc+yfag", NULL,
-    "x1RVzO1tUrUT+A3FOuaXew", "UMTSDeviceCapability",
-    "x7jCqsR180Lcm6rYguygmg", "MainScreenHeight",
-    "XACgWnmwo1t6swUPu+/UUQ", "AutoFocusCameraCapability",
-    "XcmwH6K+Nop/mDqy50Nrqw", "HorsemanCapability",
-    "XEp4h49dagkYL6YrtjW1Kw", "wifi-module-sn", // non-gestalt-key
-    "XPqbAKO9OGRsZmYTfs99Pw", "OpenGLES2Capability",
-    "yAP29WFvj9TYheRKoEJDIw", "MainScreenWidth",
-    "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability",
-    "Yk5H+MlMreeaBLjv6PPFDw", "camera-front", // non-gestalt-key
-    "YWQYAm8X1mwtoYPwpLF6YA", "YouTubePluginCapability",
-    "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability",
-    "z5qxAI4VRmvofBOSFvwxPg", "HardwareSnapshotsRequirePurpleGfxCapability",
-    "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability",
-    "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability",
-    "ziO64HFBPR9QpsOGnkVjJQ", "HiDPICapability",
-    "zJUWenIp94snlzBD1cub3g", "function-button_halleffect", // non-gestalt-key
-    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus",
-    "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability",
+    "+vrh8Iw5J9DJaSEy7n+iiw", NULL, // non-gestalt-key, IODeviceTree:/arm-io > wlan, starts with w, DeviceHasNAN, iOS 14.0+ (removed in 15.0)
+    "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability", // iOS 8.4+ (removed in 12.4)
+    "/4LCTfMhvzuiK6b557ir5Q", "pearl-calibration-data", // non-gestalt-key // iOS 14.0+ (removed in 26.0)
+    "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability", // iOS unknown
+    "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents", // iOS unknown
+    "061e/gd5kFdZwwe1G2qXFQ", NULL, // iOS 13.0+ (removed in 14.0)
+    "0kE9ab+OYAMDszxCc5nNTw", "MusicStoreCapability", // iOS unknown
+    "0tONs5niVymiPVtijnw9hg", "CallerIDCapability", // iOS unknown
+    "0X+uIFfqTkodf6Lh20JY+w", "SMSCapability", // iOS unknown
+    "0Ze/1/PMurdnnuNgYLsiSw", "OpenGLES1Capability", // iOS unknown
+    "1BLBa4NFd3uQekgmXCBOCA", "BluetoothCapability", // iOS unknown
+    "1ciXUB/TiXolnLnb9oa0+Q", "EncryptedDataPartitionCapability", // iOS unknown
+    "1h6a0FG2nwMsUDVnYfaxxA", "MainScreenOrientation", // iOS unknown
+    "1pkwRjExGQ/Xzy/LnAC98A", "LoadThumbnailsWhileScrollingCapability", // iOS unknown
+    "1pwZX5NfL1wgOY5dftDTmA", "CameraRestriction", // iOS unknown
+    "1tvy6WfYKVGumYi6Y8E5Og", "AccelerometerCapability", // iOS 17.0+ (removed in 26.0)
+    "1ZJLuPSZ7T410f25nyus0g", "BluetoothLECapability", // iOS unknown
+    "2RMKoChpU7jtotAG7NYV4Q", "VOIPCapability", // iOS unknown
+    "3lh7gCvtytf3CQisb6LSJA", "ane", // iOS 12.0+ (removed in 14.0)
+    "4/DY21tHB40GBdt7Xk8Sdg", "TouchIDCapability", // iOS unknown
+    "45gPwlxIWz7Mui/RUwUikg", "DeviceNameString", // iOS unknown
+    "4CQ7lOLjfmXp1J350TNTUQ", "TelephonyCapability", // iOS unknown
+    "4MI3+6oztazPJ1ZI2OdWDQ", NULL, // non-gestalt-key, , iOS 8.4+ (removed in 10.0.1)
+    "4TKtw5gG9r8CE3BlOrjLhg", "UnifiedIPodCapability", // iOS unknown
+    "59MRw0x/zCNPzV6/uGS8cg", "PiezoClickerCapability", // iOS unknown
+    "5JleoNS+AEM3ev96t8z0Qw", NULL, // non-gestalt-key, IOService:/, starts with A, iOS 9.0+ (removed in 9.3)
+    "5Xri+ec5Inj/4XBalFenVQ", "MainScreenPitch", // iOS unknown
+    "61o7Kdx4PeNILOhWfiXBtA", NULL, // non-gestalt-key, IODeviceTree:/arm-io/vxd, starts with h?, iOS 7.0+ (removed in 8.4)
+    "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon", // iOS 12.0+ (removed in 26.0)
+    "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability", // iOS unknown
+    "84iheBmhAmsxIlcxG4a0zA", "VideoStillsCapability", // iOS 8.4+ (removed in 12.4)
+    "8bazN693YkKz0MDmcZvjXw", "ExplicitContentRestriction", // iOS unknown
+    "8lHIyh53plXuU5ZXCCtc1A", "AirDropRestriction", // iOS unknown
+    "8P5JZjT7LnaofwK60pBM1w", "MicrophoneCapability", // iOS unknown
+    "8QDlnfTo4K3713bkcH+E9A", "iPadCapability", // iOS unknown
+    "8vIFqHe5lcMGo7TvbNLmyg", "home-button-type", // non-gestalt-key // iOS 10.0.1+ (removed in 12.4)
+    "9s1QcGZXIyfHeOT8b/+m/A", "LTEDeviceCapability", // iOS unknown
+    "9ZQAcDmoSgmTrmVL06N7hA", "AppleInternalInstallCapability", // iOS unknown
+    "A8aFtN08Oqt21846jqnftQ", "SiriGestureCapability", // iOS 8.4+ (removed in 12.4)
+    "Af/UTHptqxLPG5sy0wQTiw", "TorpedoCapability", // iOS unknown
+    "AFgMLiOUXwdf4T83wrVcxw", "MMSCapability", // iOS unknown
+    "AFSjHTczUWJZWdEzHqndnQ", "720pPlaybackCapability", // iOS unknown
+    "aH78kNnsHDm9yHe6vSJYNw", "builtin-mics", // non-gestalt-key // iOS 7.0+ (removed in 15.0)
+    "aIzBwNZS8VUrxL+9grefTA", "GameKitCapability", // iOS unknown
+    "Ar0GS4uq6WcJ33OpIF14XQ", "HealthKitCapability", // iOS unknown
+    "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability", // iOS unknown
+    "BfEIy3W3t0Wxf7Hf7LEsAw", "PearlCameraCapability", // iOS unknown
+    "BfM9558OSUj9vu/OmyjLnw", "AssistantCapability", // iOS unknown
+    "BhXj+5n3+0HcPoSArDGX7g", "EffectiveSecurityMode", // iOS 7.0+ (removed in 12.4)
+    "bstETUHlPlCFu+l1GRvM0A", "TVOutCrossfadeCapability", // iOS unknown
+    "BstyjvaCtwqls0MfbkGTSg", "DisplayMirroringCapability", // iOS 8.4+ (removed in 12.4)
+    "C69C6jJjSxkwtSCq81shww", "CallForwardingCapability", // iOS unknown
+    "Ca/ykCYJcbVY9gaO9SvKiQ", "YouTubeCapability", // iOS unknown
+    "CgrU9s3DgLoemGDRXszlnQ", "3GVeniceCapability", // iOS unknown
+    "cHla4KIe1wv0OvpRVrzy/w", "hide-non-default-apps", // iOS 7.0+ (removed in 26.0)
+    "Cp9cxpL94276NKHivShdCg", "HomeScreenWallpaperCapability", // iOS unknown
+    "cqjRgfBVUDsi5vrXdQOcng", "OpenGLES3Capability", // iOS unknown
+    "drPpRw0Jmqcxv1XQPn/q/Q", "CameraFrontFlashCapability", // iOS 9.3+ (removed in 12.4)
+    "dvaktw5A/h0zlsWpMg/COQ", "DeviceSupports64Bit", // iOS unknown
+    "dZ2183tXAlFrXRtDcdiqJQ", "Peer2PeerCapability", // iOS unknown
+    "E2iZGHvwvi387UKi9wC2Mg", "CameraFlashCapability", // iOS 8.4+ (removed in 12.4)
+    "Ecx7M8v2wk05Fch3pFE/GA", "NikeIpodCapability", // iOS 8.4+ (removed in 12.4)
+    "eDiwRLHFAmDNNPtULAcEZA", "TelephonyMaximumGeneration", // iOS unknown
+    "ePAkIesI8SUJiAx8uRCcEA", "HDRImageCaptureCapability", // iOS unknown
+    "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability", // iOS 17.0+ (removed in 26.0)
+    "EQvKwl1eIhCS1hb6EURKWg", NULL, // non-gestalt-key, , iOS 7.0+ (removed in 8.0)
+    "F2M6lgy8EHCyR6hc00hMcg", "effective-security-mode", // non-gestalt-key // iOS 7.0+ (removed in 12.4)
+    "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier", // iOS 12.0+ (removed in 12.4)
+    "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability", // iOS unknown
+    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0+ (removed in 14.3)
+    "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability", // iOS 8.4+ (removed in 12.4)
+    "g/iV4vkeMLwXt8YPrhL+EQ", NULL, // non-gestalt-key, IODeviceTree:/product/camera, starts with f, iOS 9.0+ (removed in 9.3)
+    "G/ss4ZCOHb2osL8sLnZj7w", "reverse-zoom", // iOS unknown
+    "g9b89U/AXTtd//2tEk1Dyw", "APNCapability", // iOS unknown
+    "GFBh/UJXPx/WDLe2qhu/xA", "DeviceSuportsExternalDriverKit", // iOS unknown
+    "GjhB2cGBYAYQHDA9fKOWNw", "PhotoAdjustmentsCapability", // iOS unknown
+    "gow0CqXZBgAxbnq78oLJQQ", "PlatformStandAloneContactsCapability", // iOS unknown
+    "gQxJNkIEjqfrFzqdebHB4w", "hme-in-arkit", // non-gestalt-key // iOS 13.0+ (removed in 13.5)
+    "H6fcS+aUfwP3KiWwU9YybQ", "MultitaskingCapability", // iOS unknown
+    "hL9+1F/mUsx9B1NfYn4T/g", "OTAActivationCapability", // iOS unknown
+    "hSjeLvzobsJCklk4+pzu3g", "MarketingSOCNameString", // iOS unknown
+    "htWSrEg/cfn3squdzvER/w", "MLEHW", // iOS 9.3+ (removed in 12.4)
+    "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability", // iOS unknown
+    "Hx+k29zX4XhjYZRkYUvWpw", "studio-light-portrait-preview", // non-gestalt-key // iOS 13.0+ (removed in 14.0)
+    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key // iOS 8.0+ (removed in 15.5)
+    "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability", // iOS 8.4+ (removed in 12.4)
+    "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit", // iOS unknown
+    "ibPgs24d3M4hvYwCtW6YAw", NULL, // non-gestalt-key, IODeviceTree:/arm-io > wlan, starts with w, DeviceSupportsLowLatency, iOS 14.0+ (removed in 15.0)
+    "iSVbuFLd369ug7uTvmUtkQ", "SensitiveUICapability", // iOS unknown
+    "jaHzwmQrBwNlt5n0dOa7DA", "SystemTelephonyOfAnyKindCapability", // iOS unknown
+    "jewva1LRTg17HDPWdj+TLw", NULL, // iOS 9.3+ (removed in 12.4)
+    "JIkPhorQU+H4FIGKvfqoUg", "TVOutSettingsCapability", // iOS unknown
+    "JJfHGh5TTJt4RdbtmPioyw", "HDVideoCaptureCapability", // iOS unknown
+    "jPfKgbKUk+Vl6s7DaotqIA", NULL, // iOS 9.0+ (removed in 12.4)
+    "JuR8P7H4EAlo95lY7lgvtA", "WAPICapability", // iOS unknown
+    "JVeuWWZ2F8AjVRs9kfKJ3Q", "WiFiCapability", // iOS unknown
+    "jyEyRLza0L3StNXgFUCoTw", "GPSCapability", // iOS 12.0+ (removed in 12.4)
+    "K+5Xuejc6dNaKo6szngjSg", "DisplayFCCLogosViaSoftwareCapability", // iOS unknown
+    "K0deZit9WJp08kND9wq7cQ", "CellBroadcastCapability", // iOS unknown
+    "k0rC7smY1sjVXxjCLHVeJA", "CellularDataCapability", // iOS unknown
+    "k547UCppzO+wXiwXZRFuwg", "force-supported", // iOS 13.0+ (removed in 14.0)
+    "kMHGt7N4hx12NopZFcIz6Q", "RingerSwitchCapability", // iOS 8.4+ (removed in 12.4)
+    "KRT2emT8tNPMW9VUsXwT1A", NULL, // non-gestalt-key, , iOS 7.0+ (removed in 10.0.1)
+    "kTX3vfIkwQHB9e90qFxlDg", "PhotoStreamCapability", // iOS unknown
+    "KXulcwjWtgzrg+u8qILKBQ", "LocationServicesCapability", // iOS unknown
+    "kZxeKVJr1te4KIfsML7vXw", NULL, // non-gestalt-key, , iOS 8.0+ (removed in 10.0.1)
+    "L8PQcP8OFWzr3NCfs1QrrQ", NULL, // non-gestalt-key, IODeviceTree:/product/audio, starts with s, 061e/gd5kFdZwwe1G2qXFQ, iOS 13.0+ (removed in 14.0)
+    "ld2eewXs5StVwdRtwYT8sw", "PersonalHotspotCapability", // iOS 8.4+ (removed in 12.4)
+    "Lfx1lF4WO7V2u7mKQTQXGA", "LocalizedDeviceNameString", // iOS unknown
+    "lJMvqLXN5hYqj0ulelo/1Q", "SIMCapability", // iOS unknown
+    "lLP6eSW9thhnfm1jBFX21Q", "ScreenDimensionsCapability", // iOS unknown
+    "lM8BH5myz/qFGeIYnsiEoQ", "HearingAidAudioEqualizationCapability", // iOS 8.4+ (removed in 12.4)
+    "lp0YX+xu6UPp4SeF2oyLcQ", "EnforceCameraShutterClick", // iOS unknown
+    "lrd6CRt0Uo4zpYyWWX0O0Q", "ContainsCellularRadioCapability", // iOS unknown
+    "mMpmRVTiFjGCIUUH1v5aVg", "EncodeAACCapability", // iOS unknown
+    "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha", // iOS 7.0+ (removed in 12.4)
+    "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability", // iOS 8.4+ (removed in 12.4)
+    "na77zbwlhy0V7shc4ORRgA", "post-effects", // non-gestalt-key // iOS 7.0+ (removed in 14.3)
+    "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit", // iOS 13.0+ (removed in 13.5)
+    "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera", // iOS 17.0+ (removed in 26.0)
+    "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability", // iOS unknown
+    "nqZ6O+s733xoZqQZZ1NWRw", "AmbientLightSensorCapability", // iOS unknown
+    "NwAF2cQVdjOKc7KkqR9tIA", "GyroscopeCapability", // iOS 17.0+ (removed in 26.0)
+    "NXYYZO2ABdr0PLnSomHJ2w", "C2KDeviceCapability", // iOS unknown
+    "o/P6XwYugOD7HAAAmhpTuw", "VoiceControlCapability", // iOS unknown
+    "o2KLXtN1mTtM9u/2MpYnaA", "MagnetometerCapability", // iOS unknown
+    "O3i4ewDkn5ARnjq2xIm/Sg", "MainScreenScale", // iOS unknown
+    "oaIPJckrXuT73yxxtfGJAg", "EnforceGoogleMail", // iOS unknown
+    "oGLRS3rALy/eJqiKMfXOxA", "DeviceSupportsHMEInARKit", // iOS 13.0+ (removed in 13.5)
+    "oNUnoF4mZBXwKfYyCx0Vfw", "DelaySleepForHeadsetClickCapability", // iOS unknown
+    "OwiopkU88VSKJX7zgoWPpQ", "external-driverkit", // iOS unknown
+    "OySq8itgJ0AKORPMwrKkvA", "AccessibilityCapability", // iOS unknown
+    "pdugFp4LGGarCxCXK0mWtg", "HardwareKeyboardCapability", // iOS unknown
+    "PeKqfLHCeimBIYJfnFE9vw", "ApplicationInstallationCapability", // iOS unknown
+    "pFXE4P/EKSiY0vBWvtT/HA", "HasAllFeaturesCapability", // iOS unknown
+    "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability", // iOS unknown
+    "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability", // iOS unknown
+    "pQ60lr9FHtEUdZFqLI0C+g", NULL, // non-gestalt-key, IOService:/5JleoNS+AEM3ev96t8z0Qw, starts with S, iOS 9.0+ (removed in 9.3)
+    "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability", // iOS unknown
+    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0+ (removed in 14.0)
+    "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability", // iOS unknown
+    "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability", // iOS unknown
+    "QEmhOZosE0IT4YJkQWh3Dg", NULL, // iOS unknown
+    "qMmeMcIsFZrRu0jfOy3I9Q", "HideNonDefaultApplicationsCapability", // iOS unknown
+    "R836fJkaZ8xrq3rSCYjxSw", NULL, // non-gestalt-key, IODeviceTree:/product, starts with c?, iOS 7.0+ (removed in 8.0)
+    "Rh3jQ1k4bhpCfR4FimhRZw", "AppStoreCapability", // iOS unknown
+    "S9ZweBMsbQwCL6t3Zpj4fg", "IOSurfaceBackedImagesCapability", // iOS unknown
+    "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC", // iOS unknown
+    "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability", // iOS unknown
+    "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus", // iOS 7.0+ (removed in 12.4)
+    "SVhNgqwqzg0Lk5so04T35Q", NULL, // non-gestalt-key, IODeviceTree:/baseband, starts with f, iOS 8.0+ (removed in 9.3)
+    "T9MMpvl0fu59PO8lXi/Cxg", "effective-production-status", // non-gestalt-key // iOS 7.0+ (removed in 12.4)
+    "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability", // iOS unknown
+    "TcGqIE272OpkCMRaIOaPgw", "MarketingNameString", // iOS unknown
+    "THaCQIAEgw5Zqceq9LAe0g", "HiccoughInterval", // iOS unknown
+    "TphKlAdEwSp2CSJmGi/WDA", "MobileWifi", // iOS unknown
+    "tpRXJz7izvvkGMRnTXaVWg", "WatchCompanionCapability", // iOS unknown
+    "tRBbYA5BLkf/wzaof1WfyQ", "SIMPhonebookCapability", // iOS unknown
+    "tZOIwbmkkjP5Nggu8/70dw", "MainScreenClass", // iOS unknown
+    "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.0+ (removed in 14.0)
+    "ubcUOmdIWpYH7dNopZCfEg", NULL, // non-gestalt-key, , iOS 9.0+ (removed in 10.0.1)
+    "Ue0GVAyEOkP5kyQgcXKlxg", NULL, // iOS 9.3+ (removed in 10.0.1)
+    "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported", // iOS unknown
+    "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 12.4)
+    "uOwIrmQD0GqKtBErL94XJg", "CameraCapability", // iOS unknown
+    "UtO2BMC/uvWNvjPhK2EXiQ", "ARMV6ExecutionCapability", // iOS unknown
+    "uX7jRkb03eqRdXSWq5ItkA", NULL, // non-gestalt-key, IODeviceTree:/product/maps, starts with a?, iOS 7.0+ (removed in 8.4)
+    "uYXqOrxG58efKTnlBA3PXw", "AdditionalTextTonesCapability", // iOS unknown
+    "V3vz1JOFx829T5VapwzRxQ", "SimultaneousCallAndDataSupported", // iOS unknown
+    "v5AoJC7hPGHbysTMLip12A", "SupportsTapToWake", // iOS unknown
+    "V5QFNbWGgrw+UZPvgIbDvQ", "ASTC", // iOS 12.0+ (removed in 12.4)
+    "VhcvUOAVhvIns8SosbTDrg", "NotGreenTeaDeviceCapability", // iOS unknown
+    "Vn4SAODWQXeOOIVBe8CXTg", NULL, // non-gestalt-key, , iOS 7.0+ (removed in 10.0.1)
+    "VOKmP/SJjhnx1AaT13J7QA", "MultitaskingGesturesCapability", // iOS unknown
+    "vwZ4ohiPF3w3M1jzHbP30g", "HallEffectSensorCapability", // iOS 8.4+ (removed in 12.4)
+    "WAg9taYd5sCaLcjVswnjjw", "ConferenceCallType", // iOS unknown
+    "WKTZS6CQwtj1BP1m4SLo1A", "ShoeboxCapability", // iOS unknown
+    "WT7hF1YDP3DfFx+hSAr25Q", "ARMV7ExecutionCapability", // iOS unknown
+    "WWhvfhkzSG/RNghKi17E3A", "InternationalSettingsCapability", // iOS unknown
+    "wXJsY4Sb2/qskFvLc+yfag", NULL, // non-gestalt-key, IODeviceTree:/arm-io/ane, starts with a, AppleNeuralEngineSubtype, iOS 13.0+ (removed in 14.0)
+    "x1RVzO1tUrUT+A3FOuaXew", "UMTSDeviceCapability", // iOS unknown
+    "x7jCqsR180Lcm6rYguygmg", "MainScreenHeight", // iOS unknown
+    "XACgWnmwo1t6swUPu+/UUQ", "AutoFocusCameraCapability", // iOS 8.4+ (removed in 12.4)
+    "XcmwH6K+Nop/mDqy50Nrqw", "HorsemanCapability", // iOS unknown
+    "XEp4h49dagkYL6YrtjW1Kw", "wifi-module-sn", // non-gestalt-key // iOS 8.0+ (removed in 26.0)
+    "XPqbAKO9OGRsZmYTfs99Pw", "OpenGLES2Capability", // iOS unknown
+    "yAP29WFvj9TYheRKoEJDIw", "MainScreenWidth", // iOS unknown
+    "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability", // iOS 8.4+ (removed in 12.4)
+    "Yk5H+MlMreeaBLjv6PPFDw", "camera-front", // non-gestalt-key // iOS 7.0+ (removed in 15.5)
+    "YWQYAm8X1mwtoYPwpLF6YA", "YouTubePluginCapability", // iOS unknown
+    "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability", // iOS 17.0+ (removed in 26.0)
+    "z5qxAI4VRmvofBOSFvwxPg", "HardwareSnapshotsRequirePurpleGfxCapability", // iOS unknown
+    "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability", // iOS unknown
+    "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability", // iOS unknown
+    "ziO64HFBPR9QpsOGnkVjJQ", "HiDPICapability", // iOS unknown
+    "zJUWenIp94snlzBD1cub3g", "function-button_halleffect", // non-gestalt-key // iOS 8.0+ (removed in 12.4)
+    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0+ (removed in 14.3)
+    "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability", // iOS unknown
     NULL, NULL
 };

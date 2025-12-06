@@ -112,15 +112,36 @@ def generate_mapping(
                 if not process_key(obfuscated_key, keys_map, mapping, only_gestalt, stats, add_version):
                     continue
             elif obfuscated_key in unknown_keys_desc:
-                # unknown_keys_desc now contains IODeviceTree paths only
                 desc = unknown_keys_desc[obfuscated_key]
                 if only_gestalt or not GEN_NON_GESTALT_KEY:
                     continue
                 stats['non_gestalt_keys'] += 1
-                mapping[obfuscated_key] = f'NULL, // {NON_KEY_DESC}, {desc}'
+                # Get version info for unmapped keys
+                version_comment = ''
+                if add_version and obfuscated_key in KEY_IOS_VERSIONS:
+                    intro_version = KEY_IOS_VERSIONS[obfuscated_key]
+                    if obfuscated_key in KEY_IOS_REMOVED:
+                        removed_version = KEY_IOS_REMOVED[obfuscated_key]
+                        version_comment = f', iOS {intro_version}+ (removed in {removed_version})'
+                    elif intro_version == 'unknown':
+                        version_comment = f', iOS {intro_version}'
+                    else:
+                        version_comment = f', iOS {intro_version}+'
+                mapping[obfuscated_key] = f'NULL, // {NON_KEY_DESC}, {desc}{version_comment}'
             else:
                 stats['unexplored_keys'] += 1
-                mapping[obfuscated_key] = 'NULL,'
+                # Get version info for unexplored keys
+                version_comment = ''
+                if add_version and obfuscated_key in KEY_IOS_VERSIONS:
+                    intro_version = KEY_IOS_VERSIONS[obfuscated_key]
+                    if obfuscated_key in KEY_IOS_REMOVED:
+                        removed_version = KEY_IOS_REMOVED[obfuscated_key]
+                        version_comment = f' // iOS {intro_version}+ (removed in {removed_version})'
+                    elif intro_version == 'unknown':
+                        version_comment = f' // iOS {intro_version}'
+                    else:
+                        version_comment = f' // iOS {intro_version}+'
+                mapping[obfuscated_key] = f'NULL,{version_comment}'
 
     for obfuscated_key in keys_map:
         if obfuscated_key not in seen_keys:
@@ -154,9 +175,9 @@ def generate_mapping(
         out.write('    NULL, NULL\n};\n')
 
 if __name__ == '__main__':
-    generate_mapping(HASHES_FILE, MAPPING_FILE, TABLE_NAME, False, keys)
+    generate_mapping(HASHES_FILE, MAPPING_FILE, TABLE_NAME, False, keys, add_version=True)
     generate_mapping(HASHES_FILE, MAPPING_GESTALT_FILE, TABLE_NAME, True, keys, add_version=True)
-    generate_mapping(HASHES_LEGACY_FILE, MAPPING_LEGACY_FILE, TABLE_LEGACY_NAME, False, keys_legacy)
+    generate_mapping(HASHES_LEGACY_FILE, MAPPING_LEGACY_FILE, TABLE_LEGACY_NAME, False, keys_legacy, add_version=True)
     generate_mapping(HASHES_LEGACY_FILE, MAPPING_GESTALT_LEGACY_FILE, TABLE_LEGACY_NAME, True, keys_legacy, add_version=True)
 
     with POTFILE.open('w') as out:

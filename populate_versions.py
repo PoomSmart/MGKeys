@@ -160,18 +160,19 @@ def generate_keys_versions():
 
     # Keys in version files but not mapped yet
     unknown_keys = all_seen_keys - all_hashes
+
+    # Always write the unmapped keys file (even if empty)
+    unmapped_file = Path('unmapped-keys-from-versions.txt')
+    with unmapped_file.open('w') as f:
+        f.write(f'# Keys found in version files but not in mapping.h or mapping-legacy.h\n')
+        f.write(f'# Total: {len(unknown_keys)} unmapped keys\n')
+        f.write(f'# These keys need to be deobfuscated and added to an appropriate mapping file\n\n')
+        for h in sorted(unknown_keys):
+            f.write(f'{h}\n')
+
     if unknown_keys:
         print(f"Warning: Found {len(unknown_keys)} keys in version files but not in mapping files")
         print(f"These unmapped keys are saved in unmapped-keys-from-versions.txt")
-
-        # Save unmapped keys to a file for reference
-        unmapped_file = Path('unmapped-keys-from-versions.txt')
-        with unmapped_file.open('w') as f:
-            f.write(f'# Keys found in version files but not in mapping.h or mapping-legacy.h\n')
-            f.write(f'# Total: {len(unknown_keys)} unmapped keys\n')
-            f.write(f'# These keys need to be deobfuscated and added to an appropriate mapping file\n\n')
-            for h in sorted(unknown_keys):
-                f.write(f'{h}\n')
 
     # Print statistics
     version_stats: dict[str, int] = {}

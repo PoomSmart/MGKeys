@@ -1,24 +1,4 @@
-# Keys found in version files but not in mapping-gestalt.h or mapping-legacy.h
-# Total: 20 unmapped keys
+# Keys found in version files but not in mapping.h or mapping-legacy.h
+# Total: 0 unmapped keys
 # These keys need to be deobfuscated and added to an appropriate mapping file
 
-+vrh8Iw5J9DJaSEy7n+iiw
-4MI3+6oztazPJ1ZI2OdWDQ
-5JleoNS+AEM3ev96t8z0Qw
-61o7Kdx4PeNILOhWfiXBtA
-EQvKwl1eIhCS1hb6EURKWg
-Hx+k29zX4XhjYZRkYUvWpw
-KRT2emT8tNPMW9VUsXwT1A
-L8PQcP8OFWzr3NCfs1QrrQ
-R836fJkaZ8xrq3rSCYjxSw
-SVhNgqwqzg0Lk5so04T35Q
-Vn4SAODWQXeOOIVBe8CXTg
-g/iV4vkeMLwXt8YPrhL+EQ
-gQxJNkIEjqfrFzqdebHB4w
-ibPgs24d3M4hvYwCtW6YAw
-k547UCppzO+wXiwXZRFuwg
-kZxeKVJr1te4KIfsML7vXw
-pQ60lr9FHtEUdZFqLI0C+g
-uX7jRkb03eqRdXSWq5ItkA
-ubcUOmdIWpYH7dNopZCfEg
-wXJsY4Sb2/qskFvLc+yfag
