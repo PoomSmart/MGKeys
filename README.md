@@ -105,6 +105,25 @@ python3 recover_from_dtree.py
 python3 recover_from_dtree.py --help
 ```
 
+#### Hashcat-based Recovery
+
+Use hashcat to brute-force unknown obfuscated keys:
+
+```bash
+# 1. Prepare hashcat input files
+python3 gen_md5.py              # Generate MD5 hashes from all-hashes.txt
+python3 gen_mapping.py          # Generate potfile for known keys
+
+# 2. Run hashcat with appropriate attack mode
+# See hashcat documentation for advanced usage and attack modes
+
+# 3. After recovery, update deobfuscated.py with discovered keys
+```
+
+The workflow generates:
+- `md5hashes.txt` - MD5 hashes of all obfuscated keys for hashcat input
+- `potfile` - Known key mappings in hashcat potfile format for reference
+
 ## Development
 
 ### Running Tests
