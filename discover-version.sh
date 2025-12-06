@@ -208,7 +208,7 @@ log_info "Using dylib: libMobileGestalt.dylib"
 # Run discovery
 log_info "Running key discovery..."
 if [[ -f "discover.sh" ]]; then
-    bash discover.sh
+    bash discover.sh || true
 fi
 
 if [[ -f "deobfuscate.sh" ]]; then
