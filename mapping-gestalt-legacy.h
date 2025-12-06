@@ -46,7 +46,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability",
     "BfEIy3W3t0Wxf7Hf7LEsAw", "PearlCameraCapability", // iOS 13.7+ (removed in 14.3)
     "BfM9558OSUj9vu/OmyjLnw", "AssistantCapability",
-    "BhXj+5n3+0HcPoSArDGX7g", "EffectiveSecurityMode", // iOS 7.0+ (removed in 13.0)
+    "BhXj+5n3+0HcPoSArDGX7g", "EffectiveSecurityMode", // iOS 7.0+ (removed in 12.4)
     "bstETUHlPlCFu+l1GRvM0A", "TVOutCrossfadeCapability",
     "BstyjvaCtwqls0MfbkGTSg", "DisplayMirroringCapability", // iOS 8.4+ (removed in 14.3)
     "C69C6jJjSxkwtSCq81shww", "CallForwardingCapability",
@@ -91,7 +91,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "K+5Xuejc6dNaKo6szngjSg", "DisplayFCCLogosViaSoftwareCapability",
     "K0deZit9WJp08kND9wq7cQ", "CellBroadcastCapability",
     "k0rC7smY1sjVXxjCLHVeJA", "CellularDataCapability",
-    "kMHGt7N4hx12NopZFcIz6Q", "RingerSwitchCapability", // iOS 8.4+ (removed in 13.0)
+    "kMHGt7N4hx12NopZFcIz6Q", "RingerSwitchCapability", // iOS 8.4+ (removed in 12.4)
     "kTX3vfIkwQHB9e90qFxlDg", "PhotoStreamCapability",
     "KXulcwjWtgzrg+u8qILKBQ", "LocationServicesCapability",
     "ld2eewXs5StVwdRtwYT8sw", "PersonalHotspotCapability", // iOS 8.4+ (removed in 14.3)
@@ -133,7 +133,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "S9ZweBMsbQwCL6t3Zpj4fg", "IOSurfaceBackedImagesCapability",
     "SBe5o/DMF5Z94MS+ZzmBCA", "DeviceSupportsNFC", // iOS 13.7+ (removed in 14.3)
     "sgo5tedXL8Fn5rsAqD9yiQ", "HardwareEncodeSnapshotsCapability",
-    "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus", // iOS 7.0+ (removed in 13.0)
+    "SjED0v6tcI1c4fqvuUYAqQ", "EffectiveProductionStatus", // iOS 7.0+ (removed in 12.4)
     "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability",
     "TcGqIE272OpkCMRaIOaPgw", "MarketingNameString",
     "THaCQIAEgw5Zqceq9LAe0g", "HiccoughInterval",
@@ -144,7 +144,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.7+ (removed in 14.3)
     "Ue0GVAyEOkP5kyQgcXKlxg", NULL,
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported",
-    "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 13.0)
+    "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 12.4)
     "uOwIrmQD0GqKtBErL94XJg", "CameraCapability",
     "UtO2BMC/uvWNvjPhK2EXiQ", "ARMV6ExecutionCapability",
     "uYXqOrxG58efKTnlBA3PXw", "AdditionalTextTonesCapability",
@@ -153,7 +153,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "V5QFNbWGgrw+UZPvgIbDvQ", "ASTC", // iOS 12.0+ (removed in 14.3)
     "VhcvUOAVhvIns8SosbTDrg", "NotGreenTeaDeviceCapability",
     "VOKmP/SJjhnx1AaT13J7QA", "MultitaskingGesturesCapability",
-    "vwZ4ohiPF3w3M1jzHbP30g", "HallEffectSensorCapability", // iOS 8.4+ (removed in 13.0)
+    "vwZ4ohiPF3w3M1jzHbP30g", "HallEffectSensorCapability", // iOS 8.4+ (removed in 12.4)
     "WAg9taYd5sCaLcjVswnjjw", "ConferenceCallType",
     "WKTZS6CQwtj1BP1m4SLo1A", "ShoeboxCapability",
     "WT7hF1YDP3DfFx+hSAr25Q", "ARMV7ExecutionCapability",

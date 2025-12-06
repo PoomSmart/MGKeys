@@ -317,7 +317,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "FDsm68UVR7l3wErusGLgKg", "hw-snapshots-need-purplegfx", // iOS 7.0+
     "FE4Tff1EICGXaI27X3P/dw", "web-browser-engine", // iOS 26.0+
     "Fe55gxpfp6SByfqjASqF5A", "embedded-web-browser-engine", // iOS 26.0+
-    "feC7TgoAAKLjn/KU8JAKFA", "DeviceSupportsExternalHDR", // iOS 13.0+
+    "feC7TgoAAKLjn/KU8JAKFA", "DeviceSupportsExternalHDR", // iOS 12.4+
     "fGpT09KNGDBjFXnqcVbgbw", "RearFacingCameraHFRCapability", // iOS 7.0+
     "Fh2Ga0/Sj4T3Qn5Z9A9BMw", "DeviceSupports4k", // iOS 9.0+
     "fh6DnnDGDVZ5kZ9nYn/GrQ", "hdr-image-capture", // iOS 7.0+
@@ -724,7 +724,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ssIPnsZyWHPGC5sg3Pzkiw", "SiKACapability", // iOS 11.0+
     "STBQ8gY0pl0CK8VmRcks4w", "RearFacingCameraFocusPixelCalibrationCapability", // iOS 13.0+
     "SvI9oDkzw4XJFd+dKen/2Q", "DeviceVariant", // iOS 7.0+
-    "SZy8T5ma/+a0wJc0ntiaaA", "PhoneNumber2", // iOS 13.0+
+    "SZy8T5ma/+a0wJc0ntiaaA", "PhoneNumber2", // iOS 12.4+
     "T0FD6BT+PiWc2duMVlTRww", "DeviceIsPortableMac", // iOS 15.8+
     "TACCxk6y28d14yJN09RtTg", "DeviceSupportsLanguageDownloadUI", // iOS 26.0+
     "tad3RCjcWdkyLSVI8kUBtA", "caller-id", // iOS 7.0+
@@ -796,7 +796,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "vl45ziHlkqzh1Yt6+M9vBA", "displayport", // iOS 7.0+
     "VLfT+eziZYKNjRASM6ntnQ", "FirmwareNonce", // iOS 7.0+
     "vme9Buk6XiWFCXoHApxNFA", "MarketingDeviceFamilyName", // iOS 17.0+
-    "VqRhf8vgXr9B+SYvpnX39g", "BoardRevision", // iOS 13.0+
+    "VqRhf8vgXr9B+SYvpnX39g", "BoardRevision", // iOS 12.4+
     "VuGdqp8UBpi9vPWHlPluVQ", "CompatibleAppVariants", // iOS 13.0+
     "W/xqvBX9L07XHb0BOtYycQ", "ThreadRadioMacAddress64Bit", // iOS 13.0+
     "W7MyZ3Yxoy1qD6FrI0mLUQ", "RF-exposure-separation-distance", // iOS 7.0+
@@ -872,7 +872,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "yf309VokHnvuZ4SyOixR5A", "HasPartiallyOccludedDisplay", // iOS 15.5+
     "YgC2TeHCEwzJ/ixqmNCzwQ", "DeviceHasNAN", // iOS 13.0+
     "yhHcB0iH0d1XzPO/CFd3ow", "DeviceSupportsApplePencil", // iOS 9.3+
-    "YiUtBQygkHRhLcdO3LFB4A", "DeviceSupportsTelephonyOverUSB", // iOS 13.0+
+    "YiUtBQygkHRhLcdO3LFB4A", "DeviceSupportsTelephonyOverUSB", // iOS 12.4+
     "yjP8DgByZmLk04Ta6f6DWQ", "PartitionStyle", // iOS 17.0+
     "ykpu7qyhqFweVMKtxNylWA", "DeviceSupportsAODVibrancy", // iOS 18.0+
     "yl8qmYPdAhFLeDBho10sdQ", "FaceTimeDecodings", // iOS 7.0+
