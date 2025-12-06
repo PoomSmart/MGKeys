@@ -21,7 +21,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "1tvy6WfYKVGumYi6Y8E5Og", "AccelerometerCapability", // iOS 17.0+ (removed in 26.0)
     "1ZJLuPSZ7T410f25nyus0g", "BluetoothLECapability",
     "2RMKoChpU7jtotAG7NYV4Q", "VOIPCapability",
-    "3lh7gCvtytf3CQisb6LSJA", "ane", // iOS 12.0+ (removed in 14.3)
+    "3lh7gCvtytf3CQisb6LSJA", "ane", // iOS 12.0+ (removed in 14.0)
     "4/DY21tHB40GBdt7Xk8Sdg", "TouchIDCapability",
     "45gPwlxIWz7Mui/RUwUikg", "DeviceNameString",
     "4CQ7lOLjfmXp1J350TNTUQ", "TelephonyCapability",
@@ -124,7 +124,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability",
     "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability",
     "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability",
-    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0+ (removed in 14.3)
+    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0+ (removed in 14.0)
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability",
     "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability",
     "QEmhOZosE0IT4YJkQWh3Dg", NULL,
@@ -141,7 +141,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "tpRXJz7izvvkGMRnTXaVWg", "WatchCompanionCapability",
     "tRBbYA5BLkf/wzaof1WfyQ", "SIMPhonebookCapability",
     "tZOIwbmkkjP5Nggu8/70dw", "MainScreenClass",
-    "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.0+ (removed in 14.3)
+    "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.0+ (removed in 14.0)
     "Ue0GVAyEOkP5kyQgcXKlxg", NULL,
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported",
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 12.4)

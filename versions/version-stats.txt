@@ -19,7 +19,8 @@ iOS 12.0       792 total keys  ( +66 new)
 iOS 12.4       761 total keys  (  +6 new)
 iOS 13.0       829 total keys  ( +67 new)
 iOS 13.5       855 total keys  ( +29 new)
-iOS 14.3       923 total keys  ( +73 new)
+iOS 14.0       915 total keys  ( +62 new)
+iOS 14.3       923 total keys  ( +11 new)
 iOS 14.8       931 total keys  (  +8 new)
 iOS 15.0       950 total keys  ( +22 new)
 iOS 15.5      1028 total keys  ( +81 new)
@@ -43,7 +44,8 @@ iOS 9.3          4 keys removed
 iOS 10.3         7 keys removed
 iOS 12.4        30 keys removed
 iOS 13.5         3 keys removed
-iOS 14.3        11 keys removed
+iOS 14.0         8 keys removed
+iOS 14.3         3 keys removed
 iOS 15.0         3 keys removed
 iOS 15.5         2 keys removed
 iOS 16.1         1 keys removed
