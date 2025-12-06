@@ -16,7 +16,6 @@ unknown_keys_desc = {
     "EQvKwl1eIhCS1hb6EURKWg": "",
     "g/iV4vkeMLwXt8YPrhL+EQ": "IODeviceTree:/product/camera, starts with f",
     "HhLXszMhK6bb9TP4sqVQWQ": "IODeviceTree:/chosen, starts with e, ExtendedSecurityDomain",
-    "ibPgs24d3M4hvYwCtW6YAw": "IODeviceTree:/arm-io > wlan, starts with w, DeviceSupportsLowLatency",
     "is3zjHrEdiF6J/boqghy9A": "IODeviceTree:/product, starts with m, PintoMacAddressData",
     "KRT2emT8tNPMW9VUsXwT1A": "",
     "KWr9OM2iqeLQEhaHS0UshQ": "IODeviceTree:/arm-io/i2c0/audio0, starts with a, DeviceSupportsLineIn",
