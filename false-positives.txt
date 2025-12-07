@@ -58,5 +58,7 @@ ull6FeaturesCapability
 upportsVSHCompensation
 UserAssignedDeviceName
 VideoCaptureCapability
+VLiveEffectsCapability
 VolumeDownButtonCGRect
 yingerSwitchCapability
+yUnderstandingOnDevice

@@ -18,7 +18,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "1h6a0FG2nwMsUDVnYfaxxA", "MainScreenOrientation", // iOS unknown
     "1pkwRjExGQ/Xzy/LnAC98A", "LoadThumbnailsWhileScrollingCapability", // iOS unknown
     "1pwZX5NfL1wgOY5dftDTmA", "CameraRestriction", // iOS unknown
-    "1tvy6WfYKVGumYi6Y8E5Og", "AccelerometerCapability", // iOS 17.0+ (removed in 26.0)
+    "1tvy6WfYKVGumYi6Y8E5Og", "AccelerometerCapability", // iOS 17.0+ (removed in 18.6)
     "1ZJLuPSZ7T410f25nyus0g", "BluetoothLECapability", // iOS unknown
     "2RMKoChpU7jtotAG7NYV4Q", "VOIPCapability", // iOS unknown
     "3lh7gCvtytf3CQisb6LSJA", "ane", // iOS 12.0+ (removed in 14.0)
@@ -28,7 +28,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "4TKtw5gG9r8CE3BlOrjLhg", "UnifiedIPodCapability", // iOS unknown
     "59MRw0x/zCNPzV6/uGS8cg", "PiezoClickerCapability", // iOS unknown
     "5Xri+ec5Inj/4XBalFenVQ", "MainScreenPitch", // iOS unknown
-    "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon", // iOS 12.4+ (removed in 26.0)
+    "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon", // iOS 12.1+ (removed in 18.6)
     "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability", // iOS unknown
     "84iheBmhAmsxIlcxG4a0zA", "VideoStillsCapability", // iOS 8.4+ (removed in 10.0)
     "8bazN693YkKz0MDmcZvjXw", "ExplicitContentRestriction", // iOS unknown
@@ -62,7 +62,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "Ecx7M8v2wk05Fch3pFE/GA", "NikeIpodCapability", // iOS 8.4+ (removed in 10.0)
     "eDiwRLHFAmDNNPtULAcEZA", "TelephonyMaximumGeneration", // iOS unknown
     "ePAkIesI8SUJiAx8uRCcEA", "HDRImageCaptureCapability", // iOS unknown
-    "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability", // iOS 17.0+ (removed in 26.0)
+    "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability", // iOS 17.0+ (removed in 18.6)
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier", // iOS unknown
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability", // iOS unknown
     "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0+ (removed in 14.3)
@@ -106,10 +106,10 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha", // iOS 7.0+ (removed in 10.0)
     "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability", // iOS 8.4+ (removed in 10.0)
     "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit", // iOS 13.0+ (removed in 13.4)
-    "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera", // iOS 17.0+ (removed in 26.0)
+    "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera", // iOS 17.0+ (removed in 18.6)
     "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability", // iOS unknown
     "nqZ6O+s733xoZqQZZ1NWRw", "AmbientLightSensorCapability", // iOS unknown
-    "NwAF2cQVdjOKc7KkqR9tIA", "GyroscopeCapability", // iOS 17.0+ (removed in 26.0)
+    "NwAF2cQVdjOKc7KkqR9tIA", "GyroscopeCapability", // iOS 17.0+ (removed in 18.6)
     "NXYYZO2ABdr0PLnSomHJ2w", "C2KDeviceCapability", // iOS unknown
     "o/P6XwYugOD7HAAAmhpTuw", "VoiceControlCapability", // iOS unknown
     "o2KLXtN1mTtM9u/2MpYnaA", "MagnetometerCapability", // iOS unknown
@@ -167,7 +167,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "yAP29WFvj9TYheRKoEJDIw", "MainScreenWidth", // iOS unknown
     "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability", // iOS 8.4+ (removed in 10.0)
     "YWQYAm8X1mwtoYPwpLF6YA", "YouTubePluginCapability", // iOS unknown
-    "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability", // iOS 17.0+ (removed in 26.0)
+    "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability", // iOS 17.0+ (removed in 18.6)
     "z5qxAI4VRmvofBOSFvwxPg", "HardwareSnapshotsRequirePurpleGfxCapability", // iOS unknown
     "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability", // iOS unknown
     "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability", // iOS unknown
