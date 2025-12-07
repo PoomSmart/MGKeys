@@ -8,7 +8,8 @@ Total removed keys: 69
 Keys per iOS Version:
 ------------------------------------------------------------
 iOS 7.0        418 total keys  (+418 new)
-iOS 8.0        494 total keys  ( +78 new)
+iOS 7.1        440 total keys  ( +22 new)
+iOS 8.0        494 total keys  ( +56 new)
 iOS 8.4        412 total keys  ( +21 new)
 iOS 9.0        572 total keys  ( +76 new)
 iOS 9.3        475 total keys  ( +16 new)

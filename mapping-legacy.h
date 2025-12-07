@@ -91,7 +91,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "htWSrEg/cfn3squdzvER/w", "MLEHW", // iOS 9.3+ (removed in 10.0.1)
     "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability", // iOS unknown
     "Hx+k29zX4XhjYZRkYUvWpw", "studio-light-portrait-preview", // non-gestalt-key // iOS 13.0+ (removed in 14.0)
-    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key // iOS 8.0+ (removed in 15.8)
+    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key // iOS 7.1+ (removed in 15.8)
     "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability", // iOS 8.4+ (removed in 10.0.1)
     "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit", // iOS unknown
     "ibPgs24d3M4hvYwCtW6YAw", "wlan.lowlatency", // non-gestalt-key // iOS 14.0+ (removed in 15.0)

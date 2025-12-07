@@ -103,7 +103,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "5lAK1Xp+ezh1Qu+4jnHAOg", "SupportsSOS", // iOS 10.3+
     "5MSZn7w3nnJp22VbpqaxLQ", "venice", // iOS 7.0+
     "5mvQIwu3Mqqw/zOKmwGkWw", "ProximitySensorCalibrationDictionary", // iOS 7.0+
-    "5MXFoiW2zgxfIbaaTb/wvA", "SecondaryEthernetMacAddressData", // iOS 8.0+
+    "5MXFoiW2zgxfIbaaTb/wvA", "SecondaryEthernetMacAddressData", // iOS 7.1+
     "5pYKlGnYYBzGvAlIU8RjEQ", "HardwarePlatform", // iOS 7.0+
     "5QM8apssQbhm2ZrUx5g5Tw", "pipelined-stillimage-capability", // iOS 10.0.1+
     "5tnvmEsHQKfCoieLEYpnvg", "RFExposureSeparationDistance", // iOS 7.0+
@@ -134,7 +134,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "7l0BaQsNxJCanoeHMJ2huA", "AllowYouTube", // iOS 7.0+
     "7mV26K/1a+wTtqiunvHMUQ", "PhosphorusCapability", // iOS 8.0+
     "7UhDrmrZozgwO+3AgUbHxw", "DeviceSupportsSecureMicrophone", // iOS 13.4+
-    "7VoVaBmSuokzovhUkiDx6Q", "SecondaryWifiMacAddress", // iOS 8.0+
+    "7VoVaBmSuokzovhUkiDx6Q", "SecondaryWifiMacAddress", // iOS 7.1+
     "7W2eNk/f6uewC8N58mlRrQ", "FrontFacingCameraHDRCapability", // iOS 7.0+
     "7yzVesPANxqKQ+oqNPhTwg", "applicationInstallation", // iOS 7.0+
     "7ZipyD32hkjOUTl66Q8REw", "DeviceSupportsLockdown", // iOS 14.0+
@@ -144,7 +144,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "82Ono2SP03rNGkhOc5O1Mw", "DeviceRequiresPetalOptimization", // iOS 10.3+
     "87sSAh2rboMI2TDvFBimkg", "DeviceColorMapPolicy", // iOS 7.0+
     "8bCjks0zVuOcdivIhytNbQ", "lidar-scanner", // iOS 13.5+
-    "8bOgXKgqoLvqV/XeSomAfA", "SecondaryBluetoothMacAddress", // iOS 8.0+
+    "8bOgXKgqoLvqV/XeSomAfA", "SecondaryBluetoothMacAddress", // iOS 7.1+
     "8bY/L3i3rmxrl4ZjFZZpgQ", "siri-gesture", // iOS 7.0+
     "8DHlxr5ECKhTSL3HmlZQGQ", "RestoreOSBuild", // iOS 8.0+
     "8fyX2yEg28cYgJ10Yl+ueA", "QuickNoteCapability", // iOS 15.1+
@@ -154,7 +154,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "8OTc3mN30ACaEwecgpKfXA", "CloudPhotoLibraryCapability", // iOS 11.0+
     "8QNz35Yxm0KqxP1JiE0HIw", "PintoMacAddressData", // iOS 7.0+
     "8S7ydMJ4DlCUF38/hI/fJA", "front-depth-camera", // iOS 11.0+
-    "8Shl+AdVKo09f1Sldkb0kA", "touch-id", // iOS 8.0+
+    "8Shl+AdVKo09f1Sldkb0kA", "touch-id", // iOS 7.1+
     "8Vbp0HyqndjWuIFZibhu7g", "DeviceSupportsGrey", // iOS 15.0+
     "9/J7LY7zuYSGW1BcSTRpOw", "SysCfgDict", // iOS 7.0+
     "913P3Zsei09w0GSSOaBD+w", "VolumeUpButtonNormalizedCGRect", // iOS 15.8+
@@ -190,7 +190,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "AOIh1l3cIyDXlP4KB/084A", "iap2-protocol-supported", // iOS 9.0+
     "aoJSd/MXk7M40NgXTM6x+g", "DeviceSupportsAlwaysOnDisplayFlipbook", // iOS 26.0+
     "AoKnINTLPoKML3ctoP0AZg", "IOSurfaceFormatDictionary", // iOS 12.0+
-    "aOq/O8u9f/bpWUnKco+xgA", "EthernetMacAddressData", // iOS 8.0+
+    "aOq/O8u9f/bpWUnKco+xgA", "EthernetMacAddressData", // iOS 7.1+
     "APeknA55ZAcu0FcufqVN4Q", "FaceTimePreferredDecoding", // iOS 7.0+
     "AQiIpW0UeYQKnhy2da7AXg", "EffectiveProductionStatusAp", // iOS 7.0+
     "AspYltP/iGWg0qxfg7c/3w", "SupportsLEDAging", // iOS 14.8+
@@ -217,7 +217,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "BoNz1QXiAEUgic9RdMVLIg", "FaceTimeEncodings", // iOS 7.0+
     "BOPZue5C0v42pU9iJFYE3A", "location-reminders", // iOS 7.0+
     "BOYfUi496moe56A0RWFbqQ", "sensitive-ui", // iOS 7.0+
-    "BQwz+BT9b5mS7OPh2WGD6A", "SecondaryEthernetMacAddress", // iOS 8.0+
+    "BQwz+BT9b5mS7OPh2WGD6A", "SecondaryEthernetMacAddress", // iOS 7.1+
     "bt5D9RI67C9koJO1oZ5cfg", "EOSHalleyConfiguration", // iOS 15.5+
     "bUJD9zcOcitJwFA0ieIkxA", "DeviceBackGlassMaterial", // iOS 10.0.1+
     "bwLsbkp4shhHuNB5VpRa8w", "YonkersUID", // iOS 12.0+
@@ -402,13 +402,13 @@ static const struct tKeyMapping keyMappingTable[] = {
     "HXTqT3UXOKuTEklxz+wMAA", "BasebandAPTimeSync", // iOS 8.0+
     "HxTvMvHnum5rI8d0Nr4xBw", "RegionalBehaviorVolumeLimit", // iOS 7.0+
     "hykQtM0zkNe2/IY69+3PPQ", "ApNonce", // iOS 7.0+
-    "HzddeW2/HtdBNAc5tsFtDg", "SecondaryBluetoothMacAddressData", // iOS 8.0+
+    "HzddeW2/HtdBNAc5tsFtDg", "SecondaryBluetoothMacAddressData", // iOS 7.1+
     "I32sGclpgl5VujQRJxyhKQ", "IsUIBuild", // iOS 7.0+
     "I3lidq+FVH2CeOi/ARa0tg", "generative-model-systems", // iOS 26.0+
     "I4TfkcdXWazwTr1al8Ml5w", "StrictWakeKeyboardCases", // iOS 12.4+
     "i8+iwUtLtB5jT+WNvqwrEA", "encrypted-data-partition", // iOS 7.0+
     "iaegRQa4jNGOuTA6hnZmcQ", "DeviceCoverMaterial", // iOS 8.0+
-    "IAJzgzhEVk3SMNuEhChs2w", "RemoteBluetoothAddressData", // iOS 8.0+
+    "IAJzgzhEVk3SMNuEhChs2w", "RemoteBluetoothAddressData", // iOS 7.1+
     "ibhfX8FQ6b809N632Ey98g", "Allow32BitApps", // iOS 9.0+
     "iBLsDETxB4ATmspGucaJyg", "IsLargeFormatPhone", // iOS 8.0+
     "IBqcPacFMPIX8HMWob444A", "AirDropCapability", // iOS 7.0+
@@ -454,7 +454,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "jMiqevikb6QWeHOhvLsw6A", "RenderWideGamutImagesAtDisplayTime", // iOS 9.3+
     "Jq+xaurJgFzSwxOfTqtBGw", "SupportsSSHBButtonType", // iOS 10.0.1+
     "Js8HVdVGRs8m5v94pMjkRw", "enforce-googlemail", // iOS 7.0+
-    "jSDzacs4RYWnWxn142UBLQ", "BluetoothAddressData", // iOS 8.0+
+    "jSDzacs4RYWnWxn142UBLQ", "BluetoothAddressData", // iOS 7.1+
     "juE6wCsjVG4bfAhgHcUVcQ", "MultiLynxSerialNumberArray", // iOS 13.2+
     "JUWcn+5Ss0nvr5w/jk4WEg", "device-name", // iOS 7.0+
     "jWdMTTxiAZc+KNO6Bz2jNg", "MesaSerialNumber", // iOS 8.0+
@@ -472,7 +472,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "khE304sL66yzf7K+2e+0cw", "DeviceSupportsUSBTypeCDisplay", // iOS 15.4+
     "kj5Hw7ZKY+hm7ZCs0Caznw", "ScreenCaptureWidth", // iOS 15.5+
     "kjKnJNt7HY90iN6rpbSeFQ", "RegionalBehaviorNoWiFi", // iOS 7.0+
-    "kKgJsWN/rBUAkimOtm/wbA", "arm64", // iOS 8.0+
+    "kKgJsWN/rBUAkimOtm/wbA", "arm64", // iOS 7.1+
     "kkSkHTEei96N1ZehicOgoA", "AppCapacityTVOS", // iOS 9.3+
     "KMgjmT+dsqBCXu1YQEcOFg", "RegionalBehaviorValid", // iOS 7.0+
     "Knrkxkj5zZTf/FrPNQClgg", "GroundhogEnabled", // iOS 15.8+
@@ -502,7 +502,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "LcUv5nw5flxnHlxWu9sJvw", "NavajoFusingState", // iOS 10.0.1+
     "LE2kQ7U1iM32AmlhYvlagg", "SavageSerialNumber", // iOS 11.0+
     "LeSRsiLoJCMhjn6nd6GWbQ", "FirmwareVersion", // iOS 7.0+
-    "Leuy56dCZmAMYoVCQGTfPA", "DeviceSupportsPeriodicALSUpdates", // iOS 8.0+
+    "Leuy56dCZmAMYoVCQGTfPA", "DeviceSupportsPeriodicALSUpdates", // iOS 7.1+
     "Lg1EJX11Jb7EbveB6+YgVQ", "720p", // iOS 7.0+
     "lHMDJnC58naUz2rOCJyVIw", "IntegratedCircuitCardIdentifier2", // iOS 12.0+
     "li+w2foswFu0srn5UxdOug", "arm64e", // iOS 14.0+
@@ -531,7 +531,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Mgwtle8wzQEz/0vzBk47FQ", "DeviceSupportsLineIn", // iOS 7.0+
     "Mh+drGtyBfLYKN02sROzxg", "delay-sleep-for-headset-click", // iOS 7.0+
     "Mi/ME+v1wZqkvXFU3xX3KA", "iphone-ipad-minimum-performance-a12", // iOS 14.0+
-    "MjqwTHDneTCNeqhZ7vCvUw", "DeviceSupportsHiResBuildings", // iOS 8.0+
+    "MjqwTHDneTCNeqhZ7vCvUw", "DeviceSupportsHiResBuildings", // iOS 7.1+
     "Mk4ZslaChmO+6s3h7L1w6Q", "DeviceSupports1080p", // iOS 7.0+
     "MKE8hwsOxxRCtwBk2aDBZA", "ProductTypeDescForAutomatedTesting", // iOS 26.0+
     "mL1lk3ZVGDFUQhxU9YLW6Q", "FrontFacingCameraHFRVideoCapture1080pMaxFPS", // iOS 13.0+
@@ -693,7 +693,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "rxUlSnmihTL8oDg9Hrgq/A", "MixAndMatchPrevention", // iOS 7.0+
     "RXyKSjeF239SL2vOcru01A", "MobileEquipmentInfoBaseVersion", // iOS 8.0+
     "ry09Fs7QIF3ITE0Fx5OdvQ", "RearFacingCameraVariableFrameRateCapability", // iOS 14.0+
-    "RYO2N0gqp5hHCik2TEiSVA", "armv7s", // iOS 8.0+
+    "RYO2N0gqp5hHCik2TEiSVA", "armv7s", // iOS 7.1+
     "RyXm3yMC4ejlFvwlEI509w", "hearingaid-low-energy-audio", // iOS 7.0+
     "RYZZuAFEfSNnEKEzwzRnqw", "photo-stream", // iOS 7.0+
     "s+gaKNe68Gs3PfqKrZhi1w", "MonarchLowEndHardware", // iOS 9.0+
@@ -741,7 +741,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "TpY9O1U1rtUk/m0BvlO58A", "DeviceDefaultsToAnalyticsOptIn", // iOS 15.2+
     "TqAfAH10ANDgiG7V2u8BkQ", "FrontFacingCameraHFRVideoCapture720pMaxFPS", // iOS 13.0+
     "Tqr2NqCLwGszJc3HOaPlTw", "driverkit", // iOS 15.5+
-    "TqrlqJOZiAuRx8Qu3SVr+Q", "SecondaryWifiMacAddressData", // iOS 8.0+
+    "TqrlqJOZiAuRx8Qu3SVr+Q", "SecondaryWifiMacAddressData", // iOS 7.1+
     "TqtrpIdOXIIlhOraMmq/pQ", "ipad-minimum-performance-m1", // iOS 17.0+
     "TR6Z82EVZEKMVUdHfkhDmQ", "DeviceSupportsBrook", // iOS 14.0+
     "Tr9qG122eEQiKGfr6EGRdQ", "RegionalBehaviorEUVolumeLimit", // iOS 7.0+
@@ -757,7 +757,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "U+73bmG4kBGj6kpreQXUTQ", "DeviceSupportsAlwaysListening", // iOS 10.0.1+
     "U/nyu97+Q5SFY9yJKJTuSA", "TopModuleAuthChipID", // iOS 13.0+
     "u3c0R+31Df4SUTHrICQkTg", "hearingaid-power-reduction", // iOS 7.0+
-    "uAIY4Jb2A7Fy2aLrlDU1gg", "RemoteBluetoothAddress", // iOS 8.0+
+    "uAIY4Jb2A7Fy2aLrlDU1gg", "RemoteBluetoothAddress", // iOS 7.1+
     "UAMiw+ItKRaA1yk2uyzKGQ", "UnifiedGamingPerfLeveliPadTier2", // iOS 26.0+
     "uB6I2WImAHd8DEGuqYcMbw", "WifiFirmwareVersion", // iOS 8.0+
     "UCG5MkVahJxG1YULbbd5Bg", "MedusaOverlayAppCapability", // iOS 9.0+
@@ -780,7 +780,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "UZyrJHlX635ocWEjBkt9YA", "UIProceduralWallpaperCapability", // iOS 7.0+
     "V0d6pv080gHL3QQWNs9aog", "DeviceSupportsLowPowerSoundClassification", // iOS 26.0+
     "v2Q3tLoD4+o/XazHC/0FyA", "DeviceSupportsYCbCr10", // iOS 10.0.1+
-    "V2Ykm/0M3CA6nyNhwNInsg", "64-bit", // iOS 8.0+
+    "V2Ykm/0M3CA6nyNhwNInsg", "64-bit", // iOS 7.1+
     "v5YVEwERRin1v+reUNjJ5w", "ComputerName", // iOS 7.0+
     "V9pLLbPQhyb75bbdTioZVw", "DeviceSupportsHardwareDetents", // iOS 12.0+
     "v9YZN998zL0OLA3q6SpPQA", "HasIcefall", // iOS 10.0.1+
