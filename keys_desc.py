@@ -1,7 +1,6 @@
 NON_KEY_DESC = 'non-gestalt-key'
 
 unknown_keys_desc = {
-    "+vrh8Iw5J9DJaSEy7n+iiw": "IODeviceTree:/arm-io > wlan, starts with w, DeviceHasNAN",
     "1HWDBfJwBJZ8TDHcPDafmQ": "IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard",
     "4H26SkyfcrZOrMAtjC6Cfw": "IODeviceTree:/product, starts with s, DeviceSupportsHypertensivePatternMeasurements",
     "4MI3+6oztazPJ1ZI2OdWDQ": "",
@@ -32,7 +31,6 @@ unknown_keys_desc = {
     "vf61bz2yUWqBb+jD25ZK+w": "IODeviceTree:/product, starts with s, SoCSKU",
     "Vn4SAODWQXeOOIVBe8CXTg": "",
     "wAbB2fAjUqUc6lNBelfWMA": "IODeviceTree:/product, starts with n, DeviceSupportsPeriodicALSUpdates",
-    "wXJsY4Sb2/qskFvLc+yfag": "IODeviceTree:/arm-io/ane, starts with a, AppleNeuralEngineSubtype",
     "zgtZIGG9jkHrBSZYHkVBtg": "IODeviceTree:/product, starts with a, DeviceDisablesAODByDefault",
 }
 
@@ -47,6 +45,7 @@ known_keys_desc = [
     "+fgL2ovGydvB5CWd1JI1qg",
     "+q5wYk81dLM2qjufnC0phw",
     "+U0jSj4F2EfE+Vqj22IavA",
+    "+vrh8Iw5J9DJaSEy7n+iiw",
     "+VTSncKV5ykgl9KAsuHFFg",
     "+xJ6RaQ6PDSsLjib8r5fgg",
     "0/QVFV5/X0h5iDjrdYYcog",
@@ -284,6 +283,7 @@ known_keys_desc = [
     "W5kTfIuxkKpHVdWTk42C9A",
     "WbcphnnzI6Yb5r/AzwiyUA",
     "Wft7kODl9Y2uX/sb47GoEA",
+    "wXJsY4Sb2/qskFvLc+yfag",
     "X9NA3D+PguwY0i0Uffl07Q",
     "XEp4h49dagkYL6YrtjW1Kw",
     "xgs6iXf0KFHUJ9d4FKaRYg",

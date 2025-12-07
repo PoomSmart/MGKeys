@@ -1,13 +1,13 @@
 #include "struct.h"
 
 // Total: 198 keys
-// Deobfuscated: 181 keys (91.41%)
+// Deobfuscated: 183 keys (92.42%)
 // Total gestalt keys: 169 keys
 // Deobfuscated gestalt: 164 keys (97.04%)
 // Unexplored: 5 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
-    "+vrh8Iw5J9DJaSEy7n+iiw", NULL, // non-gestalt-key, IODeviceTree:/arm-io > wlan, starts with w, DeviceHasNAN, iOS 14.0+ (removed in 15.0)
+    "+vrh8Iw5J9DJaSEy7n+iiw", "wlan.nan.enabled", // non-gestalt-key // iOS 14.0+ (removed in 15.0)
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability", // iOS 8.4+ (removed in 10.0.1)
     "/4LCTfMhvzuiK6b557ir5Q", "pearl-calibration-data", // non-gestalt-key // iOS 14.0+ (removed in 26.0)
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability", // iOS unknown
@@ -186,7 +186,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "WKTZS6CQwtj1BP1m4SLo1A", "ShoeboxCapability", // iOS unknown
     "WT7hF1YDP3DfFx+hSAr25Q", "ARMV7ExecutionCapability", // iOS unknown
     "WWhvfhkzSG/RNghKi17E3A", "InternationalSettingsCapability", // iOS unknown
-    "wXJsY4Sb2/qskFvLc+yfag", NULL, // non-gestalt-key, IODeviceTree:/arm-io/ane, starts with a, AppleNeuralEngineSubtype, iOS 13.0+ (removed in 14.0)
+    "wXJsY4Sb2/qskFvLc+yfag", "ane-type", // non-gestalt-key // iOS 13.0+ (removed in 14.0)
     "x1RVzO1tUrUT+A3FOuaXew", "UMTSDeviceCapability", // iOS unknown
     "x7jCqsR180Lcm6rYguygmg", "MainScreenHeight", // iOS unknown
     "XACgWnmwo1t6swUPu+/UUQ", "AutoFocusCameraCapability", // iOS 8.4+ (removed in 10.0.1)
