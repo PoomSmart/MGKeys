@@ -1,11 +1,11 @@
 from pathlib import Path
-from typing import Dict
+from typing import Dict, List, Tuple
 
 from deobfuscated import keys
 from deobfuscated_legacy import keys_legacy
 from obfuscate import calculate_obfuscated_key, md5_string_for_obfuscated_key
 from keys_desc import NON_KEY_DESC, known_keys_desc, unknown_keys_desc
-from keys_versions import KEY_IOS_VERSIONS, KEY_IOS_REMOVED
+from keys_versions import KEY_IOS_VERSIONS, KEY_IOS_REMOVED, KEY_IOS_REINTRODUCED
 
 '''
 This script generates a mapping file (mapping.h) for all keys in hashes.txt and hashes_legacy.txt. The mapped values are the deobfuscated keys.
@@ -26,6 +26,120 @@ GEN_NON_GESTALT_KEY = True
 USE_MAPPING_AS_SOURCE = False
 
 potfile_content = ''
+
+# Load all version files to compute ranges
+def load_version_data() -> Dict[str, List[str]]:
+    """Load all version files and return a dict mapping hash -> list of versions where it appears."""
+    from pathlib import Path
+
+    key_versions: Dict[str, List[str]] = {}
+    versions_dir = Path('versions')
+
+    if not versions_dir.exists():
+        return key_versions
+
+    version_files = sorted([f for f in versions_dir.glob('version-*.txt') if f.name != 'version-stats.txt'])
+
+    for version_file in version_files:
+        version_str = version_file.stem.replace('version-', '')
+        with version_file.open('r') as f:
+            for line in f:
+                hash_str = line.strip()
+                if hash_str:
+                    if hash_str not in key_versions:
+                        key_versions[hash_str] = []
+                    key_versions[hash_str].append(version_str)
+
+    return key_versions
+
+def parse_version(version_str: str) -> Tuple:
+    """Parse version string like '12.0' into tuple (12, 0)."""
+    try:
+        parts = version_str.split('.')
+        return tuple(int(p) for p in parts)
+    except:
+        return (999, 999)
+
+def format_version_ranges(obfuscated_key: str, key_versions_data: Dict[str, List[str]]) -> str:
+    """Format version ranges for a key, showing gaps clearly."""
+    if obfuscated_key not in KEY_IOS_VERSIONS:
+        return ''
+
+    intro_version = KEY_IOS_VERSIONS[obfuscated_key]
+    removed_suffix = ''
+
+    # Check if key was removed
+    if obfuscated_key in KEY_IOS_REMOVED:
+        removed_version = KEY_IOS_REMOVED[obfuscated_key]
+        removed_suffix = f' (removed in {removed_version})'
+
+    # If key is not reintroduced, use simple format
+    if obfuscated_key not in KEY_IOS_REINTRODUCED:
+        if removed_suffix:
+            return f' // iOS {intro_version}+{removed_suffix}'
+        elif intro_version == 'unknown':
+            return f' // iOS {intro_version}'
+        else:
+            return f' // iOS {intro_version}+'
+
+    # Key was reintroduced - compute ranges
+    if obfuscated_key not in key_versions_data:
+        # Fallback to simple format if we don't have version data
+        reintro_versions = KEY_IOS_REINTRODUCED[obfuscated_key]
+        reintro_str = ', '.join(f'{v}+' for v in reintro_versions)
+        return f' // iOS {intro_version}, {reintro_str}{removed_suffix}'
+
+    # Get all versions where key appears, sorted
+    versions = sorted(key_versions_data[obfuscated_key], key=parse_version)
+
+    if not versions:
+        return f' // iOS {intro_version}+{removed_suffix}'
+
+    # Group consecutive versions into ranges
+    ranges = []
+    range_start = versions[0]
+    range_end = versions[0]
+
+    for i in range(1, len(versions)):
+        curr_version = versions[i]
+        prev_version = versions[i-1]
+
+        curr_parts = parse_version(curr_version)
+        prev_parts = parse_version(prev_version)
+
+        # Check if versions are consecutive (allow minor version increments)
+        is_consecutive = (
+            (curr_parts[0] == prev_parts[0] and curr_parts[1] == prev_parts[1] + 1) or  # Minor bump
+            (curr_parts[0] == prev_parts[0] + 1 and curr_parts[1] == 0)  # Major bump to .0
+        )
+
+        if is_consecutive:
+            range_end = curr_version
+        else:
+            # End current range, start new one
+            if range_start == range_end:
+                ranges.append(range_start)
+            else:
+                ranges.append(f'{range_start}-{range_end}')
+            range_start = curr_version
+            range_end = curr_version
+
+    # Add final range
+    if range_start == range_end:
+        # Only add + if key wasn't removed
+        if removed_suffix:
+            ranges.append(f'{range_start}')
+        else:
+            ranges.append(f'{range_start}+')
+    else:
+        # Only add + if key wasn't removed
+        if removed_suffix:
+            ranges.append(f'{range_start}-{range_end}')
+        else:
+            ranges.append(f'{range_start}-{range_end}+')
+
+    return f' // iOS {", ".join(ranges)}{removed_suffix}'# Cache version data
+VERSION_DATA = load_version_data()
 
 def process_key(
     obfuscated_key: str,
@@ -50,15 +164,8 @@ def process_key(
 
     # Get version info if requested
     version_comment = ''
-    if add_version and obfuscated_key in KEY_IOS_VERSIONS:
-        intro_version = KEY_IOS_VERSIONS[obfuscated_key]
-        if obfuscated_key in KEY_IOS_REMOVED:
-            removed_version = KEY_IOS_REMOVED[obfuscated_key]
-            version_comment = f' // iOS {intro_version}+ (removed in {removed_version})'
-        elif intro_version == 'unknown':
-            version_comment = f' // iOS {intro_version}'
-        else:
-            version_comment = f' // iOS {intro_version}+'
+    if add_version:
+        version_comment = format_version_ranges(obfuscated_key, VERSION_DATA)
 
     if obfuscated_key in known_keys_desc:
         # known_keys_desc now contains non-gestalt keys
@@ -118,29 +225,17 @@ def generate_mapping(
                 stats['non_gestalt_keys'] += 1
                 # Get version info for unmapped keys
                 version_comment = ''
-                if add_version and obfuscated_key in KEY_IOS_VERSIONS:
-                    intro_version = KEY_IOS_VERSIONS[obfuscated_key]
-                    if obfuscated_key in KEY_IOS_REMOVED:
-                        removed_version = KEY_IOS_REMOVED[obfuscated_key]
-                        version_comment = f', iOS {intro_version}+ (removed in {removed_version})'
-                    elif intro_version == 'unknown':
-                        version_comment = f', iOS {intro_version}'
-                    else:
-                        version_comment = f', iOS {intro_version}+'
+                if add_version:
+                    version_comment = format_version_ranges(obfuscated_key, VERSION_DATA)
+                    if version_comment:
+                        version_comment = ', ' + version_comment[4:]  # Remove ' // ' and add ', '
                 mapping[obfuscated_key] = f'NULL, // {NON_KEY_DESC}, {desc}{version_comment}'
             else:
                 stats['unexplored_keys'] += 1
                 # Get version info for unexplored keys
                 version_comment = ''
-                if add_version and obfuscated_key in KEY_IOS_VERSIONS:
-                    intro_version = KEY_IOS_VERSIONS[obfuscated_key]
-                    if obfuscated_key in KEY_IOS_REMOVED:
-                        removed_version = KEY_IOS_REMOVED[obfuscated_key]
-                        version_comment = f' // iOS {intro_version}+ (removed in {removed_version})'
-                    elif intro_version == 'unknown':
-                        version_comment = f' // iOS {intro_version}'
-                    else:
-                        version_comment = f' // iOS {intro_version}+'
+                if add_version:
+                    version_comment = format_version_ranges(obfuscated_key, VERSION_DATA)
                 mapping[obfuscated_key] = f'NULL,{version_comment}'
 
     for obfuscated_key in keys_map:

@@ -273,11 +273,15 @@ extract_hashes_from_dylib() {
     local temp_hashes="temp-hashes-$$.txt"
     local filtered_hashes="filtered-hashes-$$.txt"
 
-    # Use strings to extract hashes
-    if strings -arch "$arch" -n 22 "$dylib_path" 2>/dev/null | grep -i '^[a-zA-Z0-9\+\/]\{22\}$' > "$temp_hashes" 2>/dev/null && [ -s "$temp_hashes" ]; then
+    # Try llvm-nm first (most robust), fallback to nm, then strings
+    if command -v llvm-nm &> /dev/null && llvm-nm -g --defined-only "$dylib_path" 2>/dev/null | awk '{print $3}' | grep -i '^[a-zA-Z0-9\+\/]\{22\}$' > "$temp_hashes" 2>/dev/null && [ -s "$temp_hashes" ]; then
+        log_info "Extracted hashes using llvm-nm"
+    elif nm -g --defined-only "$dylib_path" 2>/dev/null | awk '{print $3}' | grep -i '^[a-zA-Z0-9\+\/]\{22\}$' > "$temp_hashes" 2>/dev/null && [ -s "$temp_hashes" ]; then
+        log_info "Extracted hashes using nm"
+    elif strings -arch "$arch" -n 22 "$dylib_path" 2>/dev/null | grep -i '^[a-zA-Z0-9\+\/]\{22\}$' > "$temp_hashes" 2>/dev/null && [ -s "$temp_hashes" ]; then
         log_info "Extracted hashes using arch-specific strings ($arch)"
     else
-        log_warn "Arch-specific strings failed, using plain strings"
+        log_warn "nm tools and arch-specific strings failed, using plain strings"
         /usr/bin/strings - < "$dylib_path" 2>/dev/null | grep -i '^[a-zA-Z0-9\+\/]\{22\}$' > "$temp_hashes"
     fi
 

@@ -51,6 +51,24 @@ def read_version_file(version_file: Path) -> set[str]:
     return hashes
 
 
+def sort_version_file(version_file: Path) -> None:
+    """Sort a version file alphabetically (case-insensitive) and remove duplicates."""
+    if not version_file.exists():
+        return
+
+    # Read all lines
+    with version_file.open('r') as f:
+        lines = [line.strip() for line in f if line.strip()]
+
+    # Sort uniquely (case-insensitive like sort -u)
+    sorted_lines = sorted(set(lines), key=str.lower)
+
+    # Write back
+    with version_file.open('w') as f:
+        for line in sorted_lines:
+            f.write(f'{line}\n')
+
+
 def parse_version(version_str: str) -> tuple:
     """Parse version string like '12.0' or '26.2' into tuple (12, 0) or (26, 2)."""
     parts = version_str.split('.')
@@ -95,8 +113,12 @@ def generate_keys_versions():
     version_data = []
     for version_file in version_files:
         version_str = version_file.stem.replace('version-', '')
+
+        # Auto-sort the version file
+        sort_version_file(version_file)
+
         hashes = read_version_file(version_file)
-        print(f"Reading {version_file}: {len(hashes)} hashes")
+        print(f"Reading {version_file}: {len(hashes)} hashes (sorted)")
         version_data.append((version_str, parse_version(version_str), hashes))
 
     # Sort by version number
@@ -107,48 +129,58 @@ def generate_keys_versions():
     # Build version mapping by finding when each key first appeared
     version_map: dict[str, str] = {}  # hash -> version introduced
     removed_map: dict[str, str] = {}  # hash -> version removed
+    reintroduced_map: dict[str, list[str]] = {}  # hash -> list of versions where it was reintroduced
 
     # Track all keys we've ever seen
     all_seen_keys: set[str] = set()
 
-    # Process versions in order to find first introduction
+    # Track first and last appearance of each key
+    first_appearance: dict[str, int] = {}  # hash -> index of first appearance
+    last_appearance: dict[str, int] = {}  # hash -> index of last appearance
+
+    # First pass: find all appearances
     for i, (version_str, _, hashes) in enumerate(version_data):
         all_seen_keys.update(hashes)
+        for hash_str in hashes:
+            if hash_str not in first_appearance:
+                first_appearance[hash_str] = i
+            last_appearance[hash_str] = i
 
-        if i == 0:
-            # First version - all keys here are marked with this version
-            for hash_str in hashes:
-                version_map[hash_str] = version_str
-        else:
-            # Find keys that are new in this version (not in any previous version)
-            prev_all_keys = set()
-            for j in range(i):
-                prev_all_keys.update(version_data[j][2])
+    # Second pass: build version map and detect gaps (removed/reintroduced)
+    for hash_str in all_seen_keys:
+        first_idx = first_appearance[hash_str]
+        last_idx = last_appearance[hash_str]
 
-            new_keys = hashes - prev_all_keys
-            for hash_str in new_keys:
-                version_map[hash_str] = version_str
+        # Mark with first appearance version
+        version_map[hash_str] = version_data[first_idx][0]
 
-    # Find removed keys by checking if they disappear in later versions
-    # A key is "removed" if it exists in version N but not in version N+1
-    # and doesn't come back in any later version
-    for i in range(len(version_data) - 1):
-        curr_version_str, _, curr_hashes = version_data[i]
-        next_version_str, _, next_hashes = version_data[i + 1]
+        # Check for gaps between first and last appearance
+        reintroductions = []
+        was_present = True
 
-        # Keys that were in current version but not in next
-        potentially_removed = curr_hashes - next_hashes
+        for i in range(first_idx + 1, last_idx + 1):
+            is_present = hash_str in version_data[i][2]
 
-        # Check if they come back in any later version
-        for hash_str in potentially_removed:
-            comes_back = False
-            for j in range(i + 2, len(version_data)):
-                if hash_str in version_data[j][2]:
-                    comes_back = True
-                    break
+            if not was_present and is_present:
+                # Key reappeared - this is a reintroduction
+                reintroductions.append(version_data[i][0])
 
-            if not comes_back:
-                removed_map[hash_str] = next_version_str
+            was_present = is_present
+
+        if reintroductions:
+            reintroduced_map[hash_str] = reintroductions
+
+    # Third pass: find permanently removed keys
+    # A key is "removed" if it doesn't appear in the last version but appeared earlier
+    last_version_hashes = version_data[-1][2] if version_data else set()
+
+    for hash_str in all_seen_keys:
+        if hash_str not in last_version_hashes:
+            # Find the last version it appeared in
+            last_idx = last_appearance[hash_str]
+            # Mark it as removed in the next version (if there is one)
+            if last_idx < len(version_data) - 1:
+                removed_map[hash_str] = version_data[last_idx + 1][0]
 
     # Keys in mapping files but not in any version file
     unmapped_keys = all_hashes - all_seen_keys
@@ -211,11 +243,25 @@ def generate_keys_versions():
 
         f.write('}\n')
 
+        # Write reintroduced keys dictionary
+        f.write('\n# Dictionary mapping obfuscated key hash -> list of iOS versions where it was reintroduced\n')
+        f.write('# These keys disappeared in some versions but came back later\n')
+        f.write('KEY_IOS_REINTRODUCED = {\n')
+
+        for hash_str in sorted(reintroduced_map.keys()):
+            versions_list = reintroduced_map[hash_str]
+            versions_str = ', '.join(f'"{v}"' for v in versions_list)
+            f.write(f'    "{hash_str}": [{versions_str}],\n')
+
+        f.write('}\n')
+
     # Print statistics
     print(f"\n✓ Generated {output_file}")
     print(f"  - Total keys: {len(version_map)}")
     if removed_map:
         print(f"  - Removed keys tracked: {len(removed_map)}")
+    if reintroduced_map:
+        print(f"  - Reintroduced keys tracked: {len(reintroduced_map)}")
 
     # Sort and print version stats
     def sort_key(v):
@@ -237,6 +283,8 @@ def generate_keys_versions():
         f.write(f'Total unique keys tracked: {len(version_map)}\n')
         if removed_map:
             f.write(f'Total removed keys: {len(removed_map)}\n')
+        if reintroduced_map:
+            f.write(f'Total reintroduced keys: {len(reintroduced_map)}\n')
         f.write('\n')
         f.write('Keys per iOS Version:\n')
         f.write('-' * 60 + '\n')
@@ -269,6 +317,21 @@ def generate_keys_versions():
             for version_str in sorted(removed_stats.keys(), key=sort_key):
                 count = removed_stats[version_str]
                 f.write(f'iOS {version_str:8s}  {count:4d} keys removed\n')
+
+        # Print reintroduced keys summary if any
+        if reintroduced_map:
+            f.write('\n')
+            f.write('Reintroduced Keys by Version:\n')
+            f.write('-' * 60 + '\n')
+
+            reintro_stats: dict[str, int] = {}
+            for versions_list in reintroduced_map.values():
+                for version_str in versions_list:
+                    reintro_stats[version_str] = reintro_stats.get(version_str, 0) + 1
+
+            for version_str in sorted(reintro_stats.keys(), key=sort_key):
+                count = reintro_stats[version_str]
+                f.write(f'iOS {version_str:8s}  {count:4d} keys reintroduced\n')
 
     print(f"  - Report saved to {report_file}")
 

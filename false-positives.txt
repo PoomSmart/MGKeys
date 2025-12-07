@@ -37,6 +37,7 @@ MobileEquipmentInfoCSN
 noramaCameraCapability
 OnDeviceSiriCapability
 orwardCameraCapability
+qOnDemandPhotoAnalysis
 RegionalBehaviorNoVOIP
 RegionalBehaviorNoWiFi
 RemoteBluetoothAddress
@@ -52,13 +53,16 @@ sPostEffectsCapability
 taActivationCapability
 tnDeviceSiriCapability
 tpLargeFilesCapability
+tUnderstandingOnDevice
 tworkTraitDisplayGamut
 uenerativeModelSystems
+ULiveEffectsCapability
 ull6FeaturesCapability
 upportsVSHCompensation
 UserAssignedDeviceName
 VideoCaptureCapability
 VLiveEffectsCapability
 VolumeDownButtonCGRect
+vUnderstandingOnDevice
 yingerSwitchCapability
 yUnderstandingOnDevice
