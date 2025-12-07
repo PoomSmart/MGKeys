@@ -1,11 +1,9 @@
 NON_KEY_DESC = 'non-gestalt-key'
 
 unknown_keys_desc = {
-    "1HWDBfJwBJZ8TDHcPDafmQ": "IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard",
     "4H26SkyfcrZOrMAtjC6Cfw": "IODeviceTree:/product, starts with s, DeviceSupportsHypertensivePatternMeasurements",
     "4MI3+6oztazPJ1ZI2OdWDQ": "",
     "5JleoNS+AEM3ev96t8z0Qw": "IOService:/, starts with A",
-    "8kcKPCGGyCpf66MMl5TVkA": "IODeviceTree:/multi-touch, starts with m, MultiTouchMaxBootTime",
     "9f5ODNAt2gufqSI82eYnLw": "IODeviceTree:/multi-touch, starts with c, DeviceSupportsCorrectedTemperature",
     "bbyFCcrPE+k6ZXIVbXSFUw": "IODeviceTree:/product, starts with u, DevicePrefersBuildingStrokes",
     "bxQyyA/qJ3QQXTiHBsW2eg": "IODeviceTree:/product, starts with o, BuddyLanguagesAnimationRequiresOptimization",
@@ -52,6 +50,7 @@ known_keys_desc = [
     "0gkWjKWKuS2gqzTaFHKxqw",
     "0gZY31xMzJDuUNTTnWT0Nw",
     "0vvGMT0ltmG03nFfaXxoHg",
+    "1HWDBfJwBJZ8TDHcPDafmQ",
     "1oUugT++JJx5gOVyB2la7w",
     "1XU1vjgruwDJdBGH+Gx9lg",
     "1z6Kk4xUAVLdaBPGugsDSA",
@@ -82,6 +81,7 @@ known_keys_desc = [
     "7zSkleuS91WkyAuEEH7p2g",
     "86GizkmSK+IxgCtUMOp2NA",
     "8Kc1MRjWTfDiGKX6E/9XqQ",
+    "8kcKPCGGyCpf66MMl5TVkA",
     "8vIFqHe5lcMGo7TvbNLmyg",
     "8Wunmi1SpU1MxfBxkv3KOw",
     "9Bp5z20HsA1f7dqvelXKXA",

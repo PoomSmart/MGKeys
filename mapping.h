@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 1179 keys
-// Deobfuscated: 1158 keys (98.22%)
+// Deobfuscated: 1160 keys (98.39%)
 // Total gestalt keys: 907 keys
 // Deobfuscated gestalt: 907 keys (100.0%)
 // Unexplored: 0 keys
@@ -69,7 +69,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "1DQNgySZSIjPqLWroIzfiQ", "BacklightCapability", // iOS 8.0+
     "1eBwtCIwbIDdC80wiyzfow", "DeviceSupportsP3ColorspaceVideoRecording", // iOS 12.0+
     "1gsBzuZsXu2rXZJBE01M0w", "FrontFacingCameraHFRCapability", // iOS 7.0+
-    "1HWDBfJwBJZ8TDHcPDafmQ", NULL, // non-gestalt-key, IODeviceTree:/product, starts with e, DeviceHasEmbeddedSIMOnlyBoard, iOS 26.0+
+    "1HWDBfJwBJZ8TDHcPDafmQ", "esim-only", // non-gestalt-key // iOS 26.0+
     "1N14oS9TeyskaTU1DxpwoQ", "load-thumbnails-while-scrolling", // iOS 7.0+
     "1N37hGont/jibw4G2hwdRg", "DeviceSupportsUnconditionalPluckItCollection", // iOS 15.4+
     "1oMPwMsqxTa9BJxUs8v06w", "PlatinumCapability", // iOS 8.4+
@@ -197,7 +197,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "8fyX2yEg28cYgJ10Yl+ueA", "QuickNoteCapability", // iOS 15.1+
     "8gVfz9/8R1OtWBBtI0o/+Q", "DeviceSupportsTimeInDaylight", // iOS 17.0+
     "8Kc1MRjWTfDiGKX6E/9XqQ", "long-form-audio-play", // non-gestalt-key // iOS 13.0+
-    "8kcKPCGGyCpf66MMl5TVkA", NULL, // non-gestalt-key, IODeviceTree:/multi-touch, starts with m, MultiTouchMaxBootTime, iOS 14.3+
+    "8kcKPCGGyCpf66MMl5TVkA", "max-boot-time-ms", // non-gestalt-key // iOS 14.3+
     "8LAJHwc8DUQZwV2TSwsysA", "RearFacingCameraStageLightPortraitCaptureCapability", // iOS 13.4+
     "8olRm6C1xqr7AJGpLRnpSw", "PearlIDCapability", // iOS 11.0+
     "8OTc3mN30ACaEwecgpKfXA", "CloudPhotoLibraryCapability", // iOS 11.0+
