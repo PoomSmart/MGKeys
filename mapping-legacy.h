@@ -49,7 +49,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "Af/UTHptqxLPG5sy0wQTiw", "TorpedoCapability", // iOS unknown
     "AFgMLiOUXwdf4T83wrVcxw", "MMSCapability", // iOS unknown
     "AFSjHTczUWJZWdEzHqndnQ", "720pPlaybackCapability", // iOS unknown
-    "aH78kNnsHDm9yHe6vSJYNw", "builtin-mics", // non-gestalt-key // iOS 7.0-13.5, 13.7-14.3, 14.5, 14.8 (removed in 15.0)
+    "aH78kNnsHDm9yHe6vSJYNw", "builtin-mics", // non-gestalt-key // iOS 7.0-14.8 (removed in 15.0)
     "aIzBwNZS8VUrxL+9grefTA", "GameKitCapability", // iOS unknown
     "Ar0GS4uq6WcJ33OpIF14XQ", "HealthKitCapability", // iOS unknown
     "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability", // iOS unknown
@@ -76,7 +76,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "F2M6lgy8EHCyR6hc00hMcg", "effective-security-mode", // non-gestalt-key // iOS 7.0-10.3 (removed in 11.0)
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier", // iOS unknown
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability", // iOS unknown
-    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0-13.5, 13.7-14.1 (removed in 14.2)
+    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0-14.1 (removed in 14.2)
     "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability", // iOS 8.4, 9.3 (removed in 10.0)
     "g/iV4vkeMLwXt8YPrhL+EQ", "front-flash", // non-gestalt-key // iOS 9.0+ (removed in 9.3)
     "G/ss4ZCOHb2osL8sLnZj7w", "reverse-zoom", // iOS unknown
@@ -91,7 +91,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "htWSrEg/cfn3squdzvER/w", "MLEHW", // iOS 9.3+ (removed in 10.0)
     "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability", // iOS unknown
     "Hx+k29zX4XhjYZRkYUvWpw", "studio-light-portrait-preview", // non-gestalt-key // iOS 13.0+ (removed in 14.0)
-    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key // iOS 7.1-13.5, 13.7-14.3, 14.5, 14.8-15.4, 15.6-15.7 (removed in 15.8)
+    "I+ptihXW+rMeySVUWURNiw", "mac-address-bluetooth1", // non-gestalt-key // iOS 7.1-15.8 (removed in 16.0)
     "I2IvpG8yJdNpvO4csuB9EA", "LocationRemindersCapability", // iOS 8.4, 9.3 (removed in 10.0)
     "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit", // iOS unknown
     "ibPgs24d3M4hvYwCtW6YAw", "wlan.lowlatency", // non-gestalt-key // iOS 14.0+ (removed in 15.0)
@@ -124,7 +124,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "mMpmRVTiFjGCIUUH1v5aVg", "EncodeAACCapability", // iOS unknown
     "MulRZdIO3jyzkPar/CuDXA", "software-dimming-alpha", // iOS 7.0+ (removed in 10.0)
     "MWJNrFKpHkBEm8jAdJf1xw", "AirplayMirroringCapability", // iOS 8.4, 9.3 (removed in 10.0)
-    "na77zbwlhy0V7shc4ORRgA", "post-effects", // non-gestalt-key // iOS 7.0-13.5, 13.7-14.1 (removed in 14.2)
+    "na77zbwlhy0V7shc4ORRgA", "post-effects", // non-gestalt-key // iOS 7.0-14.1 (removed in 14.2)
     "nfoN5DvniQJQRqNth7F0fg", "HMERefreshRateInARKit", // iOS 13.0+ (removed in 13.4)
     "NnjMKIIAarYqUsQjrLAzCA", "avatar-camera", // iOS 17.0+ (removed in 18.0)
     "nPGxu4rFOh+jGGPSoUFgwA", "DictationCapability", // iOS unknown
@@ -146,7 +146,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability", // iOS unknown
     "pQ60lr9FHtEUdZFqLI0C+g", NULL, // non-gestalt-key, IOService:/5JleoNS+AEM3ev96t8z0Qw, starts with S, iOS 9.0+ (removed in 9.3)
     "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability", // iOS unknown
-    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0-13.5, 13.7 (removed in 14.0)
+    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0-13.7 (removed in 14.0)
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability", // iOS unknown
     "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability", // iOS unknown
     "QEmhOZosE0IT4YJkQWh3Dg", NULL, // iOS unknown
@@ -191,11 +191,11 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "x7jCqsR180Lcm6rYguygmg", "MainScreenHeight", // iOS unknown
     "XACgWnmwo1t6swUPu+/UUQ", "AutoFocusCameraCapability", // iOS 8.4, 9.3 (removed in 10.0)
     "XcmwH6K+Nop/mDqy50Nrqw", "HorsemanCapability", // iOS unknown
-    "XEp4h49dagkYL6YrtjW1Kw", "wifi-module-sn", // non-gestalt-key // iOS 8.0-13.5, 13.7-14.3, 14.5, 14.8-16.7 (removed in 17.0)
+    "XEp4h49dagkYL6YrtjW1Kw", "wifi-module-sn", // non-gestalt-key // iOS 8.0-16.7 (removed in 17.0)
     "XPqbAKO9OGRsZmYTfs99Pw", "OpenGLES2Capability", // iOS unknown
     "yAP29WFvj9TYheRKoEJDIw", "MainScreenWidth", // iOS unknown
     "YH5LeF090QGZQTvT76qcBg", "HearingAidPowerReductionCapability", // iOS 8.4, 9.3 (removed in 10.0)
-    "Yk5H+MlMreeaBLjv6PPFDw", "camera-front", // non-gestalt-key // iOS 7.0-13.5, 13.7-14.3, 14.5, 14.8-15.4, 15.6-15.7 (removed in 15.8)
+    "Yk5H+MlMreeaBLjv6PPFDw", "camera-front", // non-gestalt-key // iOS 7.0-15.8 (removed in 16.0)
     "YWQYAm8X1mwtoYPwpLF6YA", "YouTubePluginCapability", // iOS unknown
     "z1AiZGX3Zz2qjXit83EHMA", "MultiTouchCapability", // iOS unknown
     "z5qxAI4VRmvofBOSFvwxPg", "HardwareSnapshotsRequirePurpleGfxCapability", // iOS unknown
@@ -203,7 +203,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability", // iOS unknown
     "ziO64HFBPR9QpsOGnkVjJQ", "HiDPICapability", // iOS unknown
     "zJUWenIp94snlzBD1cub3g", "function-button_halleffect", // non-gestalt-key // iOS 8.0-11.1 (removed in 11.2)
-    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0-13.5, 13.7-14.1 (removed in 14.2)
+    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0-14.1 (removed in 14.2)
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability", // iOS unknown
     NULL, NULL
 };

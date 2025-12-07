@@ -294,15 +294,15 @@ def generate_keys_versions():
         for i, (version_str, _, hashes) in enumerate(version_data):
             cumulative_counts[version_str] = len(hashes)
 
-        # Print version stats to file
-        for version_str in sorted(version_stats.keys(), key=sort_key):
-            new_count = version_stats[version_str]
-            cumulative_count = cumulative_counts.get(version_str, 0)
+        # Print version stats to file - iterate over ALL versions, not just those with new keys
+        for version_str in sorted(cumulative_counts.keys(), key=sort_key):
+            cumulative_count = cumulative_counts[version_str]
+            new_count = version_stats.get(version_str, 0)
 
-            if cumulative_count > 0:
+            if new_count > 0:
                 f.write(f'iOS {version_str:8s}  {cumulative_count:4d} total keys  ({new_count:+4d} new)\n')
             else:
-                f.write(f'iOS {version_str:8s}  {new_count:4d} new keys\n')
+                f.write(f'iOS {version_str:8s}  {cumulative_count:4d} total keys\n')
 
         # Print removed keys summary if any
         if removed_map:

@@ -65,7 +65,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "EPMipOaz6R549ljzQFXEkA", "VolumeButtonCapability", // iOS unknown
     "fAwIjGT2efY3MHaGNHbCeQ", "modelIdentifier", // iOS unknown
     "FfP+vxxGg5AbBO0uzmp6rw", "GasGaugeBatteryCapability", // iOS unknown
-    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0-13.5, 13.7-14.1 (removed in 14.2)
+    "FgjnMkPJPpI4C38dWETwtw", "flash", // iOS 7.0-14.1 (removed in 14.2)
     "Fralg2R4+pkggafylKbVgw", "HearingAidLowEnergyAudioCapability", // iOS 8.4, 9.3 (removed in 10.0)
     "G/ss4ZCOHb2osL8sLnZj7w", "reverse-zoom", // iOS unknown
     "g9b89U/AXTtd//2tEk1Dyw", "APNCapability", // iOS unknown
@@ -125,7 +125,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability", // iOS unknown
     "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability", // iOS unknown
     "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability", // iOS unknown
-    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0-13.5, 13.7 (removed in 14.0)
+    "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0-13.7 (removed in 14.0)
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability", // iOS unknown
     "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability", // iOS unknown
     "QEmhOZosE0IT4YJkQWh3Dg", NULL, // iOS unknown
@@ -172,7 +172,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "zBxhtPJR7fFD8LYsxh2F+w", "ARMV7SExecutionCapability", // iOS unknown
     "ZGBeuNOKXTFmdM4TwXsaKQ", "VideoCameraCapability", // iOS unknown
     "ziO64HFBPR9QpsOGnkVjJQ", "HiDPICapability", // iOS unknown
-    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0-13.5, 13.7-14.1 (removed in 14.2)
+    "zPSNnYDFk+x5ebOtenb3Eg", "auto-focus", // iOS 7.0-14.1 (removed in 14.2)
     "Zv5zA+LUuFETzfX5WTbnjA", "ARM64ExecutionCapability", // iOS unknown
     NULL, NULL
 };
