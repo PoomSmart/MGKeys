@@ -111,15 +111,15 @@ Extract keys from IODeviceTree properties:
 
 ```bash
 # 1. Dump DeviceTree to JSON
-./dump_dtree.sh <path/to/ipsw_or_dtree>
+./dump-dtree.sh <path/to/ipsw_or_dtree>
 # Or from remote IPSW
-./dump_dtree.sh -d <DEVICE> -v <VERSION>
+./dump-dtree.sh -d <DEVICE> -v <VERSION>
 
 # 2. Recover keys from the JSON
 python3 recover_from_dtree.py
 
 # See all options
-./dump_dtree.sh --help
+./dump-dtree.sh --help
 python3 recover_from_dtree.py --help
 ```
 
