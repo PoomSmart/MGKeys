@@ -101,14 +101,29 @@ echo "Extracted $(wc -l <$READABLE | tr -d ' ') symbols"
 
 rm -f $OBFUSCATED $OBFUSCATED_MAPPED
 
-mapfile -t readables < $READABLE
-if [ ${#readables[@]} -gt 0 ]; then
-    mapfile -t hashes < <(python3 obfuscate.py obfuscate "${readables[@]}")
-    for i in "${!readables[@]}"; do
-        echo "${hashes[$i]}: ${readables[$i]}" >> $OBFUSCATED_MAPPED
-        echo "${hashes[$i]}" >> $OBFUSCATED
-    done
-fi
+########################################
+#  REPLACED MAPFILE BLOCK (MAC SAFE)
+########################################
+
+# Load readable keys into array
+readables=()
+while IFS= read -r line; do
+    readables+=("$line")
+done < "$READABLE"
+
+# Call python to get hashes, load into array
+hashes=()
+while IFS= read -r line; do
+    hashes+=("$line")
+done < <(python3 obfuscate.py obfuscate "${readables[@]}")
+
+# Write both output files
+for i in "${!readables[@]}"; do
+    echo "${hashes[$i]}: ${readables[$i]}" >> "$OBFUSCATED_MAPPED"
+    echo "${hashes[$i]}" >> "$OBFUSCATED"
+done
+
+########################################
 
 sort -f $OBFUSCATED_MAPPED -o $OBFUSCATED_MAPPED
 
