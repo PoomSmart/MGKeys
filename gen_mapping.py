@@ -75,10 +75,12 @@ def format_version_ranges(obfuscated_key: str, key_versions_data: Dict[str, List
 
     # If key is not reintroduced, use simple format
     if obfuscated_key not in KEY_IOS_REINTRODUCED:
-        if removed_suffix:
-            return f' // iOS {intro_version}+{removed_suffix}'
+        if intro_version == 'sim':
+            return ' // Simulator'
         elif intro_version == 'unknown':
-            return f' // iOS {intro_version}'
+            return ' // iOS unknown'
+        elif removed_suffix:
+            return f' // iOS {intro_version}+{removed_suffix}'
         else:
             return f' // iOS {intro_version}+'
 

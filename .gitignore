@@ -30,3 +30,6 @@ devicetree.json
 
 # Experimental
 check-readable.sh
+
+# Self
+update_applewiki.py
