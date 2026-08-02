@@ -176,7 +176,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "7DfjbzhvH/GDkhio1dv8fA", "HasSEP", // iOS 7.0+
     "7IgVvZZLtNjMFdInQlKg6A", "SoftwareBehavior", // iOS 7.0+
     "7l0BaQsNxJCanoeHMJ2huA", "AllowYouTube", // iOS 7.0+
-    "7mV26K/1a+wTtqiunvHMUQ", "PhosphorusCapability", // iOS 8.0-8.2, 10.0-18.7, 26.0-26.5+
+    "7mV26K/1a+wTtqiunvHMUQ", "PhosphorusCapability", // iOS 8.0-8.2, 10.0-18.7, 26.0-26.6+
     "7ot70MKj7EdRIEEi91jlcg", "bitrate-3g", // non-gestalt-key // iOS 7.0+
     "7pq6UGJM2TaOP2brCspvyA", "acoustic-id", // non-gestalt-key // iOS 14.0+
     "7qHcAWI5X9b1SiyYIg/Byw", "ui-background-quality", // non-gestalt-key // iOS 7.0+
@@ -214,7 +214,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "913P3Zsei09w0GSSOaBD+w", "VolumeUpButtonNormalizedCGRect", // iOS 16.3+
     "91LyMcx4z1w3SGVeqteMnA", "BasebandRegionSKU", // iOS 7.0+
     "96GRvvjuBKkU4HzNsYcHPA", "MinimumSupportediTunesVersion", // iOS 7.0+
-    "97JDvERpVwO+GHtthIh7hA", "RegulatoryModelNumber", // iOS 7.0-15.8, 17.0-17.7, 26.0-26.5+
+    "97JDvERpVwO+GHtthIh7hA", "RegulatoryModelNumber", // iOS 7.0-15.8, 17.0-17.7, 26.0-26.6+
     "9Bp5z20HsA1f7dqvelXKXA", "supports-maps-optical-heading", // non-gestalt-key // iOS 13.4+
     "9f5ODNAt2gufqSI82eYnLw", NULL, // non-gestalt-key, IODeviceTree:/multi-touch, starts with c, DeviceSupportsCorrectedTemperature, iOS 16.0+
     "9MZ5AdH43csAUajl/dU+IQ", "SupportedDeviceFamilies", // iOS 7.0+
@@ -483,7 +483,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "GvmsjQ/68T7do2CJxUhMig", "bluetooth-dev-addr0", // non-gestalt-key // iOS 7.1+
     "GxXmRWHjsY5yAVhMfCH6Lg", "BridgeBuild", // iOS 10.0+
     "H+r3Nk8ByXIY9ub/M8broA", "DeviceSupportsHeartHealthAlerts", // iOS 11.0+
-    "h0OUwg53vKp+IPdzLG4NrA", "mesa", // non-gestalt-key // iOS 8.0-11.4, 14.0-18.7, 26.0-26.5+
+    "h0OUwg53vKp+IPdzLG4NrA", "mesa", // non-gestalt-key // iOS 8.0-11.4, 14.0-18.7, 26.0-26.6+
     "h1UG2n5HnANzU4rX8pT85g", "DeviceDBVDependentVSHCompensationTraits", // iOS 26.0+
     "H4f1y1sEDUUUROeb4FZJ4A", "natural-volume-arrangement", // non-gestalt-key // iOS 15.0+
     "H5HW20mJr/djc40tAehkww", "BasebandKeyHashInformation", // iOS 7.0+
