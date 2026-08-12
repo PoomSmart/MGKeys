@@ -2,9 +2,10 @@
 
 # Extract libMobileGestalt.dylib for a specific iOS version and generate version hashes
 # This script ONLY extracts the dylib and creates version-XX.txt without running discovery or updating mappings
-# Usage: ./extract-version-hashes.sh <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract]
+# Usage: ./extract-version-hashes.sh <DEVICE> <VERSION> [ARCH] [OPTIONS]
 # Example: ./extract-version-hashes.sh iPhone15,2 18.0
-#          ./extract-version-hashes.sh iPhone15,2 22A3354 --remote-extract  # Using build number
+#          ./extract-version-hashes.sh iPhone15,2 18.0 --build 22A3354 --remote-extract
+#          ./extract-version-hashes.sh iPhone16,1 27.0 --build 24A5408d --ipsw-url URL
 #          ./extract-version-hashes.sh iPhone15,2 18.0 arm64e --remote-extract
 
 set -e
@@ -23,13 +24,15 @@ show_help() {
     cat << EOF
 Extract libMobileGestalt.dylib and generate version-specific hashes file
 
-Usage: $0 <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract]
+Usage: $0 <DEVICE> <VERSION> [ARCH] [OPTIONS]
 
 Arguments:
     DEVICE              Device identifier (e.g., iPhone15,2)
-    VERSION_OR_BUILD    iOS version (e.g., 18.0) or build number (e.g., 22A3354)
+    VERSION              iOS version; beta versions use the final version (e.g., 27.0)
     ARCH               Architecture (default: arm64e)
-    --remote-extract   Use remote extraction instead of full IPSW download
+    --remote-extract    Use remote extraction instead of full IPSW download
+    --build BUILD       Explicit IPSW build identifier (e.g., 24A5408d)
+    --ipsw-url URL      Use a direct IPSW URL instead of ipsw.me lookup
 
 Examples:
     $0 iPhone15,2 18.0

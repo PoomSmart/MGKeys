@@ -32,8 +32,9 @@ See [reference.md](reference.md) for exact commands.
 - [ ] 2. Discover locally + post-process
 - [ ] 3. Diff against previous version
 - [ ] 4. Recover non-gestalt keys from DeviceTree
-- [ ] 5. Guess remaining unknowns
-- [ ] 6. Validate and update docs
+- [ ] 5. Reverse-engineer remaining unknowns in the dyld shared-cache IDA database
+- [ ] 6. Guess remaining unknowns
+- [ ] 7. Validate and update docs
 ```
 
 ### Step 1: Extract once
@@ -77,7 +78,21 @@ python3 recover_from_dtree.py
 
 For multiple IPSWs: `python3 recover_from_all_dtrees.py` (scans `**/*.im4p`).
 
-### Step 5: Remaining unknowns
+### Step 5: Reverse-engineer unknowns in IDA
+
+Prefer the IDA database generated from the dyld shared cache over the
+extracted dylib because it preserves shared-cache tables and cross-references:
+
+```text
+dyld_shared_cache/<BUILD>__<DEVICE>/dyld_shared_cache_arm64e.i64
+```
+
+Search unresolved hashes, follow data cross-references into MobileGestalt
+registration tables, and decompile associated lookup functions. Record only
+evidence-based paths or call-site findings in `keys_desc.py`; unresolved keys
+should remain `NULL` rather than receive guessed names.
+
+### Step 6: Remaining unknowns
 
 ```bash
 python3 guess_keys.py
@@ -95,7 +110,7 @@ Check triage artifacts:
 | Unknown gestalt | `hashes.txt` minus `deobfuscated.py` |
 | Removed | `comm -23` diff → `hashes_legacy.txt` |
 
-### Step 6: Validate
+### Step 7: Validate
 
 ```bash
 .venv/bin/pytest
@@ -119,7 +134,7 @@ Update [README.md](../../../README.md) baseline line (`The keys are currently ba
 - `deobfuscated.py` — key mappings
 - `mapping.h`, `mapping-gestalt.h` — generated headers
 - `keys_versions.py`, `versions/version-stats.txt` — version metadata
-- `keys_desc.py` — unknown key hints (24 outstanding as of 26.6)
+- `keys_desc.py` — unknown key hints
 
 ## Additional resources
 

@@ -66,3 +66,6 @@ VolumeDownButtonCGRect
 vUnderstandingOnDevice
 yingerSwitchCapability
 yUnderstandingOnDevice
+HEVCEncodingCapability
+PhotoSharingCapability
+SupportsSSHBButtonType

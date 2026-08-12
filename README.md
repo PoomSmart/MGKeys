@@ -4,7 +4,7 @@ Mapping of the obfuscated keys (or questions) used by iOS's MobileGestalt to the
 
 It is our job to de-obfuscate them all.
 
-The keys are currently based on iOS 26.6.
+The keys are currently based on iOS 27.0b5.
 
 ## Patterns
 
@@ -48,13 +48,19 @@ All scripts support `--help` flags for detailed usage information. Run any scrip
 Use `discover-version.sh` to automate downloading an IPSW, extracting `libMobileGestalt.dylib`, and running discovery:
 
 ```bash
-./discover-version.sh <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract] [--post-process-only]
+./discover-version.sh <DEVICE> <VERSION> [ARCH] [OPTIONS]
 
 # Examples
 ./discover-version.sh iPhone15,2 16.5
-./discover-version.sh iPhone15,2 20F66 --remote-extract
+./discover-version.sh iPhone15,2 16.5 --build 20F66 --remote-extract
+./discover-version.sh iPhone16,1 27.0 --build 24A5408d --ipsw-url <APPLE_IPSW_URL>
 ./discover-version.sh iPhone15,2 26.4 --post-process-only
 ```
+
+Use `--build` for beta build identifiers, including identifiers with lowercase
+seed suffixes such as `24A5408d`. Use `--ipsw-url` when the beta is not yet
+indexed by ipsw.me. Beta releases are recorded under their final version
+(for example, iOS 27.0 beta 5 produces `versions/version-27.0.txt`).
 
 `--post-process-only` skips IPSW extraction and key discovery, and only runs post-processing steps on current local artifacts. This is useful when you want to validate or rerun:
 - `versions/version-<VERSION>.txt` generation from `hashes.txt`
@@ -67,11 +73,12 @@ Use `discover-version.sh` to automate downloading an IPSW, extracting `libMobile
 To extract hashes for version tracking without running discovery or updating mappings:
 
 ```bash
-./extract-version-hashes.sh <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract]
+./extract-version-hashes.sh <DEVICE> <VERSION> [ARCH] [OPTIONS]
 
 # Examples
 ./extract-version-hashes.sh iPhone15,2 18.0
 ./extract-version-hashes.sh iPhone13,1 17.4 arm64e --remote-extract
+./extract-version-hashes.sh iPhone16,1 27.0 --build 24A5408d --ipsw-url <APPLE_IPSW_URL>
 ```
 
 This script:
@@ -129,6 +136,22 @@ python3 recover_from_dtree.py
 ./dump-dtree.sh --help
 python3 recover_from_dtree.py --help
 ```
+
+#### IDA Reverse Engineering
+
+For difficult unknowns, prefer the IDA database generated from the dyld shared
+cache over the extracted dylib. It preserves the shared-cache data tables and
+cross-references:
+
+```bash
+# After IPSW extraction
+ida64 dyld_shared_cache/<BUILD>__<DEVICE>/dyld_shared_cache_arm64e.i64
+```
+
+Search unresolved hash strings, inspect their data cross-references, and
+decompile the associated MobileGestalt registration or lookup functions. Add
+only evidence-based hints to `keys_desc.py`; do not guess a key name from the
+hash alone.
 
 #### Hashcat-based Recovery
 

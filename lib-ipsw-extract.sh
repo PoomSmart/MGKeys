@@ -32,23 +32,43 @@ check_prerequisites() {
 }
 
 # Parse common arguments
-# Sets: DEVICE, VERSION, ARCH, REMOTE_EXTRACT
+# Sets: DEVICE, VERSION, ARCH, BUILD, IPSW_URL, REMOTE_EXTRACT
 parse_common_args() {
     DEVICE=""
     VERSION=""
     ARCH="arm64e"
+    BUILD=""
+    IPSW_URL=""
     REMOTE_EXTRACT=false
 
-    for arg in "$@"; do
-        if [[ "$arg" == "--remote-extract" ]]; then
-            REMOTE_EXTRACT=true
-        elif [[ -z "$DEVICE" ]]; then
-            DEVICE="$arg"
-        elif [[ -z "$VERSION" ]]; then
-            VERSION="$arg"
-        else
-            ARCH="$arg"
-        fi
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            --remote-extract)
+                REMOTE_EXTRACT=true
+                ;;
+            --build)
+                BUILD="$2"
+                shift
+                ;;
+            --ipsw-url)
+                IPSW_URL="$2"
+                shift
+                ;;
+            --arch)
+                ARCH="$2"
+                shift
+                ;;
+            *)
+                if [[ -z "$DEVICE" ]]; then
+                    DEVICE="$1"
+                elif [[ -z "$VERSION" ]]; then
+                    VERSION="$1"
+                else
+                    ARCH="$1"
+                fi
+                ;;
+        esac
+        shift
     done
 }
 
@@ -58,21 +78,17 @@ detect_version_type() {
     local version="$1"
     local device="$2"
 
-    BUILD=""
     VERSION_NUM=""
 
-    if [[ "$version" =~ ^[0-9]+[A-Z][0-9]+$ ]]; then
-        log_info "Detected build number: $version"
-        BUILD="$version"
-
-        # Try to get version from build using ipsw
-        VERSION_INFO=$(ipsw download ipsw --device "$device" --build "$BUILD" --info 2>/dev/null || echo "")
-        if [[ -n "$VERSION_INFO" ]]; then
-            VERSION_NUM=$(echo "$VERSION_INFO" | grep -oE 'Version: [0-9.]+' | cut -d' ' -f2 || echo "")
-        fi
+    if [[ "$version" =~ ^[0-9]+[A-Z][0-9]+[A-Za-z]*$ ]]; then
+        log_info "Detected build number: ${BUILD:-$version}"
+        BUILD="${BUILD:-$version}"
+    elif [[ "$version" =~ ^[0-9]+(\.[0-9]+)+([[:space:]]+[Bb]eta([[:space:]]+[0-9]+)?)?$ ]]; then
+        VERSION_NUM="${version%%[[:space:]]*}"
+        log_info "Detected iOS version: $VERSION_NUM"
     else
-        log_info "Detected version number: $version"
-        VERSION_NUM="$version"
+        log_error "Unrecognized version or build identifier: $version"
+        return 1
     fi
 }
 
@@ -89,25 +105,34 @@ remote_extract_dylib() {
     log_info "Attempting IPSW remote extraction..."
     mkdir -p "$cache_base_dir"
 
-    detect_version_type "$version" "$device"
+    detect_version_type "$version" "$device" || return 1
 
-    # Use appropriate flag for version or build
-    local ipsw_cmd
-    if [[ -n "$BUILD" ]]; then
-        ipsw_cmd="ipsw download ipsw --device \"$device\" --build \"$BUILD\" --dyld --dyld-arch \"$arch\" --output \"$cache_base_dir\" --confirm"
+    if [[ -n "$IPSW_URL" ]]; then
+        if ! ipsw extract --dyld --dyld-arch "$arch" --remote \
+            --output "$cache_base_dir" "$IPSW_URL"; then
+            log_error "IPSW remote extraction command failed"
+            return 1
+        fi
     else
-        ipsw_cmd="ipsw download ipsw --device \"$device\" --version \"$VERSION_NUM\" --dyld --dyld-arch \"$arch\" --output \"$cache_base_dir\" --confirm"
-    fi
-
-    if ! eval "$ipsw_cmd" 2>&1; then
-        log_error "IPSW remote extraction command failed"
-        return 1
+        local ipsw_args=(download ipsw --device "$device" --dyld
+            --dyld-arch "$arch" --output "$cache_base_dir" --confirm)
+        if [[ -n "$BUILD" ]]; then
+            ipsw_args+=(--build "$BUILD")
+        else
+            ipsw_args+=(--version "$VERSION_NUM")
+        fi
+        if ! ipsw "${ipsw_args[@]}"; then
+            log_error "IPSW remote extraction command failed"
+            return 1
+        fi
     fi
 
     log_info "Successfully extracted dyld_shared_cache from IPSW"
 
-    # Find the extracted cache directory (format: BUILD__DEVICE)
-    local cache_dir=$(find "$cache_base_dir" -maxdepth 1 -type d -name "*__${device}" | sort -r | head -1)
+    # Find the extracted cache directory (format: BUILD__DEVICE).
+    local cache_dir
+    cache_dir=$(find "$cache_base_dir" -maxdepth 3 -type d \
+        -name "*__${device}" | sort -r | head -1)
 
     if [[ -z "$cache_dir" ]]; then
         log_error "Could not find cache directory for $device"
@@ -116,11 +141,12 @@ remote_extract_dylib() {
 
     log_info "Found cache directory: $cache_dir"
 
-    # Extract build number from directory name
+    # Extract build number from directory name.
     EXTRACTED_BUILD=$(basename "$cache_dir" | cut -d'_' -f1)
 
-    # Find the cache file
-    local cache_file=$(find "$cache_dir" -name "dyld_shared_cache_${arch}" -type f | head -1)
+    # Find the cache file.
+    local cache_file
+    cache_file=$(find "$cache_dir" -name "dyld_shared_cache_${arch}" -type f | head -1)
 
     if [[ -z "$cache_file" ]]; then
         log_error "Could not find dyld_shared_cache_${arch} in $cache_dir"
@@ -145,7 +171,7 @@ remote_extract_dylib() {
     return 0
 }
 
-# Extract libMobileGestalt.dylib using full IPSW download
+# Download and extract libMobileGestalt.dylib from a complete IPSW.
 # Parameters: $1=DEVICE, $2=VERSION/BUILD, $3=ARCH, $4=CACHE_BASE_DIR
 # Returns: Sets DYLIB_PATH and EXTRACTED_BUILD on success, returns 0
 #          Returns 1 on failure
@@ -155,48 +181,55 @@ full_ipsw_extract_dylib() {
     local arch="$3"
     local cache_base_dir="${4:-dyld_shared_cache}"
 
-    log_info "Using full IPSW download method (~7-8GB)..."
+    log_info "Using full IPSW download method (~11GB for this beta)..."
 
-    detect_version_type "$version" "$device"
+    detect_version_type "$version" "$device" || return 1
 
-    # Use appropriate flag for version or build
     local ipsw_file
-    if [[ -n "$BUILD" ]]; then
-        log_info "Downloading IPSW for build $BUILD..."
-        ipsw download ipsw --device "$device" --build "$BUILD" --confirm
-        # Try multiple patterns to find the downloaded IPSW
-        ipsw_file=$(find . -maxdepth 1 -name "*_${BUILD}_*.ipsw" -type f | head -1)
-        EXTRACTED_BUILD="$BUILD"
-    else
-        log_info "Downloading IPSW for version $VERSION_NUM..."
-        ipsw download ipsw --device "$device" --version "$VERSION_NUM" --confirm
-        # Try multiple patterns: device_version, or just version in filename
-        ipsw_file=$(find . -maxdepth 1 -name "*_${VERSION_NUM}_*.ipsw" -o -name "*${VERSION_NUM//./_}*.ipsw" -type f | head -1)
-        # If still not found, try any recent IPSW
-        if [[ -z "$ipsw_file" ]]; then
-            ipsw_file=$(find . -maxdepth 1 -name "*.ipsw" -type f -newer . 2>/dev/null | head -1)
+    if [[ -n "$IPSW_URL" ]]; then
+        ipsw_file="${IPSW_URL##*/}"
+        ipsw_file="${ipsw_file%%\?*}"
+        log_info "Downloading IPSW from supplied URL..."
+        if ! curl -fL --retry 3 --output "$ipsw_file" "$IPSW_URL"; then
+            log_error "IPSW download failed"
+            return 1
         fi
-        # Extract build from filename if possible
-        if [[ "$ipsw_file" =~ _([0-9]+[A-Z][0-9]+)_ ]]; then
-            EXTRACTED_BUILD="${BASH_REMATCH[1]}"
+    else
+        local download_args=(download ipsw --device "$device" --confirm)
+        if [[ -n "$BUILD" ]]; then
+            log_info "Downloading IPSW for build $BUILD..."
+            download_args+=(--build "$BUILD")
+        else
+            log_info "Downloading IPSW for version $VERSION_NUM..."
+            download_args+=(--version "$VERSION_NUM")
+        fi
+        if ! ipsw "${download_args[@]}"; then
+            log_error "IPSW download failed"
+            return 1
+        fi
+        if [[ -n "$BUILD" ]]; then
+            ipsw_file=$(find . -maxdepth 1 -name "*_${BUILD}_*.ipsw" -type f | head -1)
+            EXTRACTED_BUILD="$BUILD"
+        else
+            ipsw_file=$(find . -maxdepth 1 \( -name "*_${VERSION_NUM}_*.ipsw" \
+                -o -name "*${VERSION_NUM//./_}*.ipsw" \) -type f | head -1)
         fi
     fi
 
-    if [[ -z "$ipsw_file" ]]; then
+    if [[ -z "$ipsw_file" || ! -f "$ipsw_file" ]]; then
         log_error "IPSW download failed or file not found"
         return 1
+    fi
+
+    if [[ -z "$EXTRACTED_BUILD" && "$ipsw_file" =~ _([0-9]+[A-Z][0-9]+[A-Za-z]*)_ ]]; then
+        EXTRACTED_BUILD="${BASH_REMATCH[1]}"
     fi
 
     log_info "IPSW downloaded: $ipsw_file"
     log_info "Extracting dyld_shared_cache from IPSW..."
 
-    # Create cache directory with build info
     local cache_dir
-    if [[ -n "$EXTRACTED_BUILD" ]]; then
-        cache_dir="$cache_base_dir/${EXTRACTED_BUILD}__${device}"
-    else
-        cache_dir="$cache_base_dir/${device}"
-    fi
+    cache_dir="$cache_base_dir/${EXTRACTED_BUILD:-$device}"
     mkdir -p "$cache_dir"
 
     if ! ipsw extract --dyld "$ipsw_file" --output "$cache_dir"; then
@@ -206,36 +239,30 @@ full_ipsw_extract_dylib() {
 
     log_info "Successfully extracted dyld_shared_cache"
 
-    # Find and extract libMobileGestalt.dylib
-    local cache_file=$(find "$cache_dir" -name "dyld_shared_cache_${arch}" -type f | head -n 1)
-
+    local cache_file
+    cache_file=$(find "$cache_dir" -name "dyld_shared_cache_${arch}" -type f | head -n 1)
     if [[ -z "$cache_file" ]]; then
         log_error "Could not find dyld_shared_cache_${arch}"
-        log_info "Available cache files:"
-        find "$cache_dir" -name "dyld_shared_cache*" -type f | head -5
         return 1
     fi
 
     log_info "Extracting libMobileGestalt.dylib from cache..."
-
     if ! ipsw dyld extract "$cache_file" libMobileGestalt.dylib --output "$cache_dir" 2>/dev/null; then
         log_error "Failed to extract libMobileGestalt.dylib"
         return 1
     fi
 
     DYLIB_PATH=$(find "$cache_dir" -name "*libMobileGestalt*.dylib" -type f | head -1)
-
     if [[ -z "$DYLIB_PATH" ]]; then
         log_error "Could not find extracted libMobileGestalt.dylib"
         return 1
     fi
 
     log_info "Successfully extracted: $DYLIB_PATH"
-
-    # Clean up downloaded IPSW to save space
-    log_info "Cleaning up IPSW file to save space..."
-    rm -f "$ipsw_file"
-
+    if [[ -z "$IPSW_URL" ]]; then
+        log_info "Cleaning up downloaded IPSW file to save space..."
+        rm -f "$ipsw_file"
+    fi
     return 0
 }
 

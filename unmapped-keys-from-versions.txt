@@ -1,4 +1,17 @@
 # Keys found in version files but not in mapping.h or mapping-legacy.h
-# Total: 0 unmapped keys
+# Total: 13 unmapped keys
 # These keys need to be deobfuscated and added to an appropriate mapping file
 
+9f5ODNAt2gufqSI82eYnLw
+HhLXszMhK6bb9TP4sqVQWQ
+KWr9OM2iqeLQEhaHS0UshQ
+NsUsZwajdZDN+suOIwkPvg
+P1djMN/L3B6otgGpO9WYkw
+bbyFCcrPE+k6ZXIVbXSFUw
+dW6ROVcD3o5ACa4jvALJ6A
+is3zjHrEdiF6J/boqghy9A
+lR7sjp4tOz3cMWoEMlZrLA
+t56wS9db+T2F2bxBpYSX8Q
+uNNFSosc1xQM/7bwlrqLXA
+vf61bz2yUWqBb+jD25ZK+w
+wAbB2fAjUqUc6lNBelfWMA

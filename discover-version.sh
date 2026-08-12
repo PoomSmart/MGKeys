@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 # One-command discovery script for a specific iOS version or build
-# Usage: ./discover-version.sh <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract]
+# Usage: ./discover-version.sh <DEVICE> <VERSION> [ARCH] [OPTIONS]
 # Example: ./discover-version.sh iPhone15,2 18.6 arm64e
-#          ./discover-version.sh iPhone15,2 22G86 --remote-extract  # Using build number
+#          ./discover-version.sh iPhone15,2 18.6 --build 22G86 --remote-extract
+#          ./discover-version.sh iPhone16,1 27.0 --build 24A5408d --ipsw-url URL
 #          ./discover-version.sh iPhone15,2 18.6 --remote-extract
 #          ./discover-version.sh iPhone15,2 26.4 --post-process-only
 
@@ -17,11 +18,16 @@ POST_PROCESS_ONLY=false
 
 show_help() {
     cat << EOF
-Usage: $0 <DEVICE> <VERSION_OR_BUILD> [ARCH] [--remote-extract] [--post-process-only]
+Usage: $0 <DEVICE> <VERSION> [ARCH] [OPTIONS]
 
 Options:
   --remote-extract     Use IPSW remote extraction
+  --build BUILD        Explicit IPSW build identifier (including beta suffixes)
+  --ipsw-url URL       Use a direct IPSW URL instead of ipsw.me lookup
   --post-process-only  Skip extraction/discovery and only run post-processing
+
+Beta versions are recorded using their final version number (for example,
+"27.0 beta 5" is written as version-27.0.txt).
 
 Post-processing includes:
   - Write versions/version-<VERSION>.txt from hashes.txt

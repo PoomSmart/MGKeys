@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 169 keys
-// Deobfuscated: 164 keys (97.04%)
+// Total: 181 keys
+// Deobfuscated: 176 keys (97.24%)
 // Unexplored: 5 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
@@ -9,6 +9,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "/8aKho3RQEvq1PxPnN2ziQ", "MetalCapability", // Simulator
     "04zgp3uYWXAEZCOV0wrVXQ", "hardware-detents", // Simulator
     "061e/gd5kFdZwwe1G2qXFQ", NULL, // iOS 13.0+ (removed in 14.0)
+    "0jjK6IVSQzA8doQeSwmujA", "software-bundle-version", // iOS 7.0+ (removed in 27.0)
     "0kE9ab+OYAMDszxCc5nNTw", "MusicStoreCapability", // Simulator
     "0tONs5niVymiPVtijnw9hg", "CallerIDCapability", // Simulator
     "0X+uIFfqTkodf6Lh20JY+w", "SMSCapability", // Simulator
@@ -27,6 +28,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "4CQ7lOLjfmXp1J350TNTUQ", "TelephonyCapability", // Simulator
     "4TKtw5gG9r8CE3BlOrjLhg", "UnifiedIPodCapability", // Simulator
     "59MRw0x/zCNPzV6/uGS8cg", "PiezoClickerCapability", // Simulator
+    "5QM8apssQbhm2ZrUx5g5Tw", "pipelined-stillimage-capability", // iOS 10.0+ (removed in 27.0)
     "5Xri+ec5Inj/4XBalFenVQ", "MainScreenPitch", // Simulator
     "7NoMrNekLOY0QTFFKY3MUg", "RegionSupportsCinnamon", // iOS 12.1+ (removed in 17.0)
     "7Ukdmk/m0mDoIbgES+BgbQ", "Full6FeaturesCapability", // Simulator
@@ -37,15 +39,18 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "8QDlnfTo4K3713bkcH+E9A", "iPadCapability", // Simulator
     "9s1QcGZXIyfHeOT8b/+m/A", "LTEDeviceCapability", // Simulator
     "9ZQAcDmoSgmTrmVL06N7hA", "AppleInternalInstallCapability", // Simulator
+    "a13V9f9x26JcQCfczZAVAw", "ui-traffic-cheap-shaders", // iOS 7.0+ (removed in 27.0)
     "A8aFtN08Oqt21846jqnftQ", "SiriGestureCapability", // Simulator
     "Af/UTHptqxLPG5sy0wQTiw", "TorpedoCapability", // Simulator
     "AFgMLiOUXwdf4T83wrVcxw", "MMSCapability", // Simulator
     "AFSjHTczUWJZWdEzHqndnQ", "720pPlaybackCapability", // Simulator
     "aIzBwNZS8VUrxL+9grefTA", "GameKitCapability", // Simulator
+    "AOIh1l3cIyDXlP4KB/084A", "iap2-protocol-supported", // iOS 9.0+ (removed in 27.0)
     "Ar0GS4uq6WcJ33OpIF14XQ", "HealthKitCapability", // Simulator
     "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability", // Simulator
     "BfEIy3W3t0Wxf7Hf7LEsAw", "PearlCameraCapability", // Simulator
     "BfM9558OSUj9vu/OmyjLnw", "AssistantCapability", // Simulator
+    "bhPjDx/0UDk9mzia6ksZ+A", "nike-support", // iOS 8.0+ (removed in 27.0)
     "BhXj+5n3+0HcPoSArDGX7g", "EffectiveSecurityMode", // iOS 7.0+ (removed in 11.0)
     "bstETUHlPlCFu+l1GRvM0A", "TVOutCrossfadeCapability", // Simulator
     "BstyjvaCtwqls0MfbkGTSg", "DisplayMirroringCapability", // Simulator
@@ -55,6 +60,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "cHla4KIe1wv0OvpRVrzy/w", "hide-non-default-apps", // iOS 7.0+ (removed in 26.0)
     "Cp9cxpL94276NKHivShdCg", "HomeScreenWallpaperCapability", // Simulator
     "cqjRgfBVUDsi5vrXdQOcng", "OpenGLES3Capability", // Simulator
+    "CzGP5+8jQECJMH4h+z4TYA", "offline-dictation", // iOS 7.0+ (removed in 27.0)
     "drPpRw0Jmqcxv1XQPn/q/Q", "CameraFrontFlashCapability", // Simulator
     "dvaktw5A/h0zlsWpMg/COQ", "DeviceSupports64Bit", // Simulator
     "dZ2183tXAlFrXRtDcdiqJQ", "Peer2PeerCapability", // Simulator
@@ -71,9 +77,12 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "g9b89U/AXTtd//2tEk1Dyw", "APNCapability", // Simulator
     "GFBh/UJXPx/WDLe2qhu/xA", "DeviceSuportsExternalDriverKit", // Simulator
     "GjhB2cGBYAYQHDA9fKOWNw", "PhotoAdjustmentsCapability", // Simulator
+    "GO5/TJivIXtQkTkFWkRc9A", "certificate-production-status", // iOS 7.0+ (removed in 27.0)
     "gow0CqXZBgAxbnq78oLJQQ", "PlatformStandAloneContactsCapability", // Simulator
+    "grEfqkFsEkgnJH1nl9sodw", "effective-production-status-sep", // iOS 7.0+ (removed in 27.0)
     "H6fcS+aUfwP3KiWwU9YybQ", "MultitaskingCapability", // Simulator
     "hL9+1F/mUsx9B1NfYn4T/g", "OTAActivationCapability", // Simulator
+    "hLzlRnTuKAcQLWtNwCFSfg", "nfcWithRadio", // iOS 10.0+ (removed in 27.0)
     "hSjeLvzobsJCklk4+pzu3g", "MarketingSOCNameString", // Simulator
     "htWSrEg/cfn3squdzvER/w", "MLEHW", // Simulator
     "hVVttq0KhS190K5SkaajpQ", "FrontFacingCameraCapability", // Simulator
@@ -83,6 +92,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "jaHzwmQrBwNlt5n0dOa7DA", "SystemTelephonyOfAnyKindCapability", // Simulator
     "jewva1LRTg17HDPWdj+TLw", NULL, // Simulator
     "JIkPhorQU+H4FIGKvfqoUg", "TVOutSettingsCapability", // Simulator
+    "jJ+5tnncQBcHo5T26MI5jA", "debug-board-revision", // iOS 8.3+ (removed in 27.0)
     "JJfHGh5TTJt4RdbtmPioyw", "HDVideoCaptureCapability", // Simulator
     "jPfKgbKUk+Vl6s7DaotqIA", NULL, // iOS 9.0+ (removed in 10.0)
     "JuR8P7H4EAlo95lY7lgvtA", "WAPICapability", // Simulator
@@ -124,6 +134,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "pFXE4P/EKSiY0vBWvtT/HA", "HasAllFeaturesCapability", // Simulator
     "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability", // Simulator
     "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability", // Simulator
+    "PTfO3r9syJ45k+OItTlD3Q", "ui-no-procedural-wallpaper", // iOS 7.0+ (removed in 27.0)
     "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability", // Simulator
     "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0+ (removed in 14.0)
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability", // Simulator
@@ -155,6 +166,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "VhcvUOAVhvIns8SosbTDrg", "NotGreenTeaDeviceCapability", // Simulator
     "VOKmP/SJjhnx1AaT13J7QA", "MultitaskingGesturesCapability", // Simulator
     "vwZ4ohiPF3w3M1jzHbP30g", "HallEffectSensorCapability", // Simulator
+    "W7MyZ3Yxoy1qD6FrI0mLUQ", "RF-exposure-separation-distance", // iOS 7.0+ (removed in 27.0)
     "WAg9taYd5sCaLcjVswnjjw", "ConferenceCallType", // Simulator
     "WKTZS6CQwtj1BP1m4SLo1A", "ShoeboxCapability", // Simulator
     "WT7hF1YDP3DfFx+hSAr25Q", "ARMV7ExecutionCapability", // Simulator

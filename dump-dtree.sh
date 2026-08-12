@@ -11,6 +11,7 @@ OPTIONS:
     -d, --device DEVICE     Device identifier (e.g., iPhone15,2)
     -v, --version VERSION   iOS version (e.g., 16.5)
     -b, --build BUILD       Build number (alternative to version)
+    -u, --url URL           Direct IPSW URL (useful for unindexed betas)
     -h, --help              Show this help message
 
 ARGUMENTS:
@@ -25,6 +26,9 @@ EXAMPLES:
 
     # Extract from specific build
     $0 -d iPhone15,2 -b 20F66
+
+    # Extract from a direct beta IPSW URL
+    $0 --url https://updates.cdn-apple.com/path/to/iPhone.ipsw
 
     # Extract from DeviceTree file
     $0 DeviceTree.file
@@ -51,6 +55,7 @@ DEVICE=""
 VERSION=""
 BUILD=""
 INPUT=""
+URL=""
 
 # Parse arguments
 while [[ $# -gt 0 ]]; do
@@ -75,6 +80,11 @@ while [[ $# -gt 0 ]]; do
         shift
         shift
         ;;
+        -u|--url)
+        URL="$2"
+        shift
+        shift
+        ;;
         *)
         INPUT="$1"
         shift
@@ -84,7 +94,27 @@ done
 
 DT_FILE=""
 
-if [[ -n "$DEVICE" ]]; then
+if [[ -z "$URL" && "$INPUT" =~ ^https?:// ]]; then
+    URL="$INPUT"
+    INPUT=""
+fi
+
+if [[ -n "$URL" ]]; then
+    echo "Extracting DeviceTree from remote IPSW URL..."
+    if ! ipsw extract --remote --dtree "$URL"; then
+        echo "Error: Failed to extract DeviceTree from remote IPSW URL"
+        exit 1
+    fi
+    if [[ "$URL" =~ _([0-9]+[A-Z][0-9]+[A-Za-z]*)_ ]]; then
+        BUILD="${BASH_REMATCH[1]}"
+    fi
+    if [[ -n "$BUILD" ]]; then
+        DT_FILE=$(find . -path "*${BUILD}*DeviceTree*" -type f \
+            -not -name "*.json" | sort -r | head -n 1)
+    fi
+    DT_FILE="${DT_FILE:-$(find . -name "DeviceTree*" -type f \
+        -not -name "*.json" | sort -r | head -n 1)}"
+elif [[ -n "$DEVICE" ]]; then
     if [[ -z "$VERSION" && -z "$BUILD" ]]; then
         echo "Error: Must specify --version or --build with --device"
         show_help
