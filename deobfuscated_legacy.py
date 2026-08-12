@@ -336,6 +336,7 @@ keys_legacy = {
     "pKT0lcBNzQ676fjvMAbu6Q": "ProximitySensorCapability",
     "PNIwPfoxY6URyv3kSma5Aw": "wifi-antenna-sku-info",
     "po+GVxlZvPQi8BE6RHBDHQ": "DisplayPortCapability",
+    "pQ60lr9FHtEUdZFqLI0C+g": "SupportAlwaysOnCompass",
     "PT6XKHaOkrxhQTpTVI8Rlw": "supports-secure-microphone",
     "PTfO3r9syJ45k+OItTlD3Q": "ui-no-procedural-wallpaper",
     "PUbhrnwCUBxJ2bxlZeKscg": "VeniceCapability",

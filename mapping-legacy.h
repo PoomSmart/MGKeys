@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 476 keys
-// Deobfuscated: 461 keys (96.85%)
+// Deobfuscated: 462 keys (97.06%)
 // Total gestalt keys: 181 keys
 // Deobfuscated gestalt: 176 keys (97.24%)
 // Unexplored: 5 keys
@@ -352,7 +352,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "pKT0lcBNzQ676fjvMAbu6Q", "ProximitySensorCapability", // Simulator
     "PNIwPfoxY6URyv3kSma5Aw", "wifi-antenna-sku-info", // non-gestalt-key // iOS 11.0+ (removed in 27.0)
     "po+GVxlZvPQi8BE6RHBDHQ", "DisplayPortCapability", // Simulator
-    "pQ60lr9FHtEUdZFqLI0C+g", NULL, // non-gestalt-key, IOService:/AppleSPUHIDDriver, starts with S, iOS 9.0+ (removed in 10.0)
+    "pQ60lr9FHtEUdZFqLI0C+g", "SupportAlwaysOnCompass", // non-gestalt-key // iOS 9.0+ (removed in 10.0)
     "PT6XKHaOkrxhQTpTVI8Rlw", "supports-secure-microphone", // non-gestalt-key // iOS 13.4+ (removed in 27.0)
     "PTfO3r9syJ45k+OItTlD3Q", "ui-no-procedural-wallpaper", // iOS 7.0+ (removed in 27.0)
     "PUbhrnwCUBxJ2bxlZeKscg", "VeniceCapability", // Simulator
