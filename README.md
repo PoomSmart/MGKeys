@@ -26,6 +26,11 @@ There are a few certain patterns of the key names, which can be useful for de-ob
 
 There are also keys which are obfuscated the same way but are not considered as MobileGestalt keys. That is, you can't use `MGCopyAnswer` to get the value of the key. Instead, they are used for retrieving the value from the `IODeviceTree`, in an obfuscated manner. These keys are mostly in the kebab case, having their pascal case equivalent which is actually used by `MGCopyAnswer`. In the mapping files, these keys are marked with a comment `// non-gestalt-key`.
 
+### iOS 27 DeviceTree key changes
+
+iOS 27.0+ `libMobileGestalt` strings suggests that iOS 27 no longer obfuscates some keys that are used to query `IODeviceTree`.
+For example, the legacy non-Gestalt hash `wAbB2fAjUqUc6lNBelfWMA` was removed while the readable `no-als-period-update` string appeared.
+
 ## Getting Started
 
 ### Installation

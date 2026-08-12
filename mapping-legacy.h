@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 463 keys
-// Deobfuscated: 448 keys (96.76%)
+// Total: 476 keys
+// Deobfuscated: 461 keys (96.85%)
 // Total gestalt keys: 181 keys
 // Deobfuscated gestalt: 176 keys (97.24%)
 // Unexplored: 5 keys
@@ -93,6 +93,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "8vIFqHe5lcMGo7TvbNLmyg", "home-button-type", // non-gestalt-key // iOS 10.0+ (removed in 11.0)
     "8Wunmi1SpU1MxfBxkv3KOw", "dali-mode", // non-gestalt-key // iOS 8.0+ (removed in 27.0)
     "9Bp5z20HsA1f7dqvelXKXA", "supports-maps-optical-heading", // non-gestalt-key // iOS 13.4+ (removed in 27.0)
+    "9f5ODNAt2gufqSI82eYnLw", "cal-TReS", // non-gestalt-key // iOS 16.0+ (removed in 27.0)
     "9icU1F9BQ/2S0k7pXM668g", NULL, // non-gestalt-key, IOServiceTree:/, starts with A, iOS 8.3+ (removed in 9.0)
     "9RreaA6rTvewPbqQy5ldRg", "front-auto-hdr", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "9s1QcGZXIyfHeOT8b/+m/A", "LTEDeviceCapability", // Simulator
@@ -116,6 +117,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "b/k0ZT2f/WGV2qJSyPJHoQ", "config-number", // non-gestalt-key // iOS 8.3+ (removed in 27.0)
     "b/KizANb5o/dWqSP2GC23g", "public-key-accelerator", // non-gestalt-key // iOS 9.3+ (removed in 27.0)
     "b5K3g59Aj+Cc982n9FQv8A", "display-rotation", // non-gestalt-key // iOS 9.0+ (removed in 27.0)
+    "bbyFCcrPE+k6ZXIVbXSFUw", "ui-traffic-no-bldg-stroke", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "Bf5+aj/dC02mgZlX5cpEHg", "CallWaitingCapability", // Simulator
     "BfEIy3W3t0Wxf7Hf7LEsAw", "PearlCameraCapability", // Simulator
     "BfM9558OSUj9vu/OmyjLnw", "AssistantCapability", // Simulator
@@ -152,6 +154,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "drPpRw0Jmqcxv1XQPn/q/Q", "CameraFrontFlashCapability", // Simulator
     "dUipfYkyvM80t4IkmMBVgQ", "watch-gestures", // non-gestalt-key // iOS 17.1+ (removed in 27.0)
     "dvaktw5A/h0zlsWpMg/COQ", "DeviceSupports64Bit", // Simulator
+    "dW6ROVcD3o5ACa4jvALJ6A", "dfr-touch-serial-number", // non-gestalt-key // iOS 14.0+ (removed in 27.0)
     "dZ2183tXAlFrXRtDcdiqJQ", "Peer2PeerCapability", // Simulator
     "e+pTfaabi1k1kfdk2vl1Kw", "luna-serial-number", // non-gestalt-key // iOS 11.0+ (removed in 27.0)
     "E2iZGHvwvi387UKi9wC2Mg", "CameraFlashCapability", // Simulator
@@ -201,6 +204,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "h9v96tCehBWUil/aJ7UrcA", "ui-pinned-app", // non-gestalt-key // iOS 14.0+ (removed in 27.0)
     "HdWhWK8BN8j/O9k8/OHblQ", "supports-always-listening", // non-gestalt-key // iOS 10.0+ (removed in 27.0)
     "hh/NoWpEoq1VF4lGDdPUpw", "role", // non-gestalt-key // iOS 9.0+ (removed in 27.0)
+    "HhLXszMhK6bb9TP4sqVQWQ", "esdm-fuses", // non-gestalt-key // iOS 18.0+ (removed in 27.0)
     "hK/qlAUuu8u6SvIRkKmjQQ", "gps-capable", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "hL9+1F/mUsx9B1NfYn4T/g", "OTAActivationCapability", // Simulator
     "hLzlRnTuKAcQLWtNwCFSfg", "nfcWithRadio", // iOS 10.0+ (removed in 27.0)
@@ -222,6 +226,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "iifCuJmggYlB4hLzc0Zoiw", "rear-max-slomo-video-fps-720p", // non-gestalt-key // iOS 9.0+ (removed in 27.0)
     "IMlsLCL69XUZau9QyPnxeQ", "rear-slowmo", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "Ini7+h7Q4ZZctfFM9+KTBw", "peek-ui-width", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
+    "is3zjHrEdiF6J/boqghy9A", "mac-address-pinto0", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "iSVbuFLd369ug7uTvmUtkQ", "SensitiveUICapability", // Simulator
     "ItOvlwIhFj2aCXL4wk3ijg", "front-single-camera-portrait", // non-gestalt-key // iOS 13.4+ (removed in 27.0)
     "IUvPFaILUl3l0684dR0AlA", "front-max-video-zoom", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
@@ -260,6 +265,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "kQ8nm82jb5iTBUwT2M3aIQ", "mac-address-ethernet1", // non-gestalt-key // iOS 7.1+ (removed in 27.0)
     "KRT2emT8tNPMW9VUsXwT1A", NULL, // non-gestalt-key, , iOS 7.0+ (removed in 10.0)
     "kTX3vfIkwQHB9e90qFxlDg", "PhotoStreamCapability", // Simulator
+    "KWr9OM2iqeLQEhaHS0UshQ", "ain1-linein", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "KXulcwjWtgzrg+u8qILKBQ", "LocationServicesCapability", // Simulator
     "kZxeKVJr1te4KIfsML7vXw", "main-screen-canvas-sizes", // non-gestalt-key // iOS 8.0+ (removed in 10.0)
     "l1MfXa14uBR9cvO8D9wc9w", "ui-floating-live-app", // non-gestalt-key // iOS 14.0+ (removed in 27.0)
@@ -279,6 +285,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "lNtvJFI6kdcchIbskQDzaA", "backlight", // non-gestalt-key // iOS 17.0+ (removed in 27.0)
     "lOIgg/0YE73mNKAiUbUiWQ", "raw-panel-serial-number", // non-gestalt-key // iOS 13.0+ (removed in 27.0)
     "lp0YX+xu6UPp4SeF2oyLcQ", "EnforceCameraShutterClick", // Simulator
+    "lR7sjp4tOz3cMWoEMlZrLA", "ui-traffic-no-3d-bldg-stroke", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "lrd6CRt0Uo4zpYyWWX0O0Q", "ContainsCellularRadioCapability", // Simulator
     "Lrs7l5cKWJ1Gk5ZzgMAKyQ", "sandman-support", // non-gestalt-key // iOS 10.0+ (removed in 27.0)
     "Lu6Mgo1O0+EoGMk1OtnMRg", "rear-max-video-fps-1080p", // non-gestalt-key // iOS 9.0+ (removed in 27.0)
@@ -313,6 +320,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "npI2l0ybDY9Um4z/T8K/Sg", "deferred-processing", // non-gestalt-key // iOS 13.0+ (removed in 27.0)
     "nqZ6O+s733xoZqQZZ1NWRw", "AmbientLightSensorCapability", // Simulator
     "NsIeRLGugrogpTZiayi1VA", "country-of-origin", // non-gestalt-key // iOS 16.6+ (removed in 27.0)
+    "NsUsZwajdZDN+suOIwkPvg", "supports-always-apvoicetrigger", // non-gestalt-key // iOS 18.2+ (removed in 27.0)
     "nudr7/i2XcxAX6widrWShg", "certificate-security-mode", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "NwAF2cQVdjOKc7KkqR9tIA", "GyroscopeCapability", // Simulator
     "NXYYZO2ABdr0PLnSomHJ2w", "C2KDeviceCapability", // Simulator
@@ -334,6 +342,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "oxH8p7+EaUzhkc2edrXsQQ", "aggregate-cam-photo-zoom", // non-gestalt-key // iOS 10.0+ (removed in 27.0)
     "OySq8itgJ0AKORPMwrKkvA", "AccessibilityCapability", // Simulator
     "P+UqVuzQzn3nwHSiSeDmyw", "live-photo-capture", // non-gestalt-key // iOS 9.3+ (removed in 27.0)
+    "P1djMN/L3B6otgGpO9WYkw", "silicon-bringup-test-board", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "P1uSdgM/fIttMsA/+q6k4w", "watch-keyboard", // non-gestalt-key // iOS 16.0+ (removed in 27.0)
     "pdFo85PUvIiT4FjAT6Amcw", "baseband-chipset", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "pdugFp4LGGarCxCXK0mWtg", "HardwareKeyboardCapability", // Simulator
@@ -386,6 +395,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "smT9LjRW3acTT7WTS/XqyQ", "front-max-slomo-video-fps-1080p", // non-gestalt-key // iOS 13.0+ (removed in 27.0)
     "Sr1Bmb3uoIfgKyaZguG0Gw", "front-max-video-fps-4k", // non-gestalt-key // iOS 10.0+ (removed in 27.0)
     "SVhNgqwqzg0Lk5so04T35Q", "function-bb_ap_time_sync", // non-gestalt-key // iOS 8.0+ (removed in 10.0)
+    "t56wS9db+T2F2bxBpYSX8Q", "extended-panel-id", // non-gestalt-key // iOS 13.0+ (removed in 27.0)
     "T9MMpvl0fu59PO8lXi/Cxg", "effective-production-status", // non-gestalt-key // iOS 7.0+ (removed in 11.0)
     "tAryHM5IUMkdtvVqqu1tcA", "ambient-light-sensor-serial-num", // non-gestalt-key // iOS 13.0+ (removed in 27.0)
     "tAXYjbxUHRPtyQOYqzV8rQ", "DataPlanCapability", // Simulator
@@ -404,6 +414,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "Ue0GVAyEOkP5kyQgcXKlxg", NULL, // Simulator
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported", // Simulator
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 11.0)
+    "uNNFSosc1xQM/7bwlrqLXA", "max-aot-brightness", // non-gestalt-key // iOS 14.0+ (removed in 27.0)
     "uOwIrmQD0GqKtBErL94XJg", "CameraCapability", // Simulator
     "us1armjE6TKGvh2WIrNgEQ", "aod-max-mem", // non-gestalt-key // iOS 16.0+ (removed in 27.0)
     "UtO2BMC/uvWNvjPhK2EXiQ", "ARMV6ExecutionCapability", // Simulator
@@ -416,6 +427,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "v5AoJC7hPGHbysTMLip12A", "SupportsTapToWake", // Simulator
     "V5QFNbWGgrw+UZPvgIbDvQ", "ASTC", // Simulator
     "v7h4TrJdmukTl8gpzVl3DQ", "grimaldi", // non-gestalt-key // iOS 15.4+ (removed in 27.0)
+    "vf61bz2yUWqBb+jD25ZK+w", "sbin-config-val", // non-gestalt-key // iOS 18.6+ (removed in 27.0)
     "VhcvUOAVhvIns8SosbTDrg", "NotGreenTeaDeviceCapability", // Simulator
     "vmZuX/fdqt3gKhonHYLyUw", "aggregate-cam-video-zoom", // non-gestalt-key // iOS 10.0+ (removed in 27.0)
     "Vn4SAODWQXeOOIVBe8CXTg", NULL, // non-gestalt-key, , iOS 7.0+ (removed in 10.0)
@@ -428,6 +440,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "vwZ4ohiPF3w3M1jzHbP30g", "HallEffectSensorCapability", // Simulator
     "W5kTfIuxkKpHVdWTk42C9A", "n78a-mode", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "W7MyZ3Yxoy1qD6FrI0mLUQ", "RF-exposure-separation-distance", // iOS 7.0+ (removed in 27.0)
+    "wAbB2fAjUqUc6lNBelfWMA", "no-als-period-update", // non-gestalt-key // iOS 7.1+ (removed in 27.0)
     "WAg9taYd5sCaLcjVswnjjw", "ConferenceCallType", // Simulator
     "WbcphnnzI6Yb5r/AzwiyUA", "mix-n-match-prevention-status", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "Wft7kODl9Y2uX/sb47GoEA", "supports-aod-vibrancy", // non-gestalt-key // iOS 18.0+ (removed in 27.0)
