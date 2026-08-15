@@ -8,7 +8,6 @@ unknown_keys_desc = {
     "L8PQcP8OFWzr3NCfs1QrrQ": "IODeviceTree:/product/audio, starts with s, 061e/gd5kFdZwwe1G2qXFQ",
     "mug/QuG6jZ3CYR9p7OWQaw": "IODeviceTree:/opal, starts with b",
     "pR+R7mU9EhKaQ/yQNzP/9w": "IDA: passed to system-info sandbox-access error wrapper; no semantic key name",
-    "QbaRRU+muJGhwQ1SZUpQ1g": "IDA: passed to system-info sandbox-access error wrapper; no semantic key name",
     "qFOTegRPbeFSOU88a/aQHA": "IDA: present in shared-cache key table; no callable xref or semantic name",
     "R836fJkaZ8xrq3rSCYjxSw": "IODeviceTree:/product, starts with c",
     "rQomeYDtReu8qrM6qVNUFA": "IODeviceTree:/product, starts with w",

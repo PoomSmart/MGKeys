@@ -1,9 +1,9 @@
 #include "struct.h"
 
 // Total: 935 keys
-// Deobfuscated: 931 keys (99.57%)
-// Total gestalt keys: 921 keys
-// Deobfuscated gestalt: 921 keys (100.0%)
+// Deobfuscated: 932 keys (99.68%)
+// Total gestalt keys: 922 keys
+// Deobfuscated gestalt: 922 keys (100.0%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -668,7 +668,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "Q5QHkCRPRmiX3L/5xxKrRg", "BasebandCertId", // iOS 7.0+
     "q69vauqK9djnPlEZBFBV4A", "DeviceSupportsSiDP", // iOS 10.0+
     "qb//mYg6KeTmjv8w4ZAMIg", "CompassCalibration", // iOS 7.0+
-    "QbaRRU+muJGhwQ1SZUpQ1g", NULL, // non-gestalt-key, IDA: passed to system-info sandbox-access error wrapper; no semantic key name, iOS 27.0+
+    "QbaRRU+muJGhwQ1SZUpQ1g", "CoalescedTargetProperties", // iOS 27.0+
     "QbQzuIbef01P4JeoL9EmKg", "DeviceSceneUpdateTimeLimitScale", // iOS 9.0+
     "QdL5XM6PGBrjvJ/k187Ueg", "IDAMCapability", // iOS 9.0+
     "qeaj75wk3HF4DwQ8qbIi7g", "DeviceSupportsEnhancedMultitasking", // iOS 16.0+

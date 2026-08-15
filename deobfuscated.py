@@ -658,6 +658,7 @@ keys = {
     "Q5QHkCRPRmiX3L/5xxKrRg": "BasebandCertId",
     "q69vauqK9djnPlEZBFBV4A": "DeviceSupportsSiDP",
     "qb//mYg6KeTmjv8w4ZAMIg": "CompassCalibration",
+    "QbaRRU+muJGhwQ1SZUpQ1g": "CoalescedTargetProperties",
     "QbQzuIbef01P4JeoL9EmKg": "DeviceSceneUpdateTimeLimitScale",
     "QdL5XM6PGBrjvJ/k187Ueg": "IDAMCapability",
     "qeaj75wk3HF4DwQ8qbIi7g": "DeviceSupportsEnhancedMultitasking",
