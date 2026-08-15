@@ -1,10 +1,10 @@
 #include "struct.h"
 
 // Total: 476 keys
-// Deobfuscated: 462 keys (97.06%)
-// Total gestalt keys: 181 keys
-// Deobfuscated gestalt: 176 keys (97.24%)
-// Unexplored: 5 keys
+// Deobfuscated: 466 keys (97.9%)
+// Total gestalt keys: 178 keys
+// Deobfuscated gestalt: 177 keys (99.44%)
+// Unexplored: 1 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
     "+fgL2ovGydvB5CWd1JI1qg", "has-sphere", // non-gestalt-key // iOS 9.0+ (removed in 27.0)
@@ -235,14 +235,14 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "J/a5Y6rhDH0gVkYtWUylOA", "supports-listening-on-gesture", // non-gestalt-key // iOS 10.0+ (removed in 27.0)
     "j5MYSRG6J/NkDdtOKpt6zg", "NumOfFans", // non-gestalt-key // iOS 26.4+ (removed in 27.0)
     "jaHzwmQrBwNlt5n0dOa7DA", "SystemTelephonyOfAnyKindCapability", // Simulator
-    "jewva1LRTg17HDPWdj+TLw", NULL, // Simulator
+    "jewva1LRTg17HDPWdj+TLw", "PiPPinned", // non-gestalt-key // Simulator
     "JIkPhorQU+H4FIGKvfqoUg", "TVOutSettingsCapability", // Simulator
     "jJ+5tnncQBcHo5T26MI5jA", "debug-board-revision", // iOS 8.3+ (removed in 27.0)
     "JJfHGh5TTJt4RdbtmPioyw", "HDVideoCaptureCapability", // Simulator
     "jkRyJt34tZOjsO1YhVc0mw", "supports-auto-mic-mode", // non-gestalt-key // iOS 18.0+ (removed in 27.0)
     "JljZ8PqQJB8QlFC2NsgOPw", "extended-workout", // non-gestalt-key // iOS 16.1+ (removed in 27.0)
     "JOlwW/P8Cw3CDCoFunq8og", "platinum", // non-gestalt-key // iOS 8.2+ (removed in 27.0)
-    "jPfKgbKUk+Vl6s7DaotqIA", NULL, // iOS 9.0+ (removed in 10.0)
+    "jPfKgbKUk+Vl6s7DaotqIA", "screenrecorder", // iOS 9.0+ (removed in 10.0)
     "JQr1mcESYcN648vrcZPJEA", "front-flash-capability", // non-gestalt-key // iOS 9.3+ (removed in 27.0)
     "jtg9JUxH6Mf8k7m7j8omug", "disablemigration", // non-gestalt-key // iOS 26.2+ (removed in 27.0)
     "JuR8P7H4EAlo95lY7lgvtA", "WAPICapability", // Simulator
@@ -365,7 +365,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability", // Simulator
     "QD3Nde07fjdK0R0KTbczEA", "board-revision", // non-gestalt-key // iOS 12.2+ (removed in 27.0)
     "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability", // Simulator
-    "QEmhOZosE0IT4YJkQWh3Dg", NULL, // Simulator
+    "QEmhOZosE0IT4YJkQWh3Dg", "FloatingLiveAppOverlay", // non-gestalt-key // Simulator
     "qMmeMcIsFZrRu0jfOy3I9Q", "HideNonDefaultApplicationsCapability", // Simulator
     "Qt+S0J/SXrcfymyfJWvCCQ", "rosaline-serial-num", // non-gestalt-key // iOS 13.0+ (removed in 27.0)
     "QY61T8CLLwG/yu92ScTYtw", "supports-third-party-drivers", // non-gestalt-key // iOS 16.0+ (removed in 27.0)
@@ -411,7 +411,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "U1fcnNYCEu9uH1bg3/6PKQ", "image4-supported", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.0+ (removed in 14.0)
     "ubcUOmdIWpYH7dNopZCfEg", NULL, // non-gestalt-key, , iOS 9.0+ (removed in 10.0)
-    "Ue0GVAyEOkP5kyQgcXKlxg", NULL, // Simulator
+    "Ue0GVAyEOkP5kyQgcXKlxg", "PiPOverlay", // non-gestalt-key // Simulator
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported", // Simulator
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 11.0)
     "uNNFSosc1xQM/7bwlrqLXA", "max-aot-brightness", // non-gestalt-key // iOS 14.0+ (removed in 27.0)

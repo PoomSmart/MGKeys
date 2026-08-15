@@ -1,8 +1,8 @@
 #include "struct.h"
 
-// Total: 181 keys
-// Deobfuscated: 176 keys (97.24%)
-// Unexplored: 5 keys
+// Total: 178 keys
+// Deobfuscated: 177 keys (99.44%)
+// Unexplored: 1 keys
 
 static const struct tKeyMapping keyMappingTableLegacy[] = {
     "+zD41v0XRR72ItZHfisZuQ", "PTPLargeFilesCapability", // Simulator
@@ -90,11 +90,10 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "iAu0GZogf4TG69GSO5rHcg", "DeviceSupportsARKit", // Simulator
     "iSVbuFLd369ug7uTvmUtkQ", "SensitiveUICapability", // Simulator
     "jaHzwmQrBwNlt5n0dOa7DA", "SystemTelephonyOfAnyKindCapability", // Simulator
-    "jewva1LRTg17HDPWdj+TLw", NULL, // Simulator
     "JIkPhorQU+H4FIGKvfqoUg", "TVOutSettingsCapability", // Simulator
     "jJ+5tnncQBcHo5T26MI5jA", "debug-board-revision", // iOS 8.3+ (removed in 27.0)
     "JJfHGh5TTJt4RdbtmPioyw", "HDVideoCaptureCapability", // Simulator
-    "jPfKgbKUk+Vl6s7DaotqIA", NULL, // iOS 9.0+ (removed in 10.0)
+    "jPfKgbKUk+Vl6s7DaotqIA", "screenrecorder", // iOS 9.0+ (removed in 10.0)
     "JuR8P7H4EAlo95lY7lgvtA", "WAPICapability", // Simulator
     "JVeuWWZ2F8AjVRs9kfKJ3Q", "WiFiCapability", // Simulator
     "jyEyRLza0L3StNXgFUCoTw", "GPSCapability", // Simulator
@@ -139,7 +138,6 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "PUY/n3uJEk8GSE+RjkHHAA", "video-cap", // iOS 7.0+ (removed in 14.0)
     "QAL4CoosdFzdrO2SMJflLQ", "GreenTeaDeviceCapability", // Simulator
     "qdJCWc+PSnu2Bpa6755rWQ", "RearFacingCameraCapability", // Simulator
-    "QEmhOZosE0IT4YJkQWh3Dg", NULL, // Simulator
     "qMmeMcIsFZrRu0jfOy3I9Q", "HideNonDefaultApplicationsCapability", // Simulator
     "Rh3jQ1k4bhpCfR4FimhRZw", "AppStoreCapability", // Simulator
     "S9ZweBMsbQwCL6t3Zpj4fg", "IOSurfaceBackedImagesCapability", // Simulator
@@ -154,7 +152,6 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "tRBbYA5BLkf/wzaof1WfyQ", "SIMPhonebookCapability", // Simulator
     "tZOIwbmkkjP5Nggu8/70dw", "MainScreenClass", // Simulator
     "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.0+ (removed in 14.0)
-    "Ue0GVAyEOkP5kyQgcXKlxg", NULL, // Simulator
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported", // Simulator
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 11.0)
     "uOwIrmQD0GqKtBErL94XJg", "CameraCapability", // Simulator
