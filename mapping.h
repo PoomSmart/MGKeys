@@ -651,7 +651,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "PpmzzBVLpZVubmP0tCIymg", "WirelessChargingCapability", // iOS 9.0+
     "pQzfsK0Ado+nkNFgPRIA8Q", "DeviceSupportsLivePhotoAuto", // iOS 12.0+
     "PQzmRjKVMistuIVsqs6QXA", "BasebandFirmwareVersion", // iOS 7.0+
-    "pR+R7mU9EhKaQ/yQNzP/9w", NULL, // non-gestalt-key, IDA: passed to system-info sandbox-access error wrapper; no semantic key name, iOS 27.0+
+    "pR+R7mU9EhKaQ/yQNzP/9w", NULL, // non-gestalt-key, IDA: passed to system-info sandbox-access error wrapper; no semantic key name, starts with D, iOS 27.0+
     "PR+xeEtTAiUN0R25+EYGfw", "DeviceSupportsCarPlay2", // iOS 16.0+
     "PsIXZ7uVWznKaTEXDbFSYA", "CameraButtonCGRect", // iOS 18.0+
     "psOb+c5by4e5OqReDiFm7w", "DeviceCoverGlassCoating", // iOS 17.5+
@@ -673,7 +673,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "QdL5XM6PGBrjvJ/k187Ueg", "IDAMCapability", // iOS 9.0+
     "qeaj75wk3HF4DwQ8qbIi7g", "DeviceSupportsEnhancedMultitasking", // iOS 16.0+
     "QFnvO2shAYI+d4bj3qXuFQ", "DevicePrefersBuildingStrokes", // iOS 7.0+
-    "qFOTegRPbeFSOU88a/aQHA", NULL, // non-gestalt-key, IDA: present in shared-cache key table; no callable xref or semantic name, iOS 27.0+
+    "qFOTegRPbeFSOU88a/aQHA", NULL, // non-gestalt-key, IODeviceTree:/arm-io/soc-generation >= H13, iOS 27.0+
     "qgfS+6l1exvcMW5Tfplv2Q", "OceanComputeCarrierID", // iOS 16.0+
     "QGmb9t2ZMFVwOImO6fewgQ", "all-features", // iOS 7.0+
     "qHVhw5NhezD+ljFUPvQb4g", "nike-ipod", // iOS 7.0+
