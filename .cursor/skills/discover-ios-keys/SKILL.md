@@ -131,10 +131,22 @@ Update [README.md](../../../README.md) baseline line (`The keys are currently ba
 ## Key files
 
 - `versions/version-<VERSION>.txt` — hash snapshot (commit this)
+- `versions/version-sim.txt` — simulator-only hashes (not in any physical snapshot)
 - `deobfuscated.py` — key mappings
 - `mapping.h`, `mapping-gestalt.h` — generated headers
 - `keys_versions.py`, `versions/version-stats.txt` — version metadata
 - `keys_desc.py` — unknown key hints
+
+## Simulator-only list
+
+Do **not** run device discovery against `libMobileGestalt_sim.dylib`. Use:
+
+```bash
+./extract-sim-hashes.sh
+./extract-sim-hashes.sh libMobileGestalt_sim.dylib arm64 --no-post-process
+```
+
+That rewrites `versions/version-sim.txt`, appends new hashes to `hashes_legacy.txt`, discovers `_MobileGestalt_*` names into `deobfuscated_legacy.py` (`sync_discovered_keys.py --legacy-only`, no device-key moves), and regenerates `// Simulator` comments. Simulator dylibs are `arm64`, not `arm64e`.
 
 ## Additional resources
 

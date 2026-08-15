@@ -93,6 +93,25 @@ This script:
 - Does NOT run discovery or update mapping files
 - Useful for populating version history and key tracking
 
+### Simulator Key List
+
+`versions/version-sim.txt` is the set of hashes that appear in the simulator dylib but not in any physical iOS snapshot. `populate_versions.py` uses that file to emit `// Simulator` comments.
+
+Do **not** run `discover-version.sh`, `deobfuscate.sh`, or `extract-hashes.sh` against a simulator dylib — those overwrite device `hashes.txt`.
+
+```bash
+./extract-sim-hashes.sh
+./extract-sim-hashes.sh libMobileGestalt_sim.dylib arm64
+./extract-sim-hashes.sh --no-post-process
+```
+
+This script:
+- Extracts hashes from `libMobileGestalt_sim.dylib` (default arch: `arm64`)
+- Rewrites `versions/version-sim.txt` without touching `hashes.txt`
+- Adds brand-new simulator-only hashes to `hashes_legacy.txt`
+- Discovers `_MobileGestalt_*` symbol names and syncs them into `deobfuscated_legacy.py`
+- Regenerates mapping headers unless `--no-post-process` is set
+
 ### Manual Discovery
 
 For manual key discovery from an extracted dylib:

@@ -7,6 +7,9 @@ Outputs machine-readable lines consumed by discover-version.sh:
 - DEOBF_CHANGED=<0|1>
 - LEGACY_CHANGED=<0|1>
 
+Pass --legacy-only to add discovered names into deobfuscated_legacy.py for
+hashes already listed in hashes_legacy.txt, without moving device keys.
+
 On failure, prints:
 - ERROR <message>
 """
@@ -97,8 +100,33 @@ def write_dict(path: Path, variable_name: str, values: dict[str, str]) -> bool:
     return changed
 
 
+def sync_legacy_only(mapped: dict[str, str], existing: dict[str, str], existing_legacy: dict[str, str], legacy_hashes: set[str]) -> int:
+    """Add discovered names for legacy hashes without touching device mappings."""
+    added = 0
+    pending_additions: list[tuple[str, str]] = []
+    for hash_value, key_name in mapped.items():
+        if hash_value not in legacy_hashes:
+            continue
+        if hash_value in existing or hash_value in existing_legacy:
+            continue
+        pending_additions.append((hash_value, key_name))
+
+    for hash_value, key_name in sorted(pending_additions, key=lambda item: item[0].lower()):
+        existing_legacy[hash_value] = key_name
+        added += 1
+
+    deobf_legacy_changed = write_dict(DEOBFUSCATED_LEGACY_FILE, "keys_legacy", existing_legacy)
+    print(f"ADDED={added}")
+    print("MOVED=0")
+    print(f"DEOBF_CHANGED={1 if deobf_legacy_changed else 0}")
+    print("LEGACY_CHANGED=0")
+    return 0
+
+
 def main() -> int:
     try:
+        legacy_only = "--legacy-only" in sys.argv
+
         if not DISCOVER_FILE.exists():
             raise FileNotFoundError(f"{DISCOVER_FILE} not found")
         if not DEOBFUSCATED_FILE.exists():
@@ -111,6 +139,9 @@ def main() -> int:
         existing = load_dict(DEOBFUSCATED_FILE, "keys")
         existing_legacy = load_dict(DEOBFUSCATED_LEGACY_FILE, "keys_legacy")
         mapped = load_discovered(DISCOVER_FILE)
+
+        if legacy_only:
+            return sync_legacy_only(mapped, existing, existing_legacy, legacy_hashes)
 
         added = 0
         pending_additions: list[tuple[str, str]] = []

@@ -77,6 +77,17 @@ Search the hash, follow data xrefs into MobileGestalt tables, and decompile
 the associated lookup functions. Record evidence-based hints in
 `keys_desc.py`; retain `NULL` mappings when no semantic name is established.
 
+## Simulator-only hashes
+
+```bash
+./extract-sim-hashes.sh
+./extract-sim-hashes.sh libMobileGestalt_sim.dylib arm64
+./extract-sim-hashes.sh --no-post-process
+./extract-sim-hashes.sh --no-discover
+```
+
+Discovery uses `DYLIB=... SKIP_MAYBE_NON_GESTALT=1 ./discover.sh --arch arm64` then `python3 sync_discovered_keys.py --legacy-only`. Do not run `discover-version.sh`, `deobfuscate.sh`, or `extract-hashes.sh` against the simulator dylib.
+
 ## Hashcat (last resort)
 
 ```bash

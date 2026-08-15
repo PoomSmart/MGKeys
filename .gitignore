@@ -18,6 +18,7 @@ discover-obfuscated-mapped.txt
 discover-obfuscated.txt
 hashcat.txt
 hashes.txt
+sim-all-hashes.txt
 maybe-non-gestalt-keys.txt
 md5hashes.txt
 obfuscated.txt
