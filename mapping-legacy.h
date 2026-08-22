@@ -61,7 +61,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "4H26SkyfcrZOrMAtjC6Cfw", "supports-hypertension-pattern", // non-gestalt-key // iOS 26.0+ (removed in 27.0)
     "4JalTKSe5a9I+mb00ATvag", "display-boot-rotation", // non-gestalt-key // iOS 13.5+ (removed in 27.0)
     "4KHWgupf+YDEaYOgLaS04g", "syncdbv-supported", // non-gestalt-key // iOS 26.4+ (removed in 27.0)
-    "4MI3+6oztazPJ1ZI2OdWDQ", NULL, // non-gestalt-key, , iOS 8.3+ (removed in 10.0)
+    "4MI3+6oztazPJ1ZI2OdWDQ", NULL, // non-gestalt-key, IODeviceTree:/oscar pressure (znvmheFk, starts with p) via lazy copyDeviceTreeStructureNext; sim PhosphorusCapability stand-in 8.3-9.3, iOS 8.3+ (removed in 10.0)
     "4OThI5F+/uP2oXUpdDxGnw", "supports-burnin-mitigation", // non-gestalt-key // iOS 11.0+ (removed in 27.0)
     "4TKtw5gG9r8CE3BlOrjLhg", "UnifiedIPodCapability", // Simulator
     "4vrSNeBZwJrQrZOQJG0uwQ", "supports-camera-button", // non-gestalt-key // iOS 18.0+ (removed in 27.0)
@@ -263,7 +263,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "KN7t4gQkyj5X66dBpmh9HQ", "large-format-phone", // non-gestalt-key // iOS 8.0+ (removed in 27.0)
     "knoZzQDWpu6OQWS7wgRWLg", "rear-max-video-zoom", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "kQ8nm82jb5iTBUwT2M3aIQ", "mac-address-ethernet1", // non-gestalt-key // iOS 7.1+ (removed in 27.0)
-    "KRT2emT8tNPMW9VUsXwT1A", NULL, // non-gestalt-key, , iOS 7.0+ (removed in 10.0)
+    "KRT2emT8tNPMW9VUsXwT1A", NULL, // non-gestalt-key, IDA: lazy-func slot 79; Extensions IMP MGGetBoolAnswer(Vn4SA) then logs fusing-state failure, returns 0, iOS 7.0+ (removed in 10.0)
     "kTX3vfIkwQHB9e90qFxlDg", "PhotoStreamCapability", // Simulator
     "KWr9OM2iqeLQEhaHS0UshQ", "ain1-linein", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "KXulcwjWtgzrg+u8qILKBQ", "LocationServicesCapability", // Simulator
@@ -410,7 +410,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "tZOIwbmkkjP5Nggu8/70dw", "MainScreenClass", // Simulator
     "U1fcnNYCEu9uH1bg3/6PKQ", "image4-supported", // non-gestalt-key // iOS 7.0+ (removed in 27.0)
     "U28TFcPMDYvyjIBpc8HZ4Q", "DeviceSupports3rdPartyHaptics", // iOS 13.0+ (removed in 14.0)
-    "ubcUOmdIWpYH7dNopZCfEg", NULL, // non-gestalt-key, , iOS 9.0+ (removed in 10.0)
+    "ubcUOmdIWpYH7dNopZCfEg", NULL, // non-gestalt-key, IODeviceTree:/chosen marketing-software-behavior, first byte != 0 as SInt32, iOS 9.0+ (removed in 10.0)
     "Ue0GVAyEOkP5kyQgcXKlxg", "PiPOverlay", // non-gestalt-key // Simulator
     "UKxn1HFRFlH0WCYlMr0gVg", "SimultaneousCallAndDataCurrentlySupported", // Simulator
     "ulPs+OBjapRJaJ6Ech3OFA", "h264-encoder", // iOS 7.0+ (removed in 11.0)
@@ -430,7 +430,7 @@ static const struct tKeyMapping keyMappingTableLegacy[] = {
     "vf61bz2yUWqBb+jD25ZK+w", "sbin-config-val", // non-gestalt-key // iOS 18.6+ (removed in 27.0)
     "VhcvUOAVhvIns8SosbTDrg", "NotGreenTeaDeviceCapability", // Simulator
     "vmZuX/fdqt3gKhonHYLyUw", "aggregate-cam-video-zoom", // non-gestalt-key // iOS 10.0+ (removed in 27.0)
-    "Vn4SAODWQXeOOIVBe8CXTg", NULL, // non-gestalt-key, , iOS 7.0+ (removed in 10.0)
+    "Vn4SAODWQXeOOIVBe8CXTg", NULL, // non-gestalt-key, IODeviceTree:/ mesa (h0OUwg, starts with m) via lazy copyDeviceTreeStructureNext; touch-id getter aliases this hash, iOS 7.0+ (removed in 10.0)
     "VOKmP/SJjhnx1AaT13J7QA", "MultitaskingGesturesCapability", // Simulator
     "voS/bmBAz0Y1eNLoN8x9/Q", "pearl-camera", // non-gestalt-key // iOS 11.0+ (removed in 27.0)
     "vq2wpvLzyYLEApQs9cs52A", "panel-serial-number", // non-gestalt-key // iOS 13.0+ (removed in 27.0)

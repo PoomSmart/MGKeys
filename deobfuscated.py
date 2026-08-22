@@ -544,6 +544,7 @@ keys = {
     "MTa8c+pEdbK0tHGXP06xOw": "AllowYouTubePlugin",
     "mtHZd1H8XJ2DMVtNVUSkag": "wifi",
     "mtrAoWJ3gsq+I90ZnQ0vQw": "DeviceClassNumber",
+    "mug/QuG6jZ3CYR9p7OWQaw": "bcm-window-type",
     "mumHZHMLEfAuTkkd28fHlQ": "DeviceColor",
     "mVenV0u+B3ShrqRddinaFQ": "homescreen-wallpaper",
     "MW1p1oJH8nDJc6igOb8G4g": "IcefallInfo",

@@ -1,7 +1,7 @@
 #include "struct.h"
 
 // Total: 935 keys
-// Deobfuscated: 932 keys (99.68%)
+// Deobfuscated: 933 keys (99.79%)
 // Total gestalt keys: 922 keys
 // Deobfuscated gestalt: 922 keys (100.0%)
 // Unexplored: 0 keys
@@ -552,7 +552,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "MTa8c+pEdbK0tHGXP06xOw", "AllowYouTubePlugin", // iOS 7.0+
     "mtHZd1H8XJ2DMVtNVUSkag", "wifi", // iOS 7.0+
     "mtrAoWJ3gsq+I90ZnQ0vQw", "DeviceClassNumber", // iOS 7.0+
-    "mug/QuG6jZ3CYR9p7OWQaw", NULL, // non-gestalt-key, IODeviceTree:/opal, starts with b, iOS 14.0+
+    "mug/QuG6jZ3CYR9p7OWQaw", "bcm-window-type", // non-gestalt-key // iOS 14.0+
     "mumHZHMLEfAuTkkd28fHlQ", "DeviceColor", // iOS 7.0+
     "mVenV0u+B3ShrqRddinaFQ", "homescreen-wallpaper", // iOS 7.0+
     "MW1p1oJH8nDJc6igOb8G4g", "IcefallInfo", // iOS 10.0+

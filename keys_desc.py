@@ -1,18 +1,17 @@
 NON_KEY_DESC = 'non-gestalt-key'
 
 unknown_keys_desc = {
-    "4MI3+6oztazPJ1ZI2OdWDQ": "",
+    "4MI3+6oztazPJ1ZI2OdWDQ": "IODeviceTree:/oscar pressure (znvmheFk, starts with p) via lazy copyDeviceTreeStructureNext; sim PhosphorusCapability stand-in 8.3-9.3",
     "9icU1F9BQ/2S0k7pXM668g": "IOServiceTree:/, starts with A",
     "EQvKwl1eIhCS1hb6EURKWg": "",
-    "KRT2emT8tNPMW9VUsXwT1A": "",
+    "KRT2emT8tNPMW9VUsXwT1A": "IDA: lazy-func slot 79; Extensions IMP MGGetBoolAnswer(Vn4SA) then logs fusing-state failure, returns 0",
     "L8PQcP8OFWzr3NCfs1QrrQ": "IODeviceTree:/product/audio, starts with s, 061e/gd5kFdZwwe1G2qXFQ",
-    "mug/QuG6jZ3CYR9p7OWQaw": "IODeviceTree:/opal, starts with b",
     "pR+R7mU9EhKaQ/yQNzP/9w": "IDA: passed to system-info sandbox-access error wrapper; no semantic key name, starts with D",
     "qFOTegRPbeFSOU88a/aQHA": "IODeviceTree:/arm-io/soc-generation >= H13",
     "R836fJkaZ8xrq3rSCYjxSw": "IODeviceTree:/product, starts with c",
     "rQomeYDtReu8qrM6qVNUFA": "IODeviceTree:/product, starts with w",
-    "ubcUOmdIWpYH7dNopZCfEg": "",
-    "Vn4SAODWQXeOOIVBe8CXTg": "",
+    "ubcUOmdIWpYH7dNopZCfEg": "IODeviceTree:/chosen marketing-software-behavior, first byte != 0 as SInt32",
+    "Vn4SAODWQXeOOIVBe8CXTg": "IODeviceTree:/ mesa (h0OUwg, starts with m) via lazy copyDeviceTreeStructureNext; touch-id getter aliases this hash",
 }
 
 known_keys_desc = [
@@ -204,6 +203,7 @@ known_keys_desc = [
     "MlDJggkQz38CLQh3AVv7VQ",
     "mm4/5+X4Z+eStXyipfwWVQ",
     "MQoTKg93BM8ZhBaB3WUPdw",
+    "mug/QuG6jZ3CYR9p7OWQaw",
     "MvBKQ+GSnR3DjkovgNL+3w",
     "MvVy/Q3+03B+dvsOd5g0MA",
     "MXZ7vg7hul895QdsLUBJFA",
