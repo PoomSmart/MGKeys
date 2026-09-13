@@ -1,7 +1,7 @@
 #include "struct.h"
 
-// Total: 922 keys
-// Deobfuscated: 922 keys (100.0%)
+// Total: 925 keys
+// Deobfuscated: 925 keys (100.0%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -293,6 +293,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "ELLSWiPOyh0roYBypZFHFA", "magnetometer", // iOS 7.0+
     "emXA9B552rnSoI7xXE91DA", "DeviceLaunchTimeLimitScale", // iOS 9.0+
     "eNgz35a7iZnVeEMwsBQZew", "BasebandChipId", // iOS 7.0+
+    "eOZP/G568LlFYu04hLjwAQ", "arm64e.x1", // iOS 27.0+
     "eP/CPXY0Q1CoIqAWn/J97g", "DeviceSupportsLandscapeFaceID", // iOS 17.0+
     "eQd5mlz0BN0amTp/2ccMoA", "SupportsForceTouch", // iOS 9.0+
     "EqrsVvjcYDdxHBiQmGhAWw", "apple-internal-install", // iOS 7.0+
@@ -686,6 +687,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "r5pA2qLgR86BQKwgMjPWzg", "LynxSerialNumber", // iOS 12.0+
     "r5QUsvvgcb2Qmuflua13fQ", "DeviceRequiresProximityAmeliorations", // iOS 11.0+
     "RA3I5nhSK65i1ZxkRxQKfg", "HasThinBezel", // iOS 7.0+
+    "rb2tKZxlj0Gm2tBmUQSLqQ", "DeviceSupportsAudioIntelligence", // iOS 27.0+
     "RbiXiBQAmypd3Btw3jADAw", "DeviceSupportsAppleLPM", // iOS 16.4+
     "re6Zb+zwFKJNlkQTUeT+/w", "UniqueDeviceID", // iOS 7.0+
     "RECLuzbJ6oh8q4NKR8RtNg", "multitasking", // iOS 7.0+
@@ -812,6 +814,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "VuGdqp8UBpi9vPWHlPluVQ", "CompatibleAppVariants", // iOS 14.0+
     "VXc3L66nqQ6bn4z60ChX+A", "ResponsiveAirPlayAudioCapability", // iOS 27.0+
     "W/xqvBX9L07XHb0BOtYycQ", "ThreadRadioMacAddress64Bit", // iOS 14.0+
+    "W2RPjaqovtsgiRB6ScePGA", "DeviceSupportsContinuousHeartRate", // iOS 27.0+
     "WAfNjeiwOd/k6+VU6D6SIQ", "ExtendedLOMMacAddress", // iOS 14.2+
     "waGD2UTpntjbDXD1r3oALQ", "DeviceSupportsSiriHub", // iOS 14.5+
     "waWRQ4fj6cyMuJ+wTWJs1g", "RearCameraOffsetFromDisplayCenter", // iOS 11.0+

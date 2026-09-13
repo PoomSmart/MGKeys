@@ -4,7 +4,7 @@ Mapping of the obfuscated keys (or questions) used by iOS's MobileGestalt to the
 
 It is our job to de-obfuscate them all.
 
-The keys are currently based on iOS 27.0b6.
+The keys are currently based on iOS 27.0 RC.
 
 ## Patterns
 
@@ -30,7 +30,7 @@ There are also keys which are obfuscated the same way but are not considered as 
 
 iOS 27.0+ `libMobileGestalt` strings suggests that iOS 27 no longer obfuscates some keys that are used to query `IODeviceTree`.
 For example, the legacy non-Gestalt hash `wAbB2fAjUqUc6lNBelfWMA` was removed while the readable `no-als-period-update` string appeared.
-Therefore, it is expected that there will be less non-Gestalt keys in iOS 27.0+ than in previous versions.
+Therefore, it is expected that there will be less obfuscated keys in iOS 27.0+ than in previous versions.
 
 ## Getting Started
 
