@@ -700,6 +700,7 @@ keys = {
     "rkqlwPcRHwixY4gapPjanw": "DeviceName",
     "RLlZndRrTB3oIDuZEihtpQ": "RearFacingCameraAutoHDRCapability",
     "RNcdWbM8+dO5tx82A+YCcQ": "ProvisioningUniqueDeviceID",
+    "Rq0MF/w+gXM66Ii4fkWOzg": "DeviceShowsBatteryModelInformationLegacyHW",
     "rtIWWK0kM4F+ZMkIqhE7yQ": "DeviceStingHousingColor",
     "RvCUAjrf7O/zAzV1StnBlg": "IsComputeNode",
     "rXbje18EX3b6I7u/pXBYeg": "RequiresPairedRemote",

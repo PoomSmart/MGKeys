@@ -670,6 +670,7 @@ KEY_IOS_VERSIONS = {
     "RbiXiBQAmypd3Btw3jADAw": "16.4",
     "RgoxDxYGuZ0GzijFt6kSQQ": "9.0",
     "Rh3jQ1k4bhpCfR4FimhRZw": "sim",
+    "Rq0MF/w+gXM66Ii4fkWOzg": "27.2",
     "RrhB72r1de9N65EG4pgqJw": "7.0",
     "RvCUAjrf7O/zAzV1StnBlg": "18.0",
     "RyXm3yMC4ejlFvwlEI509w": "7.0",
