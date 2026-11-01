@@ -117,7 +117,7 @@ Check triage artifacts:
 .venv/bin/mypy *.py
 ```
 
-Update [README.md](../../../README.md) baseline line (`The keys are currently based on iOS …`). Confirm `versions/version-stats.txt` lists the new version.
+Update [README.md](../../../README.md) **only** the baseline line (`The keys are currently based on iOS …`). Do not add release notes, new-key lists, or ipsw-diff links to the README. Confirm `versions/version-stats.txt` lists the new version.
 
 ## Expected outcomes
 

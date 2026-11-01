@@ -1,9 +1,9 @@
 #include "struct.h"
 
-// Total: 939 keys
-// Deobfuscated: 937 keys (99.79%)
-// Total gestalt keys: 926 keys
-// Deobfuscated gestalt: 926 keys (100.0%)
+// Total: 941 keys
+// Deobfuscated: 939 keys (99.79%)
+// Total gestalt keys: 928 keys
+// Deobfuscated gestalt: 928 keys (100.0%)
 // Unexplored: 0 keys
 
 static const struct tKeyMapping keyMappingTable[] = {
@@ -460,6 +460,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "jMiqevikb6QWeHOhvLsw6A", "RenderWideGamutImagesAtDisplayTime", // iOS 9.3+
     "Jq+xaurJgFzSwxOfTqtBGw", "SupportsSSHBButtonType", // iOS 10.0+
     "Js8HVdVGRs8m5v94pMjkRw", "enforce-googlemail", // iOS 7.0+
+    "jSCETdfJtije3kkxEwspEQ", "DeviceSupportsFaceprint", // iOS 27.2+
     "jSDzacs4RYWnWxn142UBLQ", "BluetoothAddressData", // iOS 7.1+
     "juE6wCsjVG4bfAhgHcUVcQ", "MultiLynxSerialNumberArray", // iOS 13.2+
     "JUWcn+5Ss0nvr5w/jk4WEg", "device-name", // iOS 7.0+
@@ -837,6 +838,7 @@ static const struct tKeyMapping keyMappingTable[] = {
     "wH7fRq4TDdYG2pN1KDQW/A", "FrontFacingIRStructuredLightProjectorModuleSerialNumber", // iOS 12.0+
     "whbsdxpLirBFgUbLH3+0JA", "DeviceSupportsAdaptiveMapsUI", // iOS 7.0+
     "wlxZYdEZITDTzgs/OnnV+Q", "personal-hotspot", // iOS 7.0+
+    "WnCqFWpQgAFLfacM07K0RA", "PumpkinMode", // iOS 27.2+
     "wNdWl5xfBJmJGNWJr5t0zA", "DeviceSupportsBerkelium2", // iOS 11.0+
     "wOVK1nhmiAawowdbIwgyaQ", "RearFacingCameraVideoCaptureFPS", // iOS 8.0+
     "WPEkba78QeFFU/wgqpOx6w", "UserIntentPhysicalButtonNormalizedCGRect", // iOS 12.0+
