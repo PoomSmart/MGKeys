@@ -1,6 +1,6 @@
 ---
 name: discover-ios-keys
-description: Discover and map new MobileGestalt keys for a new iOS version in MGKeys. Use when the user asks to discover keys for a new iOS version, update version snapshots, diff against the previous baseline, or run the MGKeys IPSW extraction and discovery pipeline.
+description: Discover and map new MobileGestalt keys for a new iOS version in MGKeys. Use when the user asks to discover keys for a new iOS version, update version snapshots, diff against the previous baseline, run the IPSW extraction pipeline, or check blacktop/ipsw-diffs for libMobileGestalt.dylib changes without downloading an IPSW.
 ---
 
 # Discover iOS MobileGestalt Keys (MGKeys)
@@ -20,22 +20,44 @@ Do **not** run `extract-version-hashes.sh`, `discover-version.sh --remote-extrac
 
 | Approach | When to use |
 |----------|-------------|
-| **Option A** (full IPSW once) | Need dylib + DeviceTree; preferred |
+| **Option A** (full IPSW once) | Need dylib + DeviceTree; preferred for first snapshot of a major version |
 | **Option B** (remote dyld once) | Gestalt-only; skip separate hash snapshot |
+| **Option C** (ipsw-diffs check) | [blacktop/ipsw-diffs](https://github.com/blacktop/ipsw-diffs) already has `libMobileGestalt.dylib.md` for the build pair; gestalt-only delta, no IPSW download |
 
-See [reference.md](reference.md) for exact commands.
+See [reference.md](reference.md) for exact commands. Option C details: [reference.md § ipsw-diffs check mode](reference.md#ipsw-diffs-check-mode).
 
 ## Workflow checklist
 
+Use **Option C** when the user points at an ipsw-diffs URL or only the RC→public (or adjacent beta) dylib diff matters. Skip Steps 1–2 and start at **Step 3C**, then 6–7; run Steps 4–5 only if non-gestalt or symbol/name mismatches remain.
+
 ```
-- [ ] 1. Extract once (Option A or B)
-- [ ] 2. Discover locally + post-process
-- [ ] 3. Diff against previous version
-- [ ] 4. Recover non-gestalt keys from DeviceTree
+- [ ] 1. Extract once (Option A or B) — skip for Option C
+- [ ] 2. Discover locally + post-process — skip for Option C unless validating full snapshot
+- [ ] 3. Diff against previous version (or 3C: parse ipsw-diffs)
+- [ ] 4. Recover non-gestalt keys from DeviceTree — optional for Option C
 - [ ] 5. Reverse-engineer remaining unknowns in the dyld shared-cache IDA database
 - [ ] 6. Guess remaining unknowns
 - [ ] 7. Validate and update docs
 ```
+
+### Step 3C: ipsw-diffs check mode (Option C)
+
+1. Open the dylib diff for the target build pair:
+   `iOS/<major>_<minor>_<olderBuild>_vs_<major>_<minor>_<newerBuild>/DYLIBS/usr/lib/libMobileGestalt.dylib.md`
+2. Collect **added** gestalt evidence:
+   - New `_MobileGestalt_get_*` / `_MobileGestalt_copy_*` symbols
+   - New 22-character obfuscated hash strings
+   - New PascalCase or kebab-case strings tied to those symbols (MGCopyAnswer / DeviceTree plaintext on iOS 27+)
+3. Derive the MGCopyAnswer name from each new symbol the same way `discover.sh` does: strip `_MobileGestalt_get_`, capitalize the first character only (`deviceSupportsFaceprint` → `DeviceSupportsFaceprint`).
+4. **Verify every hash** with `calculate_obfuscated_key()` in `obfuscate.py`. Do not trust hash↔name pairing in the markdown; diff layout can swap adjacent strings.
+5. If obfuscation does not match the hash in the diff, treat the symbol as a hint only: decompile the getter (Step 5) and search for `MGCopyAnswer` / `MGGetBoolAnswer` / literal question strings (example: symbol `arm64Ex1ExecutionCapability` vs question `arm64e.x1`).
+6. Update mappings: add sorted entries to `deobfuscated.py` and `hashes.txt`. Build `versions/version-<VERSION>.txt` as **previous release snapshot + new hashes** (sorted like `hashes.txt`), or re-run Option A/B later to reconcile the full set.
+7. Run `python3 populate_versions.py` then `python3 gen_mapping.py` (run `gen_mapping.py` again if version comments were missing). Confirm new keys show `// iOS <VERSION>+` in `mapping-gestalt.h`.
+
+Ignore debug-only string churn (NVRAM labels, internal UUIDs) unless you establish a gestalt or non-gestalt mapping. Readable DeviceTree strings without a new obfuscated hash do not go into `hashes.txt`.
+
+Full URL patterns, fetch tips, and a verification one-liner: [reference.md § ipsw-diffs check mode](reference.md#ipsw-diffs-check-mode).
+
 
 ### Step 1: Extract once
 
@@ -123,8 +145,9 @@ Update [README.md](../../../README.md) **only** the baseline line (`The keys are
 
 | Diff result | Action |
 |-------------|--------|
-| No change | Add `version-<VERSION>.txt`, bump README, extend mapping version comments |
-| New gestalt hashes | Usually auto-mapped via `_MobileGestalt_*` symbols |
+| No change | Add `version-<VERSION>.txt`, bump README baseline only, extend mapping version comments |
+| New gestalt hashes (Option C) | Map via symbols + `obfuscate.py`; extend snapshot; IDA if name≠hash |
+| New gestalt hashes (A/B) | Usually auto-mapped via `_MobileGestalt_*` symbols |
 | New non-gestalt | `maybe-non-gestalt-keys.txt` → dtree recovery |
 | Removed hashes | `sync_discovered_keys.py` moves to legacy; verify version-stats |
 
@@ -150,5 +173,6 @@ That rewrites `versions/version-sim.txt`, appends new hashes to `hashes_legacy.t
 
 ## Additional resources
 
-- Full Option A/B command blocks: [reference.md](reference.md)
+- Full Option A/B/C command blocks: [reference.md](reference.md)
+- ipsw-diffs gestalt-only workflow: [reference.md § ipsw-diffs check mode](reference.md#ipsw-diffs-check-mode)
 - Project docs: [README.md](../../../README.md)

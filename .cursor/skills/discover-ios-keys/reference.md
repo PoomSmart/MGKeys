@@ -1,5 +1,96 @@
 # MGKeys Discovery Reference
 
+## ipsw-diffs check mode
+
+Use when [blacktop/ipsw-diffs](https://github.com/blacktop/ipsw-diffs) already published a `libMobileGestalt.dylib` diff for the builds you care about (common for RC→public or consecutive betas). No IPSW download required for gestalt key additions.
+
+### Locate the diff
+
+Browse `https://github.com/blacktop/ipsw-diffs/tree/main/iOS` for a folder named like:
+
+```text
+<major>_<minor>_<olderBuild>_vs_<major>_<minor>_<newerBuild>
+```
+
+Open:
+
+```text
+DYLIBS/usr/lib/libMobileGestalt.dylib.md
+```
+
+Raw file (for `curl` / agent fetch):
+
+```text
+https://raw.githubusercontent.com/blacktop/ipsw-diffs/main/iOS/<folder>/DYLIBS/usr/lib/libMobileGestalt.dylib.md
+```
+
+Example (iOS 27.2 public vs prior seed):
+
+```text
+27_2_24B5099f_vs_27_2_24B5110a/DYLIBS/usr/lib/libMobileGestalt.dylib.md
+```
+
+Pick the folder whose **newer** build matches the iOS version you are recording in MGKeys (`versions/version-27.2.txt` uses marketing version `27.2`, not only the build letter).
+
+### What to extract from the markdown
+
+| Signal | Use |
+|--------|-----|
+| Added `_MobileGestalt_get_*` / `_MobileGestalt_copy_*` | Primary gestalt key names (via symbol → PascalCase rule below) |
+| Added 22-char `A-Za-z0-9+/` strings | Obfuscated hashes; must be verified |
+| Added kebab-case strings (e.g. `supports-faceprint`) | Often DeviceTree plaintext on iOS 27+; map to PascalCase gestalt key if one exists, do not add kebab hash unless it is in the dylib hash table |
+| Removed hashes / symbols | Update snapshot and legacy via `comm -23` logic; confirm with `sync_discovered_keys.py` if doing full discover later |
+
+### Symbol → MGCopyAnswer name
+
+Same rule as `discover.sh`:
+
+```bash
+# deviceSupportsFaceprint → DeviceSupportsFaceprint
+echo 'deviceSupportsFaceprint' | awk '{print toupper(substr($0,1,1))substr($0,2)}'
+```
+
+This is **not** always the string passed to `MGCopyAnswer`. When verification fails, decompile the getter in IDA (shared-cache `.i64` preferred) and read the literal question string.
+
+### Verify hashes (required)
+
+```bash
+python3 - <<'PY'
+from obfuscate import calculate_obfuscated_key
+for name in ("DeviceSupportsFaceprint", "PumpkinMode"):
+    print(calculate_obfuscated_key(name), name)
+PY
+```
+
+Only commit `deobfuscated.py` entries where `calculate_obfuscated_key(name)` equals the hash you are adding. The ipsw-diffs markdown often lists the correct strings near the wrong hash.
+
+### Apply changes (gestalt-only delta)
+
+```bash
+PREV=27.0
+VERSION=27.2
+# new_hashes.txt: one obfuscated hash per line from ipsw-diffs (after obfuscate.py verification)
+
+sort -u "versions/version-${PREV}.txt" new_hashes.txt > "versions/version-${VERSION}.txt"
+# Edit deobfuscated.py + hashes.txt (keep hashes.txt sorted; add same keys as new_hashes.txt)
+
+python3 populate_versions.py
+python3 gen_mapping.py
+python3 gen_mapping.py   # second pass if // iOS comments were missing
+```
+
+If you already have `versions/version-${VERSION}.txt` from an earlier beta diff, merge **additional** public-release hashes into that file instead of copying from `PREV`.
+
+Update README **only**: `The keys are currently based on iOS <VERSION>.`
+
+### When to still run Option A or B
+
+- First snapshot for a major iOS release or no ipsw-diffs folder yet
+- Need authoritative full hash list (941+ keys), not incremental delta
+- Non-gestalt / DeviceTree obfuscated keys (`recover_from_dtree.py`)
+- Removed keys or large string table churn you cannot interpret from the diff alone
+- After Option C, optional reconcile: one Option B run to replace incremental snapshot with discover output
+
 ## Option A — full IPSW once (dylib + dtree)
 
 ```bash
